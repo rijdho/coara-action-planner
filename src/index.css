@@ -1,0 +1,282 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================================
+   Design system — "violet" language, ported from the cris-eilein house style.
+   The page components address colours through the existing --color-* names, so
+   those names are kept as the stable interface and simply re-pointed at the new
+   palette. The --brand/--paper/--hairline/… aliases exist so the shell chrome
+   (rail, command bar) below can be written in cris-eilein's own vocabulary.
+   ============================================================================ */
+:root {
+  /* violet palette — light (default) */
+  --paper: #f7f6fb;
+  --surface: #ffffff;
+  --surface-2: #f1f0f7;
+  --surface-3: #eae8f3;
+  --ink: #17151f;
+  --ink-2: #52505e;
+  --muted: #8a8895;
+  --hairline: #e5e3ef;
+  --brand: #6d4aff;
+  --brand-soft: #eeebff;
+  --shadow: 0 1px 2px rgba(23, 21, 31, 0.06), 0 8px 24px rgba(23, 21, 31, 0.05);
+  --r: 14px;
+  --r-sm: 9px;
+  --disp: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* --color-* interface consumed by the page components */
+  --color-bg: var(--paper);
+  --color-surface: var(--surface);
+  --color-surface-alt: var(--surface-2);
+  --color-border: var(--hairline);
+  --color-text: var(--ink);
+  --color-text-muted: var(--ink-2);
+  --color-accent: var(--brand);
+  --color-accent-dim: #5636e0;
+
+  /* Maturity 0–5 — a single-hue violet SEQUENTIAL ramp (ordinal scale).
+     Monotonic in lightness (dark = more mature) and every step clears WCAG as
+     text on white, so it works as both a bar fill and a label colour. */
+  --color-level-0: #7a7597;
+  --color-level-1: #6d5fc4;
+  --color-level-2: #5b45d6;
+  --color-level-3: #4a34b8;
+  --color-level-4: #3a2790;
+  --color-level-5: #2a1b68;
+
+  /* Declaration accents (unused in the lite pages, kept harmonised) */
+  --color-coara: #6d4aff;
+  --color-dora: #c77f0a;
+  --color-leiden: #0e9c86;
+  --color-barcelona: #db2777;
+  --color-hongkong: #a855f7;
+  --color-care: #b45309;
+  --color-fair: #2563eb;
+  --color-trust: #e8452f;
+  --color-unesco: #4f46e5;
+
+  --color-shadow: rgba(23, 21, 31, 0.12);
+  --color-contrast-text: #ffffff;
+}
+
+/* Dark — applied by the theme toggle (data-theme) and, before JS runs, by the
+   OS preference. Steps re-chosen against the dark surface, not auto-flipped. */
+:root[data-theme="dark"] {
+  --paper: #121118;
+  --surface: #1b1a22;
+  --surface-2: #232230;
+  --surface-3: #2c2a3a;
+  --ink: #eceaf3;
+  --ink-2: #a9a7b5;
+  --muted: #6e6c7c;
+  --hairline: #2c2a38;
+  --brand: #8b7bff;
+  --brand-soft: #221f35;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  --color-accent-dim: #a594ff;
+  --color-level-0: #807c93;
+  --color-level-1: #8e7ee8;
+  --color-level-2: #a594ff;
+  --color-level-3: #b9aaff;
+  --color-level-4: #cdc2ff;
+  --color-level-5: #e0d9ff;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+  --color-contrast-text: #121118;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #121118;
+    --surface: #1b1a22;
+    --surface-2: #232230;
+    --surface-3: #2c2a3a;
+    --ink: #eceaf3;
+    --ink-2: #a9a7b5;
+    --muted: #6e6c7c;
+    --hairline: #2c2a38;
+    --brand: #8b7bff;
+    --brand-soft: #221f35;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
+    --color-accent-dim: #a594ff;
+    --color-level-0: #807c93;
+    --color-level-1: #8e7ee8;
+    --color-level-2: #a594ff;
+    --color-level-3: #b9aaff;
+    --color-level-4: #cdc2ff;
+    --color-level-5: #e0d9ff;
+    --color-shadow: rgba(0, 0, 0, 0.4);
+    --color-contrast-text: #121118;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--body);
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  transition: background 0.2s, color 0.2s;
+}
+
+h1, h2, h3 {
+  font-family: var(--disp);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+
+:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; border-radius: 4px; }
+
+/* ---- shell: rail + command bar (cris-eilein vocabulary) -------------------- */
+.app { display: grid; grid-template-columns: 244px 1fr; min-height: 100vh; }
+
+.rail {
+  background: var(--surface);
+  border-right: 1px solid var(--hairline);
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 18px 14px; position: sticky; top: 0; height: 100vh;
+}
+.brand-mark { display: flex; align-items: center; gap: 10px; padding: 6px 8px 20px; }
+.brand-glyph {
+  width: 32px; height: 32px; border-radius: 9px; flex: none; position: relative;
+  background: linear-gradient(135deg, var(--brand), color-mix(in oklab, var(--brand), #db2777 55%));
+}
+.brand-glyph::after {
+  content: ""; position: absolute; inset: 7px; border-radius: 3px;
+  border: 1.5px solid rgba(255, 255, 255, 0.9);
+  border-right-color: transparent; border-bottom-color: transparent; transform: rotate(45deg);
+}
+.brand-name { font-family: var(--disp); font-weight: 800; letter-spacing: -0.02em; font-size: 14.5px; line-height: 1.05; color: var(--ink); }
+.brand-sub { font-family: var(--mono); font-size: 9.5px; color: var(--muted); letter-spacing: 0.04em; margin-top: 2px; }
+
+.nav-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); padding: 10px 8px 6px; }
+.nav-item {
+  display: flex; align-items: center; gap: 11px; padding: 9px 10px; border-radius: var(--r-sm);
+  color: var(--ink-2); border: none; background: none; width: 100%; text-align: left;
+  font-family: var(--body); font-size: 13.5px; font-weight: 500; text-decoration: none;
+}
+.nav-item:hover { background: var(--surface-2); color: var(--ink); }
+.nav-item[aria-current="page"] { background: var(--brand-soft); color: var(--brand); font-weight: 600; }
+.nav-step {
+  width: 22px; height: 22px; border-radius: 7px; flex: none; display: grid; place-items: center;
+  font-family: var(--mono); font-size: 11px; font-weight: 600;
+  background: var(--surface-2); color: var(--muted);
+}
+.nav-item[aria-current="page"] .nav-step { background: var(--brand); color: #fff; }
+.rail-foot { margin-top: auto; font-family: var(--mono); font-size: 10.5px; color: var(--muted); padding: 8px; line-height: 1.7; }
+.rail-foot a { color: var(--muted); }
+.rail-foot a:hover { color: var(--brand); }
+
+.main-col { min-width: 0; display: flex; flex-direction: column; }
+
+/* Content column: anchored to the rail (not centered in the leftover space),
+   sharing one left gutter with the command-bar title so both align. The
+   max-width caps line length on very wide screens; spare room stays on the
+   right, where the eye doesn't miss it. */
+.content { padding: 28px 44px 72px; }
+.content-inner { max-width: 1080px; margin: 0; }
+
+.cmdbar {
+  position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 12px;
+  padding: 11px 44px; background: color-mix(in oklab, var(--paper), transparent 8%);
+  backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--hairline);
+}
+.cmd-title { font-family: var(--disp); font-weight: 700; font-size: 14px; letter-spacing: -0.01em; color: var(--ink); }
+.cmd-title .sep { color: var(--muted); font-weight: 400; margin: 0 8px; }
+.cmd-spacer { flex: 1; }
+.icon-btn {
+  width: 34px; height: 34px; border-radius: 9px; border: 1px solid var(--hairline);
+  background: var(--surface); display: grid; place-items: center; color: var(--ink-2); cursor: pointer;
+}
+.icon-btn:hover { color: var(--ink); border-color: var(--muted); }
+.icon-btn svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+.ghost-btn {
+  font-family: var(--mono); font-size: 11px; color: var(--ink-2);
+  border: 1px solid var(--hairline); background: var(--surface);
+  border-radius: 8px; padding: 6px 10px; cursor: pointer; text-decoration: none;
+}
+.ghost-btn:hover { color: var(--brand); border-color: var(--muted); }
+.langs { display: flex; gap: 1px; font-family: var(--mono); font-size: 11.5px; }
+.langs button { border: none; background: none; color: var(--muted); padding: 5px 7px; border-radius: 6px; cursor: pointer; }
+.langs button[aria-current="true"] { color: var(--ink); background: var(--surface-2); font-weight: 600; }
+
+.menu-btn { display: none; align-items: center; justify-content: center; width: 36px; height: 36px; flex: none; border: 1px solid var(--hairline); border-radius: 9px; background: var(--surface); color: var(--ink); cursor: pointer; }
+.menu-btn svg { width: 17px; height: 17px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+
+@media (max-width: 880px) {
+  .app { grid-template-columns: 1fr; }
+  .rail { position: fixed; top: 0; left: -280px; width: 260px; height: 100vh; overflow-y: auto; z-index: 60; transition: left 0.2s ease; }
+  .app.rail-open .rail { left: 0; box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); }
+  .rail-backdrop { position: fixed; inset: 0; z-index: 55; border: none; background: rgba(0, 0, 0, 0.35); }
+  .menu-btn { display: inline-flex; }
+  .content { padding: 20px 16px 56px; }
+  .cmdbar { padding: 11px 14px; }
+}
+
+/* ---- animations & misc ---------------------------------------------------- */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.fade-in { animation: fadeIn 0.3s ease-out; }
+@keyframes slideIn { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+.slide-in { animation: slideIn 0.4s ease-out; }
+@keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 0 0 rgba(109, 74, 255, 0.35); } 50% { box-shadow: 0 0 12px 4px rgba(109, 74, 255, 0.12); } }
+.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: var(--surface-3); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+::-webkit-scrollbar-track { background: transparent; }
+
+.recharts-tooltip-wrapper { outline: none !important; }
+.recharts-default-tooltip {
+  background: var(--color-surface) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--r-sm) !important;
+  box-shadow: var(--shadow) !important;
+}
+.recharts-tooltip-label { color: var(--color-text) !important; font-family: var(--body) !important; font-weight: 600 !important; font-size: 13px !important; }
+.recharts-tooltip-item { color: var(--color-text-muted) !important; font-size: 12px !important; }
+
+/* ============================================================================
+   Print: one-page institutional report (unchanged behaviour). Chrome is hidden,
+   the .print-report subtree is laid out in plain grayscale for PDF export.
+   ============================================================================ */
+@media print {
+  :root,
+  :root[data-theme="light"],
+  :root[data-theme="dark"] {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f1f5f9;
+    --color-border: #cbd5e1;
+    --color-text: #111111;
+    --color-text-muted: #444444;
+    --color-accent: #4a34b8;
+  }
+  body { background: #fff !important; }
+  .rail, .cmdbar, .rail-backdrop, .no-print { display: none !important; }
+  .app { display: block !important; }
+  .print-hidden { display: none !important; }
+  .print-report { display: block !important; }
+  main { max-width: none !important; padding: 0 !important; margin: 0 !important; }
+  .content-inner { max-width: none !important; }
+  .print-report { color: #111; font-size: 11px; }
+  .print-report .print-card { border: 1px solid #cbd5e1 !important; break-inside: avoid; }
+  @page { margin: 14mm; }
+}

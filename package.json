@@ -1,0 +1,30 @@
+{
+  "name": "coara-action-planner",
+  "version": "1.0.0",
+  "description": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rijdho/coara-action-planner.git"
+  },
+  "homepage": "https://rijdho.github.io/coara-action-planner/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.0",
+    "recharts": "^2.12.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.2"
+  }
+}
