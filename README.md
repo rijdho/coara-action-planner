@@ -6,6 +6,8 @@ A static React app. Answer 24 diagnostic questions, and it scores your instituti
 
 🔗 **Live:** https://rijdho.github.io/coara-action-planner/
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21492548.svg)](https://doi.org/10.5281/zenodo.21492548)
+
 Available in **English, Spanish, French and German** (auto-detected, switchable).
 
 This is the **open twin** of the hosted [Reform Assessment toolkit](https://metaudits.rijdho.org/reform-assessment/). That family keeps its calibrated methodology server-side; this repository moves the *same* questions, actions and prioritisation algorithm into the browser, in readable form, so the assessment logic can be inspected, cited, and adapted. Inspired by the open, community-first philosophy of [Metadata Game Changers](https://metadatagamechangers.com/).
@@ -69,4 +71,4 @@ Any static host works (the build is self-contained with relative asset paths). T
 
 ## Citation
 
-If you use this tool or its calibration, please cite it — see [`CITATION.cff`](CITATION.cff). A Zenodo DOI will be minted from the first release.
+If you use this tool or its calibration, please cite it — see [`CITATION.cff`](CITATION.cff) or the "Cite this repository" button. Archived on Zenodo: concept DOI [10.5281/zenodo.21492548](https://doi.org/10.5281/zenodo.21492548) (always resolves to the latest version).

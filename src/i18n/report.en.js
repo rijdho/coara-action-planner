@@ -75,7 +75,7 @@ export const REPORT_EN = {
     "{inst} treats research-assessment reform as iterative. This plan will be revisited [annually] and updated as criteria are piloted, evaluated, and embedded across all evaluation processes.",
 
   footer:
-    "Draft generated with CoARA Action Planner (rijdho.github.io/coara-action-planner) from a self-assessment of the ten CoARA commitments. Edit freely before adoption.",
+    "Draft generated with CoARA Action Planner (rijdho.github.io/coara-action-planner, DOI 10.5281/zenodo.21492548) from a self-assessment of the ten CoARA commitments. Edit freely before adoption.",
 
   // horizon timeframe phrases (fill {tf})
   tf_quickwins: "the coming 12 months",

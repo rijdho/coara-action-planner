@@ -195,7 +195,7 @@ export default {
     print_byCommitment: "Madurez por compromiso",
     print_priorityActions: "Acciones prioritarias",
     print_footer:
-      "Generado con CoARA Action Planner · rijdho.github.io/coara-action-planner · marco: Acuerdo CoARA sobre la Reforma de la Evaluación de la Investigación.",
+      "Generado con CoARA Action Planner (DOI 10.5281/zenodo.21492548) · rijdho.github.io/coara-action-planner · marco: Acuerdo CoARA sobre la Reforma de la Evaluación de la Investigación.",
     unknownInst: "Institución",
 
     // Report page
@@ -287,7 +287,7 @@ export default {
       "{inst} entiende la reforma de la evaluación de la investigación como un proceso iterativo. Este plan se revisará [anualmente] y se actualizará a medida que los criterios se pilotan, se evalúan y se integran en todos los procesos de evaluación.",
 
     footer:
-      "Borrador generado con CoARA Action Planner (rijdho.github.io/coara-action-planner) a partir de una autoevaluación de los diez compromisos de CoARA. Edítalo libremente antes de su adopción.",
+      "Borrador generado con CoARA Action Planner (rijdho.github.io/coara-action-planner, DOI 10.5281/zenodo.21492548) a partir de una autoevaluación de los diez compromisos de CoARA. Edítalo libremente antes de su adopción.",
 
     // horizon timeframe phrases (fill {tf})
     tf_quickwins: "los próximos 12 meses",

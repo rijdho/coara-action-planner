@@ -190,7 +190,7 @@ export default {
     print_byCommitment: "Reifegrad nach Verpflichtung",
     print_priorityActions: "Prioritäre Maßnahmen",
     print_footer:
-      "Erstellt mit dem CoARA Action Planner · rijdho.github.io/coara-action-planner · Rahmenwerk: CoARA-Vereinbarung zur Reform der Forschungsbewertung.",
+      "Erstellt mit dem CoARA Action Planner (DOI 10.5281/zenodo.21492548) · rijdho.github.io/coara-action-planner · Rahmenwerk: CoARA-Vereinbarung zur Reform der Forschungsbewertung.",
     unknownInst: "Einrichtung",
 
     // Report page
@@ -282,7 +282,7 @@ export default {
       "{inst} betrachtet die Reform der Forschungsbewertung als iterativen Prozess. Dieser Plan wird [jährlich] überprüft und aktualisiert, während Kriterien erprobt, evaluiert und in allen Bewertungsverfahren verankert werden.",
 
     footer:
-      "Entwurf erstellt mit dem CoARA Action Planner (rijdho.github.io/coara-action-planner) aus einer Selbsteinschätzung der zehn CoARA-Verpflichtungen. Vor der Verabschiedung frei bearbeitbar.",
+      "Entwurf erstellt mit dem CoARA Action Planner (rijdho.github.io/coara-action-planner, DOI 10.5281/zenodo.21492548) aus einer Selbsteinschätzung der zehn CoARA-Verpflichtungen. Vor der Verabschiedung frei bearbeitbar.",
 
     // horizon timeframe phrases (fill {tf})
     tf_quickwins: "die kommenden 12 Monate",

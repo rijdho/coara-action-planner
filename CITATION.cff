@@ -20,6 +20,7 @@ url: "https://rijdho.github.io/coara-action-planner/"
 license: MIT
 version: "1.0.0"
 date-released: "2026-07-22"
+doi: "10.5281/zenodo.21492548"
 keywords:
   - CoARA
   - research assessment reform

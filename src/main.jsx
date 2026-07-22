@@ -71,6 +71,10 @@ function Rail({ onNavigate }) {
         {t("footer")}
         <br />
         <a href="https://life.rijdho.org" target="_blank" rel="noopener noreferrer">@rijdho</a>
+        <br />
+        <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title="Cite this tool">
+          DOI 10.5281/zenodo.21492548
+        </a>
       </div>
     </aside>
   );

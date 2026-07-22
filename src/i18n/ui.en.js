@@ -192,7 +192,7 @@ export const UI_EN = {
   print_byCommitment: "Maturity by commitment",
   print_priorityActions: "Priority actions",
   print_footer:
-    "Generated with CoARA Action Planner · rijdho.github.io/coara-action-planner · framework: CoARA Agreement on Reforming Research Assessment.",
+    "Generated with CoARA Action Planner (DOI 10.5281/zenodo.21492548) · rijdho.github.io/coara-action-planner · framework: CoARA Agreement on Reforming Research Assessment.",
   unknownInst: "Institution",
 
   // Report page
