@@ -1,5 +1,7 @@
 # CoARA Action Planner
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21492548.svg)](https://doi.org/10.5281/zenodo.21492548)
+
 **Self-assess your institution against the ten CoARA commitments and get a prioritised, editable reform action plan — entirely in your browser.**
 
 A static React app. Answer 24 diagnostic questions, and it scores your institution's maturity across the ten commitments of the [CoARA Agreement on Reforming Research Assessment](https://coara.org/), then generates a prioritised action list and a corpus-grounded, editable action-plan narrative you can export. Nothing is uploaded; everything runs client-side and persists only in your browser's `localStorage`.
