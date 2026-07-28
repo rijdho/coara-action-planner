@@ -23,9 +23,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21644739
     description: "Version DOI for v1.1.0"
-  - type: doi
-    value: 10.5281/zenodo.21492549
-    description: "Version DOI for v1.0.0"
 repository-code: "https://github.com/rijdho/coara-action-planner"
 url: "https://rijdho.github.io/coara-action-planner/"
 license: MIT
