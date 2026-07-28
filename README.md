@@ -91,6 +91,7 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 | [`actions.js`](src/data/actions.js) | 45 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText` — the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
 | [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 314-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 314 plans" on Results) |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
+| [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS` — how divergent readings are consolidated |
 | [`i18n/{es,fr,de}.js`](src/data/i18n/) | full Spanish / French / German overlays of the above |
 
 The questions and actions were hand-calibrated by reading 15 real institutional action plans
@@ -114,6 +115,33 @@ npm run preview    # serve the build locally
 ```
 
 No backend, no API keys, no tracking.
+
+## Tests
+
+The calibration and the prioritisation algorithm are covered by unit tests (Node's built-in
+runner, no dependencies beyond what the app already needs):
+
+```bash
+npm test          # or: node --test tests/*.test.mjs
+```
+
+`prioritise.test.mjs` asserts on **exact priority scores**, and those cases double as the
+parity contract with the server-side engine behind the hosted sibling: the same answers must
+produce the same ranking on both. A change that moves a number here should be mirrored there
+or documented as a deliberate divergence. The algorithm cases use synthetic actions on
+purpose, so recalibrating the real catalog cannot break tests that are about the maths.
+
+`calibration.test.mjs` guards the failures that are silent rather than loud — a mistyped
+`theme` still renders, it just quietly loses its "N% of 314 plans" evidence band; an action
+whose `fromLevel` is not below its `toLevel` can never be recommended at all; a commitment
+with no entry-level action tells an institution it is weakest there and then offers nothing
+to do about it.
+
+`i18n.test.mjs` pins the most fragile contract in the repository: the Spanish, French and
+German action overlays align with `ACTIONS` **by array index**. Inserting an action mid-list
+without inserting one at the same position in all three overlays shifts every later
+translation onto the wrong action — nothing throws, the app just shows the wrong text in
+three languages.
 
 ## Deploy
 

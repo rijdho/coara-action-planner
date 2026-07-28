@@ -12,6 +12,16 @@ latest release.
 
 ### Added
 
+- **A test suite** — 26 tests over the prioritisation algorithm, the calibration's internal
+  consistency, and the i18n overlays (`npm test`, Node's built-in runner, no new
+  dependencies). `prioritise.test.mjs` asserts exact priority scores and doubles as the
+  parity contract with the hosted sibling's engine; `calibration.test.mjs` catches the
+  silent failures (a mistyped `theme` loses its evidence band, an unreachable
+  `fromLevel`/`toLevel` window, a commitment with no entry-level action); `i18n.test.mjs`
+  pins the by-array-index alignment of the three overlays. Verified non-vacuous by
+  mutation: four deliberate defects were each caught.
+- `perspectives.js` documented in the README's calibration table — it holds `ROLE_WEIGHTS`,
+  which is calibration, and was the one data file the table omitted.
 - Zenodo DOIs recorded across the project: concept and version DOIs in `CITATION.cff` (with a
   top-level `doi` so GitHub's "Cite this repository" widget shows it), a DOI badge under the
   README title, a `## Citation` closing section, and the DOI in the app and report footers.
