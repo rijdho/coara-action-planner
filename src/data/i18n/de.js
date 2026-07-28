@@ -955,6 +955,16 @@ export default {
       description: "Beginnen Sie nicht bei null. Übernehmen Sie formell einen bestehenden Anker: Unterzeichnen Sie DORA, unterstützen Sie das Leiden-Manifest oder nutzen Sie das SCOPE-Modell als Rückgrat Ihres Vorgehens. Rund 43 % der veröffentlichten CoARA-Aktionspläne berufen sich auf mindestens eines davon — das verleiht Legitimität, ein gemeinsames Vokabular und Orientierung, die Bewertende bereits kennen.",
       planText: "Wir werden unsere Reform in einem etablierten Rahmenwerk verankern — durch Unterzeichnung von DORA, Unterstützung des Leiden-Manifests oder Nutzung des SCOPE-Modells als Rückgrat unseres Vorgehens — und ihr damit Legitimität, ein gemeinsames Vokabular und Orientierung geben, die Bewertende bereits kennen.",
     },
+    {
+      title: "Den Plan von den Leitungsgremien formal genehmigen lassen",
+      description: "Legen Sie den Aktionsplan Ihrem Senat, Rektorat, Vorstand oder Hochschulrat zur formalen Genehmigung vor und halten Sie den Beschluss fest. Ein nie verabschiedeter Plan hat kein Mandat: Er kann kein Budget beanspruchen, keine Fakultät zur Änderung ihrer Kriterien verpflichten, und wird still zum persönlichen Projekt derjenigen, die ihn verfasst haben.",
+      planText: "Wir werden den Aktionsplan unseren Leitungsgremien zur formalen Genehmigung vorlegen und den Beschluss festhalten, damit die Reform auf einem institutionellen Mandat beruht und nicht auf dem guten Willen ihrer Verfasserinnen und Verfasser.",
+    },
+    {
+      title: "Den Aktionsplan veröffentlichen und archivieren",
+      description: "Stellen Sie den Plan dorthin, wo andere ihn finden, lesen und zitieren können: auf die eigene Website und in ein Archiv, das einen persistenten Identifikator vergibt (die meisten CoARA-Unterzeichnenden nutzen Zenodo). Das kostet fast nichts, erlaubt vergleichbaren Einrichtungen, Ihre Formulierungen zu übernehmen statt bei null anzufangen, und hat das Korpus hinter diesem Werkzeug überhaupt erst möglich gemacht.",
+      planText: "Wir werden unseren Aktionsplan auf unserer eigenen Website veröffentlichen und ihn in einem offenen Archiv mit persistentem Identifikator hinterlegen, damit vergleichbare Einrichtungen ihn finden, zitieren und darauf aufbauen können.",
+    },
   ],
 
   contexts: {

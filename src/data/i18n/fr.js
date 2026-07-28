@@ -955,6 +955,16 @@ export default {
       description: "Ne partez pas d'une page blanche. Adoptez formellement un ancrage existant : signez DORA, soutenez le Manifeste de Leiden ou utilisez le modèle SCOPE comme colonne vertébrale de votre démarche. Environ 43 % des plans d'action CoARA publiés en citent au moins un — cela apporte légitimité, vocabulaire commun et repères que les évaluateurs reconnaissent déjà.",
       planText: "Nous ancrerons notre réforme dans un cadre établi — en signant DORA, en soutenant le Manifeste de Leiden ou en adoptant le modèle SCOPE comme colonne vertébrale de notre démarche — pour lui donner légitimité, vocabulaire commun et repères que les évaluateurs reconnaissent déjà.",
     },
+    {
+      title: "Faire approuver formellement le plan par vos instances de gouvernance",
+      description: "Soumettez le plan d'action à votre sénat, rectorat, conseil d'administration ou conseil de gouvernance pour approbation formelle, et consignez la décision. Un plan jamais adopté n'a aucun mandat : il ne peut revendiquer de budget, il ne peut obliger une faculté à modifier ses critères, et il devient discrètement le projet personnel de celle ou celui qui l'a rédigé.",
+      planText: "Nous soumettrons le plan d'action à l'approbation formelle de nos instances de gouvernance et consignerons la décision, afin que la réforme repose sur un mandat institutionnel plutôt que sur la bonne volonté de ses auteurs.",
+    },
+    {
+      title: "Publier et déposer le plan d'action",
+      description: "Placez le plan là où d'autres peuvent le trouver, le lire et le citer : votre propre site et une archive délivrant un identifiant pérenne (la plupart des signataires de CoARA utilisent Zenodo). Cela ne coûte presque rien, cela permet aux institutions pairs de réutiliser vos formulations au lieu de partir d'une page blanche, et c'est ce qui a rendu possible le corpus sur lequel repose cet outil.",
+      planText: "Nous publierons notre plan d'action sur notre propre site et le déposerons dans une archive ouverte avec un identifiant pérenne, afin que les institutions pairs puissent le trouver, le citer et s'appuyer dessus.",
+    },
   ],
 
   contexts: {

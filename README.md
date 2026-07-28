@@ -88,7 +88,7 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 |---|---|
 | [`questions.js`](src/data/questions.js) | 24 diagnostic questions, each with 0–5 answer options mapped to a commitment |
 | [`commitments.js`](src/data/commitments.js) | the ten CoARA commitments + the 6-level maturity model |
-| [`actions.js`](src/data/actions.js) | 45 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText` — the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
+| [`actions.js`](src/data/actions.js) | 47 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText` — the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
 | [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 314-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 314 plans" on Results) |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
 | [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS` — how divergent readings are consolidated |

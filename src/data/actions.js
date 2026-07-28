@@ -621,6 +621,33 @@ export const ACTIONS = [
     planText: "We will anchor our reform in an established framework — signing DORA, endorsing the Leiden Manifesto, or adopting the SCOPE model as our workflow spine — giving it legitimacy, a shared vocabulary and guidance evaluators already recognise.",
     examples: ["University of Murcia", "University of Fribourg", "Maastricht University", "DORA", "Leiden Manifesto", "SCOPE model (INORMS)"],
   },
+
+  // Added 2026-07-28 from the structured deep-read of the corpus: both are common
+  // moves in real plans that this catalogue had no equivalent for.
+  {
+    commitment: "resources",
+    fromLevel: 1,
+    toLevel: 3,
+    effort: "medium",
+    impact: "high",
+    theme: "formal-approval",
+    title: "Get the plan formally approved by your governing bodies",
+    description: "Take the action plan through your senate, rectorate, executive board or governing council for formal approval, and record the decision. A plan that was never adopted has no mandate: it cannot claim budget, it cannot oblige a faculty to change its criteria, and it quietly becomes the personal project of whoever wrote it.",
+    planText: "We will submit the action plan to our governing bodies for formal approval and record the decision, so that the reform carries an institutional mandate rather than resting on the goodwill of its authors.",
+    examples: ["Ghent University", "NTNU", "University of Rijeka", "ZHAW"],
+  },
+  {
+    commitment: "communicate",
+    fromLevel: 1,
+    toLevel: 3,
+    effort: "low",
+    impact: "medium",
+    theme: "publish-plan",
+    title: "Publish and deposit the action plan",
+    description: "Put the plan where others can find, read and cite it: your own site, and an archive that issues a persistent identifier (most CoARA signatories use Zenodo). It costs almost nothing, it lets peer institutions reuse your wording instead of starting from a blank page, and it is what made the corpus behind this tool possible in the first place.",
+    planText: "We will publish our action plan on our own site and deposit it in an open archive with a persistent identifier, so that peer institutions can find, cite and build on it.",
+    examples: ["Loughborough University", "INORMS", "Turku UAS", "UCLan"],
+  },
 ];
 
 /** Priority score: higher = more urgent. Based on gap between current and target, impact, effort, and optional institutional context. */

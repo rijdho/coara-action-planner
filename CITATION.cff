@@ -6,7 +6,7 @@ abstract: >-
   ten commitments of the CoARA Agreement on Reforming Research Assessment and
   generates a prioritised, editable action plan. Multilingual (EN/ES/FR/DE).
   The open twin of the hosted Reform Assessment toolkit; the diagnostic
-  questions, the 45 calibrated actions with corpus-derived prevalence
+  questions, the 47 calibrated actions with corpus-derived prevalence
   evidence (314 published action plans), and the prioritisation algorithm
   are published in readable form under CC BY 4.0.
 type: software
@@ -26,8 +26,8 @@ identifiers:
 repository-code: "https://github.com/rijdho/coara-action-planner"
 url: "https://rijdho.github.io/coara-action-planner/"
 license: MIT
-version: "1.0.0"
-date-released: "2026-07-22"
+version: "1.1.0"
+date-released: "2026-07-28"
 keywords:
   - CoARA
   - research assessment reform

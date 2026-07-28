@@ -10,8 +10,18 @@ latest release.
 
 ## [Unreleased]
 
+## [1.1.0] — 2026-07-28
+
 ### Added
 
+- **Two actions the corpus has and the catalogue lacked**, both surfaced by a structured
+  deep-read of the 314-plan corpus: *Get the plan formally approved by your governing
+  bodies* (C5, present in 78 of 314 plans = 24.8%) and *Publish and deposit the action
+  plan* (C9, 51 of 314 = 16.2%). Prevalence was measured with the same plan-level method
+  as every other theme. The `publish-plan` signature deliberately ignores a bare "zenodo":
+  most plans carry their own DOI in a footer, which is the deposit having happened rather
+  than the plan committing to publish itself, and counting it would have inflated the
+  figure from 51 plans to 107.
 - **A test suite** — 26 tests over the prioritisation algorithm, the calibration's internal
   consistency, and the i18n overlays (`npm test`, Node's built-in runner, no new
   dependencies). `prioritise.test.mjs` asserts exact priority scores and doubles as the
@@ -71,5 +81,6 @@ Initial public release. Version DOI:
   calibration data.
 - GitHub Actions workflow publishing to GitHub Pages on every push to `main`.
 
-[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.1.0
 [1.0.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.0.0
