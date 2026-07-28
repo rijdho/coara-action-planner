@@ -12,6 +12,9 @@ latest release.
 
 ## [1.1.0] — 2026-07-28
 
+Version DOI:
+[10.5281/zenodo.21644739](https://doi.org/10.5281/zenodo.21644739).
+
 ### Added
 
 - **Two actions the corpus has and the catalogue lacked**, both surfaced by a structured
