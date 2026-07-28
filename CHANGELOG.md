@@ -24,6 +24,8 @@ latest release.
 ### Changed
 
 - README rewrapped to ~95 columns, matching the house style used by `fair-repo-audit`.
+- Build-config comment trimmed to what this repository needs; it no longer describes how the
+  hosted sibling is deployed.
 
 ### Removed
 
