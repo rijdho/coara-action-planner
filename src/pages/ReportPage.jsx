@@ -145,7 +145,7 @@ export default function ReportPage() {
       />
 
       {/* Print view: render the text as a clean document */}
-      <pre className="print-report" style={{ display: "none", whiteSpace: "pre-wrap", fontFamily: "Inter, system-ui, sans-serif", fontSize: "11px", lineHeight: 1.5 }}>
+      <pre className="print-report" style={{ display: "none", whiteSpace: "pre-wrap", fontFamily: "'Inter Variable', Inter, system-ui, sans-serif", fontSize: "11px", lineHeight: 1.5 }}>
         {text}
       </pre>
     </div>
