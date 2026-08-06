@@ -12,7 +12,13 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # false on purpose. With true, a push cancels the in-flight deploy — and on a day
+  # when the Pages backend publishes slowly (2026-08-06: ~15 min instead of ~10 s),
+  # pushing more often than that means NOTHING ever completes: each deploy dies
+  # mid-publish and leaves a zombie deployment_in_progress record on the backend
+  # that even the cancel API would not clear. Queued runs waiting their turn cost
+  # only latency; cancelled half-published deploys cost the deploy itself.
+  cancel-in-progress: false
 
 jobs:
   build:
