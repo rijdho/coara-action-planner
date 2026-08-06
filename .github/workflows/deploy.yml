@@ -38,3 +38,12 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # The action's own 600000 ms default is how long it waits for GitHub to
+          # finish publishing before giving up AND cancelling the deployment. On
+          # 2026-08-06 three deploys in a row were cancelled that way while Pages
+          # was still reporting deployment_in_progress — the build takes ~25s and
+          # the artifact is ~1.1 MB, so this is queue latency on GitHub's side, not
+          # anything this repo controls. Waiting longer costs nothing when Pages is
+          # quick; giving up early costs a deploy.
+          timeout: 1800000
