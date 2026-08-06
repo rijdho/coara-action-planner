@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-08-06
+
 ### Changed
 
 - **Corpus recount: 314 → 335 plans** (2026-08-06, incremental — the 21 deposits Zenodo
