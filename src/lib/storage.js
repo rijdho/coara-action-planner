@@ -14,6 +14,11 @@
  */
 
 import { ROLE_WEIGHTS } from "../data/perspectives";
+import { DEFAULT_PLAN, DEFAULT_DIVERGENCE_THRESHOLD } from "../data/plan";
+
+// The plan-stage ranking moved to data/plan.js, next to the rest of the calibration.
+// Re-exported here so the pages keep a single import for "plan state + plan ranking".
+export { DEFAULT_PLAN, applyPlan, CONTEXT_AFFINITY, CONTEXT_AFFINITY_BOOST } from "../data/plan";
 
 const STORAGE_KEY = "reform-assessment-lite";
 
@@ -261,7 +266,7 @@ export function resetRoleWeights() {
 /** Minimum spread (≥) before perspectives count as diverging. Default 2. */
 export function getDivergenceThreshold() {
   const n = load().divergenceThreshold;
-  return typeof n === "number" && n >= 1 ? n : 2;
+  return typeof n === "number" && n >= 1 ? n : DEFAULT_DIVERGENCE_THRESHOLD;
 }
 
 export function saveDivergenceThreshold(n) {
@@ -271,13 +276,6 @@ export function saveDivergenceThreshold(n) {
 }
 
 // --- Plan settings (the "Plan" tab) -----------------------------------------
-
-export const DEFAULT_PLAN = {
-  horizon: "balanced",      // "quick-wins" | "balanced" | "structural"
-  context: "all",           // a CONTEXTS id
-  focusCommitments: [],     // array of commitment ids to boost
-  includeHighEffort: true,  // show high-effort actions?
-};
 
 export function getPlan() {
   return { ...DEFAULT_PLAN, ...(load().plan ?? {}) };
@@ -343,7 +341,7 @@ export function exportConfig() {
     activePerspectiveId: d.activePerspectiveId,
     targetLevels: d.targetLevels ?? {},
     roleWeights: d.roleWeights ?? {},
-    divergenceThreshold: typeof d.divergenceThreshold === "number" ? d.divergenceThreshold : 2,
+    divergenceThreshold: typeof d.divergenceThreshold === "number" ? d.divergenceThreshold : DEFAULT_DIVERGENCE_THRESHOLD,
     plan: { ...DEFAULT_PLAN, ...(d.plan ?? {}) },
   };
 }
@@ -376,7 +374,7 @@ export function importConfig(obj) {
     activePerspectiveId: obj.activePerspectiveId,
     targetLevels: obj.targetLevels && typeof obj.targetLevels === "object" ? obj.targetLevels : {},
     roleWeights: obj.roleWeights && typeof obj.roleWeights === "object" ? obj.roleWeights : {},
-    divergenceThreshold: typeof obj.divergenceThreshold === "number" ? obj.divergenceThreshold : 2,
+    divergenceThreshold: typeof obj.divergenceThreshold === "number" ? obj.divergenceThreshold : DEFAULT_DIVERGENCE_THRESHOLD,
     plan: obj.plan && typeof obj.plan === "object" ? { ...DEFAULT_PLAN, ...obj.plan } : { ...DEFAULT_PLAN },
   });
   save(data);
@@ -408,72 +406,3 @@ export function parseConfigFromText(text) {
   try { return JSON.parse(b64decodeUtf8(m[1])); } catch { return null; }
 }
 
-/**
- * Context → commitment affinity (lite-only layer).
- *
- * The shared `prioritiseActions` only boosts the handful of actions that carry an
- * explicit `relevanceContext` tag (~7 of 44), so picking a context barely moved the
- * list. This map gives every context broad, principled reach: selecting it boosts ALL
- * actions belonging to the commitments that matter most for that setting (mirrors the
- * CONTEXTS descriptions and the report's context sentences). Kept here, in the lite
- * app, so the canonical `data/actions.js` stays re-copyable from the full app.
- */
-export const CONTEXT_AFFINITY = {
-  all: [],
-  "global-north": ["review-criteria", "communicate", "collective-eval", "exchange"],
-  "global-south": ["diversity", "exchange", "no-rankings", "no-metrics"],
-  "indigenous-serving": ["diversity", "collective-eval", "review-criteria"],
-  "multi-regional": ["review-criteria", "collective-eval", "exchange", "no-rankings"],
-  funder: ["qualitative", "no-metrics", "review-criteria", "awareness"],
-};
-
-/** Per-matching-commitment boost applied for the selected institutional context. */
-export const CONTEXT_AFFINITY_BOOST = 2;
-
-/**
- * Re-rank a context-prioritised action list using the user's plan settings.
- * `prioritised` is the output of prioritiseActions(ACTIONS, levels, plan.context),
- * so the per-action context tag boost is already applied; here we layer the context
- * affinity boost, horizon, focus, the high-effort filter, the ambition (target)
- * gating, and the perception-gap boost on top, then re-sort.
- *
- * Ambition is a **hard gate** (only when a target is set for the commitment):
- *   - a commitment already at/above its target drops out entirely (we are there);
- *   - actions that begin at/beyond the target drop out (pure overshoot);
- *   - actions that climb toward the target survive and get a small boost.
- * Commitments with no target are untouched, so the gate is inert by default.
- *
- * `divergence` (commitmentId → spread across perspectives) boosts contested areas:
- * where perspectives disagree by ≥2 levels, the institution should align first.
- */
-export function applyPlan(prioritised, plan = DEFAULT_PLAN, levels = {}, targets = {}, divergence = {}, divergenceThreshold = 2) {
-  const focus = new Set(plan.focusCommitments ?? []);
-  const affine = new Set(CONTEXT_AFFINITY[plan.context] ?? []);
-  let list = prioritised;
-  if (!plan.includeHighEffort) list = list.filter((a) => a.effort !== "high");
-  // Hard ambition gate (skipped for commitments without a target).
-  list = list.filter((a) => {
-    const target = targets[a.commitment];
-    if (target == null || target <= 0) return true;
-    const current = levels[a.commitment] ?? 0;
-    if (target <= current) return false; // already at/above the declared ambition
-    if (a.fromLevel >= target) return false; // begins beyond the ambition
-    return true;
-  });
-  return list
-    .map((a) => {
-      let priority = a.priority;
-      if (affine.has(a.commitment)) priority += CONTEXT_AFFINITY_BOOST;
-      if (focus.has(a.commitment)) priority += 3;
-      if (plan.horizon === "quick-wins") {
-        priority += a.effort === "low" ? 2 : a.effort === "high" ? -2 : 0;
-      } else if (plan.horizon === "structural") {
-        priority += a.impact === "high" ? 2 : 0;
-      }
-      const target = targets[a.commitment];
-      if (target != null && target > 0 && a.toLevel <= target) priority += 2; // closes the gap to target
-      if ((divergence[a.commitment] ?? 0) >= divergenceThreshold) priority += 2; // contested → align first
-      return { ...a, priority };
-    })
-    .sort((a, b) => b.priority - a.priority);
-}

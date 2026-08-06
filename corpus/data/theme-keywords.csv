@@ -1,0 +1,28 @@
+theme,regex,flags
+diverse-outputs,"\b(diverse|diversity of) (outputs|contributions)|beyond (traditional )?publications|research outputs (such as|including)|datasets?,? software|non-traditional outputs",IGNORECASE
+narrative-cv,\bnarrative (cv|curriculum|résumé|resume)|narrative-based|portfolio[- ]based (assessment|evaluation),IGNORECASE
+qualitative-judgement,"\bqualitative (judg?ement|assessment|evaluation)|peer review .{0,20}central|responsible use of (quantitative )?(indicators|metrics)",IGNORECASE
+remove-jif,\b(journal impact factor|impact factor|\bjif\b|h-index|journal[- ]based metrics|journal quartiles?),IGNORECASE
+no-rankings,\b(university )?rankings?\b|shanghai|times higher|\bqs\b|\bthe\b ranking|leiden ranking,IGNORECASE
+edi,"\b(equity,? diversity|diversity,? equity|\bedi\b|\bdei\b|gender (equality|bias)|inclusion|career break|parental leave|unconscious bias)",IGNORECASE
+open-science,\bopen (science|access|data|research)|fair (data|principles)|preregistrat|open peer review|reproducib,IGNORECASE
+governance,\b(working group|steering (group|committee|board)|task ?force|governance structure|coordinat(or|ion) (group|committee)|reform (committee|coordinator)),IGNORECASE
+resources-budget,\b(budget|funding allocat|dedicated (staff|resources|personnel|team)|protected time|resource(s)? (needed|required|allocat)),IGNORECASE
+criteria-audit,"\b(audit|review|map|analys|assess|revis)\w*\s+(\w+\s+){0,4}(evaluation|assessment)\s+(criteria|processes|practices|procedures)|\bgap analysis\b|stock[- ]?tak|baseline (assessment|analysis|review)",IGNORECASE
+cris-it,\b(cris\b|current research information system|research information system|institutional repositor|\bpure\b|\borcid\b|dataverse|research portal),IGNORECASE
+career-stage,\b(career stage|early[- ]career|r1|r2|r3|doctoral|postdoc|tenure[- ]track|differentiat(ed|e) criteria),IGNORECASE
+mentoring,"\bmentor(ing|ship)?|coaching|early[- ]career .{0,20}(support|development)",IGNORECASE
+ethics-integrity,\b(research integrity|research ethics|predatory (journal|publish)|responsible conduct|code of conduct),IGNORECASE
+training,"\b(train(ing)?|workshop|capacity[- ]building|professional development|upskill|seminar|webinar)\w*\s+(\w+\s+){0,5}(evaluat|assess|review|committee|panel|assessor|researcher|staff|academic)|evaluator training|training (programme|program|module|session)",IGNORECASE
+awareness-comms,"\b(aware(ness)?|communicat|disseminat|inform(ation)?|guidance|briefing|town hall|\bfaq\b|newsletter|info session)\w*\s+(\w+\s+){0,4}(campaign|strateg|material|session|plan|activit|researchers?|community|staff|stakeholder)|raise awareness|communication (plan|strategy)",IGNORECASE
+progress-report,\b(progress report|monitoring (and|&) (evaluation|reporting)|indicators? of (progress|success)|self[- ]assessment report|follow[- ]up),IGNORECASE
+working-groups,\b(coara )?(working group|action cluster)s?\b|thematic (group|working)|wg (ssh|emcr|peer review|rmi|oi4rra|erip),IGNORECASE
+multilingual,\b(multilingual|helsinki initiative|local[- ]language|non[- ]english|language (bias|diversity)|linguistic (diversity|justice)),IGNORECASE
+care-indigenous,\bcare principles?|indigenous (data|knowledge)|data sovereignty|community[- ]held data|collective benefit,IGNORECASE
+credit-taxonomy,\bcredit (taxonomy|statement|roles?)|contributor(ship)? (roles?|taxonomy|statement)|casrai|tadirah|author contribution,IGNORECASE
+ai-governance,\b(artificial intelligence|\bai\b) (use|governance|policy|disclosure|tool|assist)|generative ai|large language model|\bllm\b|chatgpt,IGNORECASE
+surveys-evidence,"\bsurvey(ed|s)? (of|our|the) (researchers|staff|community|faculty)|interview(ed|s)? .{0,15}(researchers|committees|staff)|empirical (evidence|data)",IGNORECASE
+unit-evaluation,\b(unit|department(al)?|institutional|centre|institute)[- ]level (evaluation|assessment|review)|research group (evaluation|assessment),IGNORECASE
+scope-dora,\b(scope (model|framework)|\bdora\b|declaration on research assessment|leiden manifesto|hong kong principles|barcelona declaration),IGNORECASE
+publish-plan,"\b(publish|publishing|publication of|deposit|deposited|depositing|upload(ed)?)\b[^.]{0,60}\b(action plan|this plan|the plan)\b|\b(action plan|this plan)\b[^.]{0,60}\b(is|will be|has been|been)\s+(publicly\s+)?(published|deposited|made available|available online|accessible)\b|\bpublicaci[oó]n del plan|\bplan de acci[oó]n[^.]{0,40}\bpublicad",IGNORECASE
+formal-approval,"\b(approv\w+|endors\w+|ratif\w+|adopt\w+|sign(ed)?[- ]off)\b[^.]{0,50}\b(by|from)\b[^.]{0,40}\b(senate|rector\w*|board|council|governing body|governing bod\w+|executive committee|management (team|board)|steering committee|assembly|presidium|trustees|regents)\b|\b(university|academic|governing|executive|supervisory) (senate|board|council)\b[^.]{0,50}\b(approv\w+|endors\w+|adopt\w+)\b|\baprobad[oa]\b[^.]{0,40}\b(consejo|junta|rector|senado)\b|\bgenehmigt\b|\bapprouv[ée]\b[^.]{0,40}\bconseil\b",IGNORECASE

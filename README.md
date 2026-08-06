@@ -72,6 +72,9 @@ flowchart LR
   ambition). Export the profile as PNG, or the full input state as a reproducible JSON config.
 - **Report** — a pre-structured, **editable** CoARA action-plan narrative drafted from your
   answers, with the responsible unit / timeframe / indicator fields left as blanks to fill in.
+  Every section carries the matching **CoARA guiding question**, quoted from the Secretariat's
+  *Action Plan Guidelines* (October 2023), so the draft can be checked against them line by
+  line. All ten commitments get a heading whether or not the tool had actions to suggest.
   Copy, download (`.md`/`.txt`), or print.
 
 ![Per-commitment breakdown for the same example institution: each of the ten commitments listed
@@ -89,10 +92,25 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 | [`questions.js`](src/data/questions.js) | 24 diagnostic questions, each with 0–5 answer options mapped to a commitment |
 | [`commitments.js`](src/data/commitments.js) | the ten CoARA commitments + the 6-level maturity model |
 | [`actions.js`](src/data/actions.js) | 47 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText` — the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
-| [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 314-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 314 plans" on Results) |
+| [`plan.js`](src/data/plan.js) | the **second** ranking stage — the ambition gate, the high-effort filter, and every plan-setting weight (context affinity, focus, horizon, target, divergence) **and** the `applyPlan` function |
+| [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 314-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 314 plans" on Results) — measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
+| [`guidingQuestions.js`](src/data/guidingQuestions.js) | the CoARA Secretariat's 19 guiding questions, quoted verbatim and mapped onto the report's sections |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
 | [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS` — how divergent readings are consolidated |
 | [`i18n/{es,fr,de}.js`](src/data/i18n/) | full Spanish / French / German overlays of the above |
+
+Ranking happens in **two stages**, and both are calibration. `prioritiseActions` scores an
+action on its own merits — gap x impact, minus an effort penalty. `applyPlan` then applies
+what the user asked for on the Plan tab: it *filters* (high-effort actions, and a hard
+ambition gate that drops anything already at or beyond a declared target) and *re-ranks*
+(context affinity, focus, horizon, target, divergence). What Results and Report display is
+the output of both, so both are pinned by tests.
+
+One consequence worth stating plainly: choosing an institutional context can move a single
+action by at most **+4** — +2 if the action carries that context tag, +2 more if its
+commitment is one the context prioritises. That is less than a full maturity step at high
+impact, so context re-orders actions within a band rather than overriding the assessment.
+The ceiling is a named constant and a test, not an accident.
 
 The questions and actions were hand-calibrated by reading 15 real institutional action plans
 (UCM, Helmholtz, DCU, UCLouvain, AQU Catalunya, FRQ, LBG, SocRSE, Eurodoc, YUFE/UNIRI, UB, UPC,
@@ -137,6 +155,21 @@ whose `fromLevel` is not below its `toLevel` can never be recommended at all; a 
 with no entry-level action tells an institution it is weakest there and then offers nothing
 to do about it.
 
+`plan.test.mjs` covers the second stage — the ambition gate that removes actions, and each
+plan weight asserted as a literal score rather than in terms of the constant it is testing
+(a suite written the other way passes even when the constant changes, which is how the first
+draft of this file failed its own mutation check).
+
+`guiding-questions.test.mjs` treats the CoARA guiding questions as what they are — a
+quotation. It pins the published count, checks every commitment is reached, and records the
+one place the source text is knowingly cleaned up rather than silently corrected.
+
+`corpus-parity.test.mjs` pins the two copies of the corpus evidence together —
+`corpus/data/theme-frequency.csv`, where prevalence is measured, and `src/data/evidence.js`,
+which the app reads. A recount that updates one and forgets the other would leave the tool
+quoting figures its own corpus no longer supports, and nothing would render differently.
+Keeping the corpus in this repository rather than its own is what makes that check possible.
+
 `i18n.test.mjs` pins the most fragile contract in the repository: the Spanish, French and
 German action overlays align with `ACTIONS` **by array index**. Inserting an action mid-list
 without inserting one at the same position in all three overlays shifts every later
@@ -151,6 +184,11 @@ GitHub Actions workflow
 GitHub Pages on every push to `main`. Enable it once under
 **Settings → Pages → Source: GitHub Actions**.
 
+The app is client-rendered, so crawlers that do not run JavaScript (LinkedIn, Slack,
+Mastodon) see only `index.html`. `public/og-card.png` is the link-preview image referenced
+by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` whenever
+`docs/maturity-profile.png` changes, or previews will keep showing the old radar.
+
 ## Caveats
 
 - **Directional, not authoritative.** The maturity scores and action rankings are a structured
@@ -161,15 +199,28 @@ GitHub Pages on every push to `main`. Enable it once under
 - **Keyword-derived corpus evidence.** The "N% of 314 plans" figures on Results come from keyword
   matching over the full text of the published action plans — read them as directional bands
   (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
-  reason to skip an action: frontier practices are an opportunity to lead.
+  reason to skip an action: frontier practices are an opportunity to lead. [`corpus/`](corpus/)
+  publishes which plans were read, the exact keyword signature behind every theme, and the
+  pipeline that reproduces the counts, so the figures can be checked rather than trusted. It
+  also records how stale they are: a harvest on 6 August 2026 found 21 plans newer than the
+  April snapshot these percentages describe.
+- **The guiding questions are a resource, not a template.** CoARA publishes no reporting or
+  action-plan template for members, and the guidelines say the guiding questions "do not serve
+  as a rigid template but rather as a resource and suggestion". Printing them beside each
+  section makes a draft easier to check; it is not a compliance claim, and answering them all
+  does not make a plan approved by anything.
 - **Your data stays local.** Because everything is in `localStorage`, clearing your browser data
   erases your assessment. Use the **Export config** button to save a reproducible copy.
 
 ## License
 
 - **Code** — [MIT](LICENSE).
-- **Calibration data** (`src/data/`) — [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-  Reuse and adapt with attribution.
+- **Calibration data** (`src/data/`, `corpus/data/`) —
+  [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reuse and adapt with attribution.
+
+Neither licence covers the action plans the corpus measures: those remain under the terms each
+depositing institution chose. `corpus/` records where every one of them lives; it does not
+redistribute them, and will not.
 
 ## Citation
 

@@ -18,6 +18,8 @@ import { ACTIONS } from '../src/data/actions.js'
 import { QUESTIONS } from '../src/data/questions.js'
 import { COMMITMENTS, MATURITY_LEVELS } from '../src/data/commitments.js'
 import { CONTEXTS } from '../src/data/context.js'
+import { REPORT_EN } from '../src/i18n/report.en.js'
+import { UI_EN } from '../src/i18n/ui.en.js'
 import { ROLE_IDS } from '../src/data/perspectives.js'
 
 const LOCALES = { es, fr, de }
@@ -90,5 +92,21 @@ test('a locale is not silently left as untranslated English', () => {
     const identical = L.actions.filter((a, i) => a.title === ACTIONS[i].title).length
     assert.ok(identical < ACTIONS.length * 0.5,
       `${code}: ${identical}/${ACTIONS.length} action titles are identical to English`)
+  }
+})
+
+test('the report and UI string tables are fully covered in every locale', () => {
+  // These two overlays are plain key maps, so a missing key does not misalign
+  // anything — it silently falls back to English mid-paragraph, which reads as a
+  // translation bug to the user and is invisible here without this check.
+  for (const [table, EN, name] of [['report', REPORT_EN, 'report'], ['ui', UI_EN, 'ui']]) {
+    const keys = Object.keys(EN)
+    for (const [code, L] of Object.entries(LOCALES)) {
+      const have = Object.keys(L[table] ?? {})
+      assert.deepEqual(keys.filter(k => !have.includes(k)), [],
+        `${code}.${name} falls back to English for these keys`)
+      assert.deepEqual(have.filter(k => !keys.includes(k)), [],
+        `${code}.${name} has keys the English table no longer defines`)
+    }
   }
 })

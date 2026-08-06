@@ -14,6 +14,7 @@
  * Docs. Bracketed [placeholders] are deliberate blanks for the institution to fill.
  */
 import { getDataset, getReportStrings, interpolate } from "../i18n/registry";
+import { startingPointFor, questionsFor } from "../data/guidingQuestions";
 
 const HORIZON_KEY = { "quick-wins": "quickwins", balanced: "balanced", structural: "structural" };
 const CONTEXT_KEY = {
@@ -48,6 +49,19 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   const L = [];
   const w = (s = "") => L.push(s);
 
+  /**
+   * Emit a guiding-question prompt as a Markdown blockquote. The questions are
+   * quoted in the published English in every locale (see data/guidingQuestions.js);
+   * the label and the reflection point framing are translated.
+   */
+  const writeQuestions = (block) => {
+    if (!block?.questions?.length) return;
+    const label = block.questions.length > 1 ? S.gq_labelPlural : S.gq_label;
+    w(`> **${label}** — *${block.reflectionPoint}*`);
+    for (const q of block.questions) w(`> - ${q}`);
+    w();
+  };
+
   const horizonKey = HORIZON_KEY[plan.horizon] || "balanced";
   const tf = S[`tf_${horizonKey}`] || S.tf_balanced;
 
@@ -72,6 +86,12 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
     w(interpolate(S.respondentSingle, { role: roleLabel(roles[0]) }));
     w();
   }
+  // How the CoARA guiding questions are used, said once, up front. Not wrapped in
+  // emphasis: the string already italicises the label inside it, and nesting `*`
+  // inside `*` breaks the run in every Markdown renderer.
+  w(`${S.gq_intro}${lang === "en" ? "" : " " + S.gq_quotedInEnglish}`);
+  w();
+  writeQuestions(startingPointFor("intro"));
 
   // Baseline
   const strengths = band(4, 5);
@@ -86,6 +106,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   w();
   w(interpolate(S.baselineClose, { inst }));
   w();
+  writeQuestions(startingPointFor("baseline"));
 
   // Strategic priorities
   w(`## ${S.h_priorities}`);
@@ -98,6 +119,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   w();
   w(S[`hs_${horizonKey}`] || S.hs_balanced);
   w();
+  writeQuestions(startingPointFor("priorities"));
   // Ambition: declared target maturity per commitment (where set above current).
   const ambition = COMMITMENTS.filter((c) => {
     const tgt = targets[c.id] ?? 0;
@@ -126,9 +148,25 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
     // written report must match what Results shows; the draft is edited down by
     // hand, so completeness beats brevity here.
     const acts = prioritised.filter((a) => a.commitment === c.id);
-    if (!acts.length) continue;
-    any = true;
     const lvl = levels[c.id] ?? 0;
+    if (!acts.length) {
+      // Still give the commitment its heading and its guiding questions. A plan
+      // submitted to CoARA is expected to speak to all ten, and a commitment the
+      // tool had nothing to add to is exactly where the drafter needs the prompt.
+      w(
+        `### ${interpolate(S.actionHeading, {
+          num: c.number,
+          title: c.title,
+          lvl,
+          label: MATURITY_LEVELS[lvl].label,
+        })}`,
+      );
+      writeQuestions(questionsFor(c.id));
+      w(S.noActionsForCommitment);
+      w();
+      continue;
+    }
+    any = true;
     w(
       `### ${interpolate(S.actionHeading, {
         num: c.number,
@@ -137,6 +175,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
         label: MATURITY_LEVELS[lvl].label,
       })}`,
     );
+    writeQuestions(questionsFor(c.id));
     for (const a of acts) {
       // planText is the action restated as institutional first-person prose;
       // description is interface copy addressed to the tool's user.
@@ -184,6 +223,8 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   w(interpolate(S.ongoingBody, { inst }));
   w();
   w(`---`);
+  w(`*${S.gq_source}*`);
+  w();
   w(`*${S.footer}*`);
 
   return L.join("\n");

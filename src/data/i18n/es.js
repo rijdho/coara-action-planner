@@ -61,6 +61,11 @@ export default {
     start_perspectivesTitle: "Perspectivas",
     start_perspectivesHint:
       "Cada perspectiva es la mirada de un participante, etiquetada con su rol. Todas responden las mismas 24 preguntas — las completas una vez por perspectiva, desde ese punto de vista. Resultados consolida las perspectivas y señala dónde difieren sus lecturas de una misma pregunta (la brecha de percepción).",
+    start_perspectivesEyebrow: "Lo que esta herramienta hace y una guía no",
+    start_perspectivesWhy:
+      "Un plan redactado por una sola oficina refleja un solo punto de vista. Si la dirección, la oficina de investigación y el personal investigador responden las mismas 24 preguntas, el desacuerdo mismo se convierte en evidencia: Resultados señala cada compromiso cuya lectura difiere en dos niveles o más, y son esos los que conviene alinear antes de redactar nada.",
+    start_quickStart: "Configurar una evaluación colectiva:",
+    start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspectiva {n}",
     start_roleLabel: "Rol del participante",
     start_active: "activa",
@@ -321,6 +326,16 @@ export default {
     impact_low: "bajo",
     impact_medium: "medio",
     impact_high: "alto",
+    gq_label: "Pregunta orientadora de CoARA",
+    gq_labelPlural: "Preguntas orientadoras de CoARA",
+    gq_intro:
+      "Las indicaciones marcadas como *Pregunta orientadora de CoARA* proceden de las *Action Plan Guidelines* (octubre de 2023) del Secretariado de CoARA. Son un recurso y una sugerencia, no una plantilla obligatoria —CoARA no publica ninguna plantilla para los planes de acción de sus miembros—, pero responderlas sección por sección es la forma más rápida de contrastar este borrador con aquello sobre lo que la Coalición pide reflexionar.",
+    gq_quotedInEnglish:
+      "Se reproducen en el inglés publicado, dado que CoARA no publica traducción.",
+    gq_source:
+      "Preguntas orientadoras citadas de: CoARA Secretariat, \"Action Plan Guidelines: Support for CoARA signatories in the preparation of action plans\", octubre de 2023.",
+    noActionsForCommitment:
+      "En este borrador no se seleccionó ninguna acción para este compromiso. [Añadir aquí las acciones previstas por la institución, o indicar por qué no se requiere ninguna.]",
   },
 
   roles: {

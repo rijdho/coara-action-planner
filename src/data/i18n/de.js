@@ -56,6 +56,11 @@ export default {
     start_perspectivesTitle: "Perspektiven",
     start_perspectivesHint:
       "Jede Perspektive ist die Sicht einer antwortenden Person, versehen mit ihrer Rolle. Alle beantworten dieselben 24 Fragen — Sie füllen sie einmal pro Perspektive aus, aus diesem Blickwinkel. Die Ergebnisse führen die Perspektiven zusammen und markieren, wo deren Einschätzungen derselben Frage voneinander abweichen (die Wahrnehmungslücke).",
+    start_perspectivesEyebrow: "Was dieses Werkzeug kann und ein Leitfaden nicht",
+    start_perspectivesWhy:
+      "Ein Plan, den eine einzelne Stelle schreibt, gibt eine einzige Sichtweise wieder. Beantworten Leitung, Forschungsservice und Forschende dieselben 24 Fragen, wird die Uneinigkeit selbst zum Befund: Ergebnisse markiert jede Verpflichtung, deren Einschätzungen um zwei Stufen oder mehr auseinandergehen — und genau dort lohnt die Verständigung, bevor irgendetwas geschrieben wird.",
+    start_quickStart: "Gemeinsame Bestandsaufnahme einrichten:",
+    start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspektive {n}",
     start_roleLabel: "Rolle der antwortenden Person",
     start_active: "aktiv",
@@ -316,6 +321,16 @@ export default {
     impact_low: "gering",
     impact_medium: "mittel",
     impact_high: "hoch",
+    gq_label: "CoARA-Leitfrage",
+    gq_labelPlural: "CoARA-Leitfragen",
+    gq_intro:
+      "Die mit *CoARA-Leitfrage* gekennzeichneten Impulse sind den *Action Plan Guidelines* (Oktober 2023) des CoARA-Sekretariats entnommen. Sie sind eine Anregung und Hilfestellung, keine verbindliche Vorlage — für Aktionspläne seiner Mitglieder veröffentlicht CoARA überhaupt keine Vorlage —, doch sie Abschnitt für Abschnitt zu beantworten ist der schnellste Weg, diesen Entwurf daran zu prüfen, worüber die Koalition ihre Mitglieder zum Nachdenken auffordert.",
+    gq_quotedInEnglish:
+      "Sie werden im veröffentlichten Englisch wiedergegeben, da CoARA keine Übersetzung herausgibt.",
+    gq_source:
+      "Leitfragen zitiert nach: CoARA Secretariat, \"Action Plan Guidelines: Support for CoARA signatories in the preparation of action plans\", Oktober 2023.",
+    noActionsForCommitment:
+      "Für diese Verpflichtung wurden in diesem Entwurf keine Maßnahmen ausgewählt. [Hier die geplanten Maßnahmen der Einrichtung ergänzen oder begründen, warum keine erforderlich sind.]",
   },
 
   roles: {

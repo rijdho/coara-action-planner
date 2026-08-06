@@ -6,3 +6,8 @@ dist/
 
 # Claude Code session state — local-only, never committed
 .claude/
+
+# The working corpus fetched by corpus/scripts/01-harvest.mjs — never committed.
+# The plans belong to the institutions that deposited them; this repo publishes
+# only the manifest that locates them. Everything in it is rebuildable.
+corpus/work/

@@ -102,6 +102,21 @@ export const REPORT_EN = {
   cs_funder:
     " As a research funding organisation, we concentrate on incentive design, call and review criteria, reviewer guidance, and alignment with national and international assessment frameworks.",
 
+  noActionsForCommitment:
+    "No actions were selected for this commitment in this draft. [Add the actions the institution plans here, or state why none are needed.]",
+
+  // CoARA guiding-question prompts (data/guidingQuestions.js). The questions
+  // themselves are quoted in the published English in every language; only these
+  // labels are translated.
+  gq_label: "CoARA guiding question",
+  gq_labelPlural: "CoARA guiding questions",
+  gq_intro:
+    "The prompts marked *CoARA guiding question* below are quoted from the CoARA Secretariat's *Action Plan Guidelines* (October 2023). They are a resource and a suggestion, not a required template — CoARA publishes no template for member action plans — but answering them section by section is the quickest way to check this draft against what the Coalition asks members to reflect on.",
+  gq_quotedInEnglish:
+    "They are reproduced in the published English, since CoARA issues no translation.",
+  gq_source:
+    "Guiding questions quoted from: CoARA Secretariat, \"Action Plan Guidelines: Support for CoARA signatories in the preparation of action plans\", October 2023.",
+
   // effort / impact words used inside the narrative
   effort_low: "low",
   effort_medium: "medium",

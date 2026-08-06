@@ -8,6 +8,9 @@ import {
   exportConfig, importConfig, parseConfigFromText, clearAll,
 } from "../lib/storage";
 
+/** The three vantage points that most often disagree — offered as one-click set-up. */
+const QUICK_ROLES = ["leadership", "research-office", "researcher"];
+
 function Lens({ badge, title, desc }) {
   return (
     <div className="rounded-lg p-4" style={{ background: "var(--color-bg)", border: "1px solid var(--color-border)" }}>
@@ -90,6 +93,23 @@ export default function StartPage() {
   const roleLabel = (id) => ROLES.find((r) => r.id === id)?.label ?? id;
 
   const handleAdd = () => { addPerspective("unspecified"); refresh(); };
+  /**
+   * One-click set-up. If the only perspective is an untouched "Unspecified"
+   * placeholder, it is replaced rather than left behind — otherwise the first click
+   * leaves the user with an empty row they did not ask for.
+   */
+  const quickAdd = (role) => {
+    const existing = getPerspectives();
+    const placeholder =
+      existing.length === 1 &&
+      existing[0].role === "unspecified" &&
+      !Object.keys(existing[0].answers || {}).length
+        ? existing[0].id
+        : null;
+    addPerspective(role);
+    if (placeholder) removePerspective(placeholder);
+    refresh();
+  };
   const handleRemove = (id) => { removePerspective(id); refresh(); };
   const handleRole = (id, role) => { setPerspectiveRole(id, role); refresh(); };
   const handleActivate = (id) => { setActivePerspectiveId(id); refresh(); };
@@ -128,11 +148,27 @@ export default function StartPage() {
         />
       </div>
 
-      {/* Perspectives */}
-      <div className="rounded-xl p-5 space-y-4" style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}>
+      {/* Perspectives — the one thing here a written guide cannot do, so it is
+          given a brand left border and an eyebrow rather than reading as a
+          settings card like the ones around it. */}
+      <div
+        className="rounded-xl p-5 space-y-4"
+        style={{
+          background: "var(--color-surface)",
+          border: "1px solid var(--color-border)",
+          borderLeft: "3px solid var(--color-accent)",
+        }}
+      >
         <div>
+          <div
+            className="text-xs font-mono font-bold uppercase tracking-wider mb-1"
+            style={{ color: "var(--color-accent)" }}
+          >
+            {t("start_perspectivesEyebrow")}
+          </div>
           <h2 className="text-base font-semibold" style={{ color: "var(--color-text)" }}>{t("start_perspectivesTitle")}</h2>
-          <p className="text-xs mt-0.5" style={{ color: "var(--color-text-muted)" }}>{t("start_perspectivesHint")}</p>
+          <p className="text-sm mt-1" style={{ color: "var(--color-text)" }}>{t("start_perspectivesWhy")}</p>
+          <p className="text-xs mt-2" style={{ color: "var(--color-text-muted)" }}>{t("start_perspectivesHint")}</p>
         </div>
 
         <div className="space-y-2">
@@ -200,6 +236,31 @@ export default function StartPage() {
             );
           })}
         </div>
+
+        {/* Until a second perspective exists, the feature is invisible: one row and
+            a text link read as "nothing to do here". Offer the common roles as
+            one-click set-up instead. */}
+        {perspectives.length === 1 && (
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="text-xs font-semibold" style={{ color: "var(--color-text-muted)" }}>
+              {t("start_quickStart")}
+            </span>
+            {QUICK_ROLES.map((id) => (
+              <button
+                key={id}
+                onClick={() => quickAdd(id)}
+                className="text-xs font-mono font-semibold px-2.5 py-1 rounded-lg hover:opacity-80"
+                style={{
+                  background: "var(--color-surface-alt)",
+                  color: "var(--color-accent)",
+                  border: "1px solid var(--color-accent)",
+                }}
+              >
+                {t("start_quickStartAdd", { role: roleLabel(id) })}
+              </button>
+            ))}
+          </div>
+        )}
 
         <button onClick={handleAdd} className="text-sm font-semibold hover:underline" style={{ color: "var(--color-accent)" }}>
           {t("start_addPerspective")}

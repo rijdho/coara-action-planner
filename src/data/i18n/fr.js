@@ -56,6 +56,11 @@ export default {
     start_perspectivesTitle: "Perspectives",
     start_perspectivesHint:
       "Chaque perspective est le point de vue d'un répondant, associé à son rôle. Tout le monde répond aux mêmes 24 questions — vous les remplissez une fois par perspective, depuis ce point de vue. Les Résultats consolident les perspectives et signalent là où leurs lectures d'une même question divergent (l'écart de perception).",
+    start_perspectivesEyebrow: "Ce que cet outil fait et qu\u2019un guide ne fait pas",
+    start_perspectivesWhy:
+      "Un plan rédigé par un seul service reflète un seul point de vue. Si la direction, le service de la recherche et le personnel chercheur répondent aux mêmes 24 questions, le désaccord devient lui-même une donnée : Résultats signale chaque engagement dont les lectures diffèrent de deux niveaux ou plus, et ce sont ceux-là qu\u2019il faut aligner avant de rédiger quoi que ce soit.",
+    start_quickStart: "Configurer une évaluation collective :",
+    start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspective {n}",
     start_roleLabel: "Rôle du répondant",
     start_active: "active",
@@ -316,6 +321,16 @@ export default {
     impact_low: "faible",
     impact_medium: "moyen",
     impact_high: "élevé",
+    gq_label: "Question directrice CoARA",
+    gq_labelPlural: "Questions directrices CoARA",
+    gq_intro:
+      "Les invites signalées par *Question directrice CoARA* sont citées des *Action Plan Guidelines* (octobre 2023) du Secrétariat de CoARA. Elles constituent une ressource et une suggestion, non un modèle obligatoire — CoARA ne publie aucun modèle pour les plans d\u2019action de ses membres —, mais y répondre section par section est le moyen le plus rapide de vérifier ce brouillon au regard de ce que la Coalition invite ses membres à examiner.",
+    gq_quotedInEnglish:
+      "Elles sont reproduites dans l\u2019anglais publié, CoARA n\u2019en publiant aucune traduction.",
+    gq_source:
+      "Questions directrices citées de : CoARA Secretariat, \"Action Plan Guidelines: Support for CoARA signatories in the preparation of action plans\", octobre 2023.",
+    noActionsForCommitment:
+      "Aucune action n\u2019a été retenue pour cet engagement dans ce brouillon. [Ajouter ici les actions prévues par l\u2019établissement, ou indiquer pourquoi aucune n\u2019est nécessaire.]",
   },
 
   roles: {
