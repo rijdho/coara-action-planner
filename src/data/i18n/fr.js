@@ -177,7 +177,7 @@ export default {
     res_noMatch: "Aucune action ne correspond à ce filtre. Essayez « Toutes les actions ».",
     res_examples: "Exemples :",
     res_corpus: "{pct} % des {n} plans",
-    res_corpusTitle: "Part des 314 plans d'action CoARA publiés dont le texte intégral correspond au thème de cette action (par mots-clés, indicatif)",
+    res_corpusTitle: "Part des {n} plans d'action CoARA publiés dont le texte intégral correspond au thème de cette action (par mots-clés, indicatif)",
     ev_universal: "Quasi universel dans les plans existants",
     ev_common: "Courant dans les plans existants",
     ev_emerging: "Pratique émergente",

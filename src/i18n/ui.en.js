@@ -178,7 +178,7 @@ export const UI_EN = {
   res_noMatch: 'No actions match this filter. Try "All actions".',
   res_examples: "Examples:",
   res_corpus: "{pct}% of {n} plans",
-  res_corpusTitle: "Share of the 314 published CoARA action plans whose full text matches this action's theme (keyword-based, directional)",
+  res_corpusTitle: "Share of the {n} published CoARA action plans whose full text matches this action's theme (keyword-based, directional)",
   ev_universal: "Near-universal in existing plans",
   ev_common: "Common in existing plans",
   ev_emerging: "Emerging practice",

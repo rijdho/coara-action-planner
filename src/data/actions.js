@@ -333,7 +333,8 @@ export const ACTIONS = [
     planText: "We will share anonymised assessment data with peer institutions and participate in — or initiate — comparative studies of reform progress across signatories.",
   },
 
-  // ---- Actions derived from the real CoARA action-plan corpus (314 plans;
+  // ---- Actions derived from the real CoARA action-plan corpus (314 plans at the
+  // April 2026 calibration;
   //      per-theme prevalence lives in evidence.js, surfaced in the Results UI) ----
 
   // EDI (Equity, Diversity, Inclusion) — found in 10/15 plans analysed
@@ -607,7 +608,7 @@ export const ACTIONS = [
     examples: ["CRediT taxonomy", "TaDiRAH (humanities)", "CASRAI standards", "OpenVIVO Contributor Roles"],
   },
 
-  // Anchor-declaration action (corpus gap): ~43% of the 314 real plans explicitly
+  // Anchor-declaration action (corpus gap): ~43% of the 314 plans (April 2026) explicitly
   // ground their reform in DORA / Leiden / SCOPE, but no action captured that move.
   {
     commitment: "qualitative",

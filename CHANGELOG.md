@@ -10,6 +10,18 @@ latest release.
 
 ## [Unreleased]
 
+### Changed
+
+- **Corpus recount: 314 → 335 plans** (2026-08-06, incremental — the 21 deposits Zenodo
+  gained since the 17 April 2026 harvest were downloaded, extracted and counted; the 314
+  already-read plans were reused, not re-fetched). Every prevalence figure moved; no theme
+  changed band. The tooltip that hardcoded "314 plans" in four languages now interpolates
+  `CORPUS_SIZE`, so a future recount cannot strand a stale number in the interface, and
+  `calibration.test.mjs` now asserts the corpus can only grow rather than pinning the
+  literal. TU Dublin's September 2024 plan no longer surfaces in Zenodo search (superseded
+  by its V2, which is among the new plans) but remains published, so it stays counted.
+
+
 ### Added
 
 - **The CoARA guiding questions in the generated report.** Every section now carries the

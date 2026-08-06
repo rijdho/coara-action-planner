@@ -21,7 +21,7 @@ zenodo_id,doi,zenodo_url,title,creators,publication_date,file_count,extracted_ch
 10843655,10.5281/zenodo.10843655,https://zenodo.org/records/10843655,EU-LIFE CoARA Action Plan,"Agostinho, Marta; Uribesalgo, Iris; Policy Task Force; Strategy Group",2024-04-11,1,5961
 10864466,10.5281/zenodo.10864466,https://zenodo.org/records/10864466,INORMS Research Evaluation Group CoARA Action Plan,INORMS Research Evaluation Group,2024-03-23,1,18188
 10886072,10.5281/zenodo.10886072,https://zenodo.org/records/10886072,University of Milano-Bicocca CoARA Action Plan,"University of Milano-Bicocca; Biancu, Bonaria",2024-03-25,1,6218
-10911057,10.5281/zenodo.10911057,https://zenodo.org/records/10911057,"CoARA Action Plan - University of Central Lancashire, United Kingdom","McCaig, Allison",2024-04-03,1,22299
+10911057,10.5281/zenodo.10911057,https://zenodo.org/records/10911057,"CoARA Action Plan - University of Lancashire, United Kingdom","McCaig, Allison",2024-04-03,1,22299
 10911186,10.5281/zenodo.10911186,https://zenodo.org/records/10911186,Aalborg University Action Plan in the context of the CoARA Agreement,"Melchiorsen, Poul Meier; Bennike, Kathrine Bjerg",2024-04-03,1,21055
 10924985,10.5281/zenodo.10924985,https://zenodo.org/records/10924985,CoARA Action Plan 2024-2027. Universitat Oberta de Catalunya,"Martínez-Samper, Pastora; Wilson, Julie; Garcia-Font, Víctor; Rodríguez-Giralt, Israel; Aguilera Caballero, Bego",2024-03-04,3,64576
 10930922,10.5281/zenodo.10930922,https://zenodo.org/records/10930922,CoARA Action Plan Technische Universität Braunschweig,Technische Universität Braunschweig,2024-04-05,1,12957
@@ -102,7 +102,7 @@ zenodo_id,doi,zenodo_url,title,creators,publication_date,file_count,extracted_ch
 13379878,10.5281/zenodo.13379878,https://zenodo.org/records/13379878,Jagiellonian University Action Plan for Responsible Research Assessment,Jagiellonian University,2024-08-27,1,17757
 13382087,10.5281/zenodo.13382087,https://zenodo.org/records/13382087,NMBU COARA Action Plan 2023-2027,"Roxrud, Ingrid; Norwegian University of Life Sciences",2024-08-28,1,2532
 13384282,10.5281/zenodo.13384282,https://zenodo.org/records/13384282,Vrije Universiteit Amsterdam - CoARA action plan,"Vrije Universiteit Amsterdam; de Waard, Richard",2024-08-27,1,11791
-13684066,10.5281/zenodo.13684066,https://zenodo.org/records/13684066,Technological University Dublin CoARA Action Plan September 2024,Technological University Dublin,2024-09-04,2,41850
+13684066,10.5281/zenodo.13684066,https://zenodo.org/records/13684066,Technological University Dublin CoARA Action Plan September 2024,Technological University Dublin,2024-09-04,,41850
 13692577,10.5281/zenodo.13692577,https://zenodo.org/records/13692577,ANECA_CoARA Action Plan_2024-2027,"Blanco Palencia, María; Paneque Salgado, Pilar; Ramos Vielba, Irene",2024-09-05,1,39889
 13735999,10.5281/zenodo.13735999,https://zenodo.org/records/13735999,CoArA Action Plan University of South-Eastern Norway,"Røsdal, Trude; Strøm, Herman",2024-09-09,1,14414
 13742164,10.5281/zenodo.13742164,https://zenodo.org/records/13742164,Kyiv National Economic University named after Vadym Hetman CoARA Action Plan,Kyiv National Economic University named after Vadym Hetman,2024-09-10,1,9930
@@ -159,6 +159,7 @@ zenodo_id,doi,zenodo_url,title,creators,publication_date,file_count,extracted_ch
 14334818,10.5281/zenodo.14334818,https://zenodo.org/records/14334818,CERN CoARA Action Plan,"European Organization for Nuclear Research; Kohls, Alexander; Naim, Kamran; Winkler, Antonia; Gonzalez Lopez, Jose Benito; Knoors, Nathalie; Kerhoas, Anne; van den Boogaard, Lisette",2024-12-09,1,9975
 14335626,10.5281/zenodo.14335626,https://zenodo.org/records/14335626,CREDI CoARA Action Plan 2024,Centre for Development Evaluation and Social Science Research (CREDI),2024-12-09,1,23845
 14354717,10.5281/zenodo.14354717,https://zenodo.org/records/14354717,CoARA Action Plan - University of Hamburg,University of Hamburg,2024-12-10,1,8429
+14394599,10.5281/zenodo.14394599,https://zenodo.org/records/14394599,Technological University Dublin CoARA Action Plan V2 July 2026,"Dowling, Lindsay; Cooke, Gordon; Guilfoyle, Róisín; Meaney, Steve; Loughran, Glenn",2026-08-04,1,24226
 14408906,10.5281/zenodo.14408906,https://zenodo.org/records/14408906,CoARA Action Plan VAMK 2024-2027,"Vaasa University of Applied Sciences; Vest, Marja-Riitta; Ritari, Minna",2024-12-12,1,10429
 14410100,10.5281/zenodo.14410100,https://zenodo.org/records/14410100,CoARA Action Plan 2024 - Tampere University of Applied Sciences,"Jokinen, Teemu",2024-12-12,1,27865
 14411109,10.5281/zenodo.14411109,https://zenodo.org/records/14411109,CoARA 2023-24 at Stockholm University,"Stockholm University; Söderbergh Widding, Astrid",2024-12-12,1,10912
@@ -285,6 +286,7 @@ zenodo_id,doi,zenodo_url,title,creators,publication_date,file_count,extracted_ch
 17672533,10.5281/zenodo.17672533,https://zenodo.org/records/17672533,Fonds de recherche du Québec (FRQ) - Plan d'action CoARA Action Plan - V1 bilingue-bilingual - Juin/June 2025,Fonds de recherche du Québec - FRQ,2025-06-17,1,153485
 17788892,10.5281/zenodo.17788892,https://zenodo.org/records/17788892,University of Cagliari COARA action plan,University of Cagliari (UNICA),2025-12-02,1,10049
 17799849,10.5281/zenodo.17799849,https://zenodo.org/records/17799849,CoARA Action Plan for the University of Applied Sciences and Arts Northwestern Switzerland FHNW,"Joller, Stefan; Bühler, Lars; Kofler, Andrea; Perrig, Sebastian",2025-12-10,1,14088
+17867768,10.5281/zenodo.17867768,https://zenodo.org/records/17867768,Corvinus CoARA Action Plan 2025-2029,Corvinus University of Budapest,2025-12-09,1,9603
 17877251,10.5281/zenodo.17877251,https://zenodo.org/records/17877251,CoARA Action Plan Tilburg University,Tilburg University,2025-12-10,1,14326
 17898654,10.5281/zenodo.17898654,https://zenodo.org/records/17898654,UAntwerpen_CoARA Action Plan,University of Antwerp,2025-12-11,1,20521
 17914756,10.5281/zenodo.17914756,https://zenodo.org/records/17914756,CoARA Action Plan,Leibniz Association,2025-12-12,1,32651
@@ -313,3 +315,22 @@ zenodo_id,doi,zenodo_url,title,creators,publication_date,file_count,extracted_ch
 19368363,10.5281/zenodo.19368363,https://zenodo.org/records/19368363,Lund University's Action Plan for Research Assessment Reform 2025-2029,"Lund University; Eksten, Rickard; Widlund, Kristine; Bredenberg, Malin; Lindell, Lena",2026-03-26,1,20439
 19399452,10.5281/zenodo.19399452,https://zenodo.org/records/19399452,University of Orléans Action Plan for the Coalition for Advancing Research Assessment (CoARA) 2026-2029,Université d'Orléans,2026-04-07,2,24137
 19468692,10.5281/zenodo.19468692,https://zenodo.org/records/19468692,CoARA Action Plan_University of Namur_2025-2030,University of Namur,2026-04-08,1,23139
+19485423,10.5281/zenodo.19485423,https://zenodo.org/records/19485423,Marie Curie Alumni Association (MCAA) CoARA Action Plan,Marie Curie Alumni Association,2026-04-22,1,15899
+19551293,10.5281/zenodo.19551293,https://zenodo.org/records/19551293,CoARA Action Plan Saxion University of Applied Sciences,Saxion University of Applied Sciences,2026-04-13,1,37042
+19609871,10.5281/zenodo.19609871,https://zenodo.org/records/19609871,PoliTO's Action Plan for CoARA - Progress Report 2026,Polytechnic university of Turin,2026-04-16,2,91579
+19824038,10.5281/zenodo.19824038,https://zenodo.org/records/19824038,University of Gothenburg - Action Plan for Reforming Research Assessment (CoARA),"University of Gothenburg; Östling, Malin; Beck, Sigríður; Nilsson, Rangnar",2026-04-27,1,7535
+20053787,10.5281/zenodo.20053787,https://zenodo.org/records/20053787,CoARA-Action Plan of the University of Freiburg,Katja Plachov,2026-05-06,1,47516
+20055701,10.5281/zenodo.20055701,https://zenodo.org/records/20055701,UHasselt Action Plan for CoARA 2023-2027,Hasselt University,2026-05-06,1,26026
+20267371,10.5281/zenodo.20267371,https://zenodo.org/records/20267371,Austrian Academy of Sciences - Action Plan,"Ofner, Michael",2026-05-18,1,6455
+20424884,10.5281/zenodo.20424884,https://zenodo.org/records/20424884,"Advancing responsible research assessment at the University of Bristol: a holistic, context-sensitive CoARA action plan (2026–2031)","University of Bristol; Young, Helen; Petitjean, Celine",2026-05-28,1,37871
+20442541,10.5281/zenodo.20442541,https://zenodo.org/records/20442541,Towards a more responsible assessment : Savonia University of Applied Sciences'  CoARA Action Plan 2026-2029,"Juppi, Mira",2026-05-29,1,18774
+20591099,10.5281/zenodo.20591099,https://zenodo.org/records/20591099,University of Potsdam CoARA Action Plan,University of Potsdam,2026-06-08,1,6680
+20737750,10.5281/zenodo.20737750,https://zenodo.org/records/20737750,UNIR-CoARA Action Plan 2026-2030,Universidad Internacional De La Rioja,2026-06-17,2,29214
+20795905,10.5281/zenodo.20795905,https://zenodo.org/records/20795905,University of the West of Scotland CoARA Action Plan (2026-2030),"Murkett, Grace; Kennedy, Helen",2026-06-22,1,17440
+20813343,10.5281/zenodo.20813343,https://zenodo.org/records/20813343,ACTION PLAN OF NEW BULGARIAN UNIVERSITY (2025–2028) FOR ACHIEVING FAIRER RESEARCH ASSESSMENT PRACTICES FOLLOWING THE UNIVERSITY'S ACCESSION TO CoARA,New Bulgarian University,2026-06-23,1,21922
+20843982,10.5281/zenodo.20843982,https://zenodo.org/records/20843982,DNRF CoARA Action Plan 2026-2030,Danish National Research Foundation,2026-06-25,1,10809
+21146750,10.5281/zenodo.21146750,https://zenodo.org/records/21146750,University of the Balearic Islands CoARA Action Plan 2026 - 2027,"Rodriguez Delgado, Montserrat; Duran, Joan; Homar Santaner, Victor",2026-07-03,1,32838
+21157890,10.5281/zenodo.21157890,https://zenodo.org/records/21157890,University of Milan - COARA Action Plan -  Progress Report 2026,University of Milan,2026-07-03,1,9635
+21282586,10.5281/zenodo.21282586,https://zenodo.org/records/21282586,INALCO 2027-2030 - Plan d'action CoARA,Institut National des Langues et Civilisations Orientales,2026-07-09,1,29348
+21296044,10.5281/zenodo.21296044,https://zenodo.org/records/21296044,CoARA UCA action plan,"Legué, Valérie; Compain, Camille",2026-07-10,2,88627
+21470553,10.5281/zenodo.21470553,https://zenodo.org/records/21470553,Follow-up report on the CoARA action plan of AQU Catalunya,"Torres Solà, Josep Manel; Arboix Codina, Esteve; Gisbert Cervera, Mercè",2026-07-23,1,19955

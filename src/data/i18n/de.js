@@ -177,7 +177,7 @@ export default {
     res_noMatch: "Keine Maßnahmen entsprechen diesem Filter. Versuchen Sie „Alle Maßnahmen“.",
     res_examples: "Beispiele:",
     res_corpus: "{pct} % von {n} Plänen",
-    res_corpusTitle: "Anteil der 314 veröffentlichten CoARA-Aktionspläne, deren Volltext dem Thema dieser Maßnahme entspricht (stichwortbasiert, orientierend)",
+    res_corpusTitle: "Anteil der {n} veröffentlichten CoARA-Aktionspläne, deren Volltext dem Thema dieser Maßnahme entspricht (stichwortbasiert, orientierend)",
     ev_universal: "Nahezu universell in bestehenden Plänen",
     ev_common: "Verbreitet in bestehenden Plänen",
     ev_emerging: "Aufkommende Praxis",

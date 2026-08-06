@@ -55,7 +55,7 @@ test('every action theme resolves to a corpus evidence band', () => {
     assert.ok(a.theme, `action "${a.title}" carries a theme`)
     assert.ok(THEME_FREQUENCY[a.theme],
       `theme "${a.theme}" (action "${a.title}") exists in THEME_FREQUENCY — ` +
-      'a typo here silently drops the "N% of 314 plans" band in the UI')
+      'a typo here silently drops the "N% of the corpus" band in the UI')
   }
 })
 
@@ -85,7 +85,10 @@ test('questions cover the commitments with a full 0–5 answer ladder', () => {
 })
 
 test('corpus evidence is internally consistent', () => {
-  assert.equal(CORPUS_SIZE, 314)
+  // Not a literal: the corpus grows at every recount, and corpus-parity.test.mjs
+  // already pins CORPUS_SIZE to the measured table. Here it just has to be sane.
+  assert.ok(Number.isInteger(CORPUS_SIZE) && CORPUS_SIZE >= 314,
+    'the corpus can only grow — a smaller value means a truncated recount')
   for (const [theme, { plans, pct }] of Object.entries(THEME_FREQUENCY)) {
     assert.ok(plans >= 0 && plans <= CORPUS_SIZE, `${theme}: plan count within the corpus`)
     assert.ok(Math.abs(pct - (100 * plans) / CORPUS_SIZE) < 0.1,

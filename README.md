@@ -93,7 +93,7 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 | [`commitments.js`](src/data/commitments.js) | the ten CoARA commitments + the 6-level maturity model |
 | [`actions.js`](src/data/actions.js) | 47 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText` — the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
 | [`plan.js`](src/data/plan.js) | the **second** ranking stage — the ambition gate, the high-effort filter, and every plan-setting weight (context affinity, focus, horizon, target, divergence) **and** the `applyPlan` function |
-| [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 314-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 314 plans" on Results) — measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
+| [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 335-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 335 plans" on Results) — measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
 | [`guidingQuestions.js`](src/data/guidingQuestions.js) | the CoARA Secretariat's 19 guiding questions, quoted verbatim and mapped onto the report's sections |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
 | [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS` — how divergent readings are consolidated |
@@ -114,7 +114,7 @@ The ceiling is a named constant and a test, not an accident.
 
 The questions and actions were hand-calibrated by reading 15 real institutional action plans
 (UCM, Helmholtz, DCU, UCLouvain, AQU Catalunya, FRQ, LBG, SocRSE, Eurodoc, YUFE/UNIRI, UB, UPC,
-OGS, SDU, U. Pannonia) and cross-checked against a corpus of 314 CoARA action plans from Zenodo.
+OGS, SDU, U. Pannonia) and cross-checked against a corpus of published CoARA action plans from Zenodo — 314 at the April 2026 calibration, 335 as of the August 2026 recount.
 It is offered as a starting point to inspect and adapt, not as an authoritative scoring — see
 *Caveats*.
 
@@ -150,7 +150,7 @@ or documented as a deliberate divergence. The algorithm cases use synthetic acti
 purpose, so recalibrating the real catalog cannot break tests that are about the maths.
 
 `calibration.test.mjs` guards the failures that are silent rather than loud — a mistyped
-`theme` still renders, it just quietly loses its "N% of 314 plans" evidence band; an action
+`theme` still renders, it just quietly loses its "N% of 335 plans" evidence band; an action
 whose `fromLevel` is not below its `toLevel` can never be recommended at all; a commitment
 with no entry-level action tells an institution it is weakest there and then offers nothing
 to do about it.
@@ -196,14 +196,13 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
   can be in very different places.
 - **The radar is a shape, not a score.** With ten axes in a fixed order, the polygon's area and
   outline carry no meaning — read the per-commitment numbers, not the picture.
-- **Keyword-derived corpus evidence.** The "N% of 314 plans" figures on Results come from keyword
+- **Keyword-derived corpus evidence.** The "N% of 335 plans" figures on Results come from keyword
   matching over the full text of the published action plans — read them as directional bands
   (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
   reason to skip an action: frontier practices are an opportunity to lead. [`corpus/`](corpus/)
   publishes which plans were read, the exact keyword signature behind every theme, and the
-  pipeline that reproduces the counts, so the figures can be checked rather than trusted. It
-  also records how stale they are: a harvest on 6 August 2026 found 21 plans newer than the
-  April snapshot these percentages describe.
+  pipeline that reproduces the counts, so the figures can be checked rather than trusted —
+  and recounted: the loop is incremental, and the last recount ran on 6 August 2026.
 - **The guiding questions are a resource, not a template.** CoARA publishes no reporting or
   action-plan template for members, and the guidelines say the guiding questions "do not serve
   as a rigid template but rather as a resource and suggestion". Printing them beside each

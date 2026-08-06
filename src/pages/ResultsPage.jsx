@@ -48,7 +48,7 @@ function ActionCard({ action, index, level = 0 }) {
             {evidence && (
               <span
                 className="text-xs font-mono px-1.5 py-0.5 rounded"
-                title={t("res_corpusTitle")}
+                title={t("res_corpusTitle", { n: evidence.corpusSize })}
                 style={{ background: "var(--color-surface-alt)", color: "var(--color-text-muted)" }}
               >
                 {interpolate(t("res_corpus"), { pct: evidencePct, n: evidence.corpusSize })}

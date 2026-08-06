@@ -1,9 +1,9 @@
-# The corpus behind "N% of 314 plans"
+# The corpus behind "N% of 335 plans"
 
 **Which published CoARA action plans were read, the exact keyword signatures used to count
 them, the counts that came out, and the pipeline that reproduces all of it.**
 
-Results shows lines like "found in 78% of 314 plans" beside each recommended action. Those
+Results shows lines like "found in 77% of 335 plans" beside each recommended action. Those
 figures come from [`src/data/evidence.js`](../src/data/evidence.js), and this folder is where
 they were measured. It exists so the number can be checked rather than taken on trust — this
 tool argues that its methodology is the product, and an unauditable percentage would be the
@@ -13,7 +13,7 @@ one part of that claim a reader has to take on faith.
 
 | File | What it holds |
 |---|---|
-| [`data/plans.csv`](data/plans.csv) | the 314 analysed plans — Zenodo id, DOI, URL, title, creators, publication date, and how many characters of text were extracted from each |
+| [`data/plans.csv`](data/plans.csv) | the 335 analysed plans — Zenodo id, DOI, URL, title, creators, publication date, and how many characters of text were extracted from each |
 | [`data/theme-keywords.csv`](data/theme-keywords.csv) / [`.json`](data/theme-keywords.json) | the 27 themes and the case-insensitive regular expression that defines each |
 | [`data/theme-frequency.csv`](data/theme-frequency.csv) | per theme: plans matched, percentage, total hits, and prevalence band |
 | [`data/harvested-not-analysed.csv`](data/harvested-not-analysed.csv) | the 2 harvested records that are not in the analysed set |
@@ -31,19 +31,23 @@ at runtime.
 
 ## How the corpus was assembled
 
-Harvested from Zenodo on **17 April 2026** with the query `"coara action plan"` and the
-`coara_action_plans` community, which returned **316 records** between them. Text was
-extracted from the deposited files, and the **314** records that yielded text form the
-analysed corpus. The two that did not are listed in `data/harvested-not-analysed.csv` rather
-than silently dropped; one is a conference presentation rather than an action plan, and
-neither has extracted text in this snapshot.
+First harvested from Zenodo on **17 April 2026** (316 records, 314 with text) and updated
+incrementally on **6 August 2026** with the same query `"coara action plan"` plus the
+`coara_action_plans` community: the fresh index returned 336 records, the 21 new plans were
+downloaded and extracted, and the corpus now stands at **335 analysed plans**. The two
+records that never yielded text are listed in `data/harvested-not-analysed.csv` rather than
+silently dropped; one is a conference presentation rather than an action plan, and neither
+deposit carries an extractable PDF or DOCX. One manifest plan — Technological University
+Dublin's September 2024 deposit — no longer appears in the search results (superseded by its
+own "V2 July 2026", which is among the new plans), but the record is still published on
+Zenodo, so it remains a real plan and stays counted.
 
-Extracted length runs from 1,305 to 153,485 characters, median 14,652. Three plans came in
+Extracted length runs from 1,305 to 153,485 characters, median 14,929. Three plans came in
 under 2,000 characters, short enough that they are probably scans or cover sheets rather than
 full text — they still count as plans in the denominator, and they can only ever push a
 theme's prevalence down.
 
-Publication dates in the analysed set: 10 from 2023, 166 from 2024, 123 from 2025, 15 from
+Publication dates in the analysed set: 10 from 2023, 166 from 2024, 124 from 2025, 35 from
 2026.
 
 Three plans carry a DOI minted by their own institutional repository rather than by Zenodo —
@@ -89,7 +93,7 @@ doubling it on an artefact of the citation line.
   ranking, including a plan explaining that it already ignores them. Nothing here
   distinguishes endorsement from rejection.
 - **A snapshot, not a census.** The population grows every month as members deposit. These
-  figures describe the 314 plans available in April 2026 and will drift from any later
+  figures describe the 335 plans available in August 2026 and will drift from any later
   harvest; recount rather than extrapolate.
 - **Low prevalence is not a verdict.** A theme in the `frontier` band is one that few
   institutions have written down yet, which is an argument for leading on it, not for
@@ -145,12 +149,10 @@ app displays moves, so it is a release, not a patch.
 
 ## How stale is this snapshot?
 
-Measured, not guessed. A metadata harvest run on **6 August 2026** returned **336 records**
-against the 314 analysed here: 21 genuinely new plans (+6.7%), 2 records that yielded no text
-in April and are worth retrying, and 1 manifest record the search no longer returns —
-Technological University Dublin's September 2024 plan, superseded by a "V2 July 2026" deposit
-that appears among the new records. So the figures are a four-month-old snapshot with a known,
-quantified gap, and re-running the loop above closes it.
+Current as of **6 August 2026** — the update loop above ran that day and folded in the 21
+plans it found. The next recount will find whatever Zenodo has gained since; run
+`01-harvest.mjs --metadata-only` + `02-diff-manifest.py` to measure the gap before deciding
+whether it is worth a release.
 
 ## Licence
 

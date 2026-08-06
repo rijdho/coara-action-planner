@@ -182,7 +182,7 @@ export default {
     res_noMatch: 'Ninguna acción coincide con este filtro. Prueba con "Todas las acciones".',
     res_examples: "Ejemplos:",
     res_corpus: "{pct}% de {n} planes",
-    res_corpusTitle: "Proporción de los 314 planes de acción CoARA publicados cuyo texto completo coincide con el tema de esta acción (por palabras clave, orientativo)",
+    res_corpusTitle: "Proporción de los {n} planes de acción CoARA publicados cuyo texto completo coincide con el tema de esta acción (por palabras clave, orientativo)",
     ev_universal: "Casi universal en los planes existentes",
     ev_common: "Frecuente en los planes existentes",
     ev_emerging: "Práctica emergente",
