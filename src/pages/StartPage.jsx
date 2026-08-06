@@ -148,16 +148,13 @@ export default function StartPage() {
         />
       </div>
 
-      {/* Perspectives — the one thing here a written guide cannot do, so it is
-          given a brand left border and an eyebrow rather than reading as a
-          settings card like the ones around it. */}
+      {/* Perspectives — the one thing here a written guide cannot do. Prominence
+          comes from the eyebrow and the lead paragraph, never from a coloured left
+          border: that 3px rule belongs to status-carrying items, and brand violet
+          must not encode meaning. Same 1px hairline as every other card. */}
       <div
         className="rounded-xl p-5 space-y-4"
-        style={{
-          background: "var(--color-surface)",
-          border: "1px solid var(--color-border)",
-          borderLeft: "3px solid var(--color-accent)",
-        }}
+        style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}
       >
         <div>
           <div
