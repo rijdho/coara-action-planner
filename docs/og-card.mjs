@@ -34,10 +34,12 @@ const html = `<!doctype html>
     font-display: block; src: url(${inter}) format('woff2-variations');
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* No coloured top band: the family reserves coloured edges for items that carry
+     a status, and brand violet never encodes meaning. The brand shows up where it
+     belongs — the eyebrow and the link — over the same paper surface as the app. */
   body {
     width: 1200px; height: 630px; display: flex; overflow: hidden;
     font-family: 'Inter', sans-serif; background: #fbfaff; color: #1a1730;
-    border-top: 10px solid #6d4aff;
   }
   .text { flex: 1 1 auto; padding: 64px 0 56px 72px; display: flex; flex-direction: column; }
   .eyebrow {
