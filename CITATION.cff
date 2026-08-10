@@ -5,7 +5,7 @@ abstract: >-
   A static, client-side web tool that self-assesses an institution against the
   ten commitments of the CoARA Agreement on Reforming Research Assessment and
   generates a prioritised, editable action plan. Multilingual (EN/ES/FR/DE).
-  The open twin of the hosted Reform Assessment toolkit; the diagnostic
+  The open twin of the hosted Reform Assessment toolkit; the 24 diagnostic
   questions, the 47 calibrated actions with corpus-derived prevalence
   evidence (335 published action plans), and the prioritisation algorithm
   are published in readable form under CC BY 4.0.
