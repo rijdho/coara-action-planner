@@ -2,7 +2,7 @@
   "name": "coara-action-planner",
   "version": "1.0.0",
   "description": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan — entirely in your browser.",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "type": "module",
   "repository": {
     "type": "git",

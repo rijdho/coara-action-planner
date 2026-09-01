@@ -25,7 +25,9 @@ identifiers:
     description: "Version DOI for v1.2.0"
 repository-code: "https://github.com/rijdho/coara-action-planner"
 url: "https://rijdho.github.io/coara-action-planner/"
-license: MIT
+license:
+  - AGPL-3.0-or-later
+  - CC-BY-4.0
 version: "1.2.0"
 date-released: "2026-08-06"
 keywords:

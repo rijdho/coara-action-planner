@@ -213,8 +213,12 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
 
 ## License
 
-- **Code** — [MIT](LICENSE).
-- **Calibration data** (`src/data/`, `corpus/data/`) —
+Copyright (C) 2026 Ricardo Hartley Belmar.
+
+- **Code**: [AGPL-3.0-or-later](LICENSE). Read, cite, fork and adapt freely; if you run a
+  modified version as a network service, publish your changes under the same licence.
+  Releases up to 1.2.0 were published under MIT and remain so.
+- **Calibration data** (`src/data/`, `corpus/data/`):
   [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reuse and adapt with attribution.
 
 Neither licence covers the action plans the corpus measures: those remain under the terms each

@@ -158,7 +158,7 @@ whether it is worth a release.
 
 The tables in `data/` are calibration data under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), like `src/data/`; the scripts are
-[MIT](../LICENSE), like the rest of the code.
+[AGPL-3.0-or-later](../LICENSE), like the rest of the code.
 
 Neither covers the deposited action plans themselves, which remain under the terms each
 depositing institution chose. This folder describes them; it does not redistribute them.

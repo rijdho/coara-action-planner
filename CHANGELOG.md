@@ -28,6 +28,21 @@ latest release.
 
 ### Changed
 
+- **The code moves from MIT to [AGPL-3.0-or-later](LICENSE).** MIT does not protect against
+  copying, it grants it: anyone could take this, close it, rebrand it and host it, owing
+  nothing but the copyright notice. That matters more here than for a standalone tool,
+  because this is the open face of a hosted toolkit. The AGPL's section 13 covers use over
+  a network, which is exactly what a browser app is: fork it, adapt it, run it, but a
+  modified version offered as a service owes its source back. Nothing about reading,
+  citing or learning from the method changes, and the calibration data stays CC BY 4.0.
+  **Releases up to 1.2.0 were published under MIT and remain so**: a copy taken then keeps
+  those terms for good.
+- **`CITATION.cff` now names both licences.** The single `MIT` value never described a
+  repository that has always been code plus CC BY 4.0 calibration data.
+- **The page says under what licence it runs.** The rail footer carried the author and the
+  DOI but no licence, which the house rule asks for and which the AGPL positively expects
+  a network user to be offered. The source link the licence wants was already in the
+  command bar.
 - **The deploy gates on the test suite.** The suite existed and CI never ran it, so a red
   test would have deployed anyway. `npm test` now runs before the build, as it does in the
   sibling repos.

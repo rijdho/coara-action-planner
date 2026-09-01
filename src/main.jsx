@@ -71,6 +71,8 @@ function Rail({ onNavigate }) {
         {t("footer")}
         <br />
         <a href="https://rijdho.github.io" target="_blank" rel="noopener noreferrer">@rijdho</a>
+        {" \u00b7 AGPL-3.0 \u00b7 "}
+        <a href="https://github.com/rijdho/coara-action-planner" target="_blank" rel="noopener noreferrer">github</a>
         <br />
         <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title="Cite this tool">
           DOI 10.5281/zenodo.21492548
