@@ -37,8 +37,10 @@ latest release.
   citing or learning from the method changes, and the calibration data stays CC BY 4.0.
   **Releases up to 1.2.0 were published under MIT and remain so**: a copy taken then keeps
   those terms for good.
-- **`CITATION.cff` now names both licences.** The single `MIT` value never described a
-  repository that has always been code plus CC BY 4.0 calibration data.
+- **`CITATION.cff` names the code licence, and the abstract keeps naming the data one.**
+  A list of both was tried and reverted: Zenodo's licence field is single-valued, a single
+  `AGPL-3.0-or-later` is proven to map cleanly, and a list would only have been found to
+  be wrong at release time.
 - **The page says under what licence it runs.** The rail footer carried the author and the
   DOI but no licence, which the house rule asks for and which the AGPL positively expects
   a network user to be offered. The source link the licence wants was already in the

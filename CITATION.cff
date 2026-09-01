@@ -25,9 +25,12 @@ identifiers:
     description: "Version DOI for v1.2.0"
 repository-code: "https://github.com/rijdho/coara-action-planner"
 url: "https://rijdho.github.io/coara-action-planner/"
-license:
-  - AGPL-3.0-or-later
-  - CC-BY-4.0
+# Single value on purpose. Zenodo's licence field takes one, and a single
+# AGPL-3.0-or-later is proven to map cleanly (fair-repo-audit v1.5.0 records
+# agpl-3.0-or-later from exactly this shape); a list is unproven and would be
+# discovered at release time. The CC BY 4.0 calibration data is described in the
+# abstract above and in the README, which is where a reader looks for it anyway.
+license: AGPL-3.0-or-later
 version: "1.2.0"
 date-released: "2026-08-06"
 keywords:
