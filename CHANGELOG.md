@@ -26,6 +26,12 @@ latest release.
   declarative APIs, so nothing in the source changed.
 - **postcss and nanoid** to their patched versions, within semver.
 
+### Removed
+
+- `getLevels` in `src/lib/storage.js`, an exported function nobody called. Its only
+  occurrence in the repository was its own definition; the similarly named
+  `getTargetLevels` is a different function and is used in three pages.
+
 ### Changed
 
 - **The code moves from MIT to [AGPL-3.0-or-later](LICENSE).** MIT does not protect against

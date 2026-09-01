@@ -141,11 +141,6 @@ export function saveAnswers(answers) {
   save(d);
 }
 
-/** Maturity level per commitment for the active perspective { commitmentId: level } */
-export function getLevels() {
-  return getActivePerspective()?.levels ?? {};
-}
-
 export function saveLevels(levels) {
   const d = load();
   const p = d.perspectives.find((x) => x.id === d.activePerspectiveId) ?? d.perspectives[0];
