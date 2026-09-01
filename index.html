@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--
+      GitHub Pages sends no security headers at all, so a meta policy is the only
+      one available. This app is unusually easy to lock down: it makes no network
+      requests of any kind, so `connect-src 'none'` costs nothing and means a
+      script that somehow ran here could not send anywhere. React sets inline
+      styles through the CSSOM rather than as attributes, which CSP does not
+      govern, so `style-src` needs no loosening either. Clickjacking stays
+      uncovered: `frame-ancestors` requires a response header Pages cannot set.
+    -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'none';
+      script-src 'self';
+      style-src 'self';
+      font-src 'self';
+      img-src 'self' data:;
+      connect-src 'none';
+      form-action 'none';
+      base-uri 'none';
+      object-src 'none'" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>" />
     <title>CoARA Action Planner</title>
     <meta name="description" content="Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable research-assessment reform action plan — entirely in your browser. Open source." />

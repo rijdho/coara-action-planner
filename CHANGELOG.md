@@ -10,6 +10,35 @@ latest release.
 
 ## [Unreleased]
 
+### Security
+
+- **A Content-Security-Policy.** GitHub Pages sends no security headers at all, so a meta
+  policy is the only one available. This app is unusually easy to lock down because it
+  makes no network requests of any kind: `connect-src 'none'` costs nothing and means a
+  script that somehow ran here could not send anywhere. `style-src` needs no loosening
+  either, since React applies inline styles through the CSSOM, which CSP does not govern.
+  Clickjacking stays uncovered: `frame-ancestors` requires a response header Pages cannot
+  set.
+- **react-router 6.30.4 to 7.18.3**, clearing two advisories. Neither was reachable here:
+  the open redirect needs a navigation target an attacker controls, and every target in
+  this codebase is a literal, while the other needs SSR hydration and this is a static
+  SPA. The 6.x line is unpatched, so clearing them meant the major. The app uses only the
+  declarative APIs, so nothing in the source changed.
+- **postcss and nanoid** to their patched versions, within semver.
+
+### Changed
+
+- **The deploy gates on the test suite.** The suite existed and CI never ran it, so a red
+  test would have deployed anyway. `npm test` now runs before the build, as it does in the
+  sibling repos.
+
+### Known
+
+- Two advisories remain against `esbuild` and `vite`, both reachable only through the dev
+  server on a developer's own machine and never in what is shipped. Clearing them needs a
+  vite major, which is a deliberate change with its own regression risk, not something to
+  fold into a security pass.
+
 ## [1.2.0] — 2026-08-06
 
 Version DOI:
