@@ -26,6 +26,16 @@ latest release.
   declarative APIs, so nothing in the source changed.
 - **postcss and nanoid** to their patched versions, within semver.
 
+### Added
+
+- **A test that keeps the charting library behind its lazy boundary**
+  (`tests/chart-boundary.test.mjs`). The split below rests on one fact: nothing imports
+  the chart implementation statically. A single stray import folds recharts back into the
+  entry bundle, and nothing renders differently, so the regression is invisible without a
+  test. Three defects were planted to confirm the test is not vacuous: a page importing
+  recharts, a page naming the implementation, and the boundary rewritten as a static
+  import. Each failed as intended.
+
 ### Removed
 
 - `getLevels` in `src/lib/storage.js`, an exported function nobody called. Its only
@@ -54,6 +64,16 @@ latest release.
 - **The deploy gates on the test suite.** The suite existed and CI never ran it, so a red
   test would have deployed anyway. `npm test` now runs before the build, as it does in the
   sibling repos.
+- **The maturity radar loads on demand.** recharts and its dependency tree (lodash, d3-*,
+  decimal.js-light, react-smooth) are the heaviest thing here, and only two of the five
+  routes draw a chart, so Start, Plan and Report were downloading a charting library in
+  order to render text. The implementation moved to `components/MaturityRadarChart.jsx`
+  behind a `React.lazy` boundary in `components/MaturityRadar.jsx`; the call sites and the
+  props are unchanged. The entry bundle goes from 899 kB to 543 kB (260 kB to 161 kB
+  gzipped), with the chart in a 357 kB chunk that arrives when a chart is about to be
+  drawn. Verified in a real browser against the built output: Start, Plan and Report
+  request no chart chunk, Questionnaire and Results draw the radar, and nothing leaves the
+  origin.
 - **`package.json` carries the real version.** It had stayed at 1.0.0 through two
   releases while the tags and `CITATION.cff` moved on. Nothing reads it, which is why it
   drifted unnoticed, and it was still the one version string in the repository that was

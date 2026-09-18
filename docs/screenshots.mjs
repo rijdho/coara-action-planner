@@ -74,6 +74,10 @@ await page.evaluate(() => {
     .find(b => /^4\s*\n?\s*Results/.test(b.innerText.trim()))?.click()
 })
 await page.waitForFunction(() => document.body.innerText.includes('Maturity Profile'), { timeout: 30000 })
+// The radar sits behind a React.lazy boundary (components/MaturityRadar.jsx), so the
+// heading can be on screen while the chart chunk is still in flight. Wait for the
+// drawn surface, not for the card that will hold it.
+await page.waitForSelector('.recharts-surface', { timeout: 30000 })
 await new Promise(r => setTimeout(r, 2000))
 
 await page.evaluate(() => {

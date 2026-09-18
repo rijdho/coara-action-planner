@@ -176,6 +176,13 @@ without inserting one at the same position in all three overlays shifts every la
 translation onto the wrong action — nothing throws, the app just shows the wrong text in
 three languages.
 
+`chart-boundary.test.mjs` keeps the charting library out of the entry bundle. recharts and
+its dependency tree are the heaviest thing this app ships and only two of the five routes
+draw a chart, so the implementation sits behind a `React.lazy` boundary. That split rests
+entirely on nothing importing it statically: one stray import folds it all back into the
+main chunk, the app looks and behaves exactly the same, and only a byte count would ever
+show it. The test pins the boundary instead.
+
 ## Deploy
 
 Any static host works (the build is self-contained with relative asset paths). This repo ships a
