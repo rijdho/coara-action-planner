@@ -54,6 +54,10 @@ latest release.
 - **The deploy gates on the test suite.** The suite existed and CI never ran it, so a red
   test would have deployed anyway. `npm test` now runs before the build, as it does in the
   sibling repos.
+- **`package.json` carries the real version.** It had stayed at 1.0.0 through two
+  releases while the tags and `CITATION.cff` moved on. Nothing reads it, which is why it
+  drifted unnoticed, and it was still the one version string in the repository that was
+  wrong.
 
 ### Known
 
