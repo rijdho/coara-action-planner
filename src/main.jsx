@@ -52,6 +52,7 @@ function Rail({ onNavigate }) {
         <div>
           <div className="brand-name"><a href="./">{t("brandApp")}</a></div>
           <a className="brand-sub" href="https://rijdho.github.io">rijdho.github.io</a>
+          <p className="brand-family">{t("rail_family")}{" "}<a href="https://rijdho.github.io/metaudits-home/" target="_blank" rel="noopener noreferrer">Metaudits</a></p>
         </div>
       </div>
       <div className="nav-label">{t("nav_steps")}</div>
@@ -79,9 +80,6 @@ function Rail({ onNavigate }) {
         {t("rail_license_data")}
         <br />
         <a href="https://github.com/rijdho/coara-action-planner" target="_blank" rel="noopener noreferrer">{t("rail_source")}</a>
-        <br />
-        {t("rail_family")}{" "}
-        <a href="https://rijdho.github.io/metaudits-home/" target="_blank" rel="noopener noreferrer">Metaudits</a>
         <br />
         <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title={t("rail_cite")}>
           DOI 10.5281/zenodo.21492548
