@@ -67,14 +67,21 @@ function Rail({ onNavigate }) {
           </NavLink>
         ))}
       </nav>
+      {/* The family's standard credits, one item per line (rijdho/house-style README). */}
       <div className="rail-foot">
-        {t("footer")}
+        {t("rail_by")}{" "}
+        <a href="https://rijdho.github.io" target="_blank" rel="noopener noreferrer">Ricardo Hartley Belmar</a>
         <br />
-        <a href="https://rijdho.github.io" target="_blank" rel="noopener noreferrer">@rijdho</a>
-        {" \u00b7 AGPL-3.0 \u00b7 "}
-        <a href="https://github.com/rijdho/coara-action-planner" target="_blank" rel="noopener noreferrer">github</a>
+        {t("rail_license_code")}
         <br />
-        <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title="Cite this tool">
+        {t("rail_license_data")}
+        <br />
+        <a href="https://github.com/rijdho/coara-action-planner" target="_blank" rel="noopener noreferrer">{t("rail_source")}</a>
+        <br />
+        {t("rail_family")}{" "}
+        <a href="https://rijdho.github.io/metaudits-home/" target="_blank" rel="noopener noreferrer">Metadata Audits</a>
+        <br />
+        <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title={t("rail_cite")}>
           DOI 10.5281/zenodo.21492548
         </a>
       </div>

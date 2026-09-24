@@ -18,7 +18,12 @@ export const UI_EN = {
   langLabel: "Language",
   nav_steps: "Steps",
   nav_menu: "Menu",
-  footer: "For questions about data usage or attribution:",
+  rail_by: "By",
+  rail_license_code: "Code under AGPL-3.0",
+  rail_license_data: "data under CC BY 4.0",
+  rail_source: "Source on GitHub",
+  rail_family: "Part of",
+  rail_cite: "Cite this tool",
 
   // commitment type
   typeCore: "core",

@@ -10,6 +10,18 @@ latest release.
 
 ## [Unreleased]
 
+### Changed
+
+- **The rail signs off like every other tool in the family.** One item per line: author, the two
+  licences, source, *Part of Metadata Audits* (linking the new front page,
+  rijdho.github.io/metaudits-home) and the concept DOI, in the interface language. It replaces the
+  "For questions about data usage or attribution:" line, which introduced nothing.
+
+### Removed
+
+- **French.** The interface is offered in English, German and Spanish, as across the family. A
+  browser that had chosen French falls back to its own language or to English.
+
 ### Security
 
 - **A Content-Security-Policy.** GitHub Pages sends no security headers at all, so a meta

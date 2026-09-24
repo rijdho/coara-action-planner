@@ -15,13 +15,11 @@ import { ROLES } from "../data/perspectives";
 import { UI_EN } from "./ui.en";
 import { REPORT_EN } from "./report.en";
 import es from "../data/i18n/es";
-import fr from "../data/i18n/fr";
 import de from "../data/i18n/de";
 
 export const LANGS = [
   { code: "en", label: "English", short: "EN" },
   { code: "es", label: "Español", short: "ES" },
-  { code: "fr", label: "Français", short: "FR" },
   { code: "de", label: "Deutsch", short: "DE" },
 ];
 
@@ -29,7 +27,7 @@ export const LANG_CODES = LANGS.map((l) => l.code);
 export const DEFAULT_LANG = "en";
 export const LANG_STORAGE_KEY = "ra-lang";
 
-const OVERLAYS = { es, fr, de };
+const OVERLAYS = { es, de };
 
 /** Replace {key} placeholders in a template string. */
 export function interpolate(tpl, params = {}) {

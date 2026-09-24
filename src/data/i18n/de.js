@@ -14,7 +14,12 @@ export default {
     langLabel: "Sprache",
     nav_steps: "Schritte",
     nav_menu: "Menü",
-    footer: "Bei Fragen zur Datennutzung oder Quellenangabe:",
+    rail_by: "Von",
+    rail_license_code: "Code unter AGPL-3.0",
+    rail_license_data: "Daten unter CC BY 4.0",
+    rail_source: "Quellcode auf GitHub",
+    rail_family: "Teil von",
+    rail_cite: "Dieses Werkzeug zitieren",
 
     // commitment type
     typeCore: "Kern",

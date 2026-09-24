@@ -17,7 +17,7 @@ leadership, reform working groups, and anyone drafting a CoARA action plan for s
 
 🔗 **Live:** https://rijdho.github.io/coara-action-planner/
 
-Available in **English, Spanish, French and German** (auto-detected, switchable).
+Available in **English, German and Spanish** (auto-detected, switchable).
 
 ![Maturity Profile radar for an example institution, overall level "Exploring". The ten CoARA
 commitments form an uneven shape: strongest on C3 (abandoning journal-based metrics) and C8
@@ -97,7 +97,7 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 | [`guidingQuestions.js`](src/data/guidingQuestions.js) | the CoARA Secretariat's 19 guiding questions, quoted verbatim and mapped onto the report's sections |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
 | [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS` — how divergent readings are consolidated |
-| [`i18n/{es,fr,de}.js`](src/data/i18n/) | full Spanish / French / German overlays of the above |
+| [`i18n/{es,de}.js`](src/data/i18n/) | full Spanish / German overlays of the above |
 
 Ranking happens in **two stages**, and both are calibration. `prioritiseActions` scores an
 action on its own merits — gap x impact, minus an effort penalty. `applyPlan` then applies
@@ -170,9 +170,9 @@ which the app reads. A recount that updates one and forgets the other would leav
 quoting figures its own corpus no longer supports, and nothing would render differently.
 Keeping the corpus in this repository rather than its own is what makes that check possible.
 
-`i18n.test.mjs` pins the most fragile contract in the repository: the Spanish, French and
+`i18n.test.mjs` pins the most fragile contract in the repository: the Spanish and
 German action overlays align with `ACTIONS` **by array index**. Inserting an action mid-list
-without inserting one at the same position in all three overlays shifts every later
+without inserting one at the same position in both overlays shifts every later
 translation onto the wrong action — nothing throws, the app just shows the wrong text in
 three languages.
 

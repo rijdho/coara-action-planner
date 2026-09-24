@@ -1,5 +1,5 @@
 /**
- * The Spanish, French and German overlays align with the source data BY ARRAY INDEX.
+ * The Spanish and German overlays align with the source data BY ARRAY INDEX.
  * That is the most fragile contract in this repository: inserting an action in the
  * middle of ACTIONS without inserting one at the same position in all three overlays
  * silently shifts every later translation onto the wrong action. Nothing throws; the
@@ -12,7 +12,6 @@
 import { test } from 'node:test'
 import assert from 'node:assert/strict'
 import es from '../src/data/i18n/es.js'
-import fr from '../src/data/i18n/fr.js'
 import de from '../src/data/i18n/de.js'
 import { ACTIONS } from '../src/data/actions.js'
 import { QUESTIONS } from '../src/data/questions.js'
@@ -22,7 +21,7 @@ import { REPORT_EN } from '../src/i18n/report.en.js'
 import { UI_EN } from '../src/i18n/ui.en.js'
 import { ROLE_IDS } from '../src/data/perspectives.js'
 
-const LOCALES = { es, fr, de }
+const LOCALES = { es, de }
 
 test('every locale exposes the same top-level sections', () => {
   const expected = ['ui', 'report', 'roles', 'questions', 'commitments', 'actions', 'contexts', 'maturity']
@@ -49,7 +48,7 @@ test('action overlays align with ACTIONS by index', () => {
 
 test('translated planText stays free of second-person address', () => {
   // Same rule as the English source: a generated plan must not address its author.
-  const YOU = { es: /\b(usted|ustedes|tu\s|tus\s)\b/i, fr: /\b(vous|votre|vos)\b/i, de: /\b(Sie|Ihre|Ihr)\b/ }
+  const YOU = { es: /\b(usted|ustedes|tu\s|tus\s)\b/i, de: /\b(Sie|Ihre|Ihr)\b/ }
   for (const [code, L] of Object.entries(LOCALES)) {
     for (const [i, a] of L.actions.entries()) {
       assert.ok(!YOU[code].test(a.planText),
