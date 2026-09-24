@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.4.0]: 2026-09-24
+
 ### Changed
 
 - **Renamed Research Assessment Reform Planner** (was Reform Action Planner): "reform" alone did
@@ -21,15 +23,11 @@ latest release.
 - **The icon and the name link to the tool's start page**, with house-style 1.0.3.
 - **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
 
-### Changed
-
 - **The tool is called Reform Action Planner.** The old name led with CoARA's, which could read as an
   official CoARA product. The repository keeps its name, `coara-action-planner`, and every URL and
   DOI stays as it was; the name changes where a reader meets it: the page title and social card, the
   rail, the generated reports, the README and `CITATION.cff` (Zenodo takes the title at the next
   release). The social card also stops listing French, which the tool no longer offers.
-
-### Changed
 
 - **The look comes from rijdho/house-style.** `src/house/` holds a synced copy (house.css and the
   Inter fonts), imported before `src/index.css`, with a lock and a test that fail on a hand edit or
@@ -271,6 +269,9 @@ Initial public release. Version DOI:
   calibration data.
 - GitHub Actions workflow publishing to GitHub Pages on every push to `main`.
 
-[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.4.0...HEAD
+[1.4.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.4.0
+[1.3.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.3.0
+[1.2.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.2.0
 [1.1.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.1.0
 [1.0.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.0.0
