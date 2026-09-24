@@ -47,7 +47,7 @@ const html = `<!doctype html>
     font-size: 19px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
     color: #6d4aff; margin-bottom: 26px;
   }
-  h1 { font-size: 72px; line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; }
+  h1 { font-size: 60px; line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; }
   p { font-size: 28px; line-height: 1.42; color: #4a4568; margin-top: 26px; max-width: 19em; }
   .spacer { flex: 1 1 auto; }
   .foot {
@@ -67,8 +67,8 @@ const html = `<!doctype html>
   }
 </style>
 <div class="text">
-  <div class="eyebrow">Research assessment reform</div>
-  <h1>Reform Action<br>Planner</h1>
+  <div class="eyebrow">CoARA self-assessment</div>
+  <h1>Research Assessment<br>Reform Planner</h1>
   <p>Self-assess against the ten CoARA commitments and draft a prioritised action plan, in your browser.</p>
   <div class="spacer"></div>
   <div class="foot">

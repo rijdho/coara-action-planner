@@ -5,7 +5,7 @@
  */
 export const UI_EN = {
   // header / nav
-  brandApp: "Reform Action Planner",
+  brandApp: "Research Assessment Reform Planner",
   source: "Source",
   sourceTitle: "View the source and the calibration on GitHub",
   tab_start: "Start",
@@ -202,7 +202,7 @@ export const UI_EN = {
   print_byCommitment: "Maturity by commitment",
   print_priorityActions: "Priority actions",
   print_footer:
-    "Generated with Reform Action Planner (DOI 10.5281/zenodo.21492548) · rijdho.github.io/coara-action-planner · framework: CoARA Agreement on Reforming Research Assessment.",
+    "Generated with Research Assessment Reform Planner (DOI 10.5281/zenodo.21492548) · rijdho.github.io/coara-action-planner · framework: CoARA Agreement on Reforming Research Assessment.",
   unknownInst: "Institution",
 
   // Report page

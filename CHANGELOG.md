@@ -12,6 +12,11 @@ latest release.
 
 ### Changed
 
+- **Renamed Research Assessment Reform Planner** (was Reform Action Planner): "reform" alone did
+  not say reform of what. The page title, the brand block, the three interfaces, the report
+  footers, the README, `CITATION.cff` and the link-preview card carry the new name; the address
+  `coara-action-planner` and the DOI stay. The Zenodo record takes the name at the next release.
+
 - **"Part of Metaudits" moves up**, under rijdho.github.io in the brand block (house-style 1.0.4), out of the rail credits.
 - **The icon and the name link to the tool's start page**, with house-style 1.0.3.
 - **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
