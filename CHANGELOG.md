@@ -12,6 +12,14 @@ latest release.
 
 ### Changed
 
+- **The tool is called Reform Action Planner.** The old name led with CoARA's, which could read as an
+  official CoARA product. The repository keeps its name, `coara-action-planner`, and every URL and
+  DOI stays as it was; the name changes where a reader meets it: the page title and social card, the
+  rail, the generated reports, the README and `CITATION.cff` (Zenodo takes the title at the next
+  release). The social card also stops listing French, which the tool no longer offers.
+
+### Changed
+
 - **The look comes from rijdho/house-style.** `src/house/` holds a synced copy (house.css and the
   Inter fonts), imported before `src/index.css`, with a lock and a test that fail on a hand edit or
   a stale copy (`node scripts/sync-house.mjs` refreshes it). `src/index.css` keeps only what this tool

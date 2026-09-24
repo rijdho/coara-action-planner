@@ -32,7 +32,7 @@ KEYWORDS = ROOT / "data" / "theme-keywords.json"
 
 
 def band(pct):
-    """Prevalence band. The thresholds are the ones the CoARA Action Planner shows."""
+    """Prevalence band. The thresholds are the ones the Reform Action Planner shows."""
     if pct >= 60:
         return "universal"
     if pct >= 30:

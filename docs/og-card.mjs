@@ -68,12 +68,12 @@ const html = `<!doctype html>
 </style>
 <div class="text">
   <div class="eyebrow">Research assessment reform</div>
-  <h1>CoARA Action<br>Planner</h1>
-  <p>Self-assess against the ten CoARA commitments and draft a prioritised action plan — in your browser.</p>
+  <h1>Reform Action<br>Planner</h1>
+  <p>Self-assess against the ten CoARA commitments and draft a prioritised action plan, in your browser.</p>
   <div class="spacer"></div>
   <div class="foot">
     <span class="url">rijdho.github.io/coara-action-planner</span>
-    <span class="dot">·</span><span>EN / ES / FR / DE</span>
+    <span class="dot">·</span><span>EN / ES / DE</span>
   </div>
 </div>
 <div class="art"><img src="${radar}" alt=""></div>`
