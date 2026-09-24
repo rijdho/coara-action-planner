@@ -51,7 +51,7 @@ function Rail({ onNavigate }) {
         <div className="brand-glyph" aria-hidden="true" />
         <div>
           <div className="brand-name">{t("brandApp")}</div>
-          <div className="brand-sub">rijdho.github.io</div>
+          <a className="brand-sub" href="https://rijdho.github.io">rijdho.github.io</a>
         </div>
       </div>
       <div className="nav-label">{t("nav_steps")}</div>

@@ -12,6 +12,10 @@ latest release.
 
 ### Changed
 
+- **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
+
+### Changed
+
 - **The tool is called Reform Action Planner.** The old name led with CoARA's, which could read as an
   official CoARA product. The repository keeps its name, `coara-action-planner`, and every URL and
   DOI stays as it was; the name changes where a reader meets it: the page title and social card, the
