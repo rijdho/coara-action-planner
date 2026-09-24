@@ -79,7 +79,7 @@ function Rail({ onNavigate }) {
         <a href="https://github.com/rijdho/coara-action-planner" target="_blank" rel="noopener noreferrer">{t("rail_source")}</a>
         <br />
         {t("rail_family")}{" "}
-        <a href="https://rijdho.github.io/metaudits-home/" target="_blank" rel="noopener noreferrer">Metadata Audits</a>
+        <a href="https://rijdho.github.io/metaudits-home/" target="_blank" rel="noopener noreferrer">Metaudits</a>
         <br />
         <a href="https://doi.org/10.5281/zenodo.21492548" target="_blank" rel="noopener noreferrer" title={t("rail_cite")}>
           DOI 10.5281/zenodo.21492548
