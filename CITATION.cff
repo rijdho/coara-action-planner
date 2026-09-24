@@ -19,7 +19,10 @@ doi: 10.5281/zenodo.21492548
 identifiers:
   - type: doi
     value: 10.5281/zenodo.21492548
-    description: "Concept DOI — always resolves to the latest version"
+    description: "Concept DOI, always resolves to the latest version"
+  - type: doi
+    value: 10.5281/zenodo.22939377
+    description: "Version DOI for v1.3.0"
 repository-code: "https://github.com/rijdho/coara-action-planner"
 url: "https://rijdho.github.io/coara-action-planner/"
 # Single value on purpose. Zenodo's licence field takes one; a list is unproven
