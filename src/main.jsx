@@ -48,9 +48,9 @@ function Rail({ onNavigate }) {
   return (
     <aside className="rail">
       <div className="brand-mark">
-        <div className="brand-glyph" aria-hidden="true" />
+        <a className="brand-glyph" href="./" tabIndex={-1} aria-hidden="true" />
         <div>
-          <div className="brand-name">{t("brandApp")}</div>
+          <div className="brand-name"><a href="./">{t("brandApp")}</a></div>
           <a className="brand-sub" href="https://rijdho.github.io">rijdho.github.io</a>
         </div>
       </div>

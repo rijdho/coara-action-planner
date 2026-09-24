@@ -12,6 +12,7 @@ latest release.
 
 ### Changed
 
+- **The icon and the name link to the tool's start page**, with house-style 1.0.3.
 - **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
 
 ### Changed
