@@ -7,6 +7,8 @@ import PlanPage from "./pages/PlanPage";
 import ResultsPage from "./pages/ResultsPage";
 import ReportPage from "./pages/ReportPage";
 import { LanguageProvider, useLang } from "./i18n/context";
+// The shared look (a synced copy of rijdho/house-style), then this tool's own styles.
+import "./house/house.css";
 import "./index.css";
 
 function useTheme() {

@@ -23,7 +23,7 @@ const dataUri = (path, mime) =>
   `data:${mime};base64,${readFileSync(join(ROOT, path)).toString('base64')}`
 
 // Self-hosted, like the app: no font CDN reaches this render either.
-const inter = dataUri('src/assets/fonts/inter-latin-wght-normal.woff2', 'font/woff2')
+const inter = dataUri('src/house/fonts/inter-latin-wght-normal.woff2', 'font/woff2')
 const radar = dataUri('docs/maturity-profile.png', 'image/png')
 
 const html = `<!doctype html>

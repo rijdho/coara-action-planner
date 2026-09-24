@@ -10,7 +10,19 @@ latest release.
 
 ## [Unreleased]
 
+### Changed
+
+- **The look comes from rijdho/house-style.** `src/house/` holds a synced copy (house.css and the
+  Inter fonts), imported before `src/index.css`, with a lock and a test that fail on a hand edit or
+  a stale copy (`node scripts/sync-house.mjs` refreshes it). `src/index.css` keeps only what this tool
+  adds or sets differently: 204 declarations identical to house.css went, and the duplicate
+  `src/assets/fonts/` with them. Checked by screenshots before and after, 7 views in light and dark,
+  desktop and phone: the only changes are the command bar's phone layout and the ellipsis on a long
+  title, both from house.
+
 ## [1.3.0] - 2026-09-24
+
+Version DOI: [10.5281/zenodo.22939377](https://doi.org/10.5281/zenodo.22939377).
 
 ### Changed
 
