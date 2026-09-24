@@ -19,7 +19,7 @@ export const UI_EN = {
   nav_steps: "Steps",
   nav_menu: "Menu",
   rail_by: "By",
-  rail_license_code: "Code under AGPL-3.0",
+  rail_license_code: "Code under Apache-2.0",
   rail_license_data: "data under CC BY 4.0",
   rail_source: "Source on GitHub",
   rail_family: "Part of",

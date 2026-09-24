@@ -20,7 +20,7 @@ export default {
     nav_steps: "Pasos",
     nav_menu: "Menú",
     rail_by: "Por",
-    rail_license_code: "Código bajo AGPL-3.0",
+    rail_license_code: "Código bajo Apache-2.0",
     rail_license_data: "datos bajo CC BY 4.0",
     rail_source: "Código en GitHub",
     rail_family: "Parte de",

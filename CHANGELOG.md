@@ -10,10 +10,12 @@ latest release.
 
 ## [Unreleased]
 
+## [1.3.0] - 2026-09-24
+
 ### Changed
 
 - **The rail signs off like every other tool in the family.** One item per line: author, the two
-  licences, source, *Part of Metadata Audits* (linking the new front page,
+  licences, source, *Part of Metaudits* (linking the family's front page,
   rijdho.github.io/metaudits-home) and the concept DOI, in the interface language. It replaces the
   "For questions about data usage or attribution:" line, which introduced nothing.
 
@@ -56,22 +58,19 @@ latest release.
 
 ### Changed
 
-- **The code moves from MIT to [AGPL-3.0-or-later](LICENSE).** MIT does not protect against
-  copying, it grants it: anyone could take this, close it, rebrand it and host it, owing
-  nothing but the copyright notice. That matters more here than for a standalone tool,
-  because this is the open face of a hosted toolkit. The AGPL's section 13 covers use over
-  a network, which is exactly what a browser app is: fork it, adapt it, run it, but a
-  modified version offered as a service owes its source back. Nothing about reading,
-  citing or learning from the method changes, and the calibration data stays CC BY 4.0.
-  **Releases up to 1.2.0 were published under MIT and remain so**: a copy taken then keeps
-  those terms for good.
+- **The code is licensed under [Apache-2.0](LICENSE)**, the licence the family now uses for its
+  tools on metadata, open science and research assessment: what these tools need is to be
+  adopted by institutions, and Apache is the permissive licence their legal offices accept
+  most readily (an explicit patent grant, contributions under the same terms, no right to the
+  names). The calibration data stays CC BY 4.0. **Releases up to 1.2.0 were published under
+  MIT and remain so.** Between 1.2.0 and this release the main branch carried
+  AGPL-3.0-or-later for a time, and a copy taken from it then keeps those terms; no release was
+  made under it.
 - **`CITATION.cff` names the code licence, and the abstract keeps naming the data one.**
-  A list of both was tried and reverted: Zenodo's licence field is single-valued, a single
-  `AGPL-3.0-or-later` is proven to map cleanly, and a list would only have been found to
-  be wrong at release time.
+  A list of both was tried and reverted: Zenodo's licence field is single-valued, so the
+  single code licence goes there and the CC BY 4.0 data is named in the abstract.
 - **The page says under what licence it runs.** The rail footer carried the author and the
-  DOI but no licence, which the house rule asks for and which the AGPL positively expects
-  a network user to be offered. The source link the licence wants was already in the
+  DOI but no licence, which the house rule asks for. The source link was already in the
   command bar.
 - **The deploy gates on the test suite.** The suite existed and CI never ran it, so a red
   test would have deployed anyway. `npm test` now runs before the build, as it does in the

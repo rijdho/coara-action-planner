@@ -15,7 +15,7 @@ export default {
     nav_steps: "Schritte",
     nav_menu: "Menü",
     rail_by: "Von",
-    rail_license_code: "Code unter AGPL-3.0",
+    rail_license_code: "Code unter Apache-2.0",
     rail_license_data: "Daten unter CC BY 4.0",
     rail_source: "Quellcode auf GitHub",
     rail_family: "Teil von",
