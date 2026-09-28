@@ -5,7 +5,7 @@
  * Results and Report tabs actually show, by filtering (high effort, the ambition
  * gate) and re-ranking (context affinity, focus, horizon, target, divergence). It
  * can drop an action entirely, so it carries at least as much weight as stage one
- * and belongs in the same parity contract with the hosted engine.
+ * and is pinned with the same exact scores.
  *
  * Synthetic actions again, for the same reason: recalibrating the real catalog must
  * not break tests that are about the maths. The real catalog is exercised at the end,

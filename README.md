@@ -24,11 +24,10 @@ commitments form an uneven shape: strongest on C3 (abandoning journal-based metr
 (exchanging practices), weakest on C5 (committing resources) and C9 (communicating
 progress).](docs/maturity-profile.png)
 
-This is the **open twin** of the hosted
-[Reform Assessment toolkit](https://metaudits.rijdho.org/reform-assessment/). That family keeps
-its calibrated methodology server-side; this repository moves the *same* questions, actions and
-prioritisation algorithm into the browser, in readable form, so the assessment logic can be
-inspected, cited, and adapted. Inspired by the open, community-first philosophy of
+It began as the open twin of a hosted toolkit that kept its calibrated methodology
+server-side. That toolkit is no longer maintained; this is the maintained version. The questions,
+actions and prioritisation algorithm live in the browser, in readable form, so the assessment
+logic can be inspected, cited, and adapted. Inspired by the open, community-first philosophy of
 [Metadata Game Changers](https://metadatagamechangers.com/).
 
 ## What it does
@@ -143,10 +142,8 @@ runner, no dependencies beyond what the app already needs):
 npm test          # or: node --test tests/*.test.mjs
 ```
 
-`prioritise.test.mjs` asserts on **exact priority scores**, and those cases double as the
-parity contract with the server-side engine behind the hosted sibling: the same answers must
-produce the same ranking on both. A change that moves a number here should be mirrored there
-or documented as a deliberate divergence. The algorithm cases use synthetic actions on
+`prioritise.test.mjs` asserts on **exact priority scores**, so a change that moves a number is
+a visible change to the method, to be made on purpose and recorded in the CHANGELOG. The algorithm cases use synthetic actions on
 purpose, so recalibrating the real catalog cannot break tests that are about the maths.
 
 `calibration.test.mjs` guards the failures that are silent rather than loud. A mistyped

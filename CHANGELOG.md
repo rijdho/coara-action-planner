@@ -14,6 +14,9 @@ latest release.
 
 - Punctuation tidied in the interface, the generated report and the calibration texts, in
   English, German and Spanish. Wording only; no level, weight or score changed.
+- The README and `CITATION.cff` no longer present the tool as the open twin of a hosted
+  toolkit. That toolkit is no longer maintained; this repository is the maintained version,
+  and its tests pin the method on their own rather than as a parity contract.
 
 ### Fixed
 

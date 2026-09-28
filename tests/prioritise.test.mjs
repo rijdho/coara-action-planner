@@ -1,10 +1,8 @@
 /**
  * prioritiseActions: the algorithm is the product, so its behaviour is pinned here.
  *
- * These assertions double as the parity contract with the server-side engine that
- * powers the hosted sibling: the same inputs must yield the same ordering and the
- * same scores on both sides. A change that moves a number here should be mirrored
- * there, or documented as a deliberate divergence.
+ * The assertions use exact scores, so a change that moves a number here is a change
+ * to the published method: make it on purpose and record it in the CHANGELOG.
  *
  * The algorithm cases use synthetic actions on purpose: recalibrating the real
  * catalog must not be able to break tests that are about the maths. The real
