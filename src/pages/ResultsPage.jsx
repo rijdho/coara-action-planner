@@ -201,7 +201,7 @@ export default function ResultsPage() {
     URL.revokeObjectURL(url);
   };
 
-  // Reproducible configuration (inputs only) — re-importable on the Start tab.
+  // Reproducible configuration (inputs only): re-importable on the Start tab.
   const handleSaveConfig = () => {
     const blob = new Blob([JSON.stringify(exportConfig(), null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
@@ -226,7 +226,7 @@ export default function ResultsPage() {
     );
   }
 
-  // Show every prioritised action (no silent cap) — consistent with the on-screen
+  // Show every prioritised action (no silent cap): consistent with the on-screen
   // list and the written report. The one-page print may run to a second page; a
   // complete plan beats an arbitrarily truncated one.
   const topActions = prioritised;
@@ -317,7 +317,7 @@ export default function ResultsPage() {
                   <div key={c.id} className="flex items-center gap-3">
                     <span className="shrink-0 text-xs font-mono w-7 font-bold" style={{ color: c.type === "core" ? "var(--color-accent)" : "var(--color-text-muted)" }}>C{c.number}</span>
                     {/* No `truncate`: the card is grid-capped at ~559px, so the title
-                        column is ~223px while the longest commitment needs ~349px —
+                        column is ~223px while the longest commitment needs ~349px:
                         it was ellipsised at every window width, and this panel gets
                         exported into action plans. Wrap instead; nothing is hidden. */}
                     <span className="flex-1 text-xs leading-tight" style={{ color: "var(--color-text)" }}>{c.title}</span>
@@ -331,7 +331,7 @@ export default function ResultsPage() {
                       )}
                     </div>
                     {/* w-32 + nowrap: the level label is localised; measured worst case
-                        is 116px ("L0 Sin conocimiento", es) — the old w-20/80px wrapped
+                        is 116px ("L0 Sin conocimiento", es): the old w-20/80px wrapped
                         it to a second line and knocked the row out of alignment. */}
                     <span className="shrink-0 text-xs w-32 text-right whitespace-nowrap" style={{ color: MATURITY_LEVELS[lvl].color }}>
                       <span className="font-mono">L{lvl}</span>{tgt > 0 ? <span className="font-mono" style={{ color: "var(--color-text-muted)" }}> →L{tgt}</span> : <span style={{ color: "var(--color-text-muted)" }}> {MATURITY_LEVELS[lvl].label}</span>}

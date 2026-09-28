@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-03-extract-text — turn the downloaded documents into plain text.
+03-extract-text: turn the downloaded documents into plain text.
 
 For every <work>/plans/<id>/ folder: run `pdftotext` over each PDF, read each DOCX,
-concatenate them into <id>/text.txt, and finally write <work>/corpus.jsonl — one JSON
+concatenate them into <id>/text.txt, and finally write <work>/corpus.jsonl: one JSON
 object per plan, merging _meta.json with the extracted `text` and a `chars` count.
 
 That JSONL is what 04-theme-frequency.py counts over, and it is the only place the
@@ -11,7 +11,7 @@ plans' full text is needed. Nothing downstream sends text to a model or a networ
 service: the measurement is regular expressions over local files.
 
 Incremental by default. A plan that already has a text.txt is left alone, so a
-quarterly update re-extracts only what 01-harvest just downloaded — but corpus.jsonl
+quarterly update re-extracts only what 01-harvest just downloaded, but corpus.jsonl
 is always rebuilt from every folder present, because the frequencies must be counted
 over the whole corpus, not the increment.
 
@@ -43,7 +43,7 @@ def extract_pdf(path):
         out = subprocess.run(["pdftotext", "-q", str(path), "-"], capture_output=True, timeout=120)
         return out.stdout.decode("utf-8", errors="replace")
     except FileNotFoundError:
-        sys.exit("pdftotext not found — install poppler (macOS: brew install poppler)")
+        sys.exit("pdftotext not found: install poppler (macOS: brew install poppler)")
     except Exception as exc:  # noqa: BLE001
         return f"[pdftotext failed: {exc}]"
 
@@ -82,7 +82,7 @@ def main():
     work = ROOT / args.work
     plans = work / "plans"
     if not plans.is_dir():
-        sys.exit(f"{plans} not found — run: node scripts/01-harvest.mjs")
+        sys.exit(f"{plans} not found; run: node scripts/01-harvest.mjs")
 
     folders = sorted((p for p in plans.iterdir() if p.is_dir() and p.name.isdigit()),
                      key=lambda p: int(p.name))
@@ -114,7 +114,7 @@ def main():
         if len(text.strip()) < MIN_USABLE_CHARS:
             thin.append(folder.name)
         if i % 25 == 0 or i == len(folders):
-            print(f"  [{i}/{len(folders)}] {folder.name} — {len(text):,} chars")
+            print(f"  [{i}/{len(folders)}] {folder.name}: {len(text):,} chars")
 
     corpus = work / "corpus.jsonl"
     with corpus.open("w", encoding="utf-8") as fh:
@@ -128,7 +128,7 @@ def main():
         # These still count in the denominator: a plan whose text could not be read is
         # a plan that mentions nothing, which can only push prevalence down. Dropping
         # them would quietly inflate every percentage.
-        print(f"\n{len(thin)} plan(s) under {MIN_USABLE_CHARS} chars — probably scans needing OCR: "
+        print(f"\n{len(thin)} plan(s) under {MIN_USABLE_CHARS} chars, probably scans needing OCR: "
               f"{', '.join(thin)}")
     print("\nNext: python3 scripts/04-theme-frequency.py " + str(corpus))
 

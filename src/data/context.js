@@ -1,5 +1,5 @@
 /**
- * Institutional context options — used to weight action priorities.
+ * Institutional context options: used to weight action priorities.
  * Trimmed copy of reform-assessment/web/src/data/context.js (CONTEXTS only).
  * The ids match the relevanceContext tags in actions.js.
  */

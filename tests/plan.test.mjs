@@ -1,5 +1,5 @@
 /**
- * applyPlan — the second half of the prioritisation method.
+ * applyPlan: the second half of the prioritisation method.
  *
  * prioritiseActions scores an action on its own merits; this stage decides what the
  * Results and Report tabs actually show, by filtering (high effort, the ambition
@@ -151,7 +151,7 @@ test('context affinity boosts every action under the affine commitments', () => 
 
 test('the two context layers stack to exactly CONTEXT_MAX_COMBINED_BOOST', () => {
   // Stage one boosts the per-action `relevanceContext` tag; stage two boosts the
-  // commitment's affinity. An action that satisfies both is boosted twice — on
+  // commitment's affinity. An action that satisfies both is boosted twice. On
   // purpose, but the ceiling is pinned here so it cannot drift unnoticed.
   const tagged = { commitment: 'diversity', fromLevel: 0, toLevel: 3, effort: 'low', impact: 'medium',
     theme: 'diverse-outputs', title: 'both', relevanceContext: ['global-south'] }

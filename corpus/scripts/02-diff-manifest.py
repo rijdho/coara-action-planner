@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-02-diff-manifest — what a fresh harvest has that the published manifest does not.
+02-diff-manifest: what a fresh harvest has that the published manifest does not.
 
 This is the step that makes updating cheap. Zenodo gains CoARA action plans every
 month; re-reading all of them each quarter is waste, and re-reading none of them is
@@ -44,7 +44,7 @@ def main():
     work = ROOT / args.work
     index_path = work / "index.json"
     if not index_path.exists():
-        sys.exit(f"{index_path} not found — run: node scripts/01-harvest.mjs --metadata-only")
+        sys.exit(f"{index_path} not found; run: node scripts/01-harvest.mjs --metadata-only")
 
     index = json.loads(index_path.read_text(encoding="utf-8"))
     harvested = {str(r["id"]): r for r in index["records"]}
@@ -59,19 +59,19 @@ def main():
 
     new.sort(key=lambda r: str(r.get("date") or ""), reverse=True)
 
-    print(f"Harvest    {index.get('fetchedAt', '?')}  —  {len(harvested)} records")
+    print(f"Harvest    {index.get('fetchedAt', '?')}  ·  {len(harvested)} records")
     print(f"Manifest   {len(analysed)} analysed + {len(failed)} previously unextractable\n")
 
     if new:
-        print(f"NEW — {len(new)} record(s) not in the manifest:")
+        print(f"NEW: {len(new)} record(s) not in the manifest:")
         for r in new:
             print(f"  {r['id']:>10}  {str(r.get('date') or '')[:10]}  {(r.get('title') or '')[:66]}")
         print()
     else:
-        print("NEW — none. The manifest covers everything this harvest found.\n")
+        print("NEW: none. The manifest covers everything this harvest found.\n")
 
     if retry:
-        print(f"RETRY — {len(retry)} record(s) that yielded no text last time:")
+        print(f"RETRY: {len(retry)} record(s) that yielded no text last time:")
         for r in retry:
             print(f"  {r['id']:>10}  files: {r.get('fileCount', '?')}  {(r.get('title') or '')[:60]}")
         print()
@@ -79,9 +79,9 @@ def main():
     if gone:
         # A record in the manifest that the harvest no longer returns. Usually the
         # deposit was withdrawn, renamed, or dropped out of both the query and the
-        # community — worth a look, never an automatic deletion: the published
+        # community. Worth a look, never an automatic deletion: the published
         # figures were computed with it included.
-        print(f"GONE — {len(gone)} manifest record(s) this harvest did not return:")
+        print(f"GONE: {len(gone)} manifest record(s) this harvest did not return:")
         for r in gone:
             print(f"  {r['zenodo_id']:>10}  {(r.get('title') or '')[:66]}")
         print()

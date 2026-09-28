@@ -9,7 +9,7 @@
  * - impact: "low" | "medium" | "high"
  * - title: short title
  * - description: what to do (interface copy, addressed to the reader)
- * - planText: the same action as institutional first-person prose — used by the
+ * - planText: the same action as institutional first-person prose: used by the
  *   generated action-plan narrative instead of description, so the plan never
  *   addresses its own author in the imperative
  * - examples: optional real-world examples
@@ -337,7 +337,7 @@ export const ACTIONS = [
   // April 2026 calibration;
   //      per-theme prevalence lives in evidence.js, surfaced in the Results UI) ----
 
-  // EDI (Equity, Diversity, Inclusion) — found in 10/15 plans analysed
+  // EDI (Equity, Diversity, Inclusion): found in 10/15 plans analysed
   {
     commitment: "diversity",
     fromLevel: 0,
@@ -363,7 +363,7 @@ export const ACTIONS = [
     examples: ["FRQ mandatory bias module for all committee members", "SDU Mentoring for Change Programme"],
   },
 
-  // Open Science as evaluation criterion — found in 12/15 plans
+  // Open Science as evaluation criterion: found in 12/15 plans
   {
     commitment: "diversity",
     fromLevel: 0,
@@ -389,7 +389,7 @@ export const ACTIONS = [
     examples: ["AQU Catalunya action A23", "UCM open peer review module in repository", "SDU OADO indicator"],
   },
 
-  // Governance — found in 15/15 plans (universal)
+  // Governance: found in 15/15 plans (universal)
   {
     commitment: "resources",
     fromLevel: 0,
@@ -403,7 +403,7 @@ export const ACTIONS = [
     examples: ["UCM CoARA Working Group", "DCU Open Research Steering Group", "Pannonia Scientific Quality Analysis Group"],
   },
 
-  // CRIS/IT infrastructure — found in 8/15 plans
+  // CRIS/IT infrastructure: found in 8/15 plans
   {
     commitment: "review-criteria",
     fromLevel: 0,
@@ -429,7 +429,7 @@ export const ACTIONS = [
     examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
   },
 
-  // Career stage differentiation — found in 6/15 plans
+  // Career stage differentiation: found in 6/15 plans
   {
     commitment: "review-criteria",
     fromLevel: 2,
@@ -443,7 +443,7 @@ export const ACTIONS = [
     examples: ["UB differentiated review per call type (predoc, postdoc, Serra Hunter, cátedras)", "Eurodoc R1/R2/R3 mapping"],
   },
 
-  // Mentoring — found in 7/15 plans
+  // Mentoring: found in 7/15 plans
   {
     commitment: "awareness",
     fromLevel: 0,
@@ -457,7 +457,7 @@ export const ACTIONS = [
     examples: ["SDU Mentoring for Change (130 PhDs/year)", "OGS mentoring initiative", "Pannonia Group of Young Scientists"],
   },
 
-  // Ethics and integrity — found in 6/15 plans
+  // Ethics and integrity: found in 6/15 plans
   {
     commitment: "awareness",
     fromLevel: 0,
@@ -471,7 +471,7 @@ export const ACTIONS = [
     examples: ["Pannonia Committee on Research Ethics", "Hong Kong Principles", "LBG Ethics & Diversity Hub"],
   },
 
-  // Internal empirical evidence — found in 5/15 plans
+  // Internal empirical evidence: found in 5/15 plans
   {
     commitment: "collective-eval",
     fromLevel: 0,
@@ -485,7 +485,7 @@ export const ACTIONS = [
     examples: ["Helmholtz survey of 1,145 researchers", "UCLouvain 34 interviews with evaluation committees", "UCM planned periodic surveys"],
   },
 
-  // Unit-level evaluation — found in 5/15 plans
+  // Unit-level evaluation: found in 5/15 plans
   {
     commitment: "review-criteria",
     fromLevel: 2,

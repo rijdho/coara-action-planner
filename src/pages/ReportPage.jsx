@@ -18,7 +18,7 @@ function generate(lang) {
   const divergence = getDivergence();
   const threshold = getDivergenceThreshold();
   // Use the LOCALISED action catalog (title/description/planText in `lang`),
-  // like Results does — the raw English import would leak into the narrative.
+  // like Results does: the raw English import would leak into the narrative.
   const prioritised = applyPlan(prioritiseActions(getDataset(lang).ACTIONS, levels, plan.context), plan, levels, targets, divergence, threshold);
   const overallLevel = Math.round(
     Object.values(levels).reduce((a, b) => a + b, 0) / Object.values(levels).length,

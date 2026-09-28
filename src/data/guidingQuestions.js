@@ -2,7 +2,7 @@
  * The CoARA secretariat's Guiding Questions, quoted verbatim, mapped onto the
  * sections this tool generates.
  *
- * Source: "Action Plan Guidelines — Support for CoARA signatories in the preparation
+ * Source: "Action Plan Guidelines: Support for CoARA signatories in the preparation
  * of action plans", CoARA Secretariat, October 2023.
  * https://www.coara.org/wp-content/uploads/2023/10/Action-plan-guidelines-October-2023_Incl.-Table.pdf
  *
@@ -17,7 +17,7 @@
  *    "Signatories and CoARA members are not required to use the Guiding Questions,
  *    which do not serve as a rigid template but rather as a resource and suggestion."
  *    CoARA publishes no reporting or monitoring template for member action plans at
- *    all — the "Monitoring Framework" and "Output Template" that turn up in search
+ *    all: the "Monitoring Framework" and "Output Template" that turn up in search
  *    results belong to Working Groups, not to member plans. So this is an alignment
  *    aid, never a compliance claim.
  *
@@ -42,7 +42,7 @@ export const GUIDING_QUESTIONS_SOURCE = {
 };
 
 /**
- * Phase 1, "Starting Point" — three reflection points, seven questions, keyed to the
+ * Phase 1, "Starting Point": three reflection points, seven questions, keyed to the
  * report section that answers each.
  */
 export const STARTING_POINT_QUESTIONS = [
@@ -80,7 +80,7 @@ export const STARTING_POINT_QUESTIONS = [
 ];
 
 /**
- * Phase 2, "Operational action plan for a 5-year time frame" — the ten Commitments,
+ * Phase 2, "Operational action plan for a 5-year time frame": the ten Commitments,
  * keyed by this app's commitment ids. The order below is the Agreement's order, which
  * is also COMMITMENTS' order, so C-numbers line up.
  *

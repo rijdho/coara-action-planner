@@ -1,5 +1,5 @@
 /**
- * Respondent roles — the "who is giving this info" framing (lite-only).
+ * Respondent roles: the "who is giving this info" framing (lite-only).
  *
  * A self-assessment reads differently depending on who fills it out: leadership
  * tends to be more optimistic than the researchers being assessed. Tagging each
@@ -31,7 +31,7 @@ export const ROLE_IDS = ROLES.map((r) => r.id);
 /**
  * Weight each role carries when several perspectives are averaged into the
  * consolidated profile (see getConsolidatedLevels). Those who are *assessed*
- * (researchers) weigh most — their lived experience of the system is the ground
+ * (researchers) weigh most: their lived experience of the system is the ground
  * truth; senior leadership weighs a little less, as self-reports from the top
  * tend toward optimism. Everyone else is neutral. A missing role defaults to 1.
  */

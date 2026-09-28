@@ -1,7 +1,7 @@
 /**
  * Plan-stage ranking: the second half of the prioritisation method.
  *
- * `prioritiseActions` (data/actions.js) scores an action on its own merits —
+ * `prioritiseActions` (data/actions.js) scores an action on its own merits:
  * gap x impact, minus an effort penalty, plus the per-action context tag. That is
  * stage one, and it is deliberately kept re-copyable from the full app.
  *
@@ -13,7 +13,7 @@
  * The two stages both react to the selected context, by design and on purpose:
  * stage one boosts the handful of actions carrying an explicit `relevanceContext`
  * tag, stage two boosts every action under the commitments that matter most for
- * that setting. An action that satisfies both is boosted twice — see
+ * that setting. An action that satisfies both is boosted twice; see
  * CONTEXT_MAX_COMBINED_BOOST.
  */
 

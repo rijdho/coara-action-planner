@@ -282,9 +282,9 @@ export function savePlan(plan) {
   save(d);
 }
 
-// --- Report draft (the "Report" tab — user-editable narrative) ----------------
+// --- Report draft (the "Report" tab: user-editable narrative) ----------------
 
-/** { text, lang, edited } — lang/edited let us auto-refresh an untouched draft
+/** { text, lang, edited }: lang/edited let us auto-refresh an untouched draft
  *  when the user switches language, while preserving manual edits. */
 export function getReportState() {
   const d = load();
@@ -315,8 +315,8 @@ export function clearAll() {
 // --- Reproducible configuration: save / load the full input state -------------
 //
 // Captures every INPUT that determines the assessment and the generated report
-// (answers, perspectives, ambition, plan, weights) — but NOT the derived report
-// draft — into one portable, versioned object. Loading it back reproduces the
+// (answers, perspectives, ambition, plan, weights), but NOT the derived report
+// draft, into one portable, versioned object. Loading it back reproduces the
 // exact same Results + report, or gives you a base to tweak from.
 
 const CONFIG_TYPE = "reform-assessment-lite-config";
@@ -361,7 +361,7 @@ export function importConfig(obj) {
         id: typeof p?.id === "string" ? p.id : newId(),
         role: typeof p?.role === "string" ? p.role : "unspecified",
         answers,
-        // Levels are derived from answers — recompute when answers exist so the
+        // Levels are derived from answers: recompute when answers exist so the
         // profile always matches the responses; otherwise trust provided levels.
         levels: Object.keys(answers).length ? computeLevels(answers) : providedLevels,
       };
@@ -390,7 +390,7 @@ const CONFIG_MARKER = CONFIG_TYPE + ":v" + CONFIG_VERSION + ":";
  */
 export function embeddedConfigComment() {
   const json = JSON.stringify(exportConfig());
-  return `\n\n<!-- ${CONFIG_MARKER}${b64encodeUtf8(json)}\n     (this line keeps the report reproducible — Load configuration on the Start tab reads it) -->\n`;
+  return `\n\n<!-- ${CONFIG_MARKER}${b64encodeUtf8(json)}\n     (this line keeps the report reproducible: Load configuration on the Start tab reads it) -->\n`;
 }
 
 /** Extract + decode a config embedded by embeddedConfigComment(), or null. */

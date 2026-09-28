@@ -2,7 +2,7 @@
  * The calibration is what this repository publishes and what people cite, so its
  * internal consistency is pinned here rather than left to review.
  *
- * Most of these guard silent failures — a mistyped `theme` still renders, it just
+ * Most of these guard silent failures: a mistyped `theme` still renders, it just
  * quietly loses its corpus-evidence band; a `commitment` that matches nothing means
  * an action that can never be recommended. Neither shows up as an error at runtime.
  */
@@ -54,7 +54,7 @@ test('every action theme resolves to a corpus evidence band', () => {
   for (const a of ACTIONS) {
     assert.ok(a.theme, `action "${a.title}" carries a theme`)
     assert.ok(THEME_FREQUENCY[a.theme],
-      `theme "${a.theme}" (action "${a.title}") exists in THEME_FREQUENCY — ` +
+      `theme "${a.theme}" (action "${a.title}") exists in THEME_FREQUENCY: ` +
       'a typo here silently drops the "N% of the corpus" band in the UI')
   }
 })
@@ -66,7 +66,7 @@ test('planText is institutional prose, not the reader-facing description', () =>
     assert.ok(a.planText && a.planText.trim(), `action "${a.title}" has planText`)
     assert.notEqual(a.planText, a.description, `action "${a.title}": planText is not a copy of description`)
     assert.ok(!/\b(you|your|yours)\b/i.test(a.planText),
-      `action "${a.title}": planText addresses the reader — "${a.planText.slice(0, 70)}…"`)
+      `action "${a.title}": planText addresses the reader: "${a.planText.slice(0, 70)}…"`)
   }
 })
 
@@ -88,7 +88,7 @@ test('corpus evidence is internally consistent', () => {
   // Not a literal: the corpus grows at every recount, and corpus-parity.test.mjs
   // already pins CORPUS_SIZE to the measured table. Here it just has to be sane.
   assert.ok(Number.isInteger(CORPUS_SIZE) && CORPUS_SIZE >= 314,
-    'the corpus can only grow — a smaller value means a truncated recount')
+    'the corpus can only grow: a smaller value means a truncated recount')
   for (const [theme, { plans, pct }] of Object.entries(THEME_FREQUENCY)) {
     assert.ok(plans >= 0 && plans <= CORPUS_SIZE, `${theme}: plan count within the corpus`)
     assert.ok(Math.abs(pct - (100 * plans) / CORPUS_SIZE) < 0.1,

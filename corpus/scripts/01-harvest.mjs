@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * 01-harvest — fetch CoARA action plan records from Zenodo.
+ * 01-harvest: fetch CoARA action plan records from Zenodo.
  *
  * Writes <work>/index.json (the harvest manifest) and, unless --metadata-only,
  * downloads each record's documents to <work>/plans/<id>/ alongside a _meta.json.
  *
- * Zenodo is searched twice — by text query and by community — and the results are
+ * Zenodo is searched twice (by text query and by community) and the results are
  * merged and de-duplicated by record id. Neither alone is complete: plans exist that
  * were never added to the community, and the community holds records the text query
  * misses.
@@ -15,7 +15,7 @@
  *
  * Options:
  *   --work DIR        working directory (default: ./work). Holds the corpus; keep it
- *                     out of git — see the repository .gitignore.
+ *                     out of git: see the repository .gitignore.
  *   --metadata-only   fetch the index, download nothing. Run this first, then
  *                     02-diff-manifest.py, to see what is new before pulling files.
  *   --only-new        skip records already listed in data/plans.csv. This is what
@@ -36,7 +36,7 @@ const ZENODO_API = "https://zenodo.org/api/records";
 const SEARCH_QUERY = '"coara action plan"';
 const COMMUNITY = "coara_action_plans";
 const PAGE_SIZE = 25; // Zenodo API maximum
-const DELAY_MS = 500; // polite delay between requests — do not lower this
+const DELAY_MS = 500; // polite delay between requests: do not lower this
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(name);
@@ -212,7 +212,7 @@ async function main() {
       continue;
     }
     if (!r.files.some((f) => /\.(pdf|docx?)$/i.test(f.filename))) {
-      console.log(`  [${i + 1}/${records.length}] ${r.title} — no PDF/DOCX, skipping`);
+      console.log(`  [${i + 1}/${records.length}] ${r.title}: no PDF/DOCX, skipping`);
       continue;
     }
     console.log(`  [${i + 1}/${records.length}] ${r.title}`);

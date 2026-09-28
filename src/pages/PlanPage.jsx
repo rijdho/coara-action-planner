@@ -211,7 +211,7 @@ export default function PlanPage() {
         </button>
       </Section>
 
-      {/* 5. Ambition — where do you want to be? */}
+      {/* 5. Ambition: where do you want to be? */}
       <Section title={t("plan_s5_title")} hint={t("plan_s5_hint")}>
         <div className="space-y-1.5">
           {COMMITMENTS.map((c) => {

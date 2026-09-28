@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-04-theme-frequency — recompute data/theme-frequency.csv from the corpus texts.
+04-theme-frequency: recompute data/theme-frequency.csv from the corpus texts.
 
 This is the whole measurement. It is one regex match per theme per plan, counted
-at the level of "does this plan mention it at all" — deliberately blunt, and the
+at the level of "does this plan mention it at all": deliberately blunt, and the
 reason the published figures are bands rather than statistics (see README,
 "What these numbers can and cannot support").
 
@@ -60,7 +60,7 @@ def main():
             try:
                 records.append(json.loads(line))
             except json.JSONDecodeError as exc:
-                sys.exit(f"{args.corpus}:{lineno}: not valid JSON — {exc}")
+                sys.exit(f"{args.corpus}:{lineno}: not valid JSON: {exc}")
     n = len(records)
     if not n:
         sys.exit("corpus is empty: nothing to count")

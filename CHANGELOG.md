@@ -140,7 +140,7 @@ Version DOI:
 
 ### Changed
 
-- **Corpus recount: 314 → 335 plans** (2026-08-06, incremental — the 21 deposits Zenodo
+- **Corpus recount: 314 → 335 plans** (2026-08-06, incremental: the 21 deposits Zenodo
   gained since the 17 April 2026 harvest were downloaded, extracted and counted; the 314
   already-read plans were reused, not re-fetched). Every prevalence figure moved; no theme
   changed band. The tooltip that hardcoded "314 plans" in four languages now interpolates
@@ -169,16 +169,16 @@ Version DOI:
   they disagree is the thing this tool does that a written guide cannot, and it was reading
   as a settings panel.
 - **Tests for the second ranking stage** (`tests/plan.test.mjs`, 15 cases). `applyPlan`
-  filters and re-ranks everything Results and Report display — including a hard ambition
-  gate that can drop an action entirely — and had no coverage at all, which meant the
+  filters and re-ranks everything Results and Report display, including a hard ambition
+  gate that can drop an action entirely, and had no coverage at all, which meant the
   documented parity contract with the hosted engine only ever covered half the pipeline.
 - **Locale coverage tests** for the `ui` and `report` string tables. A missing key there
   falls back to English mid-paragraph, which is invisible to every other check.
-- **[`corpus/`](corpus/) — the empirical basis of the "N% of 314 plans" figures**, published
+- **[`corpus/`](corpus/): the empirical basis of the "N% of 314 plans" figures**, published
   rather than asserted: the manifest of which 314 Zenodo records were read, the 27 keyword
   signatures that define each theme, the counts they produce, and a five-step pipeline that
-  reproduces all of it. The action plans themselves are deliberately not redistributed — they
-  belong to the depositing institutions under terms each chose — so `corpus/data/plans.csv`
+  reproduces all of it. The action plans themselves are deliberately not redistributed (they
+  belong to the depositing institutions under terms each chose), so `corpus/data/plans.csv`
   locates every one instead. The pipeline is incremental: a diff against the manifest runs
   before anything is downloaded, so a quarter with no new plans costs a single API call, and
   nothing in it sends a document to a model or any third-party service.
@@ -194,8 +194,8 @@ Version DOI:
 ### Changed
 
 - **The plan-stage ranking moved from `src/lib/storage.js` to `src/data/plan.js`**, next to
-  the rest of the calibration. Half the published method — the ambition gate and the
-  context-affinity, focus, horizon, target and divergence weights — was living in the
+  the rest of the calibration. Half the published method, the ambition gate and the
+  context-affinity, focus, horizon, target and divergence weights, was living in the
   localStorage persistence module, which is not a file anyone auditing the methodology would
   open. The weights are now named constants rather than inline literals, the combined
   ceiling on the two context boosts is documented and pinned (`CONTEXT_MAX_COMBINED_BOOST`),
@@ -217,7 +217,7 @@ Version DOI:
   most plans carry their own DOI in a footer, which is the deposit having happened rather
   than the plan committing to publish itself, and counting it would have inflated the
   figure from 51 plans to 107.
-- **A test suite** — 26 tests over the prioritisation algorithm, the calibration's internal
+- **A test suite**: 26 tests over the prioritisation algorithm, the calibration's internal
   consistency, and the i18n overlays (`npm test`, Node's built-in runner, no new
   dependencies). `prioritise.test.mjs` asserts exact priority scores and doubles as the
   parity contract with the hosted sibling's engine; `calibration.test.mjs` catches the
@@ -225,12 +225,12 @@ Version DOI:
   `fromLevel`/`toLevel` window, a commitment with no entry-level action); `i18n.test.mjs`
   pins the by-array-index alignment of the three overlays. Verified non-vacuous by
   mutation: four deliberate defects were each caught.
-- `perspectives.js` documented in the README's calibration table — it holds `ROLE_WEIGHTS`,
+- `perspectives.js` documented in the README's calibration table: it holds `ROLE_WEIGHTS`,
   which is calibration, and was the one data file the table omitted.
 - Zenodo DOIs recorded across the project: concept and version DOIs in `CITATION.cff` (with a
   top-level `doi` so GitHub's "Cite this repository" widget shows it), a DOI badge under the
   README title, a `## Citation` closing section, and the DOI in the app and report footers.
-- Screenshots in the README (`docs/`) — the maturity radar and the per-commitment breakdown —
+- Screenshots in the README (`docs/`), the maturity radar and the per-commitment breakdown,
   plus `docs/screenshots.mjs`, which regenerates them by driving a full 24-question assessment.
 - A Mermaid flowchart of the five assessment steps.
 - A line stating who the tool is for, above the live link.
@@ -244,7 +244,7 @@ Version DOI:
 
 ### Removed
 
-- `p1.txt` / `p2.txt` — leftover German `planText` drafts, byte-identical to each other and
+- `p1.txt` / `p2.txt`: leftover German `planText` drafts, byte-identical to each other and
   fully superseded by `src/data/i18n/de.js`.
 
 ## [1.0.0] - 2026-07-22
@@ -257,13 +257,13 @@ Initial public release. Version DOI:
 - Five-step assessment: **Start → Questionnaire → Plan → Results → Report**.
 - 24 diagnostic questions mapped to the ten CoARA commitments, scored on a 0–5 maturity model
   (Unaware → Aware → Exploring → Planning → Implementing → Embedded).
-- *Perspectives* — answer the questionnaire once per respondent role, then consolidate the
+- *Perspectives*: answer the questionnaire once per respondent role, then consolidate the
   readings and surface where they diverge.
 - 45 recommended actions with `fromLevel`/`toLevel`/`effort`/`impact`, real institutional
   examples, and a `planText` restating each action as institutional first-person prose.
 - The `prioritiseActions` algorithm: gap size × expected impact, adjusted for effort, chosen
   institutional context and per-commitment ambition.
-- Corpus evidence — per-theme prevalence across 314 published CoARA action plans, shown as
+- Corpus evidence: per-theme prevalence across 314 published CoARA action plans, shown as
   `universal / common / emerging / frontier` bands.
 - Maturity radar, per-commitment breakdown, PNG export, and reproducible JSON config export.
 - Editable action-plan narrative with responsible unit / timeframe / indicator left blank,

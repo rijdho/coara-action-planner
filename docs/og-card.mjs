@@ -1,4 +1,4 @@
-// Regenerates public/og-card.png — the 1200x630 image link previews show
+// Regenerates public/og-card.png: the 1200x630 image link previews show
 // (LinkedIn, Bluesky, Mastodon, Slack, X). The app is client-rendered, so a
 // crawler that does not run JS sees only <head>: without this file a shared
 // link is a bare text row.
@@ -36,7 +36,7 @@ const html = `<!doctype html>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   /* No coloured top band: the family reserves coloured edges for items that carry
      a status, and brand violet never encodes meaning. The brand shows up where it
-     belongs — the eyebrow and the link — over the same paper surface as the app. */
+     belongs (the eyebrow and the link) over the same paper surface as the app. */
   body {
     width: 1200px; height: 630px; display: flex; overflow: hidden;
     font-family: 'Inter', sans-serif; background: #fbfaff; color: #1a1730;

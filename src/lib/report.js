@@ -129,7 +129,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
     w(interpolate(S.ambitionLine, { inst, targets: ambition.join("; ") }));
     w();
   }
-  // Contested commitments (perspectives diverge ≥2 levels) — align first.
+  // Contested commitments (perspectives diverge ≥2 levels): align first.
   const contested = COMMITMENTS.filter((c) => (divergence[c.id] ?? 0) >= threshold).map((c) => `C${c.number} ${c.title}`);
   if (contested.length) {
     w(interpolate(S.contestedNote, { contested: contested.join("; ") }));
@@ -144,7 +144,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
 
   let any = false;
   for (const c of COMMITMENTS) {
-    // Include every recommended action for the commitment — no silent cap. The
+    // Include every recommended action for the commitment: no silent cap. The
     // written report must match what Results shows; the draft is edited down by
     // hand, so completeness beats brevity here.
     const acts = prioritised.filter((a) => a.commitment === c.id);
@@ -183,7 +183,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
       w(
         `  - *${S.targetLabel}* ${interpolate(S.targetValue, {
           // Anchor on where the institution actually is, not on the action's
-          // eligibility threshold — prioritiseActions already guarantees
+          // eligibility threshold: prioritiseActions already guarantees
           // lvl >= a.fromLevel, so a.fromLevel says nothing about this reader.
           from: lvl,
           to: a.toLevel,

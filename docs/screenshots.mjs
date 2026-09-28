@@ -5,7 +5,7 @@
 //   npm i -D puppeteer                               # or point CHROME_PATH at an existing Chrome
 //   node docs/screenshots.mjs docs http://localhost:5173/
 //
-// Change PROFILE and the README alt text needs updating too — it describes this
+// Change PROFILE and the README alt text needs updating too: it describes this
 // specific shape.
 
 import puppeteer from 'puppeteer'
@@ -16,7 +16,7 @@ const URL = process.argv[3]
 mkdirSync(OUT, { recursive: true })
 
 // A plausible mid-maturity institution: some traction on metrics and exchange of
-// practice, little on resourcing and communication — so the radar has a real shape
+// practice, little on resourcing and communication, so the radar has a real shape
 // instead of a flat ring. Values are answer levels (L0–L5) per question.
 const PROFILE = {
   C1: [3, 2, 3, 2, 1, 2], C2: [2, 1], C3: [4, 3], C4: [3], C5: [1, 1],

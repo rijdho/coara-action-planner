@@ -13,7 +13,7 @@ export default defineConfig({
   build: {
     // esbuild (Vite's default) rather than the upstream Terser pass: toplevel
     // mangling and drop_console exist there to make the shipped code hostile to
-    // reading. Here the source is the product — minify for size, nothing more.
+    // reading. Here the source is the product: minify for size, nothing more.
     minify: "esbuild",
     sourcemap: true,
   },

@@ -36,7 +36,7 @@ test('action overlays align with ACTIONS by index', () => {
   for (const [code, L] of Object.entries(LOCALES)) {
     assert.ok(Array.isArray(L.actions), `${code}.actions is an array`)
     assert.equal(L.actions.length, ACTIONS.length,
-      `${code} has ${L.actions.length} action translations for ${ACTIONS.length} actions — ` +
+      `${code} has ${L.actions.length} action translations for ${ACTIONS.length} actions: ` +
       'index alignment is broken and every later translation is on the wrong action')
     for (const [i, a] of L.actions.entries()) {
       assert.ok(a.title?.trim(), `${code} action ${i}: title is present`)
@@ -52,7 +52,7 @@ test('translated planText stays free of second-person address', () => {
   for (const [code, L] of Object.entries(LOCALES)) {
     for (const [i, a] of L.actions.entries()) {
       assert.ok(!YOU[code].test(a.planText),
-        `${code} action ${i} planText addresses the reader — "${a.planText.slice(0, 70)}…"`)
+        `${code} action ${i} planText addresses the reader: "${a.planText.slice(0, 70)}…"`)
     }
   }
 })
@@ -85,7 +85,7 @@ test('keyed overlays match the source ids exactly, with no strays', () => {
 
 test('a locale is not silently left as untranslated English', () => {
   // Proper nouns and short labels legitimately match English, so this only fails
-  // when a whole file looks like a copy — the signature of an overlay that was
+  // when a whole file looks like a copy: the signature of an overlay that was
   // stubbed out and never filled in.
   for (const [code, L] of Object.entries(LOCALES)) {
     const identical = L.actions.filter((a, i) => a.title === ACTIONS[i].title).length
@@ -96,7 +96,7 @@ test('a locale is not silently left as untranslated English', () => {
 
 test('the report and UI string tables are fully covered in every locale', () => {
   // These two overlays are plain key maps, so a missing key does not misalign
-  // anything — it silently falls back to English mid-paragraph, which reads as a
+  // anything: it silently falls back to English mid-paragraph, which reads as a
   // translation bug to the user and is invisible here without this check.
   for (const [table, EN, name] of [['report', REPORT_EN, 'report'], ['ui', UI_EN, 'ui']]) {
     const keys = Object.keys(EN)

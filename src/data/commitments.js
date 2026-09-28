@@ -1,5 +1,5 @@
 /**
- * CoARA Agreement on Reforming Research Assessment — 10 Commitments
+ * CoARA Agreement on Reforming Research Assessment: 10 Commitments
  * Source: https://coara.org/agreement/the-commitments/
  * Full text: https://doi.org/10.5281/zenodo.13480728
  *

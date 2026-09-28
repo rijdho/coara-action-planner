@@ -17,7 +17,7 @@ import { svgToPng, resolveColor } from "../lib/exportChart";
  *
  * Backwards-compatible simple mode: pass `levels` (+ optional `comparison`).
  * Multi-series mode: pass `series` = [{ key, name, levels, color, dash, fill, width }]
- * to overlay several polygons — used on Results to show each respondent perspective
+ * to overlay several polygons, used on Results to show each respondent perspective
  * plus the target (ambition) polygon. `target` is a shorthand for one dashed series.
  *
  * This file is the recharts implementation and is loaded through the lazy boundary in

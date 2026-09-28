@@ -8,7 +8,7 @@ import {
   exportConfig, importConfig, parseConfigFromText, clearAll,
 } from "../lib/storage";
 
-/** The three vantage points that most often disagree — offered as one-click set-up. */
+/** The three vantage points that most often disagree: offered as one-click set-up. */
 const QUICK_ROLES = ["leadership", "research-office", "researcher"];
 
 function Lens({ badge, title, desc }) {
@@ -70,7 +70,7 @@ export default function StartPage() {
       try {
         const j = JSON.parse(raw);
         if (j && typeof j === "object") obj = j;
-      } catch { /* not JSON — try embedded */ }
+      } catch { /* not JSON: try embedded */ }
       if (!obj) obj = parseConfigFromText(raw);
       if (!obj) { setCfgMsg({ ok: false, text: t("cfg_loadError", { msg: "no configuration found" }) }); return; }
       const res = importConfig(obj);
@@ -95,7 +95,7 @@ export default function StartPage() {
   const handleAdd = () => { addPerspective("unspecified"); refresh(); };
   /**
    * One-click set-up. If the only perspective is an untouched "Unspecified"
-   * placeholder, it is replaced rather than left behind — otherwise the first click
+   * placeholder, it is replaced rather than left behind: otherwise the first click
    * leaves the user with an empty row they did not ask for.
    */
   const quickAdd = (role) => {
@@ -148,7 +148,7 @@ export default function StartPage() {
         />
       </div>
 
-      {/* Perspectives — the one thing here a written guide cannot do. Prominence
+      {/* Perspectives: the one thing here a written guide cannot do. Prominence
           comes from the eyebrow and the lead paragraph, never from a coloured left
           border: that 3px rule belongs to status-carrying items, and brand violet
           must not encode meaning. Same 1px hairline as every other card. */}

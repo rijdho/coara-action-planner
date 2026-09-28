@@ -1,12 +1,12 @@
 /**
- * prioritiseActions — the algorithm is the product, so its behaviour is pinned here.
+ * prioritiseActions: the algorithm is the product, so its behaviour is pinned here.
  *
  * These assertions double as the parity contract with the server-side engine that
  * powers the hosted sibling: the same inputs must yield the same ordering and the
  * same scores on both sides. A change that moves a number here should be mirrored
  * there, or documented as a deliberate divergence.
  *
- * The algorithm cases use synthetic actions on purpose — recalibrating the real
+ * The algorithm cases use synthetic actions on purpose: recalibrating the real
  * catalog must not be able to break tests that are about the maths. The real
  * catalog is exercised separately at the bottom.
  */
@@ -33,7 +33,7 @@ test('recommends only actions whose window contains the current level', () => {
   const at = lvl => prioritiseActions([a], { diversity: lvl }).length
 
   assert.equal(at(1), 0, 'below fromLevel: institution is not ready for it yet')
-  assert.equal(at(2), 1, 'at fromLevel: included — the boundary is inclusive')
+  assert.equal(at(2), 1, 'at fromLevel: included; the boundary is inclusive')
   assert.equal(at(3), 1, 'inside the window')
   assert.equal(at(4), 0, 'at toLevel: already achieved, nothing left to recommend')
   assert.equal(at(5), 0, 'past toLevel')

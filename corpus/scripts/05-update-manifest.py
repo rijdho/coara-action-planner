@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-05-update-manifest — regenerate the published manifest from the working corpus.
+05-update-manifest: regenerate the published manifest from the working corpus.
 
 Rewrites data/plans.csv (every record that yielded text) and
 data/harvested-not-analysed.csv (every record the harvest returned that did not),
@@ -11,7 +11,7 @@ two CSVs in data/ are outputs of the pipeline, not artefacts anyone edits. It is
 last step of an update, after 03-extract-text and alongside 04-theme-frequency.
 
 The split matters. A harvested record with no extractable text is not dropped
-silently — it is listed, with its file count, so that the difference between "this
+silently: it is listed, with its file count, so that the difference between "this
 plan does not mention resourcing" and "we could not read this plan" stays visible to
 anyone citing the figures.
 
@@ -52,7 +52,7 @@ def main():
     index_path, corpus_path = work / "index.json", work / "corpus.jsonl"
     for p in (index_path, corpus_path):
         if not p.exists():
-            sys.exit(f"{p} not found — run 01-harvest.mjs and 03-extract-text.py first")
+            sys.exit(f"{p} not found; run 01-harvest.mjs and 03-extract-text.py first")
 
     index = json.loads(index_path.read_text(encoding="utf-8"))
     recs = {str(r["id"]): r for r in index["records"]}
@@ -122,7 +122,7 @@ def main():
         print(f"Wrote {path.relative_to(ROOT)}")
 
     print("\nRemember: CORPUS_SIZE is now "
-          f"{len(plans_rows)} — update corpus/README.md's harvest date and counts, then "
+          f"{len(plans_rows)}. Update corpus/README.md's harvest date and counts, then "
           "propagate CORPUS_SIZE + THEME_FREQUENCY into src/data/evidence.js. "
           "tests/corpus-parity.test.mjs fails until you do.")
 

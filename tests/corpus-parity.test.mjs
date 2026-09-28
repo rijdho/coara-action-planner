@@ -23,7 +23,7 @@ import { ACTIONS } from '../src/data/actions.js'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 
 /**
- * CSV reader handling the quoting these files actually use — titles and author lists
+ * CSV reader handling the quoting these files actually use: titles and author lists
  * contain commas, so splitting on `,` silently shifts every later column and reads
  * one field's value as another's.
  */
@@ -97,7 +97,7 @@ test('percentages are consistent with the counts they came from', () => {
 
 test('every theme an action carries is one the corpus measured', () => {
   // The same guarantee calibration.test.mjs makes against evidence.js, made here
-  // against the measurement itself — so an action tagged with a theme that was never
+  // against the measurement itself, so an action tagged with a theme that was never
   // counted cannot reach Results with a blank evidence band.
   const measured = new Set(frequency.map((r) => r.theme))
   const orphans = [...new Set(ACTIONS.map((a) => a.theme))].filter((t) => t && !measured.has(t))
@@ -109,7 +109,7 @@ test('the keyword signatures cover exactly the themes that were counted', () => 
   const defined = new Set(Object.keys(keywords.themes))
   const measured = new Set(frequency.map((r) => r.theme))
   assert.deepEqual([...measured].filter((t) => !defined.has(t)), [],
-    'counted with a signature that is not published — the figure cannot be reproduced')
+    'counted with a signature that is not published: the figure cannot be reproduced')
   assert.deepEqual([...defined].filter((t) => !measured.has(t)), [],
     'a published signature that no figure came from')
 })

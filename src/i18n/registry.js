@@ -1,7 +1,7 @@
 /**
  * Language registry (pure, no React) for reform-assessment-lite.
  *
- * The English data files (src/data/*.js) remain the canonical source of truth —
+ * The English data files (src/data/*.js) remain the canonical source of truth:
  * still re-copyable verbatim from the full reform-assessment app. Each non-English
  * language ships a single overlay (src/data/i18n/<lang>.js) that is merged on top,
  * field by field, with English as the fallback for anything missing. This keeps the
