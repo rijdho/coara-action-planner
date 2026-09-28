@@ -90,7 +90,8 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 |---|---|
 | [`questions.js`](src/data/questions.js) | 24 diagnostic questions, each with 0–5 answer options mapped to a commitment |
 | [`commitments.js`](src/data/commitments.js) | the ten CoARA commitments + the 6-level maturity model |
-| [`actions.js`](src/data/actions.js) | 47 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, real institutional examples, and a `planText`, the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
+| [`actions.js`](src/data/actions.js) | 61 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, the `frameworks` it puts into practice, real institutional examples, and a `planText`, the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
+| [`frameworks.js`](src/data/frameworks.js) | the DORA recommendations, Leiden Manifesto principles and SCOPE stages and principles an action can be tagged with, each linked to its source |
 | [`plan.js`](src/data/plan.js) | the **second** ranking stage: the ambition gate, the high-effort filter, and every plan-setting weight (context affinity, focus, horizon, target, divergence) **and** the `applyPlan` function |
 | [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 335-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 335 plans" on Results), measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
 | [`guidingQuestions.js`](src/data/guidingQuestions.js) | the CoARA Secretariat's 19 guiding questions, quoted verbatim and mapped onto the report's sections |
@@ -107,13 +108,30 @@ the output of both, so both are pinned by tests.
 
 One consequence worth stating plainly: choosing an institutional context can move a single
 action by at most **+4**: +2 if the action carries that context tag, +2 more if its
-commitment is one the context prioritises. That is less than a full maturity step at high
-impact, so context re-orders actions within a band rather than overriding the assessment.
-The ceiling is a named constant and a test, not an accident.
+commitment is one the context prioritises. At high impact one level of gap is worth 3, so
+context can lift an action past one that is a single level further from its target, but not
+past one two or more levels further. It re-orders neighbours; it does not override the
+assessment. The ceiling is a named constant and a test, not an accident.
 
 The questions and actions were hand-calibrated by reading 15 real institutional action plans
 (UCM, Helmholtz, DCU, UCLouvain, AQU Catalunya, FRQ, LBG, SocRSE, Eurodoc, YUFE/UNIRI, UB, UPC,
-OGS, SDU, U. Pannonia) and cross-checked against a corpus of published CoARA action plans from Zenodo: 314 at the April 2026 calibration, 335 as of the August 2026 recount.
+OGS, SDU, U. Pannonia) and cross-checked against a corpus of published CoARA action plans
+from Zenodo: 314 at the April 2026 calibration, 335 as of the August 2026 recount.
+
+In September 2026 the catalogue grew from 47 to 61 actions. Twelve came from reading 40 of
+the published plans in full: every action a plan commits to was extracted with a verbatim
+quote, each quote was checked against the plan's text by string match, and an independent
+pass tried to refute each record. Actions that recurred in five or more of the 40 plans and
+that no catalogue action covered were added; near-duplicates were merged first, and seven
+existing actions were widened instead of gaining a sibling. Two more ("Let researchers verify
+the data used to assess them", "Evaluate only where necessary") come from the Leiden Manifesto
+and SCOPE rather than from the plans, which rarely take them yet, and are marked as such.
+
+Each action also names the DORA recommendations, Leiden principles and SCOPE stages or
+principles it puts into practice, read against those texts. Many carry none: DORA and Leiden
+say what to value and what to stop using, and say little about how an institution organises
+the change, which is where most of CoARA's process actions sit.
+
 It is offered as a starting point to inspect and adapt, not as an authoritative scoring (see
 *Caveats*).
 
@@ -173,6 +191,11 @@ without inserting one at the same position in both overlays shifts every later
 translation onto the wrong action. Nothing throws, the app just shows the wrong text in
 three languages.
 
+`frameworks.test.mjs` treats a framework tag as a claim about a published text: every tag
+must name a recommendation or principle that exists (Leiden has exactly ten, SCOPE five
+stages and three principles), and the number of actions tagged per framework is pinned, so
+changing the tagging is a visible edit rather than a drift.
+
 `chart-boundary.test.mjs` keeps the charting library out of the entry bundle. recharts and
 its dependency tree are the heaviest thing this app ships and only two of the five routes
 draw a chart, so the implementation sits behind a `React.lazy` boundary. That split rests
@@ -207,6 +230,9 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
   publishes which plans were read, the exact keyword signature behind every theme, and the
   pipeline that reproduces the counts, so the figures can be checked rather than trusted,
   and recounted: the loop is incremental, and the last recount ran on 6 August 2026.
+  For the eleven themes added in September 2026, [`corpus/README.md`](corpus/README.md) also
+  says how many of the plans where a full reading found the action each signature catches;
+  for some it is under half, so those figures are floors.
 - **The guiding questions are a resource, not a template.** CoARA publishes no reporting or
   action-plan template for members, and the guidelines say the guiding questions "do not serve
   as a rigid template but rather as a resource and suggestion". Printing them beside each

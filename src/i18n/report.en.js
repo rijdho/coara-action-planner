@@ -49,6 +49,7 @@ export const REPORT_EN = {
   targetLabel: "Progression:",
   targetValue: "Level {from} → {to} · effort {effort} · expected impact {impact}",
   referenceLabel: "Reference practice:",
+  frameworksLabel: "Frameworks it puts into practice:",
   responsibleLabel: "Responsible:",
   responsiblePlaceholder: "[e.g. CoARA Working Group / Vice-Rector for Research / relevant office]",
   timeframeLabel: "Timeframe:",

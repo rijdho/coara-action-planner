@@ -182,6 +182,7 @@ export const UI_EN = {
   res_filterHigh: "High impact",
   res_noMatch: 'No actions match this filter. Try "All actions".',
   res_examples: "Examples:",
+  res_frameworks: "Puts into practice:",
   res_corpus: "{pct}% of {n} plans",
   res_corpusTitle: "Share of the {n} published CoARA action plans whose full text matches this action's theme (keyword-based, directional)",
   ev_universal: "Near-universal in existing plans",

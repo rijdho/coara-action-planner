@@ -10,7 +10,34 @@ latest release.
 
 ## [Unreleased]
 
+### Added
+
+- **Fourteen actions, from 47 to 61.** Twelve come from reading 40 published plans in full
+  (every action extracted with a verbatim quote, the quotes checked against the text, each
+  record challenged by an independent pass) and recurring in at least five of them: keeping the
+  reform on the agenda of governing bodies, written guidance for evaluators and referees,
+  publishing criteria and giving feedback, a communication plan with a regular update, distinct
+  career paths, a standing channel for researcher participation, evaluating reformed
+  procedures, co-designing criteria, supporting open science practice, an institution's own
+  responsible-assessment and metrics policy, preparing the people being assessed, and staff
+  development conversations. Two come from the Leiden Manifesto (principle 5, letting
+  researchers verify their data) and SCOPE (evaluate only where necessary), which few plans
+  take yet. All are appended, so earlier actions keep their positions and translations.
+- **Framework tags.** Each action names the DORA recommendations, Leiden principles and SCOPE
+  stages or principles it puts into practice; Results and the report show them with links to
+  the sources. `tests/frameworks.test.mjs` checks that every tag exists and pins the counts.
+- **Eleven corpus themes (27 to 38)** for the new actions, each signature calibrated against
+  the full reading; `corpus/README.md` publishes how many of the plans where the reading found
+  the action each one catches. Adding them changed no existing count.
+
 ### Changed
+
+- Seven actions widened instead of gaining near-duplicates: A03 credits team, collegial and
+  evaluation work; A16 adapts national matrices (NOR-CAM, FIN-CAM) and carries rubrics into job
+  ads and calls; A20 includes collaborative reform projects; A21 includes university alliances;
+  A25 draws on research on research; A32 staffs the support services; A34 adds training.
+- The README's account of the context ceiling was wrong: +4 is more than one level of gap at
+  high impact (3), not less. It now says what the code does.
 
 - Punctuation tidied in the interface, the generated report and the calibration texts, in
   English, German and Spanish. Wording only; no level, weight or score changed.

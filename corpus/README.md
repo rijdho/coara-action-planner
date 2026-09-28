@@ -14,7 +14,7 @@ one part of that claim a reader has to take on faith.
 | File | What it holds |
 |---|---|
 | [`data/plans.csv`](data/plans.csv) | the 335 analysed plans: Zenodo id, DOI, URL, title, creators, publication date, and how many characters of text were extracted from each |
-| [`data/theme-keywords.csv`](data/theme-keywords.csv) / [`.json`](data/theme-keywords.json) | the 27 themes and the case-insensitive regular expression that defines each |
+| [`data/theme-keywords.csv`](data/theme-keywords.csv) / [`.json`](data/theme-keywords.json) | the 38 themes and the case-insensitive regular expression that defines each |
 | [`data/theme-frequency.csv`](data/theme-frequency.csv) | per theme: plans matched, percentage, total hits, and prevalence band |
 | [`data/harvested-not-analysed.csv`](data/harvested-not-analysed.csv) | the 2 harvested records that are not in the analysed set |
 | [`scripts/`](scripts/) | the five pipeline steps, from Zenodo harvest to regenerated manifest (see *Updating the corpus*) |
@@ -75,6 +75,38 @@ theme deliberately does **not** match a bare "zenodo": nearly every plan carries
 Zenodo DOI in a footer, which records that the deposit happened rather than that the plan
 commits to publishing itself. Including it took the theme from 51 plans to 107, more than
 doubling it on an artefact of the citation line.
+
+## Themes added in September 2026
+
+Eleven signatures were added for the actions that joined the catalogue in September 2026.
+Nine of those actions were found by reading 40 plans in full rather than by keyword: every
+action a plan commits to was extracted with a verbatim quote, the quotes were checked against
+the text by string match, and an independent pass tried to refute each record. That reading
+also gives each new signature something to be calibrated against: of the plans in the 40
+where the reading found the action, how many does the keyword signature catch?
+
+| Theme | Plans matched (of 335) | Caught, of the plans where the reading found it |
+|---|---|---|
+| `career-paths` | 142 | 11 of 12 |
+| `community-feedback` | 92 | 6 of 11 |
+| `evaluator-guidance` | 74 | 10 of 16 |
+| `leadership-agenda` | 60 | 11 of 15 |
+| `co-design` | 59 | 4 of 9 |
+| `appraisal` | 58 | 4 of 6 |
+| `criteria-transparency` | 45 | 5 of 12 |
+| `rra-policy` | 39 | 7 of 11 |
+| `evaluate-reform` | 30 | 5 of 10 |
+| `assessment-load` | 10 | none found by the reading |
+| `data-verification` | 0 | none found by the reading |
+
+Read the second column as the size of the undercount, not as a score. Plans describe these
+actions in many wordings and several languages ("Evaluierung der erweiterten
+Einstellungskriterien", "Presentación ... en el Consejo de Gobierno"), and no single regular
+expression catches them all: `co-design` and `criteria-transparency` find fewer than half.
+The keyword figure for these themes is a floor. The last two themes belong to actions that
+DORA, the Leiden Manifesto or SCOPE ask for and that few plans take yet; their near-zero
+prevalence is the finding, not a failure of the signature. Adding the eleven changed no count
+for the 27 themes that already existed.
 
 ## What these numbers can and cannot support
 

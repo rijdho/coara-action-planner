@@ -181,6 +181,7 @@ export default {
     res_filterHigh: "Hohe Wirkung",
     res_noMatch: "Keine Maßnahmen entsprechen diesem Filter. Versuchen Sie „Alle Maßnahmen“.",
     res_examples: "Beispiele:",
+    res_frameworks: "Setzt um:",
     res_corpus: "{pct} % von {n} Plänen",
     res_corpusTitle: "Anteil der {n} veröffentlichten CoARA-Aktionspläne, deren Volltext dem Thema dieser Maßnahme entspricht (stichwortbasiert, orientierend)",
     ev_universal: "Nahezu universell in bestehenden Plänen",
@@ -266,6 +267,7 @@ export default {
     targetLabel: "Fortschritt:",
     targetValue: "Stufe {from} → {to} · Aufwand {effort} · erwartete Wirkung {impact}",
     referenceLabel: "Referenzpraxis:",
+    frameworksLabel: "Umgesetzte Rahmenwerke:",
     responsibleLabel: "Verantwortlich:",
     responsiblePlaceholder: "[z. B. CoARA-Arbeitsgruppe / Vizerektorat für Forschung / zuständige Stelle]",
     timeframeLabel: "Zeitrahmen:",
@@ -741,8 +743,8 @@ export default {
     },
     {
       title: "Vielfältige Forschungsleistungen in allen Bewertungsverfahren verankern",
-      description: "Überarbeiten Sie alle Kriterien für Einstellung, Beförderung, Tenure und Förderung, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten. Stellen Sie sicher, dass Bewertende darin geschult sind, sie zu beurteilen.",
-      planText: "Wir werden alle Kriterien für Einstellung, Beförderung, Tenure und Förderung überarbeiten, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten, und sicherstellen, dass Bewertende darin geschult sind, sie zu beurteilen.",
+      description: "Überarbeiten Sie alle Kriterien für Einstellung, Beförderung, Tenure und Förderung, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit neben individuellen Leistungen anzuerkennen. Stellen Sie sicher, dass Bewertende darin geschult sind, sie zu beurteilen.",
+      planText: "Wir werden alle Kriterien für Einstellung, Beförderung, Tenure und Förderung überarbeiten, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit neben individuellen Leistungen anzuerkennen, und sicherstellen, dass Bewertende darin geschult sind, sie zu beurteilen.",
     },
     {
       title: "Modelle narrativer Lebensläufe untersuchen",
@@ -807,8 +809,8 @@ export default {
     },
     {
       title: "Bewertungsrubriken neu gestalten",
-      description: "Erstellen Sie auf Grundlage der Prüfungsergebnisse neue Rubriken, die vielfältige Beiträge, qualitative Belege und die Ausrichtung am Auftrag der Einrichtung betonen. Erproben und anpassen.",
-      planText: "Auf Grundlage der Prüfungsergebnisse werden wir neue Rubriken erstellen, die vielfältige Beiträge, qualitative Belege und die Ausrichtung an unserem institutionellen Auftrag betonen, und sie schrittweise erproben und anpassen.",
+      description: "Erstellen Sie auf Grundlage der Prüfungsergebnisse neue Rubriken, die vielfältige Beiträge, qualitative Belege und die Ausrichtung am Auftrag der Einrichtung betonen. Wo eine nationale oder vergleichbare Bewertungsmatrix existiert (NOR-CAM, FIN-CAM), passen Sie diese an, statt bei null zu beginnen. Erproben und anpassen, dann in das übertragen, was Bewerbende tatsächlich sehen: Ausschreibungstexte, Formulare und Ausschreibungsbedingungen.",
+      planText: "Auf Grundlage der Prüfungsergebnisse werden wir neue Rubriken erstellen, die vielfältige Beiträge, qualitative Belege und die Ausrichtung an unserem institutionellen Auftrag betonen, dabei eine vorhandene nationale Matrix anpassen, sie schrittweise erproben und anpassen und in Ausschreibungstexte, Formulare und Ausschreibungsbedingungen übertragen.",
     },
     {
       title: "Periodischen Zyklus zur Kriterienüberprüfung etablieren",
@@ -827,14 +829,14 @@ export default {
     },
     {
       title: "Thematischen CoARA-Arbeitsgruppen und Action Clusters beitreten",
-      description: "Unterzeichnen Sie die CoARA-Vereinbarung (falls noch nicht geschehen) und wählen Sie 1–2 thematische Arbeitsgruppen oder Action Clusters, die zu Ihren Prioritäten passen (SSH, EMCRs, Peer Review, RMI, OI4RRA, ERIP usw.). Für geografische Foren (CoARA National Chapters, IRAF, AFRA, AOSP) siehe die eigene Maßnahme unten.",
-      planText: "Wir werden ein oder zwei thematischen CoARA-Arbeitsgruppen oder Action Clusters beitreten, die zu unseren Prioritäten passen (etwa SSH, EMCRs, Peer Review, RMI, OI4RRA oder ERIP), und uns an ihrem Austausch beteiligen.",
+      description: "Unterzeichnen Sie die CoARA-Vereinbarung (falls noch nicht geschehen) und wählen Sie 1–2 thematische Arbeitsgruppen oder Action Clusters, die zu Ihren Prioritäten passen (SSH, EMCRs, Peer Review, RMI, OI4RRA, ERIP usw.). Auch kooperative Reformprojekte zählen: ein von CoARA oder der EU gefördertes Projekt oder eine Arbeitsgruppe einer Initiative außerhalb der Koalition. Für geografische Foren (CoARA National Chapters, IRAF, AFRA, AOSP) siehe die eigene Maßnahme unten.",
+      planText: "Wir werden ein oder zwei thematischen CoARA-Arbeitsgruppen oder Action Clusters beitreten, die zu unseren Prioritäten passen (etwa SSH, EMCRs, Peer Review, RMI, OI4RRA oder ERIP) oder einem kooperativen Reformprojekt beitreten und uns an ihrem Austausch beteiligen.",
       examples: ["WG SSH", "WG EMCRs", "WG Peer Review", "WG OI4RRA", "WG ERIP"],
     },
     {
       title: "Peer-Learning-Aktivitäten mitorganisieren",
-      description: "Schließen Sie sich mit anderen Unterzeichnenden zusammen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren. Teilen Sie Ihre Umsetzungserfahrung, sowohl Erfolge als auch Misserfolge.",
-      planText: "Wir werden uns mit anderen Unterzeichnenden zusammenschließen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren, und unsere Umsetzungserfahrung teilen, Erfolge wie Misserfolge.",
+      description: "Schließen Sie sich mit anderen Unterzeichnenden zusammen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren. Gehören Sie einer Europäischen Hochschulallianz oder einem internationalen Netzwerk an, bringen Sie die Bewertungsreform auch dort auf die Tagesordnung. Teilen Sie Ihre Umsetzungserfahrung, sowohl Erfolge als auch Misserfolge.",
+      planText: "Wir werden uns mit anderen Unterzeichnenden sowie mit den Hochschulallianzen und Netzwerken, denen wir angehören, zusammenschließen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren, und unsere Umsetzungserfahrung teilen, Erfolge wie Misserfolge.",
     },
     {
       title: "Fortschrittsindikatoren definieren",
@@ -853,8 +855,8 @@ export default {
     },
     {
       title: "Benchmarking-Studien leiten oder zu ihnen beitragen",
-      description: "Teilen Sie anonymisierte Bewertungsdaten mit Partnereinrichtungen. Beteiligen Sie sich an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg oder initiieren Sie solche.",
-      planText: "Wir werden anonymisierte Bewertungsdaten mit Partnereinrichtungen teilen und uns an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg beteiligen oder solche initiieren.",
+      description: "Teilen Sie anonymisierte Bewertungsdaten und, wo sinnvoll, Ihre Methoden und Werkzeuge mit Partnereinrichtungen. Beteiligen Sie sich an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg oder initiieren Sie solche, und stützen Sie sich auf Wissenschaftsforschung: Beziehen Sie die Forschenden Ihrer Einrichtung ein, die Bewertung untersuchen.",
+      planText: "Wir werden anonymisierte Bewertungsdaten und, wo sinnvoll, unsere Methoden und Werkzeuge mit Partnereinrichtungen teilen, uns an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg beteiligen oder solche initiieren und uns auf Wissenschaftsforschung stützen, auch auf die unserer eigenen Forschenden.",
     },
     {
       title: "Bewertungsverfahren auf EDI-Lücken prüfen",
@@ -894,8 +896,8 @@ export default {
     },
     {
       title: "Infrastruktur ausbauen, um die reformierte Bewertung zu unterstützen",
-      description: "Implementieren oder erweitern Sie ein CRIS, integrieren Sie ORCID, setzen Sie Datenrepositorien ein, verbinden Sie Systeme mit den Bewertungsabläufen. Stellen Sie sicher, dass die Infrastruktur erfasst, was die neuen Kriterien erfordern.",
-      planText: "Wir werden unsere Forschungsinformationsinfrastruktur implementieren oder ausbauen (CRIS, ORCID-Integration, Datenrepositorien) und sie mit den Bewertungsabläufen verbinden, damit sie erfasst, was die neuen Kriterien erfordern.",
+      description: "Implementieren oder erweitern Sie ein CRIS, integrieren Sie ORCID, setzen Sie Datenrepositorien ein, verbinden Sie Systeme mit den Bewertungsabläufen und statten Sie die unterstützenden Dienste personell aus (ein Open-Access-Team, Data Stewards). Stellen Sie sicher, dass die Infrastruktur erfasst, was die neuen Kriterien erfordern.",
+      planText: "Wir werden unsere Forschungsinformationsinfrastruktur implementieren oder ausbauen (CRIS, ORCID-Integration, Datenrepositorien), die unterstützenden Dienste personell ausstatten und sie mit den Bewertungsabläufen verbinden, damit sie erfasst, was die neuen Kriterien erfordern.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
@@ -906,8 +908,8 @@ export default {
     },
     {
       title: "Mentoring-Programme für Early-Career-Forschende einrichten",
-      description: "Schaffen Sie ein strukturiertes Mentoring, das Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: wie man ein Portfolio aufbaut, einen narrativen Lebenslauf schreibt, vielfältige Beiträge nachweist. Binden Sie erfahrene Forschende als Mentorinnen und Mentoren ein.",
-      planText: "Wir werden ein strukturiertes Mentoring mit erfahrenen Forschenden als Mentorinnen und Mentoren schaffen, das Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: ein Portfolio aufbauen, einen narrativen Lebenslauf schreiben und vielfältige Beiträge nachweisen.",
+      description: "Schaffen Sie strukturiertes Mentoring und Schulungen, die Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: wie man ein Portfolio aufbaut, einen narrativen Lebenslauf schreibt, vielfältige Beiträge nachweist. Binden Sie erfahrene Forschende als Mentorinnen und Mentoren ein.",
+      planText: "Wir werden strukturiertes Mentoring und Schulungen mit erfahrenen Forschenden als Mentorinnen und Mentoren schaffen, die Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: ein Portfolio aufbauen, einen narrativen Lebenslauf schreiben und vielfältige Beiträge nachweisen.",
       examples: ["SDU Mentoring for Change (130 PhDs/year)", "OGS mentoring initiative", "Pannonia Group of Young Scientists"],
     },
     {
@@ -984,6 +986,76 @@ export default {
       title: "Den Aktionsplan veröffentlichen und archivieren",
       description: "Stellen Sie den Plan dorthin, wo andere ihn finden, lesen und zitieren können: auf die eigene Website und in ein Archiv, das einen persistenten Identifikator vergibt (die meisten CoARA-Unterzeichnenden nutzen Zenodo). Das kostet fast nichts, erlaubt vergleichbaren Einrichtungen, Ihre Formulierungen zu übernehmen statt bei null anzufangen, und hat das Korpus hinter diesem Werkzeug überhaupt erst möglich gemacht.",
       planText: "Wir werden unseren Aktionsplan auf unserer eigenen Website veröffentlichen und ihn in einem offenen Archiv mit persistentem Identifikator hinterlegen, damit vergleichbare Einrichtungen ihn finden, zitieren und darauf aufbauen können.",
+    },
+    {
+      title: "Die Reform auf der Tagesordnung der Leitungsgremien halten",
+      description: "Den Aktionsplan auf die Tagesordnung der Gremien setzen, die die Einrichtung führen (Leitungsteam, Senat, Hochschulrat, Forschungskommission, Dekanerunde), und in festen Abständen mit einem kurzen Fortschrittsbericht zurückkommen. Die formale Genehmigung gibt dem Plan einmal ein Mandat; ein fester Tagesordnungspunkt hält diejenigen informiert und in der Verantwortung, die Budgets vergeben und Kriterien festlegen.",
+      planText: "Wir werden den Aktionsplan unseren Leitungsgremien vorstellen und ihnen in festen Abständen kurz über den Fortschritt berichten, damit diejenigen, die Budgets vergeben und Kriterien festlegen, informiert und in der Verantwortung bleiben.",
+    },
+    {
+      title: "Schriftliche Leitfäden für Bewertende und externe Gutachtende herausgeben",
+      description: "Leitfäden für den Moment der Bewertung: wie ein narrativer Lebenslauf zu lesen ist, wie vielfältige Beiträge zu gewichten sind, was nicht verwendet werden darf (Impact-Faktor, h-Index, Quartile, Rankings) und wie verbleibende Zahlen das Urteil stützen können, ohne es zu ersetzen. Sie gehen mit jedem Verfahren hinaus, auch an externe Gutachtende, die nie an einer Schulung teilnehmen, und werden bei jeder Änderung der Kriterien aktualisiert.",
+      planText: "Wir werden Leitfäden für Bewertende und externe Gutachtende zur Bewertung nach den reformierten Kriterien und zu nicht zulässigen Indikatoren verfassen, sie jedem Verfahren beilegen und bei Änderungen der Kriterien aktualisieren.",
+    },
+    {
+      title: "Bewertungskriterien veröffentlichen und den Bewerteten Rückmeldung geben",
+      description: "Kriterien, Indikatoren und Verfahren für Einstellung, Beförderung und interne Bewertung werden dort veröffentlicht, wo Bewerbende und Beschäftigte sie vor der Bewertung lesen können: auf der Website für Berufungen und Einstellungen, im Intranet für interne Verfahren. Nach jeder Entscheidung erfahren die Bewerteten, im Rahmen der Vertraulichkeit, welche Kriterien angewandt wurden und mit welchem Ergebnis. Ein Kriterium, das niemand einsehen kann, lässt sich nicht einfordern.",
+      planText: "Wir werden die Kriterien, Indikatoren und Verfahren für Einstellung, Beförderung und interne Bewertung veröffentlichen, bevor jemand danach bewertet wird, und Bewerbenden wie Beschäftigten Rückmeldung zu ihrer Anwendung geben.",
+    },
+    {
+      title: "Einen Kommunikationsplan mit regelmäßigem internem Update erstellen",
+      description: "Festlegen, wer was erfahren muss (Forschende, Bewertende, Verwaltung, Leitung, Partner), über welche Kanäle, wie oft und in wessen Verantwortung. Dazu ein fester Rhythmus, etwa eine vierteljährliche Intranet-Zusammenfassung der Änderungen an Kriterien und Verfahren, archiviert auf der CoARA-Seite, und ein Rückweg, über den Beschäftigte die Arbeitsgruppe erreichen.",
+      planText: "Wir werden einen Kommunikationsplan für die Reform mit Zielgruppen, Kanälen und Verantwortlichen erstellen und die Beschäftigten über ein regelmäßiges internes Update informieren, das auf unserer CoARA-Seite archiviert wird.",
+    },
+    {
+      title: "Eigene Karrierewege für alle Rollen in der Forschung schaffen",
+      description: "Aufstieg über mehr als einen Weg ermöglichen: formale Laufbahnen neben der klassischen (lehrorientiert, forschungsorientiert, Innovation oder gesellschaftliche Wirkung) und ein veröffentlichter Karriererahmen für alle Rollen, einschließlich wissenschaftsunterstützendem Personal. Jede Laufbahn braucht eigene Kriterien für das Vorankommen. Vielfältigere Kriterien helfen nur, wenn es die Karrieren gibt, zu denen sie führen.",
+      planText: "Wir werden eigene Karrierewege für Lehre, Forschung und gesellschaftliche Wirkung schaffen, festgehalten in einem veröffentlichten Karriererahmen für alle Rollen, jeweils mit eigenen Kriterien für das Vorankommen.",
+    },
+    {
+      title: "Einen ständigen Kanal für Beteiligung und Rückmeldung der Forschenden einrichten",
+      description: "Forschenden eine dauerhafte Stimme in der Reform geben statt einer einmaligen Befragung zu Beginn: ein Forum oder Gremium über Karrierestufen und Disziplinen hinweg, eine Konsultationsrunde zu jeder Maßnahme vor ihrer Einführung und ein direkter Weg zur Steuerungsgruppe. Der Kreis schließt sich, wenn veröffentlicht wird, was gehört wurde und was sich dadurch geändert hat.",
+      planText: "Wir werden ein ständiges Forum für die Beteiligung von Forschenden aller Karrierestufen und Disziplinen einrichten, es vor der Einführung jeder Maßnahme konsultieren und veröffentlichen, was wir gehört und was wir daraufhin geändert haben.",
+    },
+    {
+      title: "Die Wirkung reformierter Verfahren evaluieren",
+      description: "Sobald ein neues Kriterium, ein neues Lebenslaufformat oder ein neues Karrieremodell im Einsatz ist, wird es evaluiert: Rückmeldungen von Bewerbenden, Bewertenden und Kommissionen sowie Folgen für Arbeitsaufwand, Konsistenz, Entscheidungsqualität und Chancengerechtigkeit. Wo ein gemeinsamer Evaluationsrahmen existiert, macht er die Ergebnisse vergleichbar; die Befunde fließen in die nächste Fassung ein. Eine Reform, die nie evaluiert wird, kann einen Erfolg nicht von einer neuen Last unterscheiden.",
+      planText: "Wir werden jedes reformierte Verfahren nach seiner Einführung evaluieren, gestützt auf Rückmeldungen von Bewerbenden, Bewertenden und Kommissionen und auf seine Folgen für Arbeitsaufwand, Konsistenz, Entscheidungsqualität und Chancengerechtigkeit, und es auf dieser Grundlage überarbeiten.",
+    },
+    {
+      title: "Neue Kriterien gemeinsam mit den Bewerteten entwickeln",
+      description: "Bevor neue Kriterien oder Leitfäden feststehen: Fokusgruppen oder Co-Design-Runden mit Forschenden verschiedener Disziplinen, Karrierestufen und Rollen, die den Umfang klären, Texte entwerfen und Entwürfe kommentieren, und zum Schluss eine Bestätigungsrunde. Die Beteiligten gestalten den Text mit, statt erst hinterher davon zu erfahren; blinde Flecken zeigen sich früh, und die Umsetzung fällt deutlich leichter.",
+      planText: "Wir werden neue Kriterien und Leitfäden gemeinsam mit Forschenden verschiedener Disziplinen, Karrierestufen und Rollen entwickeln, von der Klärung des Umfangs bis zu einer abschließenden Bestätigungsrunde, bevor sie verabschiedet werden.",
+    },
+    {
+      title: "Forschende bei der Erfüllung von Open-Science-Kriterien unterstützen",
+      description: "Offene Praktiken in der Bewertung zu honorieren ist nur fair, wenn sie sich umsetzen lassen. Dazu gehören eine Open-Access- und Forschungsdaten-Policy, regelmäßige Schulungen zu Open Access, Datenmanagement und FAIR sowie aktuelle Hilfen (Vorlagen für Datenmanagementpläne, eine Entscheidungshilfe, wie offen etwas sein kann). Dieselben Hilfen stehen auch den Bewertenden zur Verfügung, damit alle vom gleichen Verständnis ausgehen.",
+      planText: "Wir werden eine Open-Access- und Forschungsdaten-Policy verabschieden und ihre Umsetzung durch regelmäßige Schulungen und aktuelle Hilfen unterstützen, die auch den Bewertenden zur Verfügung stehen.",
+    },
+    {
+      title: "Eine eigene Policy für verantwortungsvolle Bewertung einschließlich Metriken verabschieden",
+      description: "Aus einer Unterzeichnung Regeln machen, denen Kommissionen folgen: eigene Grundsätze verantwortungsvoller Bewertung, die auch festlegen, wann quantitative Indikatoren verwendet werden dürfen und wann nicht (zur Stützung des Expertenurteils, nie als Ersatz; keine zeitschriftenbasierten Kennzahlen für Personen; stets mit Kontext). Sie werden vom zuständigen Gremium genehmigt und veröffentlicht, und Rubriken und Ausschreibungen werden an dieser einen Referenz ausgerichtet.",
+      planText: "Wir werden eine eigene Policy für verantwortungsvolle Bewertung mit Regeln zur Verwendung quantitativer Indikatoren verabschieden und veröffentlichen, vom für die Bewertung zuständigen Gremium genehmigt, und unsere Rubriken und Ausschreibungen daran ausrichten.",
+    },
+    {
+      title: "Die Bewerteten vorbereiten",
+      description: "Bewerbenden und Beschäftigten helfen, den neuen Kriterien gerecht zu werden: Leitfäden zu jeder Ausschreibung (einen narrativen Lebenslauf verfassen, welche Belege ein Portfolio enthalten sollte, sich selbst einschätzen) und ein fester Baustein zu verantwortungsvoller Bewertung in der Promotionsausbildung und beim Onboarding neuer Beschäftigter, damit jeder Jahrgang die Erwartungen von Anfang an kennt.",
+      planText: "Wir werden Leitfäden für Bewerbende zu jeder Ausschreibung veröffentlichen und einen festen Baustein zu verantwortungsvoller Bewertung in die Promotionsausbildung und das Onboarding aufnehmen, damit die Bewerteten verstehen, was die reformierten Kriterien verlangen.",
+    },
+    {
+      title: "Die Reform in die Entwicklungsgespräche tragen",
+      description: "Das regelmäßige Entwicklungs- oder Mitarbeitendengespräch am reformierten Rahmen ausrichten: Selbsteinschätzung anhand der neuen Kriterien, Anerkennung der ganzen Breite von Beiträgen, individuelle Karriereziele. Das ist die Bewertung, der Beschäftigte am häufigsten begegnen, und eine Reform, die bei Einstellung und Beförderung stehen bleibt, erreicht sie nie.",
+      planText: "Wir werden unsere regelmäßigen Entwicklungsgespräche am reformierten Rahmen ausrichten, einschließlich einer Selbsteinschätzung anhand der neuen Kriterien und der Anerkennung der ganzen Breite von Beiträgen.",
+    },
+    {
+      title: "Forschende die Daten prüfen lassen, nach denen sie bewertet werden",
+      description: "Bevor ein Datensatz aus dem Forschungsinformationssystem in eine Bewertung eingeht, kann die bewertete Person ihn einsehen und korrigieren: welche Leistungen gezählt, wie sie eingeordnet, welche Indikatoren daraus abgeleitet wurden. Das tun bisher wenige Pläne, aber es ist der fünfte Grundsatz des Leiden-Manifests und verhindert Entscheidungen auf Grundlage ungeprüfter Daten.",
+      planText: "Wir werden Forschenden ermöglichen, die Daten über ihre Arbeit, die unsere Informationssysteme in Bewertungen einspeisen, vor der Verwendung einzusehen und zu korrigieren.",
+    },
+    {
+      title: "Nur bewerten, wo es nötig ist",
+      description: "Für jede wiederkehrende Bewertung fragen, ob es sie braucht und in welcher Tiefe. Bewertungen, die keine Entscheidung verändern, streichen oder zusammenlegen, und eine Praxis lieber ermöglichen als messen. Sonst häufen neue Dimensionen (Open Science, Kollegialität, Integrität) nur mehr Bewertung auf dieselben Menschen.",
+      planText: "Wir werden unsere wiederkehrenden Bewertungen überprüfen, nur die beibehalten, die eine Entscheidung stützen, und ihre Tiefe entsprechend festlegen, damit die Reform keinen zusätzlichen Bewertungsaufwand erzeugt.",
     },
   ],
 

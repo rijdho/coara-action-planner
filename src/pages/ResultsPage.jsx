@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { prioritiseActions } from "../data/actions";
 import { themeEvidence } from "../data/evidence";
+import { FRAMEWORKS } from "../data/frameworks";
 import { interpolate } from "../i18n/registry";
 import MaturityBadge from "../components/MaturityBadge";
 import MaturityRadar from "../components/MaturityRadar";
@@ -21,7 +22,7 @@ function ActionCard({ action, index, level = 0 }) {
   const [expanded, setExpanded] = useState(false);
   const commitment = dataset.COMMITMENTS.find((c) => c.id === action.commitment);
   const evidence = themeEvidence(action.theme);
-  const evidencePct = evidence ? (evidence.pct < 1 ? "<1" : Math.round(evidence.pct)) : null;
+  const evidencePct = evidence ? (evidence.pct === 0 ? 0 : evidence.pct < 1 ? "<1" : Math.round(evidence.pct)) : null;
   return (
     <div className="rounded-xl p-4 transition-all" style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}>
       <div className="flex items-start gap-3">
@@ -61,6 +62,17 @@ function ActionCard({ action, index, level = 0 }) {
               {evidence && (
                 <p className="text-xs" style={{ color: "var(--color-accent)" }}>
                   {t(`ev_${evidence.band}`)} · {interpolate(t("res_corpus"), { pct: evidencePct, n: evidence.corpusSize })}
+                </p>
+              )}
+              {action.frameworks?.length > 0 && (
+                <p className="text-xs" style={{ color: "var(--color-text-muted)" }}>
+                  <span className="font-semibold" style={{ color: "var(--color-accent)" }}>{t("res_frameworks")}</span>{" "}
+                  {action.frameworks.map((f, i) => (
+                    <span key={f}>
+                      {i > 0 && " · "}
+                      <a href={FRAMEWORKS[f].url} target="_blank" rel="noopener noreferrer" className="underline">{f}</a>
+                    </span>
+                  ))}
                 </p>
               )}
               {action.examples && (

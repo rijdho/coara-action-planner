@@ -186,6 +186,7 @@ export default {
     res_filterHigh: "Alto impacto",
     res_noMatch: 'Ninguna acción coincide con este filtro. Prueba con "Todas las acciones".',
     res_examples: "Ejemplos:",
+    res_frameworks: "Aplica:",
     res_corpus: "{pct}% de {n} planes",
     res_corpusTitle: "Proporción de los {n} planes de acción CoARA publicados cuyo texto completo coincide con el tema de esta acción (por palabras clave, orientativo)",
     ev_universal: "Casi universal en los planes existentes",
@@ -271,6 +272,7 @@ export default {
     targetLabel: "Progresión:",
     targetValue: "Nivel {from} → {to} · esfuerzo {effort} · impacto esperado {impact}",
     referenceLabel: "Práctica de referencia:",
+    frameworksLabel: "Marcos que aplica:",
     responsibleLabel: "Responsable:",
     responsiblePlaceholder: "[p. ej. Grupo de Trabajo CoARA / Vicerrectorado de Investigación / oficina pertinente]",
     timeframeLabel: "Plazo:",
@@ -746,8 +748,8 @@ export default {
     },
     {
       title: "Integrar productos diversos en todos los procesos de evaluación",
-      description: "Revisa todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos. Asegura que las personas evaluadoras estén formadas para evaluarlos.",
-      planText: "Revisaremos todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos, y aseguraremos que las personas evaluadoras estén formadas para evaluarlos.",
+      description: "Revisa todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación junto a los logros individuales. Asegura que las personas evaluadoras estén formadas para evaluarlos.",
+      planText: "Revisaremos todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación junto a los logros individuales, y aseguraremos que las personas evaluadoras estén formadas para evaluarlos.",
     },
     {
       title: "Estudiar modelos de CV narrativo",
@@ -812,8 +814,8 @@ export default {
     },
     {
       title: "Rediseñar las rúbricas de evaluación",
-      description: "Con base en los resultados de la auditoría, crea nuevas rúbricas que enfaticen las contribuciones diversas, la evidencia cualitativa y la alineación con la misión institucional. Pilota e itera.",
-      planText: "Con base en los resultados de la auditoría, crearemos nuevas rúbricas que enfaticen las contribuciones diversas, la evidencia cualitativa y la alineación con nuestra misión institucional, pilotando e iterando sobre la marcha.",
+      description: "Con base en los resultados de la auditoría, crea nuevas rúbricas que enfaticen las contribuciones diversas, la evidencia cualitativa y la alineación con la misión institucional. Donde exista una matriz nacional o de pares (NOR-CAM, FIN-CAM), adáptala en lugar de empezar de cero. Pilota e itera, y lleva las rúbricas a lo que ven las candidaturas: anuncios de plazas, formularios y bases de las convocatorias.",
+      planText: "Con base en los resultados de la auditoría, crearemos nuevas rúbricas que enfaticen las contribuciones diversas, la evidencia cualitativa y la alineación con nuestra misión institucional, adaptando una matriz nacional donde exista, pilotando e iterando sobre la marcha, y trasladándolas a los anuncios de plazas, los formularios y las bases de las convocatorias.",
     },
     {
       title: "Establecer un ciclo periódico de revisión de criterios",
@@ -832,14 +834,14 @@ export default {
     },
     {
       title: "Unirse a Grupos de Trabajo temáticos y Action Clusters de CoARA",
-      description: "Firma el Acuerdo CoARA (si aún no lo has firmado) y selecciona 1-2 Grupos de Trabajo temáticos o Action Clusters alineados con tus prioridades (SSH, EMCRs, peer review, RMI, OI4RRA, ERIP, etc.). Para foros geográficos (CoARA National Chapters, IRAF, AFRA, AOSP) consulta la acción dedicada más abajo.",
-      planText: "Nos uniremos a uno o dos Grupos de Trabajo temáticos o Action Clusters de CoARA alineados con nuestras prioridades (como SSH, EMCRs, peer review, RMI, OI4RRA o ERIP) y participaremos en sus intercambios.",
+      description: "Firma el Acuerdo CoARA (si aún no lo has firmado) y selecciona 1-2 Grupos de Trabajo temáticos o Action Clusters alineados con tus prioridades (SSH, EMCRs, peer review, RMI, OI4RRA, ERIP, etc.). También cuentan los proyectos colaborativos de reforma: un proyecto financiado por CoARA o por la UE, o un grupo de trabajo de una iniciativa externa a la Coalición. Para foros geográficos (CoARA National Chapters, IRAF, AFRA, AOSP) consulta la acción dedicada más abajo.",
+      planText: "Nos uniremos a uno o dos Grupos de Trabajo temáticos o Action Clusters de CoARA alineados con nuestras prioridades (como SSH, EMCRs, peer review, RMI, OI4RRA o ERIP), o a un proyecto colaborativo de reforma, y participaremos en sus intercambios.",
       examples: ["WG SSH", "WG EMCRs", "WG Peer Review", "WG OI4RRA", "WG ERIP"],
     },
     {
       title: "Co-organizar actividades de aprendizaje entre pares",
-      description: "Asóciate con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas. Comparte tu experiencia de implementación, tanto los éxitos como los fracasos.",
-      planText: "Nos asociaremos con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas, compartiendo nuestra experiencia de implementación, tanto los éxitos como los fracasos.",
+      description: "Asóciate con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas. Si perteneces a una Alianza de Universidades Europeas o a una red internacional, lleva también allí la reforma de la evaluación. Comparte tu experiencia de implementación, tanto los éxitos como los fracasos.",
+      planText: "Nos asociaremos con otras entidades firmantes, y con las alianzas y redes universitarias de las que formamos parte, para organizar talleres, seminarios web o visitas conjuntas, compartiendo nuestra experiencia de implementación, tanto los éxitos como los fracasos.",
     },
     {
       title: "Definir indicadores de progreso",
@@ -858,8 +860,8 @@ export default {
     },
     {
       title: "Liderar o contribuir a estudios de benchmarking",
-      description: "Comparte datos de evaluación anonimizados con instituciones pares. Participa en estudios comparativos del progreso de la reforma entre entidades firmantes o inícialos.",
-      planText: "Compartiremos datos de evaluación anonimizados con instituciones pares y participaremos en estudios comparativos del progreso de la reforma entre entidades firmantes, o los iniciaremos.",
+      description: "Comparte datos de evaluación anonimizados, y cuando proceda tus métodos y herramientas, con instituciones pares. Participa en estudios comparativos del progreso de la reforma entre entidades firmantes o inícialos, y apóyate en la investigación sobre la investigación: involucra a quienes estudian la evaluación en tu propia institución.",
+      planText: "Compartiremos datos de evaluación anonimizados, y cuando proceda nuestros métodos y herramientas, con instituciones pares, participaremos en estudios comparativos del progreso de la reforma entre entidades firmantes, o los iniciaremos, y nos apoyaremos en la investigación sobre la investigación, incluida la de nuestro propio personal.",
     },
     {
       title: "Revisar los procesos de evaluación en busca de brechas de EDI",
@@ -899,8 +901,8 @@ export default {
     },
     {
       title: "Mejorar la infraestructura para apoyar la evaluación reformada",
-      description: "Implementa o mejora el CRIS, integra ORCID, despliega repositorios de datos, conecta los sistemas con los flujos de trabajo de evaluación. Asegura que la infraestructura registre lo que requieren los nuevos criterios.",
-      planText: "Implementaremos o mejoraremos nuestra infraestructura de información de investigación (CRIS, integración con ORCID, repositorios de datos) y la conectaremos con los flujos de trabajo de evaluación para que registre lo que requieren los nuevos criterios.",
+      description: "Implementa o mejora el CRIS, integra ORCID, despliega repositorios de datos, conecta los sistemas con los flujos de trabajo de evaluación y dota de personal el apoyo que los rodea (un equipo de acceso abierto, una persona gestora de datos). Asegura que la infraestructura registre lo que requieren los nuevos criterios.",
+      planText: "Implementaremos o mejoraremos nuestra infraestructura de información de investigación (CRIS, integración con ORCID, repositorios de datos), dotaremos de personal los servicios de apoyo que la rodean y la conectaremos con los flujos de trabajo de evaluación para que registre lo que requieren los nuevos criterios.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
@@ -911,8 +913,8 @@ export default {
     },
     {
       title: "Establecer programas de mentoría para personas investigadoras en inicio de carrera",
-      description: "Crea una mentoría estructurada que ayude a las personas en inicio de carrera (ECR) a navegar la evaluación reformada: cómo construir un portafolio, escribir un CV narrativo, demostrar contribuciones diversas. Incluye a personas investigadoras sénior como mentoras.",
-      planText: "Crearemos una mentoría estructurada, con personas investigadoras sénior como mentoras, que ayude a quienes inician su carrera a navegar la evaluación reformada: construir un portafolio, escribir un CV narrativo y demostrar contribuciones diversas.",
+      description: "Crea una mentoría y una formación estructuradas que ayuden a las personas en inicio de carrera (ECR) a navegar la evaluación reformada: cómo construir un portafolio, escribir un CV narrativo, demostrar contribuciones diversas. Incluye a personas investigadoras sénior como mentoras.",
+      planText: "Crearemos una mentoría y una formación estructuradas, con personas investigadoras sénior como mentoras, que ayuden a quienes inician su carrera a navegar la evaluación reformada: construir un portafolio, escribir un CV narrativo y demostrar contribuciones diversas.",
       examples: ["SDU Mentoring for Change (130 PhDs/year)", "OGS mentoring initiative", "Pannonia Group of Young Scientists"],
     },
     {
@@ -989,6 +991,76 @@ export default {
       title: "Publicar y depositar el plan de acción",
       description: "Ponga el plan donde otras personas puedan encontrarlo, leerlo y citarlo: su propio sitio web y un archivo que emita un identificador persistente (la mayoría de las entidades firmantes de CoARA usan Zenodo). Cuesta casi nada, permite que instituciones pares reutilicen su redacción en vez de partir de cero, y es lo que hizo posible el corpus que sustenta esta herramienta.",
       planText: "Publicaremos nuestro plan de acción en nuestro propio sitio y lo depositaremos en un archivo abierto con un identificador persistente, para que otras instituciones puedan encontrarlo, citarlo y construir sobre él.",
+    },
+    {
+      title: "Mantener la reforma en la agenda de los órganos de gobierno",
+      description: "Llevar el plan de acción a los órganos que dirigen la institución (equipo de dirección, claustro, consejo de gobierno, comisión de investigación, reuniones de decanatos) y volver a ellos cada cierto tiempo con un breve informe de avance. La aprobación formal da mandato al plan una sola vez; un punto fijo en el orden del día mantiene informadas, y con responsabilidades, a las personas que asignan presupuesto y fijan criterios.",
+      planText: "Presentaremos el plan de acción a nuestros órganos de gobierno y volveremos a ellos a intervalos fijos con un breve informe de avance, para que quienes asignan presupuesto y fijan criterios sigan informados y asuman su parte.",
+    },
+    {
+      title: "Redactar guías escritas para personas evaluadoras y revisoras externas",
+      description: "Guías pensadas para el momento de evaluar: cómo leer un CV narrativo, cómo ponderar contribuciones diversas, qué no debe usarse (factor de impacto, índice h, cuartiles, rankings) y cómo las cifras que queden pueden apoyar el juicio sin sustituirlo. Se envían con cada caso, también a quienes revisan desde fuera y nunca asisten a la formación, y se actualizan cada vez que cambian los criterios.",
+      planText: "Redactaremos guías para personas evaluadoras y revisoras externas sobre cómo evaluar con los criterios reformados y qué indicadores no deben usarse, las enviaremos con cada caso y las actualizaremos cuando cambien los criterios.",
+    },
+    {
+      title: "Publicar los criterios de evaluación y dar retroalimentación a quienes se evalúa",
+      description: "Los criterios, indicadores y procedimientos de contratación, promoción y evaluación interna se publican donde candidaturas y personal puedan leerlos antes de ser evaluados: la web para la contratación, la intranet para los procesos internos. Tras cada decisión, se explica qué criterios se aplicaron y con qué resultado, dentro de los límites de la confidencialidad. Un criterio que nadie puede ver no se puede exigir.",
+      planText: "Publicaremos los criterios, indicadores y procedimientos de contratación, promoción y evaluación interna antes de que nadie sea evaluado con ellos, y daremos retroalimentación a candidaturas y personal sobre cómo se aplicaron.",
+    },
+    {
+      title: "Elaborar un plan de comunicación con una actualización interna periódica",
+      description: "Definir quién necesita saber qué (personal investigador, personas evaluadoras, personal de gestión, dirección, socios), por qué canales, con qué frecuencia y con qué responsable. Fijar un ritmo, por ejemplo un resumen trimestral en la intranet de lo que ha cambiado en criterios y procesos, archivado en la página de CoARA, y abrir también el camino inverso: que el personal pueda dirigirse al grupo de trabajo.",
+      planText: "Elaboraremos un plan de comunicación para la reforma, con públicos, canales y responsables, y mantendremos informado al personal mediante una actualización interna periódica archivada en nuestra página de CoARA.",
+    },
+    {
+      title: "Crear trayectorias de carrera distintas para todos los perfiles de investigación",
+      description: "Que se pueda avanzar por más de una vía: trayectorias formales junto a la tradicional (docente, investigadora, de innovación o de impacto social) y un marco de carrera publicado que abarque todos los perfiles, incluido el personal técnico y de apoyo. Cada trayectoria necesita sus propios criterios de progresión. Diversificar los criterios solo sirve si existen las carreras a las que conducen.",
+      planText: "Crearemos trayectorias de carrera diferenciadas para la docencia, la investigación y el impacto social, recogidas en un marco de carrera publicado que abarque todos los perfiles, cada una con sus propios criterios de progresión.",
+    },
+    {
+      title: "Mantener un canal permanente de participación y retroalimentación del personal investigador",
+      description: "Dar al personal investigador una voz duradera en la reforma y no una única consulta al principio: un foro o comité que abarque etapas de carrera y disciplinas, una ronda de consulta sobre cada acción antes de ponerla en marcha y una vía directa hacia el grupo de dirección. El ciclo se cierra publicando lo que se escuchó y lo que cambió gracias a ello.",
+      planText: "Mantendremos un foro permanente de participación del personal investigador, de todas las etapas de carrera y disciplinas, lo consultaremos sobre cada acción antes de ponerla en marcha y publicaremos lo que escuchamos y lo que cambió como resultado.",
+    },
+    {
+      title: "Evaluar los efectos de los procedimientos reformados",
+      description: "Cuando un criterio, un formato de CV o un esquema de carrera nuevo ya está en uso, se evalúa: opiniones de candidaturas, personas evaluadoras y comisiones, y efectos sobre la carga de trabajo, la coherencia, la calidad de las decisiones y la equidad. Donde exista un marco de evaluación compartido, conviene usarlo para poder comparar, y los hallazgos alimentan la siguiente versión. Una reforma que nunca se evalúa no distingue un acierto de una carga nueva.",
+      planText: "Evaluaremos cada procedimiento reformado una vez en uso, a partir de la opinión de candidaturas, personas evaluadoras y comisiones y de sus efectos sobre la carga de trabajo, la coherencia, la calidad de las decisiones y la equidad, y usaremos los resultados para revisarlo.",
+    },
+    {
+      title: "Codiseñar los nuevos criterios con las personas a quienes se evaluará",
+      description: "Antes de fijar criterios o guías nuevos, grupos focales o sesiones de codiseño con personal investigador de distintas disciplinas, etapas de carrera y perfiles para delimitar el cambio, redactar el texto y comentar los borradores, y una ronda final de confirmación. Quienes participan dan forma al texto en lugar de conocerlo después, lo que saca a la luz los puntos ciegos a tiempo y facilita mucho la adopción.",
+      planText: "Codiseñaremos los nuevos criterios y guías con personal investigador de distintas disciplinas, etapas de carrera y perfiles, desde la delimitación hasta una ronda final de confirmación, antes de adoptarlos.",
+    },
+    {
+      title: "Apoyar al personal investigador para cumplir los criterios de ciencia abierta",
+      description: "Premiar las prácticas abiertas en la evaluación solo es justo si se pueden llevar a cabo. Hace falta una política de acceso abierto y de datos de investigación, formación periódica en acceso abierto, gestión de datos y FAIR, y orientaciones al día (plantillas de plan de gestión de datos, una guía para decidir cuán abierto ser). Las mismas orientaciones sirven a quienes evalúan, para que quien aplica los criterios y quien los cumple compartan un mismo entendimiento.",
+      planText: "Adoptaremos una política de acceso abierto y de datos de investigación y apoyaremos su cumplimiento con formación periódica y orientaciones actualizadas, compartidas también con quienes evalúan.",
+    },
+    {
+      title: "Adoptar una política propia de evaluación responsable, incluido el uso de métricas",
+      description: "Convertir una adhesión en reglas que las comisiones siguen: principios propios de evaluación responsable que digan también cuándo pueden y cuándo no pueden usarse indicadores cuantitativos (como apoyo al juicio experto, nunca como sustituto; sin indicadores basados en revistas para personas; siempre con su contexto). Se aprueban en el órgano responsable de la evaluación, se publican, y rúbricas y convocatorias se revisan contra esa única referencia.",
+      planText: "Adoptaremos y publicaremos una política propia de evaluación responsable, con reglas sobre el uso de indicadores cuantitativos, aprobada por el órgano responsable de la evaluación, y revisaremos nuestras rúbricas y convocatorias de acuerdo con ella.",
+    },
+    {
+      title: "Preparar a las personas que serán evaluadas",
+      description: "Ayudar a candidaturas y personal a responder a los nuevos criterios: guías publicadas con cada convocatoria (cómo redactar un CV narrativo, qué evidencias debe llevar un portafolio, cómo autoevaluarse) y un módulo estable sobre evaluación responsable en la formación doctoral y la acogida de personal nuevo, para que cada cohorte conozca desde el principio lo que se espera.",
+      planText: "Publicaremos guías para candidaturas con cada convocatoria e incorporaremos un módulo estable sobre evaluación responsable en la formación doctoral y en la acogida del personal, para que quienes serán evaluados entiendan lo que piden los criterios reformados.",
+    },
+    {
+      title: "Llevar la reforma a las conversaciones de desarrollo del personal",
+      description: "Rediseñar la conversación periódica de desarrollo o evaluación del desempeño en torno al marco reformado: autoevaluación con los nuevos criterios, reconocimiento de toda la gama de contribuciones, objetivos de carrera individuales. Es la evaluación con la que el personal se encuentra más a menudo, y una reforma que se queda en la contratación y la promoción nunca llega a ella.",
+      planText: "Rediseñaremos las conversaciones periódicas de desarrollo del personal en torno al marco reformado, con autoevaluación según los nuevos criterios y reconocimiento de toda la gama de contribuciones.",
+    },
+    {
+      title: "Permitir que el personal investigador verifique los datos con que se le evalúa",
+      description: "Antes de que un registro del sistema de información de investigación entre en una evaluación, la persona evaluada puede verlo y corregirlo: qué productos se contaron, cómo se clasificaron, qué indicadores se derivaron. Pocos planes lo hacen todavía, pero es el quinto principio del Manifiesto de Leiden, y evita decisiones basadas en datos que nadie revisó.",
+      planText: "Permitiremos que el personal investigador vea y corrija, antes de su uso, los datos sobre su trabajo que nuestros sistemas de información trasladan a la evaluación.",
+    },
+    {
+      title: "Evaluar solo cuando es necesario",
+      description: "Para cada evaluación periódica, preguntarse si hace falta y con qué profundidad. Suprimir o fusionar las que no cambian ninguna decisión, y preferir facilitar una práctica a medirla. Si no, sumar dimensiones nuevas a la evaluación (ciencia abierta, colegialidad, integridad) acumula más evaluación sobre las mismas personas.",
+      planText: "Revisaremos nuestras evaluaciones periódicas, mantendremos solo las que informan una decisión y ajustaremos su profundidad, para que la reforma no añada carga de evaluación.",
     },
   ],
 

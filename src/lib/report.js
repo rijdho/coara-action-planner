@@ -192,6 +192,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
         })}`,
       );
       if (a.examples?.length) w(`  - *${S.referenceLabel}* ${a.examples.join("; ")}`);
+      if (a.frameworks?.length) w(`  - *${S.frameworksLabel}* ${a.frameworks.join("; ")}`);
       w(`  - *${S.responsibleLabel}* ${S.responsiblePlaceholder}`);
       w(`  - *${S.timeframeLabel}* ${S.timeframePlaceholder}`);
       w(`  - *${S.indicatorLabel}* ${S.indicatorPlaceholder}`);
