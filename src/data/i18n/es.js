@@ -53,7 +53,7 @@ export default {
     start_lensesTitle: "Tres miradas",
     start_lens_now: "① Dónde estamos hoy",
     start_lens_now_desc:
-      "El cuestionario mide tu madurez actual en cada compromiso de CoARA — el estado actual, evaluado con honestidad.",
+      "El cuestionario mide tu madurez actual en cada compromiso de CoARA: el estado actual, evaluado con honestidad.",
     start_lens_goal: "② A dónde queremos llegar",
     start_lens_goal_desc:
       "En la pestaña Plan defines un nivel de madurez objetivo por compromiso. La brecha entre el ahora y el objetivo es lo que cierra tu plan de acción.",
@@ -65,7 +65,7 @@ export default {
     start_instPlaceholder: "Nombre de la institución (opcional)",
     start_perspectivesTitle: "Perspectivas",
     start_perspectivesHint:
-      "Cada perspectiva es la mirada de un participante, etiquetada con su rol. Todas responden las mismas 24 preguntas — las completas una vez por perspectiva, desde ese punto de vista. Resultados consolida las perspectivas y señala dónde difieren sus lecturas de una misma pregunta (la brecha de percepción).",
+      "Cada perspectiva es la mirada de un participante, etiquetada con su rol. Todas responden las mismas 24 preguntas; las completas una vez por perspectiva, desde ese punto de vista. Resultados consolida las perspectivas y señala dónde difieren sus lecturas de una misma pregunta (la brecha de percepción).",
     start_perspectivesEyebrow: "Lo que esta herramienta hace y una guía no",
     start_perspectivesWhy:
       "Un plan redactado por una sola oficina refleja un solo punto de vista. Si la dirección, la oficina de investigación y el personal investigador responden las mismas 24 preguntas, el desacuerdo mismo se convierte en evidencia: Resultados señala cada compromiso cuya lectura difiere en dos niveles o más, y son esos los que conviene alinear antes de redactar nada.",
@@ -84,13 +84,13 @@ export default {
     start_cta: "Ir al cuestionario →",
     asmt_answeringAs: "Respondiendo como: {role}",
     asmt_switchPerspective: "Cambiar →",
-    plan_s5_title: "5 · Ambición — ¿a dónde quieres llegar?",
+    plan_s5_title: "5 · Ambición: ¿a dónde quieres llegar?",
     plan_s5_hint:
-      "Define un nivel de madurez objetivo por compromiso. Las acciones que cierran la brecha entre tu nivel actual y el objetivo suben; los compromisos que ya están en su objetivo bajan. Deja «—» para ordenar solo por la brecha hasta el nivel máximo.",
+      "Define un nivel de madurez objetivo por compromiso. Las acciones que cierran la brecha entre tu nivel actual y el objetivo suben; los compromisos que ya están en su objetivo bajan. Deja «–» para ordenar solo por la brecha hasta el nivel máximo.",
     plan_ambition_now: "ahora",
     plan_ambition_current: "nivel actual",
     plan_ambition_target: "nivel objetivo",
-    plan_ambition_notset: "—",
+    plan_ambition_notset: "–",
     plan_ambition_clear: "Borrar todos los objetivos",
     plan_s6_title: "6 · Ponderación de perspectivas y alineación",
     plan_s6_hint:
@@ -103,7 +103,7 @@ export default {
     res_ambitionSet: "Ambición definida",
     res_currentVsTarget: "actual vs objetivo",
     res_consolidatedNote: "Promedio ponderado por rol entre {n} perspectivas (quienes son evaluados pesan más).",
-    res_perceptionGap: "Las perspectivas difieren en ≥2 niveles en: {list} — priorizadas para alinear.",
+    res_perceptionGap: "Las perspectivas difieren en ≥2 niveles en: {list}. Priorizadas para alinear.",
     print_respondents: "Participantes: {list}",
     radar_target: "Objetivo",
 
@@ -117,18 +117,18 @@ export default {
     // Plan page
     plan_emptyTitle: "Plan",
     plan_emptyBody:
-      "Responde primero el cuestionario — el plan ajusta las acciones que surgen de tu perfil de madurez.",
+      "Responde primero el cuestionario: el plan ajusta las acciones que surgen de tu perfil de madurez.",
     plan_startQuestionnaire: "Comenzar el cuestionario",
     plan_title: "Define tu plan de acción",
     plan_intro:
-      "Cuatro decisiones rápidas que ajustan qué acciones aparecen primero. Nada aquí es obligatorio — los valores por defecto dan un plan equilibrado, guiado por las brechas. Tu perfil de madurez no se ve afectado.",
+      "Cuatro decisiones rápidas que ajustan qué acciones aparecen primero. Nada aquí es obligatorio; los valores por defecto dan un plan equilibrado, guiado por las brechas. Tu perfil de madurez no se ve afectado.",
     plan_s1_title: "1 · Horizonte y capacidad",
     plan_s1_hint: "¿Cuánto cambio puedes asumir ahora mismo?",
     plan_s2_title: "2 · Contexto institucional",
     plan_s2_hint: "Potencia las acciones especialmente relevantes para tu contexto.",
     plan_s3_title: "3 · Compromisos prioritarios",
     plan_s3_hint:
-      "Elige los compromisos de CoARA que quieres abordar primero — sus acciones suben en la lista. Déjalo vacío para ninguno.",
+      "Elige los compromisos de CoARA que quieres abordar primero, y sus acciones suben en la lista. Déjalo vacío para ninguno.",
     plan_clear: "Borrar selección",
     plan_s4_title: "4 · Acciones de alto esfuerzo",
     plan_s4_hint: "Las reformas estructurales (nuevos criterios, formación a nivel de todo el sistema) requieren recursos reales.",
@@ -166,7 +166,7 @@ export default {
     res_saveConfig: "Guardar config.",
     cfg_title: "Guardar / cargar configuración",
     cfg_hint:
-      "Guarda todos los datos de esta evaluación (respuestas, perspectivas, ambición y plan) en un archivo — para reproducir este mismo informe después, compartirlo, o volver a cargarlo como base y modificarlo.",
+      "Guarda todos los datos de esta evaluación (respuestas, perspectivas, ambición y plan) en un archivo, para reproducir este mismo informe después, compartirlo, o volver a cargarlo como base y modificarlo.",
     cfg_save: "Guardar configuración",
     cfg_load: "Cargar configuración",
     cfg_loaded: "Configuración cargada.",
@@ -191,17 +191,17 @@ export default {
     ev_universal: "Casi universal en los planes existentes",
     ev_common: "Frecuente en los planes existentes",
     ev_emerging: "Práctica emergente",
-    ev_frontier: "Frontera — pocos planes lo hacen aún; una oportunidad para liderar",
+    ev_frontier: "Frontera: pocos planes lo hacen aún, una oportunidad para liderar",
     res_ctaNext: "Siguiente:",
     res_ctaBody: "convierte esto en un borrador escrito de plan de acción CoARA que puedes editar y compartir.",
     res_generateReport: "Generar informe →",
 
-    // Results — print view
-    print_title: "Reforma de la Evaluación de la Investigación — Informe de Madurez",
+    // Results: print view
+    print_title: "Reforma de la Evaluación de la Investigación: Informe de Madurez",
     print_meta: "{inst} · {date} · compromisos de CoARA · basado en {answered}/{total} preguntas",
     print_planPrefix: "Plan:",
     print_overall: "Madurez general:",
-    print_level: "Nivel {n} — {label}",
+    print_level: "Nivel {n} · {label}",
     print_byCommitment: "Madurez por compromiso",
     print_priorityActions: "Acciones prioritarias",
     print_footer:
@@ -211,12 +211,12 @@ export default {
     // Report page
     rep_emptyTitle: "Informe",
     rep_emptyBody:
-      "Responde primero el cuestionario — el informe se redacta a partir de tu perfil de madurez y tu plan.",
+      "Responde primero el cuestionario: el informe se redacta a partir de tu perfil de madurez y tu plan.",
     rep_title: "Informe del plan de acción",
     rep_intro_pre:
       "Un borrador preestructurado de plan de acción CoARA, generado a partir de tus respuestas y tu plan. Su estructura sigue planes de acción institucionales reales (Introducción → línea base → prioridades → acciones por compromiso → recursos → seguimiento). ",
     rep_intro_strong: "Edítalo libremente",
-    rep_intro_post: " — los [campos] entre corchetes son espacios para completar. Se guarda localmente a medida que escribes.",
+    rep_intro_post: ". Los [campos] entre corchetes son espacios para completar. Se guarda localmente a medida que escribes.",
     rep_copy: "Copiar texto",
     rep_copied: "Copiado ✓",
     rep_downloadMd: "Descargar .md",
@@ -228,10 +228,10 @@ export default {
     // radar tooltip / series
     radar_current: "Actual",
     radar_previous: "Anterior",
-    radar_level: "Nivel {n} — {label}",  },
+    radar_level: "Nivel {n} · {label}",  },
 
   report: {
-    docTitle: "{inst} — Plan de Acción para la Reforma de la Evaluación de la Investigación",
+    docTitle: "{inst}: Plan de Acción para la Reforma de la Evaluación de la Investigación",
     subtitle: "Alineado con el Acuerdo CoARA sobre la Reforma de la Evaluación de la Investigación · {date}",
     respondentSingle:
       "Esta autoevaluación se completó desde la perspectiva de {role}, y debe leerse teniendo presente ese punto de vista.",
@@ -250,7 +250,7 @@ export default {
       "Este plan se nutre de una autoevaluación estructurada a lo largo de los diez compromisos de CoARA. Establece nuestra línea base actual, nuestras prioridades y las acciones concretas que llevaremos a cabo, junto con las unidades responsables, los plazos indicativos y los hitos con los que mediremos el progreso.",
 
     h_baseline: "1. Autoevaluación de línea base",
-    overall: "Madurez general: Nivel {level} — {label}.",
+    overall: "Madurez general: Nivel {level} ({label}).",
     established: "Consolidado (Nivel 4–5):",
     developing: "En desarrollo (Nivel 2–3):",
     gaps: "Brechas prioritarias (Nivel 0–1):",
@@ -266,7 +266,7 @@ export default {
     actionsIntro:
       "Las acciones a continuación se priorizan según el tamaño de cada brecha y su impacto esperado{focusClause}. Los campos entre corchetes son para que la unidad responsable los complete.",
     actionsFocusClause: ", con un peso adicional en nuestros compromisos prioritarios",
-    actionHeading: "C{num}. {title} — Nivel actual {lvl} ({label})",
+    actionHeading: "C{num}. {title}: Nivel actual {lvl} ({label})",
     actionLabel: "Acción:",
     targetLabel: "Progresión:",
     targetValue: "Nivel {from} → {to} · esfuerzo {effort} · impacto esperado {impact}",
@@ -278,7 +278,7 @@ export default {
     indicatorLabel: "Indicador / hito:",
     indicatorPlaceholder: "[producto observable, p. ej. criterios revisados aprobados]",
     noActions:
-      "No se recomendaron acciones — tu madurez ya es alta en los compromisos evaluados. Concéntrate en las actividades de consolidación y seguimiento descritas más abajo.",
+      "No se recomendaron acciones: tu madurez ya es alta en los compromisos evaluados. Concéntrate en las actividades de consolidación y seguimiento descritas más abajo.",
 
     h_resources: "4. Recursos (Compromiso 5 de CoARA)",
     resourcesBody:
@@ -286,7 +286,7 @@ export default {
 
     h_awareness: "5. Sensibilización, orientación e intercambio (Compromisos 7–8 de CoARA)",
     awarenessBody:
-      "Aumentaremos la sensibilización internamente y publicaremos orientación accesible sobre los criterios reformados y su uso responsable. {inst} intercambiará prácticas con instituciones pares — a través de [Grupos de Trabajo CoARA / capítulo nacional / foro regional] — reconociendo que las organizaciones se encuentran en distintos puntos del camino.",
+      "Aumentaremos la sensibilización internamente y publicaremos orientación accesible sobre los criterios reformados y su uso responsable. {inst} intercambiará prácticas con instituciones pares (a través de [Grupos de Trabajo CoARA / capítulo nacional / foro regional]), reconociendo que las organizaciones se encuentran en distintos puntos del camino.",
 
     h_monitoring: "6. Seguimiento, evaluación y comunicación del progreso (Compromisos 9–10 de CoARA)",
     monitoringBody:
@@ -310,7 +310,7 @@ export default {
     hs_balanced:
       "Buscamos una mezcla equilibrada de logros tempranos y reformas más sustanciales, secuenciadas según el tamaño de cada brecha y su impacto esperado.",
     hs_structural:
-      "Estamos preparados para emprender una reforma ambiciosa y estructural — revisando criterios y procesos en todo el sistema — incluso cuando ello requiera esfuerzo y recursos sostenidos.",
+      "Estamos preparados para emprender una reforma ambiciosa y estructural, revisando criterios y procesos en todo el sistema, incluso cuando ello requiera esfuerzo y recursos sostenidos.",
 
     // context sentences (appended to intro1; leading space intentional)
     cs_globalnorth:
@@ -334,7 +334,7 @@ export default {
     gq_label: "Pregunta orientadora de CoARA",
     gq_labelPlural: "Preguntas orientadoras de CoARA",
     gq_intro:
-      "Las indicaciones marcadas como *Pregunta orientadora de CoARA* proceden de las *Action Plan Guidelines* (octubre de 2023) del Secretariado de CoARA. Son un recurso y una sugerencia, no una plantilla obligatoria —CoARA no publica ninguna plantilla para los planes de acción de sus miembros—, pero responderlas sección por sección es la forma más rápida de contrastar este borrador con aquello sobre lo que la Coalición pide reflexionar.",
+      "Las indicaciones marcadas como *Pregunta orientadora de CoARA* proceden de las *Action Plan Guidelines* (octubre de 2023) del Secretariado de CoARA. Son un recurso y una sugerencia, no una plantilla obligatoria (CoARA no publica ninguna plantilla para los planes de acción de sus miembros), pero responderlas sección por sección es la forma más rápida de contrastar este borrador con aquello sobre lo que la Coalición pide reflexionar.",
     gq_quotedInEnglish:
       "Se reproducen en el inglés publicado, dado que CoARA no publica traducción.",
     gq_source:
@@ -348,12 +348,12 @@ export default {
     leadership: { label: "Alta dirección", hint: "Rectorado, vicerrectorado de investigación, órgano de gobierno." },
     "research-office": { label: "Oficina de investigación / apoyo", hint: "Servicios de investigación, oficina de RRA o ciencia abierta." },
     "working-group": { label: "Grupo de trabajo de reforma", hint: "Equipo dedicado a CoARA / reforma de la evaluación." },
-    researcher: { label: "Investigador/a / personal académico", hint: "Profesorado, posdocs — quienes son evaluados." },
+    researcher: { label: "Investigador/a / personal académico", hint: "Profesorado, posdocs: quienes son evaluados." },
     "hr-career": { label: "RR. HH. y desarrollo de carrera", hint: "Responsables de contratación, promoción y evaluación del desempeño." },
     "library-os": { label: "Biblioteca / Ciencia Abierta", hint: "Repositorio, datos FAIR, comunicación científica." },
     "evaluation-committee": { label: "Comité de evaluación / calidad", hint: "Comités que ejecutan los procesos de evaluación." },
     funder: { label: "Financiador / RFO", hint: "Organización financiadora que diseña convocatorias y criterios." },
-    external: { label: "Revisor/a externo/a o consultor/a", hint: "Mirada externa — institución par o auditor." },
+    external: { label: "Revisor/a externo/a o consultor/a", hint: "Mirada externa: institución par o auditor." },
   },
 
   questions: {
@@ -391,7 +391,7 @@ export default {
       },
     },
     q1d: {
-      text: "¿Tu institución considera la equidad, la diversidad y la inclusión (EDI) en sus procesos de evaluación — p. ej., interrupciones de carrera, licencias parentales, discapacidad, sesgo de género en los comités de evaluación?",
+      text: "¿Tu institución considera la equidad, la diversidad y la inclusión (EDI) en sus procesos de evaluación, p. ej., interrupciones de carrera, licencias parentales, discapacidad, sesgo de género en los comités de evaluación?",
       answers: {
         0: "La EDI no se considera en la evaluación",
         1: "Somos conscientes de los temas de EDI, pero no hemos actuado",
@@ -442,7 +442,7 @@ export default {
         2: "Estamos encuestando a las personas evaluadoras para entender las prácticas actuales",
         3: "Tenemos evidencia de la brecha y un plan para abordarla",
         4: "Ofrecemos orientación y monitoreamos el mal uso de métricas",
-        5: "La cultura ha cambiado — las personas evaluadoras usan habitualmente el juicio cualitativo",
+        5: "La cultura ha cambiado: las personas evaluadoras usan habitualmente el juicio cualitativo",
       },
     },
     q4a: {
@@ -626,7 +626,7 @@ export default {
   commitments: {
     diversity: {
       title: "Reconocer la diversidad de contribuciones",
-      text: "Reconocer la diversidad de actividades, prácticas y contribuciones que maximizan la calidad y el impacto de la investigación — incluyendo, entre otras: la investigación de calidad (de la fundamental a la traslacional), la docencia, la mentoría, la supervisión, el liderazgo, el emprendimiento, la movilización del conocimiento, la gestión de la investigación, la innovación, la colaboración público-privada, la participación ciudadana y las prácticas de ciencia abierta.",
+      text: "Reconocer la diversidad de actividades, prácticas y contribuciones que maximizan la calidad y el impacto de la investigación, incluyendo, entre otras, la investigación de calidad (de la fundamental a la traslacional), la docencia, la mentoría, la supervisión, el liderazgo, el emprendimiento, la movilización del conocimiento, la gestión de la investigación, la innovación, la colaboración público-privada, la participación ciudadana y las prácticas de ciencia abierta.",
       inPractice: [
         "Ampliar lo que 'cuenta' en la evaluación más allá de las publicaciones",
         "Incluir conjuntos de datos, software, patentes, mentoría y divulgación en los criterios de evaluación",
@@ -808,7 +808,7 @@ export default {
     {
       title: "Realizar una auditoría exhaustiva de criterios",
       description: "Revisa sistemáticamente TODOS los criterios de evaluación: contratación (todos los niveles), promoción, titularidad, convocatorias internas, años sabáticos, premios, evaluaciones de departamento. Usa una lista de verificación estandarizada.",
-      planText: "Revisaremos sistemáticamente todos los criterios de evaluación — contratación en todos los niveles, promoción, titularidad, convocatorias internas, años sabáticos, premios y evaluaciones de departamento — con una lista de verificación estandarizada.",
+      planText: "Revisaremos sistemáticamente todos los criterios de evaluación (contratación en todos los niveles, promoción, titularidad, convocatorias internas, años sabáticos, premios y evaluaciones de departamento) con una lista de verificación estandarizada.",
     },
     {
       title: "Rediseñar las rúbricas de evaluación",
@@ -828,7 +828,7 @@ export default {
     {
       title: "Realizar talleres y asambleas abiertas",
       description: "Organiza talleres interactivos para personas investigadoras, evaluadoras y administrativas. Incluye ejercicios prácticos (p. ej., 'evalúa a esta candidatura sin métricas'). Realiza asambleas abiertas de preguntas y respuestas.",
-      planText: "Organizaremos talleres interactivos para personas investigadoras, evaluadoras y administrativas — con ejercicios prácticos como la evaluación de candidaturas sin métricas — complementados con asambleas abiertas de preguntas y respuestas.",
+      planText: "Organizaremos talleres interactivos para personas investigadoras, evaluadoras y administrativas, con ejercicios prácticos como la evaluación de candidaturas sin métricas, complementados con asambleas abiertas de preguntas y respuestas.",
     },
     {
       title: "Unirse a Grupos de Trabajo temáticos y Action Clusters de CoARA",
@@ -838,8 +838,8 @@ export default {
     },
     {
       title: "Co-organizar actividades de aprendizaje entre pares",
-      description: "Asóciate con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas. Comparte tu experiencia de implementación — tanto los éxitos como los fracasos.",
-      planText: "Nos asociaremos con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas, compartiendo nuestra experiencia de implementación — tanto los éxitos como los fracasos.",
+      description: "Asóciate con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas. Comparte tu experiencia de implementación, tanto los éxitos como los fracasos.",
+      planText: "Nos asociaremos con otras entidades firmantes para organizar talleres, seminarios web o visitas conjuntas, compartiendo nuestra experiencia de implementación, tanto los éxitos como los fracasos.",
     },
     {
       title: "Definir indicadores de progreso",
@@ -859,7 +859,7 @@ export default {
     {
       title: "Liderar o contribuir a estudios de benchmarking",
       description: "Comparte datos de evaluación anonimizados con instituciones pares. Participa en estudios comparativos del progreso de la reforma entre entidades firmantes o inícialos.",
-      planText: "Compartiremos datos de evaluación anonimizados con instituciones pares y participaremos en — o iniciaremos — estudios comparativos del progreso de la reforma entre entidades firmantes.",
+      planText: "Compartiremos datos de evaluación anonimizados con instituciones pares y participaremos en estudios comparativos del progreso de la reforma entre entidades firmantes, o los iniciaremos.",
     },
     {
       title: "Revisar los procesos de evaluación en busca de brechas de EDI",
@@ -882,7 +882,7 @@ export default {
     {
       title: "Integrar la ciencia abierta en los criterios de evaluación",
       description: "Añade las prácticas de ciencia abierta como criterios positivos: compartir datos, disponibilidad del código, preregistro, publicación en acceso abierto. Premia la reproducibilidad y la transparencia, no solo el volumen de productos.",
-      planText: "Añadiremos las prácticas de ciencia abierta como criterios positivos de evaluación — compartir datos, disponibilidad del código, preregistro, publicación en acceso abierto — premiando la reproducibilidad y la transparencia y no solo el volumen de productos.",
+      planText: "Añadiremos las prácticas de ciencia abierta como criterios positivos de evaluación (compartir datos, disponibilidad del código, preregistro, publicación en acceso abierto), premiando la reproducibilidad y la transparencia y no solo el volumen de productos.",
       examples: ["AQU Catalunya action A23", "UCM open peer review module in repository", "SDU OADO indicator"],
     },
     {
@@ -900,7 +900,7 @@ export default {
     {
       title: "Mejorar la infraestructura para apoyar la evaluación reformada",
       description: "Implementa o mejora el CRIS, integra ORCID, despliega repositorios de datos, conecta los sistemas con los flujos de trabajo de evaluación. Asegura que la infraestructura registre lo que requieren los nuevos criterios.",
-      planText: "Implementaremos o mejoraremos nuestra infraestructura de información de investigación — CRIS, integración con ORCID, repositorios de datos — y la conectaremos con los flujos de trabajo de evaluación para que registre lo que requieren los nuevos criterios.",
+      planText: "Implementaremos o mejoraremos nuestra infraestructura de información de investigación (CRIS, integración con ORCID, repositorios de datos) y la conectaremos con los flujos de trabajo de evaluación para que registre lo que requieren los nuevos criterios.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
@@ -929,7 +929,7 @@ export default {
     },
     {
       title: "Extender la reforma a la evaluación de unidades e instituciones",
-      description: "La reforma no se detiene en la evaluación individual. Revisa cómo se evalúan los departamentos, institutos y grupos de investigación — estos procesos también dependen de métricas de publicación y rankings. Desarrolla alternativas cualitativas.",
+      description: "La reforma no se detiene en la evaluación individual. Revisa cómo se evalúan los departamentos, institutos y grupos de investigación: estos procesos también dependen de métricas de publicación y rankings. Desarrolla alternativas cualitativas.",
       planText: "Extenderemos la reforma más allá de la evaluación individual, revisando cómo se evalúan los departamentos, institutos y grupos de investigación y desarrollando alternativas cualitativas a las métricas de publicación y los rankings.",
       examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
     },
@@ -943,7 +943,7 @@ export default {
       title: "Auditar el sesgo lingüístico (Helsinki Initiative on Multilingualism)",
       description: "Asegura que la investigación en lenguas locales o no dominantes no sea penalizada. Revisa los criterios, la composición de los comités y las bases de datos consultadas en busca de sesgo implícito hacia el inglés. La Helsinki Initiative ofrece el marco canónico.",
       planText: "Revisaremos los criterios, la composición de los comités y las bases de datos que consultamos en busca de sesgo implícito hacia el inglés, siguiendo la Helsinki Initiative on Multilingualism, para que la investigación en lenguas locales o no dominantes no sea penalizada.",
-      examples: ["AQU Catalunya — Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
+      examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
     },
     {
       title: "Unirse a un foro regional o capítulo nacional",
@@ -960,13 +960,13 @@ export default {
     {
       title: "Documentar las excepciones a la apertura ('tan abierto como sea posible, tan cerrado como sea necesario')",
       description: "La apertura es la opción por defecto; las excepciones deben documentarse, tener plazo limitado, estar sujetas a supervisión y revisarse periódicamente. Este principio (del Whitepaper CoARA-ERIP y la Declaración de Barcelona) convierte los datos cerrados en la excepción auditable en lugar de la norma silenciosa.",
-      planText: "Haremos de la apertura la opción por defecto y documentaremos cada excepción — con plazo limitado, sujeta a supervisión y revisada periódicamente — para que los datos cerrados sean la excepción auditable y no la norma silenciosa.",
+      planText: "Haremos de la apertura la opción por defecto y documentaremos cada excepción (con plazo limitado, sujeta a supervisión y revisada periódicamente) para que los datos cerrados sean la excepción auditable y no la norma silenciosa.",
       examples: ["CoARA-ERIP Whitepaper (2025)", "UNESCO Recommendation on Open Science"],
     },
     {
       title: "Mapear tu infraestructura de evaluación contra la arquitectura de 4 niveles de OI4RRA",
       description: "El WG OI4RRA de CoARA define una arquitectura de 4 niveles: Nivel 0 Fundamento (PIDs, ORCID, ROR, DOI), Nivel 1 Publicación, Nivel 2 Agregadores de metadatos (OpenAIRE, ORKG), Nivel 3 Apoyo a la evaluación (analítica, constructores de CV narrativo). Mapea lo que tienes frente a lo que falta en cada nivel; invierte en consecuencia.",
-      planText: "Mapearemos nuestra infraestructura de evaluación contra la arquitectura de cuatro niveles de OI4RRA — desde los identificadores persistentes hasta las herramientas de apoyo a la evaluación — e invertiremos donde falten niveles.",
+      planText: "Mapearemos nuestra infraestructura de evaluación contra la arquitectura de cuatro niveles de OI4RRA, desde los identificadores persistentes hasta las herramientas de apoyo a la evaluación, e invertiremos donde falten niveles.",
       examples: ["OI4RRA Framework & Principles (Manola et al. 2025)", "OI4RRA Policy Briefs for RPOs/RFOs"],
     },
     {
@@ -977,8 +977,8 @@ export default {
     },
     {
       title: "Anclar la reforma en un marco establecido (DORA / Leiden / SCOPE)",
-      description: "No partas de una página en blanco. Adopta formalmente un ancla existente: firma DORA, respalda el Manifiesto de Leiden o usa el modelo SCOPE como espina dorsal de tu proceso. Aproximadamente el 43% de los planes de acción CoARA publicados citan al menos uno — aporta legitimidad, un vocabulario compartido y orientaciones que las personas evaluadoras ya reconocen.",
-      planText: "Anclaremos nuestra reforma en un marco establecido — firmando DORA, respaldando el Manifiesto de Leiden o adoptando el modelo SCOPE como espina dorsal de nuestro proceso — dotándola de legitimidad, un vocabulario compartido y orientaciones que las personas evaluadoras ya reconocen.",
+      description: "No partas de una página en blanco. Adopta formalmente un ancla existente: firma DORA, respalda el Manifiesto de Leiden o usa el modelo SCOPE como espina dorsal de tu proceso. Aproximadamente el 43% de los planes de acción CoARA publicados citan al menos uno, que aporta legitimidad, un vocabulario compartido y orientaciones que las personas evaluadoras ya reconocen.",
+      planText: "Anclaremos nuestra reforma en un marco establecido (firmando DORA, respaldando el Manifiesto de Leiden o adoptando el modelo SCOPE como espina dorsal de nuestro proceso), dotándola de legitimidad, un vocabulario compartido y orientaciones que las personas evaluadoras ya reconocen.",
     },
     {
       title: "Lograr la aprobación formal del plan por los órganos de gobierno",

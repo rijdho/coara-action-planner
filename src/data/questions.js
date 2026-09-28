@@ -51,7 +51,7 @@ export const QUESTIONS = [
   {
     id: "q1d",
     commitment: "diversity",
-    text: "Does your institution consider equity, diversity, and inclusion (EDI) in its assessment processes — e.g., career breaks, parental leave, disability, gender bias in evaluation committees?",
+    text: "Does your institution consider equity, diversity, and inclusion (EDI) in its assessment processes, e.g., career breaks, parental leave, disability, gender bias in evaluation committees?",
     answers: [
       { level: 0, text: "EDI is not considered in assessment" },
       { level: 1, text: "We are aware of EDI issues but haven't acted" },
@@ -114,7 +114,7 @@ export const QUESTIONS = [
       { level: 2, text: "We are surveying evaluators to understand current practices" },
       { level: 3, text: "We have evidence of the gap and a plan to address it" },
       { level: 4, text: "We provide guidance and monitor for metric misuse" },
-      { level: 5, text: "Culture has shifted — evaluators routinely use qualitative judgement" },
+      { level: 5, text: "Culture has shifted: evaluators routinely use qualitative judgement" },
     ],
   },
 

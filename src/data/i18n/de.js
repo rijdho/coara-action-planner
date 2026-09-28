@@ -48,7 +48,7 @@ export default {
     start_lensesTitle: "Drei Blickwinkel",
     start_lens_now: "① Wo wir heute stehen",
     start_lens_now_desc:
-      "Der Fragebogen misst Ihre aktuelle Reife bei jeder CoARA-Verpflichtung — den Ist-Zustand, ehrlich eingeschätzt.",
+      "Der Fragebogen misst Ihre aktuelle Reife bei jeder CoARA-Verpflichtung: den Ist-Zustand, ehrlich eingeschätzt.",
     start_lens_goal: "② Wohin wir wollen",
     start_lens_goal_desc:
       "Im Tab Plan legen Sie ein Reife-Ziel pro Verpflichtung fest. Die Lücke zwischen Ist und Ziel schließt Ihr Aktionsplan.",
@@ -60,10 +60,10 @@ export default {
     start_instPlaceholder: "Name der Einrichtung (optional)",
     start_perspectivesTitle: "Perspektiven",
     start_perspectivesHint:
-      "Jede Perspektive ist die Sicht einer antwortenden Person, versehen mit ihrer Rolle. Alle beantworten dieselben 24 Fragen — Sie füllen sie einmal pro Perspektive aus, aus diesem Blickwinkel. Die Ergebnisse führen die Perspektiven zusammen und markieren, wo deren Einschätzungen derselben Frage voneinander abweichen (die Wahrnehmungslücke).",
+      "Jede Perspektive ist die Sicht einer antwortenden Person, versehen mit ihrer Rolle. Alle beantworten dieselben 24 Fragen; Sie füllen sie einmal pro Perspektive aus, aus diesem Blickwinkel. Die Ergebnisse führen die Perspektiven zusammen und markieren, wo deren Einschätzungen derselben Frage voneinander abweichen (die Wahrnehmungslücke).",
     start_perspectivesEyebrow: "Was dieses Werkzeug kann und ein Leitfaden nicht",
     start_perspectivesWhy:
-      "Ein Plan, den eine einzelne Stelle schreibt, gibt eine einzige Sichtweise wieder. Beantworten Leitung, Forschungsservice und Forschende dieselben 24 Fragen, wird die Uneinigkeit selbst zum Befund: Ergebnisse markiert jede Verpflichtung, deren Einschätzungen um zwei Stufen oder mehr auseinandergehen — und genau dort lohnt die Verständigung, bevor irgendetwas geschrieben wird.",
+      "Ein Plan, den eine einzelne Stelle schreibt, gibt eine einzige Sichtweise wieder. Beantworten Leitung, Forschungsservice und Forschende dieselben 24 Fragen, wird die Uneinigkeit selbst zum Befund: Ergebnisse markiert jede Verpflichtung, deren Einschätzungen um zwei Stufen oder mehr auseinandergehen, und genau dort lohnt die Verständigung, bevor irgendetwas geschrieben wird.",
     start_quickStart: "Gemeinsame Bestandsaufnahme einrichten:",
     start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspektive {n}",
@@ -79,13 +79,13 @@ export default {
     start_cta: "Zum Fragebogen →",
     asmt_answeringAs: "Antwort als: {role}",
     asmt_switchPerspective: "Wechseln →",
-    plan_s5_title: "5 · Ambition — wohin wollen Sie?",
+    plan_s5_title: "5 · Ambition: wohin wollen Sie?",
     plan_s5_hint:
-      "Legen Sie ein Reife-Ziel pro Verpflichtung fest. Maßnahmen, die die Lücke zwischen Ihrer aktuellen Stufe und dem Ziel schließen, steigen nach oben; Verpflichtungen, die ihr Ziel bereits erreicht haben, sinken. Lassen Sie „—“, um nur nach der Lücke bis zur höchsten Stufe zu ordnen.",
+      "Legen Sie ein Reife-Ziel pro Verpflichtung fest. Maßnahmen, die die Lücke zwischen Ihrer aktuellen Stufe und dem Ziel schließen, steigen nach oben; Verpflichtungen, die ihr Ziel bereits erreicht haben, sinken. Lassen Sie „–“, um nur nach der Lücke bis zur höchsten Stufe zu ordnen.",
     plan_ambition_now: "jetzt",
     plan_ambition_current: "aktuelle Stufe",
     plan_ambition_target: "Zielstufe",
-    plan_ambition_notset: "—",
+    plan_ambition_notset: "–",
     plan_ambition_clear: "Alle Ziele löschen",
     plan_s6_title: "6 · Perspektivengewichtung & Abstimmung",
     plan_s6_hint:
@@ -98,7 +98,7 @@ export default {
     res_ambitionSet: "Ambition festgelegt",
     res_currentVsTarget: "aktuell vs Ziel",
     res_consolidatedNote: "Rollengewichteter Durchschnitt über {n} Perspektiven (die Bewerteten zählen mehr).",
-    res_perceptionGap: "Perspektiven weichen um ≥2 Stufen ab bei: {list} — zur Abstimmung priorisiert.",
+    res_perceptionGap: "Perspektiven weichen um ≥2 Stufen ab bei: {list}. Zur Abstimmung priorisiert.",
     print_respondents: "Antwortende: {list}",
     radar_target: "Ziel",
 
@@ -112,18 +112,18 @@ export default {
     // Plan page
     plan_emptyTitle: "Plan",
     plan_emptyBody:
-      "Beantworten Sie zuerst den Fragebogen — der Plan stimmt die Maßnahmen ab, die sich aus Ihrem Reifegradprofil ergeben.",
+      "Beantworten Sie zuerst den Fragebogen: Der Plan stimmt die Maßnahmen ab, die sich aus Ihrem Reifegradprofil ergeben.",
     plan_startQuestionnaire: "Fragebogen starten",
     plan_title: "Ihren Aktionsplan gestalten",
     plan_intro:
-      "Vier schnelle Entscheidungen, die festlegen, welche Maßnahmen zuerst erscheinen. Nichts davon ist erforderlich — die Standardeinstellungen ergeben einen ausgewogenen, lückenorientierten Plan. Ihr Reifegradprofil bleibt unverändert.",
+      "Vier schnelle Entscheidungen, die festlegen, welche Maßnahmen zuerst erscheinen. Nichts davon ist erforderlich; die Standardeinstellungen ergeben einen ausgewogenen, lückenorientierten Plan. Ihr Reifegradprofil bleibt unverändert.",
     plan_s1_title: "1 · Zeithorizont & Kapazität",
     plan_s1_hint: "Wie viel Veränderung können Sie derzeit bewältigen?",
     plan_s2_title: "2 · Institutioneller Kontext",
     plan_s2_hint: "Hebt Maßnahmen hervor, die für Ihre Situation besonders relevant sind.",
     plan_s3_title: "3 · Prioritäre Verpflichtungen",
     plan_s3_hint:
-      "Wählen Sie die CoARA-Verpflichtungen, die Sie zuerst angehen möchten — ihre Maßnahmen rücken in der Liste nach oben. Leer lassen für keine.",
+      "Wählen Sie die CoARA-Verpflichtungen, die Sie zuerst angehen möchten; ihre Maßnahmen rücken in der Liste nach oben. Leer lassen für keine.",
     plan_clear: "Auswahl löschen",
     plan_s4_title: "4 · Aufwändige Maßnahmen",
     plan_s4_hint: "Strukturelle Reformen (neue Kriterien, systemweite Schulungen) erfordern erhebliche Ressourcen.",
@@ -161,7 +161,7 @@ export default {
     res_saveConfig: "Konfig. speichern",
     cfg_title: "Konfiguration speichern / laden",
     cfg_hint:
-      "Speichern Sie alle Eingaben dieser Bewertung (Antworten, Perspektiven, Zielniveau und Plan) in einer Datei — um genau diesen Bericht später zu reproduzieren, zu teilen oder als Basis zum Ändern neu zu laden.",
+      "Speichern Sie alle Eingaben dieser Bewertung (Antworten, Perspektiven, Zielniveau und Plan) in einer Datei, um genau diesen Bericht später zu reproduzieren, zu teilen oder als Basis zum Ändern neu zu laden.",
     cfg_save: "Konfiguration speichern",
     cfg_load: "Konfiguration laden",
     cfg_loaded: "Konfiguration geladen.",
@@ -186,17 +186,17 @@ export default {
     ev_universal: "Nahezu universell in bestehenden Plänen",
     ev_common: "Verbreitet in bestehenden Plänen",
     ev_emerging: "Aufkommende Praxis",
-    ev_frontier: "Neuland — bislang von wenigen Plänen umgesetzt; eine Chance, voranzugehen",
+    ev_frontier: "Neuland: bislang von wenigen Plänen umgesetzt, eine Chance, voranzugehen",
     res_ctaNext: "Weiter:",
     res_ctaBody: "verwandeln Sie dies in einen schriftlichen CoARA-Aktionsplan-Entwurf, den Sie bearbeiten und teilen können.",
     res_generateReport: "Bericht erstellen →",
 
-    // Results — print view
-    print_title: "Reform der Forschungsbewertung — Reifegradbericht",
+    // Results: print view
+    print_title: "Reform der Forschungsbewertung: Reifegradbericht",
     print_meta: "{inst} · {date} · CoARA-Verpflichtungen · basierend auf {answered}/{total} Fragen",
     print_planPrefix: "Plan:",
     print_overall: "Gesamtreifegrad:",
-    print_level: "Stufe {n} — {label}",
+    print_level: "Stufe {n} · {label}",
     print_byCommitment: "Reifegrad nach Verpflichtung",
     print_priorityActions: "Prioritäre Maßnahmen",
     print_footer:
@@ -206,12 +206,12 @@ export default {
     // Report page
     rep_emptyTitle: "Bericht",
     rep_emptyBody:
-      "Beantworten Sie zuerst den Fragebogen — der Bericht wird aus Ihrem Reifegradprofil und Ihrem Plan entworfen.",
+      "Beantworten Sie zuerst den Fragebogen: Der Bericht wird aus Ihrem Reifegradprofil und Ihrem Plan entworfen.",
     rep_title: "Aktionsplan-Bericht",
     rep_intro_pre:
       "Ein vorstrukturierter CoARA-Aktionsplan-Entwurf, erstellt aus Ihren Antworten und Ihrem Plan. Seine Struktur folgt echten institutionellen Aktionsplänen (Einleitung → Ausgangslage → Prioritäten → Maßnahmen je Verpflichtung → Ressourcen → Monitoring). ",
     rep_intro_strong: "Bearbeiten Sie ihn frei",
-    rep_intro_post: " — eingeklammerte [Felder] sind auszufüllende Lücken. Wird beim Tippen lokal gespeichert.",
+    rep_intro_post: ". Eingeklammerte [Felder] sind auszufüllende Lücken. Wird beim Tippen lokal gespeichert.",
     rep_copy: "Text kopieren",
     rep_copied: "Kopiert ✓",
     rep_downloadMd: ".md herunterladen",
@@ -223,10 +223,10 @@ export default {
     // radar tooltip / series
     radar_current: "Aktuell",
     radar_previous: "Vorher",
-    radar_level: "Stufe {n} — {label}",  },
+    radar_level: "Stufe {n} · {label}",  },
 
   report: {
-    docTitle: "{inst} — Aktionsplan zur Reform der Forschungsbewertung",
+    docTitle: "{inst}: Aktionsplan zur Reform der Forschungsbewertung",
     subtitle: "Im Einklang mit der CoARA-Vereinbarung zur Reform der Forschungsbewertung · {date}",
     respondentSingle:
       "Diese Selbsteinschätzung wurde aus der Perspektive von {role} erstellt und sollte mit diesem Blickwinkel im Hinterkopf gelesen werden.",
@@ -245,7 +245,7 @@ export default {
       "Dieser Plan stützt sich auf eine strukturierte Selbsteinschätzung über die zehn CoARA-Verpflichtungen hinweg. Er beschreibt unsere aktuelle Ausgangslage, unsere Prioritäten und die konkreten Maßnahmen, die wir ergreifen werden, zusammen mit den verantwortlichen Einheiten, indikativen Zeitrahmen und den Meilensteinen, an denen wir den Fortschritt messen werden.",
 
     h_baseline: "1. Selbsteinschätzung der Ausgangslage",
-    overall: "Gesamtreifegrad: Stufe {level} — {label}.",
+    overall: "Gesamtreifegrad: Stufe {level} ({label}).",
     established: "Etabliert (Stufe 4–5):",
     developing: "In Entwicklung (Stufe 2–3):",
     gaps: "Prioritäre Lücken (Stufe 0–1):",
@@ -261,7 +261,7 @@ export default {
     actionsIntro:
       "Die folgenden Maßnahmen sind nach der Größe jeder Lücke und ihrer erwarteten Wirkung priorisiert{focusClause}. Eingeklammerte Felder sind von der verantwortlichen Einheit auszufüllen.",
     actionsFocusClause: ", mit zusätzlichem Gewicht auf unseren prioritären Verpflichtungen",
-    actionHeading: "C{num}. {title} — aktuell Stufe {lvl} ({label})",
+    actionHeading: "C{num}. {title}: aktuell Stufe {lvl} ({label})",
     actionLabel: "Maßnahme:",
     targetLabel: "Fortschritt:",
     targetValue: "Stufe {from} → {to} · Aufwand {effort} · erwartete Wirkung {impact}",
@@ -273,7 +273,7 @@ export default {
     indicatorLabel: "Indikator / Meilenstein:",
     indicatorPlaceholder: "[beobachtbares Ergebnis, z. B. überarbeitete Kriterien genehmigt]",
     noActions:
-      "Es wurden keine Maßnahmen empfohlen — Ihr Reifegrad ist über die bewerteten Verpflichtungen hinweg bereits hoch. Konzentrieren Sie sich auf die unten beschriebenen Verankerungs- und Monitoring-Aktivitäten.",
+      "Es wurden keine Maßnahmen empfohlen: Ihr Reifegrad ist über die bewerteten Verpflichtungen hinweg bereits hoch. Konzentrieren Sie sich auf die unten beschriebenen Verankerungs- und Monitoring-Aktivitäten.",
 
     h_resources: "4. Ressourcen (CoARA-Verpflichtung 5)",
     resourcesBody:
@@ -281,7 +281,7 @@ export default {
 
     h_awareness: "5. Sensibilisierung, Anleitung & Austausch (CoARA-Verpflichtungen 7–8)",
     awarenessBody:
-      "Wir werden intern sensibilisieren und zugängliche Leitlinien zu den reformierten Kriterien und ihrer verantwortungsvollen Nutzung veröffentlichen. {inst} wird Praktiken mit Partnereinrichtungen austauschen — über [CoARA-Arbeitsgruppen / nationales Kapitel / regionales Forum] — und dabei anerkennen, dass Organisationen sich an unterschiedlichen Punkten des Weges befinden.",
+      "Wir werden intern sensibilisieren und zugängliche Leitlinien zu den reformierten Kriterien und ihrer verantwortungsvollen Nutzung veröffentlichen. {inst} wird Praktiken mit Partnereinrichtungen austauschen (über [CoARA-Arbeitsgruppen / nationales Kapitel / regionales Forum]) und dabei anerkennen, dass Organisationen sich an unterschiedlichen Punkten des Weges befinden.",
 
     h_monitoring: "6. Monitoring, Evaluation & Kommunikation des Fortschritts (CoARA-Verpflichtungen 9–10)",
     monitoringBody:
@@ -305,7 +305,7 @@ export default {
     hs_balanced:
       "Wir verfolgen eine ausgewogene Mischung aus frühen Erfolgen und umfangreicheren Reformen, geordnet nach der Größe jeder Lücke und ihrer erwarteten Wirkung.",
     hs_structural:
-      "Wir sind bereit, ehrgeizige, strukturelle Reformen anzugehen — Kriterien und Verfahren systemweit zu überarbeiten — auch wo dies anhaltenden Aufwand und Ressourcen erfordert.",
+      "Wir sind bereit, ehrgeizige, strukturelle Reformen anzugehen, Kriterien und Verfahren systemweit zu überarbeiten, auch wo dies anhaltenden Aufwand und Ressourcen erfordert.",
 
     // context sentences (appended to intro1; leading space intentional)
     cs_globalnorth:
@@ -329,7 +329,7 @@ export default {
     gq_label: "CoARA-Leitfrage",
     gq_labelPlural: "CoARA-Leitfragen",
     gq_intro:
-      "Die mit *CoARA-Leitfrage* gekennzeichneten Impulse sind den *Action Plan Guidelines* (Oktober 2023) des CoARA-Sekretariats entnommen. Sie sind eine Anregung und Hilfestellung, keine verbindliche Vorlage — für Aktionspläne seiner Mitglieder veröffentlicht CoARA überhaupt keine Vorlage —, doch sie Abschnitt für Abschnitt zu beantworten ist der schnellste Weg, diesen Entwurf daran zu prüfen, worüber die Koalition ihre Mitglieder zum Nachdenken auffordert.",
+      "Die mit *CoARA-Leitfrage* gekennzeichneten Impulse sind den *Action Plan Guidelines* (Oktober 2023) des CoARA-Sekretariats entnommen. Sie sind eine Anregung und Hilfestellung, keine verbindliche Vorlage (für Aktionspläne seiner Mitglieder veröffentlicht CoARA überhaupt keine Vorlage), doch sie Abschnitt für Abschnitt zu beantworten ist der schnellste Weg, diesen Entwurf daran zu prüfen, worüber die Koalition ihre Mitglieder zum Nachdenken auffordert.",
     gq_quotedInEnglish:
       "Sie werden im veröffentlichten Englisch wiedergegeben, da CoARA keine Übersetzung herausgibt.",
     gq_source:
@@ -343,12 +343,12 @@ export default {
     leadership: { label: "Hochschulleitung", hint: "Rektorat, Vizerektorat für Forschung, Leitungsgremium." },
     "research-office": { label: "Forschungsservice / Unterstützung", hint: "Forschungsservice, RRA- oder Open-Science-Büro." },
     "working-group": { label: "Reform-Arbeitsgruppe", hint: "Eigene CoARA- / Bewertungsreform-Arbeitsgruppe." },
-    researcher: { label: "Forschende / akademisches Personal", hint: "Lehrende, Postdocs — die Bewerteten." },
+    researcher: { label: "Forschende / akademisches Personal", hint: "Lehrende, Postdocs: die Bewerteten." },
     "hr-career": { label: "Personal & Karriereentwicklung", hint: "Verantwortliche für Einstellung, Beförderung und Beurteilung." },
     "library-os": { label: "Bibliothek / Open Science", hint: "Repositorium, FAIRe Daten, Wissenschaftskommunikation." },
     "evaluation-committee": { label: "Bewertungs- / Qualitätsausschuss", hint: "Gremien, die Bewertungsprozesse durchführen." },
     funder: { label: "Förderer / RFO", hint: "Förderorganisation, die Ausschreibungen und Kriterien gestaltet." },
-    external: { label: "Externe Gutachter/in oder Berater/in", hint: "Außenblick — Partnereinrichtung oder Auditor." },
+    external: { label: "Externe Gutachter/in oder Berater/in", hint: "Außenblick: Partnereinrichtung oder Auditor." },
   },
 
   questions: {
@@ -386,7 +386,7 @@ export default {
       },
     },
     q1d: {
-      text: "Berücksichtigt Ihre Einrichtung Gleichstellung, Vielfalt und Inklusion (EDI) in ihren Bewertungsverfahren — z. B. Karriereunterbrechungen, Elternzeit, Behinderung, Geschlechterverzerrung in Bewertungsausschüssen?",
+      text: "Berücksichtigt Ihre Einrichtung Gleichstellung, Vielfalt und Inklusion (EDI) in ihren Bewertungsverfahren, z. B. Karriereunterbrechungen, Elternzeit, Behinderung, Geschlechterverzerrung in Bewertungsausschüssen?",
       answers: {
         0: "EDI wird in der Bewertung nicht berücksichtigt",
         1: "Uns sind EDI-Themen bewusst, aber wir haben nicht gehandelt",
@@ -437,7 +437,7 @@ export default {
         2: "Wir befragen Bewertende, um die aktuelle Praxis zu verstehen",
         3: "Wir haben Belege für die Lücke und einen Plan, sie anzugehen",
         4: "Wir bieten Anleitung und überwachen den Missbrauch von Kennzahlen",
-        5: "Die Kultur hat sich gewandelt — Bewertende nutzen routinemäßig qualitative Beurteilung",
+        5: "Die Kultur hat sich gewandelt: Bewertende nutzen routinemäßig qualitative Beurteilung",
       },
     },
     q4a: {
@@ -621,7 +621,7 @@ export default {
   commitments: {
     diversity: {
       title: "Vielfalt der Beiträge anerkennen",
-      text: "Die Vielfalt der Tätigkeiten, Praktiken und Beiträge anerkennen, die Qualität und Wirkung von Forschung maximieren — einschließlich, aber nicht beschränkt auf: hochwertige Forschung (von der Grundlagen- bis zur translationalen Forschung), Lehre, Mentoring, Betreuung, Leitung, Unternehmertum, Wissensmobilisierung, Forschungsmanagement, Innovation, öffentlich-private Zusammenarbeit, Bürgerbeteiligung und Open-Science-Praktiken.",
+      text: "Die Vielfalt der Tätigkeiten, Praktiken und Beiträge anerkennen, die Qualität und Wirkung von Forschung maximieren, einschließlich, aber nicht beschränkt auf: hochwertige Forschung (von der Grundlagen- bis zur translationalen Forschung), Lehre, Mentoring, Betreuung, Leitung, Unternehmertum, Wissensmobilisierung, Forschungsmanagement, Innovation, öffentlich-private Zusammenarbeit, Bürgerbeteiligung und Open-Science-Praktiken.",
       inPractice: [
         "Erweitern, was in der Bewertung „zählt“, über Publikationen hinaus",
         "Datensätze, Software, Patente, Mentoring, Öffentlichkeitsarbeit in Bewertungskriterien einbeziehen",
@@ -736,7 +736,7 @@ export default {
     {
       title: "Erweiterte Leistungstypologie entwerfen",
       description: "Entwickeln Sie eine umfassende Typologie von Forschungsbeiträgen: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien, Citizen Science usw.",
-      planText: "Wir werden eine umfassende Typologie von Forschungsbeiträgen entwickeln — begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien und Citizen Science.",
+      planText: "Wir werden eine umfassende Typologie von Forschungsbeiträgen entwickeln: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien und Citizen Science.",
       examples: ["Netherlands Recognition & Rewards programme", "UK REF impact case studies"],
     },
     {
@@ -803,7 +803,7 @@ export default {
     {
       title: "Umfassende Kriterienprüfung durchführen",
       description: "Überprüfen Sie systematisch ALLE Bewertungskriterien: Einstellung (alle Ebenen), Beförderung, Tenure, interne Förderungen, Sabbaticals, Auszeichnungen, Fachbereichsbewertungen. Verwenden Sie eine standardisierte Checkliste.",
-      planText: "Wir werden systematisch alle Bewertungskriterien überprüfen — Einstellung auf allen Ebenen, Beförderung, Tenure, interne Förderungen, Sabbaticals, Auszeichnungen und Fachbereichsbewertungen — anhand einer standardisierten Checkliste.",
+      planText: "Wir werden systematisch alle Bewertungskriterien überprüfen (Einstellung auf allen Ebenen, Beförderung, Tenure, interne Förderungen, Sabbaticals, Auszeichnungen und Fachbereichsbewertungen) anhand einer standardisierten Checkliste.",
     },
     {
       title: "Bewertungsrubriken neu gestalten",
@@ -823,7 +823,7 @@ export default {
     {
       title: "Workshops und Town Halls durchführen",
       description: "Organisieren Sie interaktive Workshops für Forschende, Bewertende und Verwaltung. Beziehen Sie praktische Übungen ein (z. B. „Bewerten Sie diese Kandidatin ohne Kennzahlen“). Halten Sie Q&A-Town-Halls ab.",
-      planText: "Wir werden interaktive Workshops für Forschende, Bewertende und Verwaltung organisieren — einschließlich praktischer Übungen wie der kennzahlenfreien Bewertung von Kandidatinnen und Kandidaten — ergänzt durch offene Q&A-Town-Halls.",
+      planText: "Wir werden interaktive Workshops für Forschende, Bewertende und Verwaltung organisieren, einschließlich praktischer Übungen wie der kennzahlenfreien Bewertung von Kandidatinnen und Kandidaten, ergänzt durch offene Q&A-Town-Halls.",
     },
     {
       title: "Thematischen CoARA-Arbeitsgruppen und Action Clusters beitreten",
@@ -833,8 +833,8 @@ export default {
     },
     {
       title: "Peer-Learning-Aktivitäten mitorganisieren",
-      description: "Schließen Sie sich mit anderen Unterzeichnenden zusammen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren. Teilen Sie Ihre Umsetzungserfahrung — sowohl Erfolge als auch Misserfolge.",
-      planText: "Wir werden uns mit anderen Unterzeichnenden zusammenschließen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren, und unsere Umsetzungserfahrung teilen — Erfolge wie Misserfolge.",
+      description: "Schließen Sie sich mit anderen Unterzeichnenden zusammen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren. Teilen Sie Ihre Umsetzungserfahrung, sowohl Erfolge als auch Misserfolge.",
+      planText: "Wir werden uns mit anderen Unterzeichnenden zusammenschließen, um gemeinsame Workshops, Webinare oder Besuche vor Ort zu organisieren, und unsere Umsetzungserfahrung teilen, Erfolge wie Misserfolge.",
     },
     {
       title: "Fortschrittsindikatoren definieren",
@@ -854,7 +854,7 @@ export default {
     {
       title: "Benchmarking-Studien leiten oder zu ihnen beitragen",
       description: "Teilen Sie anonymisierte Bewertungsdaten mit Partnereinrichtungen. Beteiligen Sie sich an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg oder initiieren Sie solche.",
-      planText: "Wir werden anonymisierte Bewertungsdaten mit Partnereinrichtungen teilen und uns an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg beteiligen — oder solche initiieren.",
+      planText: "Wir werden anonymisierte Bewertungsdaten mit Partnereinrichtungen teilen und uns an vergleichenden Studien zum Reformfortschritt über die Unterzeichnenden hinweg beteiligen oder solche initiieren.",
     },
     {
       title: "Bewertungsverfahren auf EDI-Lücken prüfen",
@@ -877,7 +877,7 @@ export default {
     {
       title: "Open Science in die Bewertungskriterien integrieren",
       description: "Fügen Sie Open-Science-Praktiken als positive Kriterien hinzu: Datenteilung, Verfügbarkeit von Code, Präregistrierung, Open-Access-Publizieren. Honorieren Sie Reproduzierbarkeit und Transparenz, nicht nur das Volumen an Forschungsleistungen.",
-      planText: "Wir werden Open-Science-Praktiken als positive Bewertungskriterien hinzufügen — Datenteilung, Verfügbarkeit von Code, Präregistrierung, Open-Access-Publizieren — und Reproduzierbarkeit und Transparenz honorieren statt allein das Volumen an Forschungsleistungen.",
+      planText: "Wir werden Open-Science-Praktiken als positive Bewertungskriterien hinzufügen (Datenteilung, Verfügbarkeit von Code, Präregistrierung, Open-Access-Publizieren) und Reproduzierbarkeit und Transparenz honorieren statt allein das Volumen an Forschungsleistungen.",
       examples: ["AQU Catalunya action A23", "UCM open peer review module in repository", "SDU OADO indicator"],
     },
     {
@@ -895,7 +895,7 @@ export default {
     {
       title: "Infrastruktur ausbauen, um die reformierte Bewertung zu unterstützen",
       description: "Implementieren oder erweitern Sie ein CRIS, integrieren Sie ORCID, setzen Sie Datenrepositorien ein, verbinden Sie Systeme mit den Bewertungsabläufen. Stellen Sie sicher, dass die Infrastruktur erfasst, was die neuen Kriterien erfordern.",
-      planText: "Wir werden unsere Forschungsinformationsinfrastruktur implementieren oder ausbauen — CRIS, ORCID-Integration, Datenrepositorien — und sie mit den Bewertungsabläufen verbinden, damit sie erfasst, was die neuen Kriterien erfordern.",
+      planText: "Wir werden unsere Forschungsinformationsinfrastruktur implementieren oder ausbauen (CRIS, ORCID-Integration, Datenrepositorien) und sie mit den Bewertungsabläufen verbinden, damit sie erfasst, was die neuen Kriterien erfordern.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
@@ -919,12 +919,12 @@ export default {
     {
       title: "Interne Umfrage zur Wahrnehmung der Bewertung durchführen",
       description: "Befragen Sie Ihre Forschungsgemeinschaft: Welche Kriterien werden ihrer Ansicht nach verwendet vs. welche sollten verwendet werden? Diese Evidenzbasis ist von unschätzbarem Wert, um die Reform zu kalibrieren. Veröffentlichen Sie die Ergebnisse offen.",
-      planText: "Wir werden unsere Forschungsgemeinschaft dazu befragen, welche Kriterien ihrer Ansicht nach verwendet werden und welche verwendet werden sollten, und die Ergebnisse offen veröffentlichen — als Evidenzbasis zur Kalibrierung der Reform.",
+      planText: "Wir werden unsere Forschungsgemeinschaft dazu befragen, welche Kriterien ihrer Ansicht nach verwendet werden und welche verwendet werden sollten, und die Ergebnisse offen veröffentlichen, als Evidenzbasis zur Kalibrierung der Reform.",
       examples: ["Helmholtz survey of 1,145 researchers", "UCLouvain 34 interviews with evaluation committees", "UCM planned periodic surveys"],
     },
     {
       title: "Reform auf die Einheits- und Institutionsbewertung ausweiten",
-      description: "Die Reform endet nicht bei der individuellen Bewertung. Überprüfen Sie, wie Fachbereiche, Institute und Forschungsgruppen bewertet werden — auch diese Verfahren stützen sich auf Publikationskennzahlen und Rankings. Entwickeln Sie qualitative Alternativen.",
+      description: "Die Reform endet nicht bei der individuellen Bewertung. Überprüfen Sie, wie Fachbereiche, Institute und Forschungsgruppen bewertet werden: Auch diese Verfahren stützen sich auf Publikationskennzahlen und Rankings. Entwickeln Sie qualitative Alternativen.",
       planText: "Wir werden die Reform über die individuelle Bewertung hinaus ausweiten, überprüfen, wie Fachbereiche, Institute und Forschungsgruppen bewertet werden, und qualitative Alternativen zu Publikationskennzahlen und Rankings entwickeln.",
       examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
     },
@@ -937,8 +937,8 @@ export default {
     {
       title: "Auf Sprachverzerrung prüfen (Helsinki Initiative on Multilingualism)",
       description: "Stellen Sie sicher, dass Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird. Überprüfen Sie Kriterien, Ausschusszusammensetzung und konsultierte Datenbanken auf implizite Bevorzugung der englischen Sprache. Die Helsinki Initiative bietet den maßgeblichen Rahmen.",
-      planText: "Wir werden Kriterien, Ausschusszusammensetzung und die von uns konsultierten Datenbanken auf implizite Bevorzugung der englischen Sprache überprüfen — im Einklang mit der Helsinki Initiative on Multilingualism —, damit Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird.",
-      examples: ["AQU Catalunya — Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
+      planText: "Wir werden Kriterien, Ausschusszusammensetzung und die von uns konsultierten Datenbanken auf implizite Bevorzugung der englischen Sprache überprüfen (im Einklang mit der Helsinki Initiative on Multilingualism), damit Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird.",
+      examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
     },
     {
       title: "Einem regionalen Forum oder nationalen Kapitel beitreten",
@@ -955,13 +955,13 @@ export default {
     {
       title: "Ausnahmen von der Offenheit dokumentieren („so offen wie möglich, so geschlossen wie nötig“)",
       description: "Offenheit ist der Standard; Ausnahmen müssen dokumentiert, zeitlich begrenzt, einer Aufsicht unterworfen und periodisch erneut geprüft werden. Dieses Prinzip (aus dem CoARA-ERIP Whitepaper und der Barcelona Declaration) macht geschlossene Daten zur überprüfbaren Ausnahme statt zur stillen Norm.",
-      planText: "Wir werden Offenheit zum Standard machen und jede Ausnahme dokumentieren — zeitlich begrenzt, einer Aufsicht unterworfen und periodisch erneut geprüft —, damit geschlossene Daten die überprüfbare Ausnahme statt der stillen Norm sind.",
+      planText: "Wir werden Offenheit zum Standard machen und jede Ausnahme dokumentieren (zeitlich begrenzt, einer Aufsicht unterworfen und periodisch erneut geprüft), damit geschlossene Daten die überprüfbare Ausnahme statt der stillen Norm sind.",
       examples: ["CoARA-ERIP Whitepaper (2025)", "UNESCO Recommendation on Open Science"],
     },
     {
       title: "Ihren Bewertungs-Stack an der 4-Schichten-Architektur von OI4RRA ausrichten",
       description: "Die OI4RRA-Arbeitsgruppe von CoARA definiert eine 4-Schichten-Architektur: Tier 0 Foundation (PIDs, ORCID, ROR, DOI), Tier 1 Publishing, Tier 2 Metadaten-Aggregatoren (OpenAIRE, ORKG), Tier 3 Bewertungsunterstützung (Analytik, narrative-CV-Generatoren). Bilden Sie ab, was Sie haben vs. was auf jeder Schicht fehlt; investieren Sie entsprechend.",
-      planText: "Wir werden unsere Bewertungsinfrastruktur an der 4-Schichten-Architektur von OI4RRA ausrichten — von persistenten Identifikatoren bis zu Werkzeugen der Bewertungsunterstützung — und dort investieren, wo Schichten fehlen.",
+      planText: "Wir werden unsere Bewertungsinfrastruktur an der 4-Schichten-Architektur von OI4RRA ausrichten, von persistenten Identifikatoren bis zu Werkzeugen der Bewertungsunterstützung, und dort investieren, wo Schichten fehlen.",
       examples: ["OI4RRA Framework & Principles (Manola et al. 2025)", "OI4RRA Policy Briefs for RPOs/RFOs"],
     },
     {
@@ -972,8 +972,8 @@ export default {
     },
     {
       title: "Die Reform in einem etablierten Rahmenwerk verankern (DORA / Leiden / SCOPE)",
-      description: "Beginnen Sie nicht bei null. Übernehmen Sie formell einen bestehenden Anker: Unterzeichnen Sie DORA, unterstützen Sie das Leiden-Manifest oder nutzen Sie das SCOPE-Modell als Rückgrat Ihres Vorgehens. Rund 43 % der veröffentlichten CoARA-Aktionspläne berufen sich auf mindestens eines davon — das verleiht Legitimität, ein gemeinsames Vokabular und Orientierung, die Bewertende bereits kennen.",
-      planText: "Wir werden unsere Reform in einem etablierten Rahmenwerk verankern — durch Unterzeichnung von DORA, Unterstützung des Leiden-Manifests oder Nutzung des SCOPE-Modells als Rückgrat unseres Vorgehens — und ihr damit Legitimität, ein gemeinsames Vokabular und Orientierung geben, die Bewertende bereits kennen.",
+      description: "Beginnen Sie nicht bei null. Übernehmen Sie formell einen bestehenden Anker: Unterzeichnen Sie DORA, unterstützen Sie das Leiden-Manifest oder nutzen Sie das SCOPE-Modell als Rückgrat Ihres Vorgehens. Rund 43 % der veröffentlichten CoARA-Aktionspläne berufen sich auf mindestens eines davon; das verleiht Legitimität, ein gemeinsames Vokabular und Orientierung, die Bewertende bereits kennen.",
+      planText: "Wir werden unsere Reform in einem etablierten Rahmenwerk verankern (durch Unterzeichnung von DORA, Unterstützung des Leiden-Manifests oder Nutzung des SCOPE-Modells als Rückgrat unseres Vorgehens) und ihr damit Legitimität, ein gemeinsames Vokabular und Orientierung geben, die Bewertende bereits kennen.",
     },
     {
       title: "Den Plan von den Leitungsgremien formal genehmigen lassen",

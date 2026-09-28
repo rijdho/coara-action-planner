@@ -31,7 +31,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   const roleLabel = (id) => ROLES.find((r) => r.id === id)?.label ?? id;
 
   const inst = institutionName || "[Institution]";
-  const lvlLabel = MATURITY_LEVELS[overallLevel]?.label ?? "—";
+  const lvlLabel = MATURITY_LEVELS[overallLevel]?.label ?? "–";
   const effortWord = (e) => S[`effort_${e}`] ?? e;
   const impactWord = (i) => S[`impact_${i}`] ?? i;
 
@@ -57,7 +57,7 @@ export function buildReport({ institutionName, levels, plan, prioritised, overal
   const writeQuestions = (block) => {
     if (!block?.questions?.length) return;
     const label = block.questions.length > 1 ? S.gq_labelPlural : S.gq_label;
-    w(`> **${label}** — *${block.reflectionPoint}*`);
+    w(`> **${label}**: *${block.reflectionPoint}*`);
     for (const q of block.questions) w(`> - ${q}`);
     w();
   };

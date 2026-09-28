@@ -18,12 +18,12 @@ export const ROLES = [
   { id: "leadership", label: "Senior leadership", hint: "Rectorate, vice-rector for research, governing board." },
   { id: "research-office", label: "Research office / support", hint: "Research services, RRA or open-science office." },
   { id: "working-group", label: "Reform working group", hint: "Dedicated CoARA / assessment-reform task force." },
-  { id: "researcher", label: "Researcher / academic staff", hint: "Faculty, postdocs — those being assessed." },
+  { id: "researcher", label: "Researcher / academic staff", hint: "Faculty, postdocs: those being assessed." },
   { id: "hr-career", label: "HR & career development", hint: "Recruitment, promotion and appraisal owners." },
   { id: "library-os", label: "Library / Open Science", hint: "Repository, FAIR data, scholarly communication." },
   { id: "evaluation-committee", label: "Evaluation / quality committee", hint: "Panels that run assessment processes." },
   { id: "funder", label: "Funder / RFO", hint: "Funding organisation designing calls and criteria." },
-  { id: "external", label: "External reviewer / consultant", hint: "Outside view — peer institution or auditor." },
+  { id: "external", label: "External reviewer / consultant", hint: "Outside view: peer institution or auditor." },
 ];
 
 export const ROLE_IDS = ROLES.map((r) => r.id);

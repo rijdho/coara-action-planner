@@ -6,7 +6,7 @@
  * must be kept verbatim in every language.
  */
 export const REPORT_EN = {
-  docTitle: "{inst} — Research Assessment Reform Action Plan",
+  docTitle: "{inst}: Research Assessment Reform Action Plan",
   subtitle: "Aligned with the CoARA Agreement on Reforming Research Assessment · {date}",
 
   h_intro: "Introduction",
@@ -21,7 +21,7 @@ export const REPORT_EN = {
     "This self-assessment consolidates {n} perspectives ({roles}). Bringing several vantage points together gives a fuller, more honest picture of where the institution stands and where readings of progress differ.",
 
   h_baseline: "1. Baseline self-assessment",
-  overall: "Overall maturity: Level {level} — {label}.",
+  overall: "Overall maturity: Level {level} ({label}).",
   established: "Established (Level 4–5):",
   developing: "Developing (Level 2–3):",
   gaps: "Priority gaps (Level 0–1):",
@@ -42,10 +42,10 @@ export const REPORT_EN = {
   actionsIntro:
     "The actions below are prioritised by the size of each gap and their expected impact{focusClause}. Bracketed fields are for the responsible unit to complete.",
   actionsFocusClause: ", with additional weight on our priority commitments",
-  actionHeading: "C{num}. {title} — current Level {lvl} ({label})",
+  actionHeading: "C{num}. {title}: current Level {lvl} ({label})",
   actionLabel: "Action:",
   // Describes what THIS ACTION delivers, from the commitment's current level.
-  // Not the institution's ambition — that lives in `ambitionLine` (§2).
+  // Not the institution's ambition; that lives in `ambitionLine` (§2).
   targetLabel: "Progression:",
   targetValue: "Level {from} → {to} · effort {effort} · expected impact {impact}",
   referenceLabel: "Reference practice:",
@@ -56,7 +56,7 @@ export const REPORT_EN = {
   indicatorLabel: "Indicator / milestone:",
   indicatorPlaceholder: "[observable output, e.g. revised criteria approved]",
   noActions:
-    "No actions were recommended — your maturity is already high across the assessed commitments. Focus on the embedding and monitoring activities described below.",
+    "No actions were recommended: your maturity is already high across the assessed commitments. Focus on the embedding and monitoring activities described below.",
 
   h_resources: "4. Resources (CoARA Commitment 5)",
   resourcesBody:
@@ -64,7 +64,7 @@ export const REPORT_EN = {
 
   h_awareness: "5. Awareness, guidance & exchange (CoARA Commitments 7–8)",
   awarenessBody:
-    "We will raise awareness internally and publish accessible guidance on the reformed criteria and their responsible use. {inst} will exchange practices with peer institutions — through [CoARA Working Groups / national chapter / regional forum] — recognising that organisations are at different points along the way.",
+    "We will raise awareness internally and publish accessible guidance on the reformed criteria and their responsible use. {inst} will exchange practices with peer institutions (through [CoARA Working Groups / national chapter / regional forum]), recognising that organisations are at different points along the way.",
 
   h_monitoring: "6. Monitoring, evaluation & communicating progress (CoARA Commitments 9–10)",
   monitoringBody:
@@ -88,7 +88,7 @@ export const REPORT_EN = {
   hs_balanced:
     "We pursue a balanced mix of early wins and more substantial reforms, sequenced by the size of each gap and its expected impact.",
   hs_structural:
-    "We are prepared to undertake ambitious, structural reform — revising criteria and processes system-wide — even where this requires sustained effort and resources.",
+    "We are prepared to undertake ambitious, structural reform, revising criteria and processes system-wide, even where this requires sustained effort and resources.",
 
   // context sentences (appended to intro1; leading space intentional)
   cs_globalnorth:
@@ -111,7 +111,7 @@ export const REPORT_EN = {
   gq_label: "CoARA guiding question",
   gq_labelPlural: "CoARA guiding questions",
   gq_intro:
-    "The prompts marked *CoARA guiding question* below are quoted from the CoARA Secretariat's *Action Plan Guidelines* (October 2023). They are a resource and a suggestion, not a required template — CoARA publishes no template for member action plans — but answering them section by section is the quickest way to check this draft against what the Coalition asks members to reflect on.",
+    "The prompts marked *CoARA guiding question* below are quoted from the CoARA Secretariat's *Action Plan Guidelines* (October 2023). They are a resource and a suggestion, not a required template (CoARA publishes no template for member action plans), but answering them section by section is the quickest way to check this draft against what the Coalition asks members to reflect on.",
   gq_quotedInEnglish:
     "They are reproduced in the published English, since CoARA issues no translation.",
   gq_source:

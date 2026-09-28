@@ -1,5 +1,5 @@
 /**
- * English UI strings — the reference set. Other languages overlay this object
+ * English UI strings, the reference set. Other languages overlay this object
  * (see src/data/i18n/<lang>.js → `ui`); any missing key falls back to English.
  * `{placeholders}` are filled by interpolate() at render time.
  */
@@ -46,7 +46,7 @@ export const UI_EN = {
   start_lensesTitle: "Three lenses",
   start_lens_now: "① Where are we now",
   start_lens_now_desc:
-    "The questionnaire measures your current maturity on each CoARA commitment — the status quo, honestly assessed.",
+    "The questionnaire measures your current maturity on each CoARA commitment: the status quo, honestly assessed.",
   start_lens_goal: "② Where we want to be",
   start_lens_goal_desc:
     "In the Plan tab you set a target maturity per commitment. The gap between now and target is what your action plan closes.",
@@ -58,10 +58,10 @@ export const UI_EN = {
   start_instPlaceholder: "Institution name (optional)",
   start_perspectivesTitle: "Perspectives",
   start_perspectivesHint:
-    "Each perspective is one respondent's view, tagged with their role. Everyone answers the same 24 questions — you fill them in once per perspective, from that vantage point. Results consolidates the perspectives and flags where their readings of the same question diverge (the perception gap).",
+    "Each perspective is one respondent's view, tagged with their role. Everyone answers the same 24 questions; you fill them in once per perspective, from that vantage point. Results consolidates the perspectives and flags where their readings of the same question diverge (the perception gap).",
   start_perspectivesEyebrow: "What this does that a guide cannot",
   start_perspectivesWhy:
-    "A plan drafted by one office reflects one vantage point. Ask leadership, the research office and researchers the same 24 questions and the disagreement itself becomes evidence — Results flags every commitment where readings differ by two levels or more, and those are the ones to align on before writing anything.",
+    "A plan drafted by one office reflects one vantage point. Ask leadership, the research office and researchers the same 24 questions and the disagreement itself becomes evidence. Results flags every commitment where readings differ by two levels or more, and those are the ones to align on before writing anything.",
   start_quickStart: "Set up a group assessment:",
   start_quickStartAdd: "+ {role}",
   start_perspectiveN: "Perspective {n}",
@@ -91,30 +91,30 @@ export const UI_EN = {
   // Plan page
   plan_emptyTitle: "Plan",
   plan_emptyBody:
-    "Answer the questionnaire first — the plan tailors the actions that come out of your maturity profile.",
+    "Answer the questionnaire first: the plan tailors the actions that come out of your maturity profile.",
   plan_startQuestionnaire: "Start the questionnaire",
   plan_title: "Shape your action plan",
   plan_intro:
-    "Four quick choices that tune which actions surface first. Nothing here is required — the defaults give a balanced, gap-driven plan. Your maturity profile is unaffected.",
+    "Four quick choices that tune which actions surface first. Nothing here is required; the defaults give a balanced, gap-driven plan. Your maturity profile is unaffected.",
   plan_s1_title: "1 · Horizon & capacity",
   plan_s1_hint: "How much change can you take on right now?",
   plan_s2_title: "2 · Institutional context",
   plan_s2_hint: "Boosts actions that are especially relevant to your setting.",
   plan_s3_title: "3 · Priority commitments",
   plan_s3_hint:
-    "Pick the CoARA commitments you want to tackle first — their actions move up the list. Leave empty for none.",
+    "Pick the CoARA commitments you want to tackle first, and their actions move up the list. Leave empty for none.",
   plan_clear: "Clear selection",
   plan_s4_title: "4 · High-effort actions",
   plan_s4_hint: "Structural reforms (new criteria, system-wide training) take real resources.",
   plan_includeHigh: "Include high-effort actions",
   plan_hideHigh: "Hide high-effort actions",
-  plan_s5_title: "5 · Ambition — where do you want to be?",
+  plan_s5_title: "5 · Ambition: where do you want to be?",
   plan_s5_hint:
-    "Set a target maturity per commitment. Actions that close the gap from your current level to the target rise to the top; commitments already at their target drop down. Leave as “—” to rank purely by gap to the top level.",
+    "Set a target maturity per commitment. Actions that close the gap from your current level to the target rise to the top; commitments already at their target drop down. Leave as “–” to rank purely by gap to the top level.",
   plan_ambition_now: "now",
   plan_ambition_current: "current level",
   plan_ambition_target: "target level",
-  plan_ambition_notset: "—",
+  plan_ambition_notset: "–",
   plan_ambition_clear: "Clear all targets",
   plan_s6_title: "6 · Perspective weighting & alignment",
   plan_s6_hint:
@@ -150,7 +150,7 @@ export const UI_EN = {
   res_ambitionSet: "Ambition set",
   res_currentVsTarget: "current vs target",
   res_consolidatedNote: "Role-weighted average across {n} perspectives (the assessed count for more).",
-  res_perceptionGap: "Perspectives diverge by ≥2 levels on: {list} — prioritised for alignment.",
+  res_perceptionGap: "Perspectives diverge by ≥2 levels on: {list}. Prioritised for alignment.",
   res_highHidden: "High-effort hidden",
   res_edit: "Edit",
   res_balancedNote: "Balanced plan (gap-driven).",
@@ -161,7 +161,7 @@ export const UI_EN = {
   // configuration save/load (reproducibility)
   cfg_title: "Save / load configuration",
   cfg_hint:
-    "Save every input of this assessment (answers, perspectives, ambition and plan) to a small file — so you can reproduce this exact report later, share it, or load it back as a base to modify.",
+    "Save every input of this assessment (answers, perspectives, ambition and plan) to a small file, so you can reproduce this exact report later, share it, or load it back as a base to modify.",
   cfg_save: "Save configuration",
   cfg_load: "Load configuration",
   cfg_loaded: "Configuration loaded.",
@@ -187,18 +187,18 @@ export const UI_EN = {
   ev_universal: "Near-universal in existing plans",
   ev_common: "Common in existing plans",
   ev_emerging: "Emerging practice",
-  ev_frontier: "Frontier — few plans do this yet; an opportunity to lead",
+  ev_frontier: "Frontier: few plans do this yet, an opportunity to lead",
   res_ctaNext: "Next:",
   res_ctaBody: "turn this into a written CoARA action-plan draft you can edit and share.",
   res_generateReport: "Generate report →",
 
-  // Results — print view
-  print_title: "Research Assessment Reform — Maturity Report",
+  // Results: print view
+  print_title: "Research Assessment Reform: Maturity Report",
   print_meta: "{inst} · {date} · CoARA commitments · based on {answered}/{total} questions",
   print_respondents: "Respondents: {list}",
   print_planPrefix: "Plan:",
   print_overall: "Overall maturity:",
-  print_level: "Level {n} — {label}",
+  print_level: "Level {n} · {label}",
   print_byCommitment: "Maturity by commitment",
   print_priorityActions: "Priority actions",
   print_footer:
@@ -208,12 +208,12 @@ export const UI_EN = {
   // Report page
   rep_emptyTitle: "Report",
   rep_emptyBody:
-    "Answer the questionnaire first — the report is drafted from your maturity profile and plan.",
+    "Answer the questionnaire first: the report is drafted from your maturity profile and plan.",
   rep_title: "Action plan report",
   rep_intro_pre:
     "A pre-structured CoARA action-plan draft, generated from your answers and plan. Its structure follows real institutional action plans (Introduction → baseline → priorities → actions per commitment → resources → monitoring). ",
   rep_intro_strong: "Edit it freely",
-  rep_intro_post: " — bracketed [fields] are blanks to fill in. Saved locally as you type.",
+  rep_intro_post: ". Bracketed [fields] are blanks to fill in. Saved locally as you type.",
   rep_copy: "Copy text",
   rep_copied: "Copied ✓",
   rep_downloadMd: "Download .md",
@@ -226,4 +226,4 @@ export const UI_EN = {
   radar_current: "Current",
   radar_target: "Target",
   radar_previous: "Previous",
-  radar_level: "Level {n} — {label}",};
+  radar_level: "Level {n} · {label}",};

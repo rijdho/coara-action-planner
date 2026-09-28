@@ -39,7 +39,7 @@ export const ACTIONS = [
     theme: "diverse-outputs",
     title: "Draft expanded output typology",
     description: "Develop a comprehensive typology of research contributions: peer-reviewed articles, datasets, software, code, protocols, teaching materials, mentoring, policy briefs, media, citizen science, etc.",
-    planText: "We will develop a comprehensive typology of research contributions — peer-reviewed articles, datasets, software, code, protocols, teaching materials, mentoring, policy briefs, media and citizen science.",
+    planText: "We will develop a comprehensive typology of research contributions: peer-reviewed articles, datasets, software, code, protocols, teaching materials, mentoring, policy briefs, media and citizen science.",
     examples: ["Netherlands Recognition & Rewards programme", "UK REF impact case studies"],
   },
   {
@@ -204,7 +204,7 @@ export const ACTIONS = [
     theme: "criteria-audit",
     title: "Conduct comprehensive criteria audit",
     description: "Systematically review ALL evaluation criteria: hiring (all levels), promotion, tenure, internal grants, sabbaticals, awards, department evaluations. Use a standardised checklist.",
-    planText: "We will systematically review all evaluation criteria — hiring at all levels, promotion, tenure, internal grants, sabbaticals, awards and department evaluations — using a standardised checklist.",
+    planText: "We will systematically review all evaluation criteria (hiring at all levels, promotion, tenure, internal grants, sabbaticals, awards and department evaluations) using a standardised checklist.",
     examples: ["University of Rijeka", "University of Florence", "German Sport University Cologne"],
   },
   {
@@ -253,7 +253,7 @@ export const ACTIONS = [
     theme: "awareness-comms",
     title: "Run workshops and town halls",
     description: "Organise interactive workshops for researchers, evaluators, and administrators. Include practical exercises (e.g., 'evaluate this candidate without metrics'). Hold Q&A town halls.",
-    planText: "We will organise interactive workshops for researchers, evaluators and administrators — including practical exercises such as metric-free candidate evaluation — complemented by open Q&A town halls.",
+    planText: "We will organise interactive workshops for researchers, evaluators and administrators, including practical exercises such as metric-free candidate evaluation, complemented by open Q&A town halls.",
     examples: ["Universidade de Lisboa", "Università di Bologna", "University of Reading"],
   },
 
@@ -278,8 +278,8 @@ export const ACTIONS = [
     impact: "medium",
     theme: "working-groups",
     title: "Co-organise peer learning activities",
-    description: "Partner with other signatories to organise joint workshops, webinars, or site visits. Share your implementation experience — both successes and failures.",
-    planText: "We will partner with other signatories to organise joint workshops, webinars or site visits, sharing our implementation experience — successes and failures alike.",
+    description: "Partner with other signatories to organise joint workshops, webinars, or site visits. Share your implementation experience, both successes and failures.",
+    planText: "We will partner with other signatories to organise joint workshops, webinars or site visits, sharing our implementation experience, successes and failures alike.",
     examples: ["KTH Royal Institute of Technology", "University of Pannonia", "University of Barcelona"],
   },
 
@@ -330,7 +330,7 @@ export const ACTIONS = [
     theme: "progress-report",
     title: "Lead or contribute to benchmarking studies",
     description: "Share anonymised assessment data with peer institutions. Participate in or initiate comparative studies of reform progress across signatories.",
-    planText: "We will share anonymised assessment data with peer institutions and participate in — or initiate — comparative studies of reform progress across signatories.",
+    planText: "We will share anonymised assessment data with peer institutions and participate in, or initiate, comparative studies of reform progress across signatories.",
   },
 
   // ---- Actions derived from the real CoARA action-plan corpus (314 plans at the
@@ -385,7 +385,7 @@ export const ACTIONS = [
     theme: "open-science",
     title: "Integrate open science into evaluation criteria",
     description: "Add open science practices as positive criteria: data sharing, code availability, preregistration, open access publishing. Reward reproducibility and transparency, not just output volume.",
-    planText: "We will add open science practices as positive evaluation criteria — data sharing, code availability, preregistration, open access publishing — rewarding reproducibility and transparency rather than output volume alone.",
+    planText: "We will add open science practices as positive evaluation criteria (data sharing, code availability, preregistration, open access publishing), rewarding reproducibility and transparency rather than output volume alone.",
     examples: ["AQU Catalunya action A23", "UCM open peer review module in repository", "SDU OADO indicator"],
   },
 
@@ -425,7 +425,7 @@ export const ACTIONS = [
     theme: "cris-it",
     title: "Upgrade infrastructure to support reformed assessment",
     description: "Implement or upgrade CRIS, integrate ORCID, deploy data repositories, connect systems to evaluation workflows. Ensure the infrastructure captures what the new criteria require.",
-    planText: "We will implement or upgrade our research information infrastructure — CRIS, ORCID integration, data repositories — and connect it to evaluation workflows so it captures what the new criteria require.",
+    planText: "We will implement or upgrade our research information infrastructure (CRIS, ORCID integration, data repositories) and connect it to evaluation workflows so it captures what the new criteria require.",
     examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
   },
 
@@ -494,7 +494,7 @@ export const ACTIONS = [
     impact: "medium",
     theme: "unit-evaluation",
     title: "Extend reform to unit and institutional evaluation",
-    description: "Reform doesn't stop at individual assessment. Review how departments, institutes, and research groups are evaluated — these processes also rely on publication metrics and rankings. Develop qualitative alternatives.",
+    description: "Reform doesn't stop at individual assessment. Review how departments, institutes, and research groups are evaluated: these processes also rely on publication metrics and rankings. Develop qualitative alternatives.",
     planText: "We will extend reform beyond individual assessment, reviewing how departments, institutes and research groups are evaluated and developing qualitative alternatives to publication metrics and rankings.",
     examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
   },
@@ -530,7 +530,7 @@ export const ACTIONS = [
     title: "Audit for language bias (Helsinki Initiative on Multilingualism)",
     description: "Ensure that research in local or non-dominant languages is not penalised. Review criteria, committee composition, and databases consulted for implicit English-language bias. The Helsinki Initiative provides the canonical framework.",
     planText: "We will review criteria, committee composition and the databases we consult for implicit English-language bias, following the Helsinki Initiative on Multilingualism, so that research in local or non-dominant languages is not penalised.",
-    examples: ["AQU Catalunya — Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
+    examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
   },
   {
     commitment: "exchange",
@@ -574,7 +574,7 @@ export const ACTIONS = [
     theme: "open-science",
     title: "Document exceptions to openness ('as open as possible, as closed as necessary')",
     description: "Openness is the default; exceptions must be documented, time-limited, subject to oversight, and periodically revisited. This principle (from the CoARA-ERIP Whitepaper and the Barcelona Declaration) makes closed data the auditable exception rather than the silent norm.",
-    planText: "We will make openness the default and document every exception — time-limited, subject to oversight and periodically revisited — so that closed data is the auditable exception rather than the silent norm.",
+    planText: "We will make openness the default and document every exception (time-limited, subject to oversight and periodically revisited) so that closed data is the auditable exception rather than the silent norm.",
     examples: ["CoARA-ERIP Whitepaper (2025)", "UNESCO Recommendation on Open Science"],
   },
   {
@@ -589,7 +589,7 @@ export const ACTIONS = [
     theme: "cris-it",
     title: "Map your assessment stack against OI4RRA's 4-tier architecture",
     description: "CoARA's OI4RRA WG defines a 4-tier architecture: Tier 0 Foundation (PIDs, ORCID, ROR, DOI), Tier 1 Publishing, Tier 2 Metadata aggregators (OpenAIRE, ORKG), Tier 3 Assessment support (analytics, narrative-CV builders). Map what you have vs what's missing at each tier; invest accordingly.",
-    planText: "We will map our assessment infrastructure against OI4RRA's four-tier architecture — from persistent identifiers to assessment-support tools — and invest where tiers are missing.",
+    planText: "We will map our assessment infrastructure against OI4RRA's four-tier architecture, from persistent identifiers to assessment-support tools, and invest where tiers are missing.",
     examples: ["OI4RRA Framework & Principles (Manola et al. 2025)", "OI4RRA Policy Briefs for RPOs/RFOs"],
   },
   {
@@ -618,8 +618,8 @@ export const ACTIONS = [
     impact: "high",
     theme: "scope-dora",
     title: "Anchor your reform in an established framework (DORA / Leiden / SCOPE)",
-    description: "Don't start from a blank page. Formally adopt an existing anchor: sign DORA, endorse the Leiden Manifesto, or use the SCOPE model as your workflow spine. Roughly 43% of published CoARA action plans reference at least one — it gives your reform legitimacy, a shared vocabulary, and ready-made guidance evaluators already recognise.",
-    planText: "We will anchor our reform in an established framework — signing DORA, endorsing the Leiden Manifesto, or adopting the SCOPE model as our workflow spine — giving it legitimacy, a shared vocabulary and guidance evaluators already recognise.",
+    description: "Don't start from a blank page. Formally adopt an existing anchor: sign DORA, endorse the Leiden Manifesto, or use the SCOPE model as your workflow spine. Roughly 43% of published CoARA action plans reference at least one, and it gives your reform legitimacy, a shared vocabulary, and ready-made guidance evaluators already recognise.",
+    planText: "We will anchor our reform in an established framework (signing DORA, endorsing the Leiden Manifesto, or adopting the SCOPE model as our workflow spine), giving it legitimacy, a shared vocabulary and guidance evaluators already recognise.",
     examples: ["University of Murcia", "University of Fribourg", "Maastricht University", "DORA", "Leiden Manifesto", "SCOPE model (INORMS)"],
   },
 

@@ -66,7 +66,7 @@ export const COMMITMENTS = [
     number: 1,
     type: "core",
     title: "Recognise diversity of contributions",
-    text: "Recognise the diversity of activities, practices, and contributions that maximise the quality and impact of research — including but not limited to: quality research (from fundamental to translational), teaching, mentoring, supervision, leadership, entrepreneurship, knowledge mobilisation, research management, innovation, public-private collaboration, citizen engagement, and open science practices.",
+    text: "Recognise the diversity of activities, practices, and contributions that maximise the quality and impact of research, including but not limited to: quality research (from fundamental to translational), teaching, mentoring, supervision, leadership, entrepreneurship, knowledge mobilisation, research management, innovation, public-private collaboration, citizen engagement, and open science practices.",
     inPractice: [
       "Expand what 'counts' in evaluation beyond publications",
       "Include datasets, software, patents, mentoring, outreach in assessment criteria",

@@ -10,25 +10,32 @@ latest release.
 
 ## [Unreleased]
 
-## [1.4.0]: 2026-09-24
+### Changed
+
+- Punctuation tidied in the interface, the generated report and the calibration texts, in
+  English, German and Spanish. Wording only; no level, weight or score changed.
+
+### Fixed
+
+- `CITATION.cff` carries the v1.4.0 version DOI and names the three interface languages; the
+  1.4.0 CHANGELOG section records its DOI and describes the rename once.
+
+## [1.4.0] - 2026-09-24
+
+Version DOI: [10.5281/zenodo.22944861](https://doi.org/10.5281/zenodo.22944861).
 
 ### Changed
 
-- **Renamed Research Assessment Reform Planner** (was Reform Action Planner): "reform" alone did
-  not say reform of what. The page title, the brand block, the three interfaces, the report
-  footers, the README, `CITATION.cff` and the link-preview card carry the new name; the address
-  `coara-action-planner` and the DOI stay. The Zenodo record takes the name at the next release.
-
+- **The tool is called Research Assessment Reform Planner.** The old name, CoARA Action
+  Planner, led with CoARA's and could read as an official CoARA product; the intermediate
+  Reform Action Planner did not say reform of what. The repository keeps its name,
+  `coara-action-planner`, and every URL and DOI stays as it was; the name changes where a
+  reader meets it: the page title, the brand block, the three interfaces, the report footers,
+  the README, `CITATION.cff` and the link-preview card. The social card also stops listing
+  French, which the tool no longer offers.
 - **"Part of Metaudits" moves up**, under rijdho.github.io in the brand block (house-style 1.0.4), out of the rail credits.
 - **The icon and the name link to the tool's start page**, with house-style 1.0.3.
 - **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
-
-- **The tool is called Reform Action Planner.** The old name led with CoARA's, which could read as an
-  official CoARA product. The repository keeps its name, `coara-action-planner`, and every URL and
-  DOI stays as it was; the name changes where a reader meets it: the page title and social card, the
-  rail, the generated reports, the README and `CITATION.cff` (Zenodo takes the title at the next
-  release). The social card also stops listing French, which the tool no longer offers.
-
 - **The look comes from rijdho/house-style.** `src/house/` holds a synced copy (house.css and the
   Inter fonts), imported before `src/index.css`, with a lock and a test that fail on a hand edit or
   a stale copy (`node scripts/sync-house.mjs` refreshes it). `src/index.css` keeps only what this tool
@@ -126,7 +133,7 @@ Version DOI: [10.5281/zenodo.22939377](https://doi.org/10.5281/zenodo.22939377).
   vite major, which is a deliberate change with its own regression risk, not something to
   fold into a security pass.
 
-## [1.2.0] — 2026-08-06
+## [1.2.0] - 2026-08-06
 
 Version DOI:
 [10.5281/zenodo.21826287](https://doi.org/10.5281/zenodo.21826287).
@@ -195,7 +202,7 @@ Version DOI:
   and the README methodology table lists the file. Behaviour is unchanged.
 
 
-## [1.1.0] — 2026-07-28
+## [1.1.0] - 2026-07-28
 
 Version DOI:
 [10.5281/zenodo.21644739](https://doi.org/10.5281/zenodo.21644739).
@@ -240,7 +247,7 @@ Version DOI:
 - `p1.txt` / `p2.txt` — leftover German `planText` drafts, byte-identical to each other and
   fully superseded by `src/data/i18n/de.js`.
 
-## [1.0.0] — 2026-07-22
+## [1.0.0] - 2026-07-22
 
 Initial public release. Version DOI:
 [10.5281/zenodo.21492549](https://doi.org/10.5281/zenodo.21492549).
