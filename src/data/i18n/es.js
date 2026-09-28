@@ -984,12 +984,12 @@ export default {
     },
     {
       title: "Lograr la aprobación formal del plan por los órganos de gobierno",
-      description: "Lleve el plan de acción a su claustro, rectorado, consejo de dirección o consejo de gobierno para su aprobación formal, y deje constancia de la decisión. Un plan que nunca se adoptó no tiene mandato: no puede reclamar presupuesto, no puede obligar a una facultad a cambiar sus criterios y acaba siendo, calladamente, el proyecto personal de quien lo redactó.",
+      description: "Lleva el plan de acción a tu claustro, rectorado, consejo de dirección o consejo de gobierno para su aprobación formal, y deja constancia de la decisión. Un plan que nunca se adoptó no tiene mandato: no puede reclamar presupuesto, no puede obligar a una facultad a cambiar sus criterios y acaba siendo, calladamente, el proyecto personal de quien lo redactó.",
       planText: "Someteremos el plan de acción a la aprobación formal de nuestros órganos de gobierno y dejaremos constancia de la decisión, de modo que la reforma cuente con un mandato institucional y no dependa de la buena voluntad de quienes la redactaron.",
     },
     {
       title: "Publicar y depositar el plan de acción",
-      description: "Ponga el plan donde otras personas puedan encontrarlo, leerlo y citarlo: su propio sitio web y un archivo que emita un identificador persistente (la mayoría de las entidades firmantes de CoARA usan Zenodo). Cuesta casi nada, permite que instituciones pares reutilicen su redacción en vez de partir de cero, y es lo que hizo posible el corpus que sustenta esta herramienta.",
+      description: "Pon el plan donde otras personas puedan encontrarlo, leerlo y citarlo: tu propio sitio web y un archivo que emita un identificador persistente (la mayoría de las entidades firmantes de CoARA usan Zenodo). Cuesta casi nada, permite que instituciones pares reutilicen tu redacción en vez de partir de cero, y es lo que hizo posible el corpus que sustenta esta herramienta.",
       planText: "Publicaremos nuestro plan de acción en nuestro propio sitio y lo depositaremos en un archivo abierto con un identificador persistente, para que otras instituciones puedan encontrarlo, citarlo y construir sobre él.",
     },
     {
