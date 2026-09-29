@@ -184,6 +184,7 @@ export const UI_EN = {
   res_examples: "Examples:",
   res_frameworks: "Puts into practice:",
   res_corpus: "{pct}% of {n} plans",
+  res_readingTitle: "Share of the {n} published CoARA action plans that take this action, from a full reading of each plan in which every action is backed by a verbatim quote and an independent check. A lower bound.",
   res_corpusTitle: "Share of the {n} published CoARA action plans whose full text matches this action's theme (keyword-based, directional)",
   ev_universal: "Near-universal in existing plans",
   ev_common: "Common in existing plans",

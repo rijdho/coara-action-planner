@@ -188,6 +188,7 @@ export default {
     res_examples: "Ejemplos:",
     res_frameworks: "Aplica:",
     res_corpus: "{pct}% de {n} planes",
+    res_readingTitle: "Proporción de los {n} planes de acción de CoARA publicados que toman esta acción, según una lectura completa de cada plan en la que cada acción está respaldada por una cita textual y una verificación independiente. Es un mínimo.",
     res_corpusTitle: "Proporción de los {n} planes de acción CoARA publicados cuyo texto completo coincide con el tema de esta acción (por palabras clave, orientativo)",
     ev_universal: "Casi universal en los planes existentes",
     ev_common: "Frecuente en los planes existentes",

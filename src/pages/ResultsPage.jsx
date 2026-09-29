@@ -1,7 +1,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { prioritiseActions } from "../data/actions";
-import { themeEvidence } from "../data/evidence";
+import { actionEvidence } from "../data/evidence";
 import { FRAMEWORKS } from "../data/frameworks";
 import { interpolate } from "../i18n/registry";
 import MaturityBadge from "../components/MaturityBadge";
@@ -21,7 +21,7 @@ function ActionCard({ action, index, level = 0 }) {
   const { t, dataset } = useLang();
   const [expanded, setExpanded] = useState(false);
   const commitment = dataset.COMMITMENTS.find((c) => c.id === action.commitment);
-  const evidence = themeEvidence(action.theme);
+  const evidence = actionEvidence(action);
   const evidencePct = evidence ? (evidence.pct === 0 ? 0 : evidence.pct < 1 ? "<1" : Math.round(evidence.pct)) : null;
   return (
     <div className="rounded-xl p-4 transition-all" style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)" }}>
@@ -49,7 +49,7 @@ function ActionCard({ action, index, level = 0 }) {
             {evidence && (
               <span
                 className="text-xs font-mono px-1.5 py-0.5 rounded"
-                title={t("res_corpusTitle", { n: evidence.corpusSize })}
+                title={t(evidence.source === "reading" ? "res_readingTitle" : "res_corpusTitle", { n: evidence.corpusSize })}
                 style={{ background: "var(--color-surface-alt)", color: "var(--color-text-muted)" }}
               >
                 {interpolate(t("res_corpus"), { pct: evidencePct, n: evidence.corpusSize })}

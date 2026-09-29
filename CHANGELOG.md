@@ -23,6 +23,12 @@ latest release.
   development conversations. Two come from the Leiden Manifesto (principle 5, letting
   researchers verify their data) and SCOPE (evaluate only where necessary), which few plans
   take yet. All are appended, so earlier actions keep their positions and translations.
+- **"N% of 335 plans" now comes from reading every plan, not from keywords.** All 335 plans
+  were read in full; each action is counted only from records backed by a verbatim quote (checked
+  by string search), an adversarial check and an agreed catalogue match. Results shows the new
+  figure, with its own explanation, in all three languages. The per-action counts are published
+  in `corpus/data/action-uptake.csv`; `tests/uptake.test.mjs` pins the app to them. Each action
+  now has a stable id (A01 to A61).
 - **The catalogue re-balanced on a reading of all 335 plans, still 61 actions.** Eight actions
   that almost no plan takes (0 to 11 of 335) were folded into the neighbour that absorbs them:
   output mapping into the typology, studying CV models into piloting one, estimating resources

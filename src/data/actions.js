@@ -2,6 +2,7 @@
  * Recommended actions per commitment, organised by target maturity level.
  *
  * Each action has:
+ * - id: stable key (A01...), used for the corpus reading figures in uptake.js; never reuse one
  * - commitment: which CoARA commitment it addresses
  * - fromLevel: minimum current maturity to recommend this
  * - toLevel: what maturity this helps achieve
@@ -21,6 +22,7 @@
 export const ACTIONS = [
   // C1: Diversity
   {
+    id: "A01",
     commitment: "diversity",
     fromLevel: 1,
     toLevel: 3,
@@ -34,6 +36,7 @@ export const ACTIONS = [
     examples: ["Netherlands Recognition & Rewards programme", "UK REF impact case studies"],
   },
   {
+    id: "A02",
     commitment: "diversity",
     fromLevel: 3,
     toLevel: 5,
@@ -49,6 +52,7 @@ export const ACTIONS = [
 
   // C2: Qualitative judgement
   {
+    id: "A03",
     commitment: "qualitative",
     fromLevel: 1,
     toLevel: 4,
@@ -62,6 +66,7 @@ export const ACTIONS = [
     examples: ["University of Edinburgh", "University of Padua", "University of Oulu", "University of Cyprus"],
   },
   {
+    id: "A04",
     commitment: "qualitative",
     fromLevel: 2,
     toLevel: 4,
@@ -75,6 +80,7 @@ export const ACTIONS = [
     examples: ["Universidade de Lisboa", "University of Edinburgh", "Italian Institute of Technology (IIT)", "University of Reading"],
   },
   {
+    id: "A05",
     commitment: "qualitative",
     fromLevel: 4,
     toLevel: 5,
@@ -90,6 +96,7 @@ export const ACTIONS = [
 
   // C3: Abandon metrics
   {
+    id: "A06",
     commitment: "no-metrics",
     fromLevel: 0,
     toLevel: 2,
@@ -103,6 +110,7 @@ export const ACTIONS = [
     examples: ["Tampere University", "Charité – Universitätsmedizin Berlin", "Malmö University"],
   },
   {
+    id: "A07",
     commitment: "no-metrics",
     fromLevel: 2,
     toLevel: 4,
@@ -116,6 +124,7 @@ export const ACTIONS = [
     examples: ["Charité – Universitätsmedizin Berlin", "Tampere University"],
   },
   {
+    id: "A08",
     commitment: "no-metrics",
     fromLevel: 4,
     toLevel: 5,
@@ -130,6 +139,7 @@ export const ACTIONS = [
 
   // C4: Rankings
   {
+    id: "A09",
     commitment: "no-rankings",
     fromLevel: 0,
     toLevel: 2,
@@ -143,6 +153,7 @@ export const ACTIONS = [
     examples: ["Maastricht University", "Delft University of Technology", "Utrecht University"],
   },
   {
+    id: "A10",
     commitment: "no-rankings",
     fromLevel: 1,
     toLevel: 4,
@@ -158,6 +169,7 @@ export const ACTIONS = [
 
   // C5: Resources
   {
+    id: "A11",
     commitment: "resources",
     fromLevel: 2,
     toLevel: 4,
@@ -173,6 +185,7 @@ export const ACTIONS = [
 
   // C6: Review criteria
   {
+    id: "A12",
     commitment: "review-criteria",
     fromLevel: 0,
     toLevel: 2,
@@ -186,6 +199,7 @@ export const ACTIONS = [
     examples: ["University of Rijeka", "University of Florence", "German Sport University Cologne"],
   },
   {
+    id: "A13",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 4,
@@ -199,6 +213,7 @@ export const ACTIONS = [
     examples: ["University of Florence", "University of Rijeka"],
   },
   {
+    id: "A14",
     commitment: "review-criteria",
     fromLevel: 4,
     toLevel: 5,
@@ -213,6 +228,7 @@ export const ACTIONS = [
 
   // C7: Awareness
   {
+    id: "A15",
     commitment: "awareness",
     fromLevel: 0,
     toLevel: 2,
@@ -226,6 +242,7 @@ export const ACTIONS = [
     examples: ["University of Padua", "University of Reading"],
   },
   {
+    id: "A16",
     commitment: "awareness",
     fromLevel: 2,
     toLevel: 4,
@@ -241,6 +258,7 @@ export const ACTIONS = [
 
   // C8: Exchange
   {
+    id: "A17",
     commitment: "exchange",
     fromLevel: 0,
     toLevel: 3,
@@ -254,6 +272,7 @@ export const ACTIONS = [
     examples: ["WG SSH", "WG EMCRs", "WG Peer Review", "WG OI4RRA", "WG ERIP"],
   },
   {
+    id: "A18",
     commitment: "exchange",
     fromLevel: 3,
     toLevel: 5,
@@ -269,6 +288,7 @@ export const ACTIONS = [
 
   // C9: Communicate progress
   {
+    id: "A19",
     commitment: "communicate",
     fromLevel: 0,
     toLevel: 2,
@@ -282,6 +302,7 @@ export const ACTIONS = [
     examples: ["Research Council of Norway", "KTH Royal Institute of Technology"],
   },
   {
+    id: "A20",
     commitment: "communicate",
     fromLevel: 2,
     toLevel: 4,
@@ -297,6 +318,7 @@ export const ACTIONS = [
 
   // C10: Collective evaluation
   {
+    id: "A21",
     commitment: "collective-eval",
     fromLevel: 0,
     toLevel: 3,
@@ -309,6 +331,7 @@ export const ACTIONS = [
     planText: "We will prepare our public self-assessment in line with CoARA's trust-based follow-up, collecting the action plan, progress indicators and self-assessment data it requires.",
   },
   {
+    id: "A22",
     commitment: "collective-eval",
     fromLevel: 3,
     toLevel: 5,
@@ -327,6 +350,7 @@ export const ACTIONS = [
 
   // EDI (Equity, Diversity, Inclusion): found in 10/15 plans analysed
   {
+    id: "A23",
     commitment: "diversity",
     fromLevel: 0,
     toLevel: 2,
@@ -340,6 +364,7 @@ export const ACTIONS = [
     examples: ["FRQ unconscious bias training modules", "SDU Gender Equality Plan", "UCLouvain GEDIP 2024-2027"],
   },
   {
+    id: "A24",
     commitment: "diversity",
     fromLevel: 2,
     toLevel: 4,
@@ -355,6 +380,7 @@ export const ACTIONS = [
 
   // Open Science as evaluation criterion: found in 12/15 plans
   {
+    id: "A25",
     commitment: "diversity",
     fromLevel: 0,
     toLevel: 2,
@@ -368,6 +394,7 @@ export const ACTIONS = [
     examples: ["SDU Open Science Awards", "Helmholtz FAIR Quality Indicators for data and software"],
   },
   {
+    id: "A26",
     commitment: "diversity",
     fromLevel: 2,
     toLevel: 5,
@@ -383,6 +410,7 @@ export const ACTIONS = [
 
   // Governance: found in 15/15 plans (universal)
   {
+    id: "A27",
     commitment: "resources",
     fromLevel: 0,
     toLevel: 3,
@@ -398,6 +426,7 @@ export const ACTIONS = [
 
   // CRIS/IT infrastructure: found in 8/15 plans
   {
+    id: "A28",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 4,
@@ -413,6 +442,7 @@ export const ACTIONS = [
 
   // Career stage differentiation: found in 6/15 plans
   {
+    id: "A29",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 4,
@@ -428,6 +458,7 @@ export const ACTIONS = [
 
   // Mentoring: found in 7/15 plans
   {
+    id: "A30",
     commitment: "awareness",
     fromLevel: 0,
     toLevel: 3,
@@ -443,6 +474,7 @@ export const ACTIONS = [
 
   // Ethics and integrity: found in 6/15 plans
   {
+    id: "A31",
     commitment: "awareness",
     fromLevel: 0,
     toLevel: 3,
@@ -458,6 +490,7 @@ export const ACTIONS = [
 
   // Internal empirical evidence: found in 5/15 plans
   {
+    id: "A32",
     commitment: "collective-eval",
     fromLevel: 0,
     toLevel: 3,
@@ -473,6 +506,7 @@ export const ACTIONS = [
 
   // Unit-level evaluation: found in 5/15 plans
   {
+    id: "A33",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 4,
@@ -490,6 +524,7 @@ export const ACTIONS = [
   // (derived from Crawley AOSP 2026 + CoARA-ERIP Whitepaper) ---
 
   {
+    id: "A34",
     commitment: "diversity",
     fromLevel: 0,
     toLevel: 3,
@@ -506,6 +541,7 @@ export const ACTIONS = [
     examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
   },
   {
+    id: "A35",
     commitment: "exchange",
     fromLevel: 0,
     toLevel: 3,
@@ -522,6 +558,7 @@ export const ACTIONS = [
     examples: ["IRAF inauguration (Dr. Gitanjali Yadav)", "AOSP Governing Council", "CoARA Spain (CRUE/CSIC)"],
   },
   {
+    id: "A36",
     commitment: "review-criteria",
     fromLevel: 1,
     toLevel: 4,
@@ -541,6 +578,7 @@ export const ACTIONS = [
   // Anchor-declaration action (corpus gap): ~43% of the 314 plans (April 2026) explicitly
   // ground their reform in DORA / Leiden / SCOPE, but no action captured that move.
   {
+    id: "A37",
     commitment: "qualitative",
     fromLevel: 0,
     toLevel: 2,
@@ -557,6 +595,7 @@ export const ACTIONS = [
   // Added 2026-07-28 from the structured deep-read of the corpus: both are common
   // moves in real plans that this catalogue had no equivalent for.
   {
+    id: "A38",
     commitment: "resources",
     fromLevel: 1,
     toLevel: 3,
@@ -570,6 +609,7 @@ export const ACTIONS = [
     examples: ["Ghent University", "NTNU", "University of Rijeka", "ZHAW"],
   },
   {
+    id: "A39",
     commitment: "communicate",
     fromLevel: 1,
     toLevel: 3,
@@ -585,6 +625,7 @@ export const ACTIONS = [
   // Added 2026-09: from reading the plans themselves (deep read of 40 plans, verbatim quotes,
   // adversarial check), and two that DORA, Leiden and SCOPE ask for although few plans do yet.
   {
+    id: "A40",
     commitment: "communicate",
     fromLevel: 1,
     toLevel: 4,
@@ -598,6 +639,7 @@ export const ACTIONS = [
     examples: ["TU Darmstadt", "Tampere University", "University of Groningen", "Universidad Autónoma de Madrid"],
   },
   {
+    id: "A41",
     commitment: "qualitative",
     fromLevel: 1,
     toLevel: 4,
@@ -611,6 +653,7 @@ export const ACTIONS = [
     examples: ["ISGlobal", "Tampere University", "Swansea University", "Scuola Normale Superiore"],
   },
   {
+    id: "A42",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 5,
@@ -624,6 +667,7 @@ export const ACTIONS = [
     examples: ["UHasselt", "University of Antwerp", "Italian Institute of Technology", "New Bulgarian University"],
   },
   {
+    id: "A43",
     commitment: "communicate",
     fromLevel: 0,
     toLevel: 3,
@@ -637,6 +681,7 @@ export const ACTIONS = [
     examples: ["TU Dublin", "LAB University of Applied Sciences", "Savonia University of Applied Sciences", "Universidad Autónoma de Madrid"],
   },
   {
+    id: "A44",
     commitment: "diversity",
     fromLevel: 2,
     toLevel: 5,
@@ -650,6 +695,7 @@ export const ACTIONS = [
     examples: ["Tampere University", "KTH Royal Institute of Technology", "Savonia University of Applied Sciences"],
   },
   {
+    id: "A45",
     commitment: "collective-eval",
     fromLevel: 1,
     toLevel: 4,
@@ -663,6 +709,7 @@ export const ACTIONS = [
     examples: ["Italian Institute of Technology", "TU Dublin", "Université de Lorraine"],
   },
   {
+    id: "A46",
     commitment: "collective-eval",
     fromLevel: 3,
     toLevel: 5,
@@ -676,6 +723,7 @@ export const ACTIONS = [
     examples: ["KTH Royal Institute of Technology", "University of Bristol", "Swansea University", "ZB MED"],
   },
   {
+    id: "A47",
     commitment: "review-criteria",
     fromLevel: 1,
     toLevel: 4,
@@ -689,6 +737,7 @@ export const ACTIONS = [
     examples: ["Hanken School of Economics", "University of Bristol", "Eurodoc", "New Bulgarian University"],
   },
   {
+    id: "A48",
     commitment: "diversity",
     fromLevel: 1,
     toLevel: 4,
@@ -703,6 +752,7 @@ export const ACTIONS = [
     examples: ["Koszalin University of Technology", "TU Dublin", "Italian Institute of Technology", "Scuola Normale Superiore"],
   },
   {
+    id: "A49",
     commitment: "no-metrics",
     fromLevel: 1,
     toLevel: 4,
@@ -716,6 +766,7 @@ export const ACTIONS = [
     examples: ["University of Groningen", "TU Dublin", "UHasselt", "University of Bristol"],
   },
   {
+    id: "A50",
     commitment: "awareness",
     fromLevel: 1,
     toLevel: 4,
@@ -729,6 +780,7 @@ export const ACTIONS = [
     examples: ["Universidad Autónoma de Madrid", "South East Technological University", "Universidad Complutense de Madrid", "Hanken School of Economics"],
   },
   {
+    id: "A51",
     commitment: "review-criteria",
     fromLevel: 3,
     toLevel: 5,
@@ -742,6 +794,7 @@ export const ACTIONS = [
     examples: ["University of Antwerp", "Oulu University of Applied Sciences", "UiT The Arctic University of Norway"],
   },
   {
+    id: "A52",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 4,
@@ -755,6 +808,7 @@ export const ACTIONS = [
     examples: ["Leiden Manifesto, principle 5"],
   },
   {
+    id: "A53",
     commitment: "review-criteria",
     fromLevel: 2,
     toLevel: 5,
@@ -771,6 +825,7 @@ export const ACTIONS = [
   // Added 2026-09-29: the eight most frequent actions in the full reading of all 335 plans that
   // no catalogue action covered; eight near-unused actions were folded into their neighbours.
   {
+    id: "A54",
     commitment: "exchange",
     fromLevel: 2,
     toLevel: 5,
@@ -784,6 +839,7 @@ export const ACTIONS = [
     examples: ["University of Cyprus", "Research Council of Lithuania", "Estonian Research Council", "Science Europe"],
   },
   {
+    id: "A55",
     commitment: "resources",
     fromLevel: 1,
     toLevel: 4,
@@ -797,6 +853,7 @@ export const ACTIONS = [
     examples: ["Lodz University of Technology", "University of Southern Denmark", "South East Technological University", "Loughborough University"],
   },
   {
+    id: "A56",
     commitment: "qualitative",
     fromLevel: 2,
     toLevel: 4,
@@ -810,6 +867,7 @@ export const ACTIONS = [
     examples: ["Health Research Board (Ireland)", "Foundation for Polish Science", "Estonian Research Council", "Jagiellonian University"],
   },
   {
+    id: "A57",
     commitment: "no-metrics",
     fromLevel: 2,
     toLevel: 5,
@@ -823,6 +881,7 @@ export const ACTIONS = [
     examples: ["Tilburg University", "Tampere University", "Aalborg University", "TU Dortmund University"],
   },
   {
+    id: "A58",
     commitment: "diversity",
     fromLevel: 2,
     toLevel: 4,
@@ -836,6 +895,7 @@ export const ACTIONS = [
     examples: ["Tilburg University", "LAB University of Applied Sciences", "University of Jyväskylä", "Erasmus University Rotterdam"],
   },
   {
+    id: "A59",
     commitment: "diversity",
     fromLevel: 2,
     toLevel: 4,
@@ -849,6 +909,7 @@ export const ACTIONS = [
     examples: ["South East Technological University", "University of Luxembourg", "Erasmus MC", "University of Urbino"],
   },
   {
+    id: "A60",
     commitment: "qualitative",
     fromLevel: 2,
     toLevel: 4,
@@ -862,6 +923,7 @@ export const ACTIONS = [
     examples: ["Deutsche Forschungsgemeinschaft (DFG)", "Leibniz Association", "Knowledge Foundation (Sweden)", "University of Bologna"],
   },
   {
+    id: "A61",
     commitment: "collective-eval",
     fromLevel: 1,
     toLevel: 4,

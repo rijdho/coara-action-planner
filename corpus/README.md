@@ -76,6 +76,46 @@ Zenodo DOI in a footer, which records that the deposit happened rather than that
 commits to publishing itself. Including it took the theme from 51 plans to 107, more than
 doubling it on an artefact of the citation line.
 
+## The full reading (September 2026)
+
+The "N% of 335 plans" line on Results no longer comes from keywords. Every one of the 335 plans
+was read in full, and every action it commits to or reports was extracted as a record with a
+verbatim quote. [`data/action-uptake.csv`](data/action-uptake.csv) publishes the result: for each
+of the 61 actions, how many plans take it. The keyword counts below remain as a second, cruder
+signal, and as the method for the eleven themes' calibration.
+
+How a plan came to count for an action:
+
+1. **Extraction.** An AI agent read the plan's full text and wrote one record per action, each
+   with a verbatim quote, a status (planned, implemented, unclear; "implemented" needed a second
+   quote showing it) and the commitment it serves. 10,774 records from 335 plans.
+2. **Quote check, by string search, no model involved.** 10,174 quotes occur in the text exactly;
+   595 differ only in whitespace (PDF line breaks) and count as found; 5 do not occur and their
+   records are dropped.
+3. **Adversarial check.** A second agent, told to refute by default, re-read each plan and judged
+   every record: quote present, not overstated, status defensible. 10,387 records survive.
+4. **Matching.** A separate agent matched each record to a catalogue action or to none; a checker
+   judged each match; disputed matches went to an independent third judge. A final pass matched
+   the records that still had no action against the final 61-action catalogue, again with a
+   checker. 6,886 supported records count for an action. Matches the checker still disputed (567)
+   count for none.
+5. **Uptake** is the number of distinct plans with at least one such record.
+
+What these figures can and cannot support:
+
+- **They are lower bounds.** A record counts only when two readers agree it is the action.
+  Records the checker disputed, and actions a plan implies without stating them, count for
+  nothing.
+- **They measure what plans say they do or will do, not what happened.** A plan that promises
+  a narrative CV counts the same as one that has run it for three years; the status field
+  separates the two in the underlying records, and the published figure does not.
+- **Language models read the plans.** Every record carries a quote that was checked
+  mechanically against the text, so an invented action cannot enter; interpretation (is this
+  overstated, is this the same action) is a judgement, made twice where it mattered.
+- **The records themselves are not published here**, for the same reason the plans are not:
+  they quote documents that belong to the institutions that wrote them. They are kept, with the
+  prompts, run records and the rules above, so that every figure can be traced to its quotes.
+
 ## Themes added in September 2026
 
 Eleven signatures were added for the actions that joined the catalogue in September 2026.

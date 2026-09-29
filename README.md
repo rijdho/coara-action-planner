@@ -93,7 +93,8 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 | [`actions.js`](src/data/actions.js) | 61 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, the `frameworks` it puts into practice, real institutional examples, and a `planText`, the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
 | [`frameworks.js`](src/data/frameworks.js) | the DORA recommendations, Leiden Manifesto principles and SCOPE stages and principles an action can be tagged with, each linked to its source |
 | [`plan.js`](src/data/plan.js) | the **second** ranking stage: the ambition gate, the high-effort filter, and every plan-setting weight (context affinity, focus, horizon, target, divergence) **and** the `applyPlan` function |
-| [`evidence.js`](src/data/evidence.js) | per-theme prevalence across the 335-plan corpus (`THEME_FREQUENCY` + the `universal / common / emerging / frontier` bands shown as "N% of 335 plans" on Results), measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
+| [`uptake.js`](src/data/uptake.js) | how many of the 335 plans take each action, from the full reading (the "N% of 335 plans" on Results); published as [`corpus/data/action-uptake.csv`](corpus/data/action-uptake.csv) |
+| [`evidence.js`](src/data/evidence.js) | the `universal / common / emerging / frontier` bands, and per-theme keyword prevalence (`THEME_FREQUENCY`), measured in [`corpus/`](corpus/), which publishes the manifest, the keyword signatures and the pipeline |
 | [`guidingQuestions.js`](src/data/guidingQuestions.js) | the CoARA Secretariat's 19 guiding questions, quoted verbatim and mapped onto the report's sections |
 | [`context.js`](src/data/context.js) | 6 institutional contexts that re-weight priorities |
 | [`perspectives.js`](src/data/perspectives.js) | the 10 respondent roles and their `ROLE_WEIGHTS`, which set how divergent readings are consolidated |
@@ -118,14 +119,15 @@ The questions and actions were hand-calibrated by reading 15 real institutional 
 OGS, SDU, U. Pannonia) and cross-checked against a corpus of published CoARA action plans
 from Zenodo: 314 at the April 2026 calibration, 335 as of the August 2026 recount.
 
-In September 2026 the catalogue grew from 47 to 61 actions. Twelve came from reading 40 of
-the published plans in full: every action a plan commits to was extracted with a verbatim
-quote, each quote was checked against the plan's text by string match, and an independent
-pass tried to refute each record. Actions that recurred in five or more of the 40 plans and
-that no catalogue action covered were added; near-duplicates were merged first, and seven
-existing actions were widened instead of gaining a sibling. Two more ("Let researchers verify
-the data used to assess them", "Evaluate only where necessary") come from the Leiden Manifesto
-and SCOPE rather than from the plans, which rarely take them yet, and are marked as such.
+In September 2026 every one of the 335 plans was read in full: each action a plan commits to
+was extracted with a verbatim quote, each quote was checked against the plan's text by string
+search, and an independent pass tried to refute each record ([`corpus/README.md`](corpus/README.md),
+"The full reading"). The catalogue was rebuilt on that reading and held at 61 actions: actions
+that almost no plan takes were folded into their neighbours, and the most frequent practices
+the catalogue did not cover were added. Two actions ("Let researchers verify the data used to
+assess them", "Evaluate only where necessary") come from the Leiden Manifesto and SCOPE rather
+than from the plans, which rarely take them yet, and stay because of it. The same reading
+gives each action the "N% of 335 plans" shown on Results.
 
 Each action also names the DORA recommendations, Leiden principles and SCOPE stages or
 principles it puts into practice, read against those texts. Many carry none: DORA and Leiden
@@ -196,6 +198,10 @@ must name a recommendation or principle that exists (Leiden has exactly ten, SCO
 stages and three principles), and the number of actions tagged per framework is pinned, so
 changing the tagging is a visible edit rather than a drift.
 
+`uptake.test.mjs` pins the reading figures: every action has a stable id and one figure, and
+`src/data/uptake.js`, which the app reads, agrees action by action with the published
+`corpus/data/action-uptake.csv`.
+
 `chart-boundary.test.mjs` keeps the charting library out of the entry bundle. recharts and
 its dependency tree are the heaviest thing this app ships and only two of the five routes
 draw a chart, so the implementation sits behind a `React.lazy` boundary. That split rests
@@ -223,8 +229,10 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
   can be in very different places.
 - **The radar is a shape, not a score.** With ten axes in a fixed order, the polygon's area and
   outline carry no meaning; read the per-commitment numbers, not the picture.
-- **Keyword-derived corpus evidence.** The "N% of 335 plans" figures on Results come from keyword
-  matching over the full text of the published action plans. Read them as directional bands
+- **Reading-derived corpus evidence.** The "N% of 335 plans" figures on Results come from a full
+  reading of every published action plan in which each action is backed by a verbatim quote and
+  an independent check ([`corpus/README.md`](corpus/README.md), "The full reading"). They are lower
+  bounds, and they count what plans commit to, not what has been done. Read them as bands
   (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
   reason to skip an action: frontier practices are an opportunity to lead. [`corpus/`](corpus/)
   publishes which plans were read, the exact keyword signature behind every theme, and the

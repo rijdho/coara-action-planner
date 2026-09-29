@@ -6,6 +6,8 @@
  * pipeline (02-analyze-corpus.py) whenever new plans are harvested.
  */
 
+import { ACTION_UPTAKE, PLANS_READ } from "./uptake.js";
+
 export const CORPUS_SIZE = 335;
 
 /** theme key -> { plans, pct } over the corpus */
@@ -65,4 +67,16 @@ export function themeEvidence(theme) {
   if (!theme || !THEME_FREQUENCY[theme]) return null;
   const { plans, pct } = THEME_FREQUENCY[theme];
   return { theme, plans, pct, corpusSize: CORPUS_SIZE, ...evidenceBand(pct) };
+}
+
+/**
+ * Evidence for an action from the full reading of every plan: how many plans take this action,
+ * counted from records backed by a verbatim quote and an independent check (a lower bound).
+ * Falls back to the keyword theme only for an action the reading has no figure for.
+ */
+export function actionEvidence(action) {
+  const u = action && ACTION_UPTAKE[action.id];
+  if (u) return { source: "reading", plans: u.plans, pct: u.pct, corpusSize: PLANS_READ, ...evidenceBand(u.pct) };
+  const t = themeEvidence(action && action.theme);
+  return t ? { ...t, source: "keywords" } : null;
 }

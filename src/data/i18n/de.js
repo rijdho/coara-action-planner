@@ -183,6 +183,7 @@ export default {
     res_examples: "Beispiele:",
     res_frameworks: "Setzt um:",
     res_corpus: "{pct} % von {n} Plänen",
+    res_readingTitle: "Anteil der {n} veröffentlichten CoARA-Aktionspläne, die diese Maßnahme vorsehen, aus einer vollständigen Lektüre jedes Plans, in der jede Maßnahme durch ein wörtliches Zitat und eine unabhängige Prüfung belegt ist. Eine Untergrenze.",
     res_corpusTitle: "Anteil der {n} veröffentlichten CoARA-Aktionspläne, deren Volltext dem Thema dieser Maßnahme entspricht (stichwortbasiert, orientierend)",
     ev_universal: "Nahezu universell in bestehenden Plänen",
     ev_common: "Verbreitet in bestehenden Plänen",
