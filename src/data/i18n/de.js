@@ -742,14 +742,9 @@ export default {
 
   actions: [
     {
-      title: "Aktuell anerkannte Leistungstypen erfassen",
-      description: "Erstellen Sie ein Verzeichnis aller Leistungstypen, die derzeit in Ihren Bewertungskriterien anerkannt werden (Publikationen, Daten, Software, Patente usw.). Identifizieren Sie Lücken.",
-      planText: "Wir werden ein Verzeichnis aller Leistungstypen erstellen, die derzeit in unseren Bewertungskriterien anerkannt werden (Publikationen, Daten, Software, Patente usw.), und Lücken identifizieren.",
-    },
-    {
-      title: "Erweiterte Leistungstypologie entwerfen",
-      description: "Entwickeln Sie eine umfassende Typologie von Forschungsbeiträgen: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien, Citizen Science usw.",
-      planText: "Wir werden eine umfassende Typologie von Forschungsbeiträgen entwickeln: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien und Citizen Science.",
+      title: "Anerkannte Leistungen erfassen und eine erweiterte Typologie entwerfen",
+      description: "Erfassen Sie zuerst, welche Leistungstypen Ihre Kriterien heute anerkennen und wo Lücken sind. Entwickeln Sie dann eine umfassende Typologie von Forschungsbeiträgen: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien, Citizen Science usw.",
+      planText: "Wir werden erfassen, welche Leistungstypen unsere Kriterien heute anerkennen, und eine umfassende Typologie von Forschungsbeiträgen entwickeln: begutachtete Artikel, Datensätze, Software, Code, Protokolle, Lehrmaterialien, Mentoring, Policy Briefs, Medien und Citizen Science.",
       examples: ["Netherlands Recognition & Rewards programme", "UK REF impact case studies"],
     },
     {
@@ -758,15 +753,9 @@ export default {
       planText: "Wir werden alle Kriterien für Einstellung, Beförderung, Tenure und Förderung überarbeiten, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit neben individuellen Leistungen anzuerkennen, und sicherstellen, dass Bewertende darin geschult sind, sie zu beurteilen.",
     },
     {
-      title: "Modelle narrativer Lebensläufe untersuchen",
-      description: "Sichten Sie Vorlagen für narrative Lebensläufe von Einrichtungen, die sie übernommen haben: UKRI Narrative CV, NWO (Niederlande), Schweizerischer Nationalfonds.",
-      planText: "Wir werden Vorlagen für narrative Lebensläufe von Einrichtungen sichten, die sie übernommen haben (UKRI, NWO, Schweizerischer Nationalfonds), um ein für unseren Kontext geeignetes Modell auszuwählen.",
-      examples: ["UKRI Résumé for Research and Innovation", "NWO narrative sections", "Swiss NSF academic profile"],
-    },
-    {
       title: "Einen narrativen Lebenslauf entwerfen und erproben",
-      description: "Passen Sie eine Vorlage für narrative Lebensläufe an Ihren institutionellen Kontext an. Erproben Sie sie in ein oder zwei Bewertungsrunden (z. B. interne Förderungen, ein Beförderungsausschuss). Sammeln Sie Rückmeldungen von Bewertenden und Kandidatinnen und Kandidaten.",
-      planText: "Wir werden eine Vorlage für narrative Lebensläufe an unseren institutionellen Kontext anpassen, sie in ein oder zwei Bewertungsrunden erproben und Rückmeldungen von Bewertenden sowie Kandidatinnen und Kandidaten sammeln.",
+      description: "Sichten Sie bestehende Modelle narrativer Lebensläufe (Résumé for Researchers, R4RI von UKRI, nationale Vorlagen) und passen Sie eines an Ihren institutionellen Kontext an. Erproben Sie sie in ein oder zwei Bewertungsrunden (z. B. interne Förderungen, ein Beförderungsausschuss). Sammeln Sie Rückmeldungen von Bewertenden und Kandidatinnen und Kandidaten.",
+      planText: "Wir werden bestehende Modelle narrativer Lebensläufe sichten, eines an unseren institutionellen Kontext anpassen, sie in ein oder zwei Bewertungsrunden erproben und Rückmeldungen von Bewertenden sowie Kandidatinnen und Kandidaten sammeln.",
     },
     {
       title: "Bewertungsausschüsse schulen",
@@ -799,19 +788,14 @@ export default {
       planText: "Wir werden institutionelle Kommunikation, Partnerschaftskriterien und Bewertungsverfahren auf Verweise auf Shanghai, THE, QS oder andere Rankings sichten.",
     },
     {
-      title: "Eine rankingfreie Partnerschaftsrichtlinie entwickeln",
-      description: "Erstellen Sie Kriterien für internationale Partnerschaften auf Grundlage von Forschungsqualität, strategischer Passung und gegenseitigem Nutzen statt institutioneller Rankings.",
-      planText: "Wir werden Kriterien für internationale Partnerschaften erstellen, die auf Forschungsqualität, strategischer Passung und gegenseitigem Nutzen statt auf institutionellen Rankings beruhen.",
-    },
-    {
-      title: "Ressourcenbedarf abschätzen",
-      description: "Berechnen Sie das Budget, die VZÄ und die Zeit, die für die Bewertungsreform erforderlich sind: Schulungsentwicklung, Ausschusszeit, Überarbeitung von Richtlinien, Infrastruktur, Monitoring.",
-      planText: "Wir werden das Budget, den Personalaufwand und die Infrastruktur berechnen, die für die Bewertungsreform erforderlich sind: Schulungsentwicklung, Ausschusszeit, Überarbeitung von Richtlinien und Monitoring.",
+      title: "Eine Position zu Rankings veröffentlichen und sie aus internen Entscheidungen heraushalten",
+      description: "Öffentlich darlegen, wie die Einrichtung Hochschulrankings sieht und wofür sie sie nicht verwendet (etwa mit einer INORMS-Erklärung More Than Our Rank), ihre Grenzen der eigenen Gemeinschaft erklären und sie aus Entscheidungen über Einstellung, Beförderung, Förderung und Partnerschaften heraushalten. Manche Einrichtungen gehen weiter und liefern kommerziellen Rankings keine Daten mehr.",
+      planText: "Wir werden unsere Position zu Hochschulrankings veröffentlichen, ihre Grenzen unserer Gemeinschaft erklären und sie aus Entscheidungen über Einstellung, Beförderung, Förderung und Partnerschaften heraushalten.",
     },
     {
       title: "Eigene Finanzierung und Personal sichern",
-      description: "Beantragen Sie eine Budgetzuweisung bei der institutionellen Leitung. Benennen Sie eine Reformkoordination oder einen Ausschuss mit geschützter Zeit und klarem Mandat.",
-      planText: "Wir werden eine eigene Budgetzuweisung sichern und eine Reformkoordination oder einen Ausschuss mit geschützter Zeit und klarem Mandat benennen.",
+      description: "Schätzen Sie ab, was die Reform braucht (Personalzeit, Systeme, Schulungen, Kommunikation), und beantragen Sie dann eine Budgetzuweisung bei der institutionellen Leitung. Benennen Sie eine Reformkoordination oder einen Ausschuss mit geschützter Zeit und klarem Mandat.",
+      planText: "Wir werden den Ressourcenbedarf der Reform abschätzen, eine eigene Budgetzuweisung sichern und eine Reformkoordination oder einen Ausschuss mit geschützter Zeit und klarem Mandat benennen.",
     },
     {
       title: "Umfassende Kriterienprüfung durchführen",
@@ -900,21 +884,15 @@ export default {
       examples: ["UCM CoARA Working Group", "DCU Open Research Steering Group", "Pannonia Scientific Quality Analysis Group"],
     },
     {
-      title: "IT-Bereitschaft zur Erfassung vielfältiger Forschungsleistungen bewerten",
-      description: "Überprüfen Sie, ob Ihr CRIS (Current Research Information System), Ihr Repositorium oder Ihre HR-Systeme vielfältige Forschungsleistungen erfassen können (Datensätze, Software, Patente, Mentoring, Öffentlichkeitsarbeit). Identifizieren Sie Lücken.",
-      planText: "Wir werden überprüfen, ob unser CRIS, unser Repositorium und unsere HR-Systeme vielfältige Forschungsleistungen erfassen können (Datensätze, Software, Patente, Mentoring, Öffentlichkeitsarbeit), und die Lücken identifizieren.",
-      examples: ["UPC DRAC system with 35 indicators", "SDU Pure CRIS + Dataverse", "UCM DOCTA repository"],
-    },
-    {
       title: "Infrastruktur ausbauen, um die reformierte Bewertung zu unterstützen",
-      description: "Implementieren oder erweitern Sie ein CRIS, integrieren Sie ORCID, setzen Sie Datenrepositorien ein, verbinden Sie Systeme mit den Bewertungsabläufen und statten Sie die unterstützenden Dienste personell aus (ein Open-Access-Team, Data Stewards). Stellen Sie sicher, dass die Infrastruktur erfasst, was die neuen Kriterien erfordern.",
+      description: "Prüfen Sie zuerst, ob Ihre Systeme vielfältige Leistungen überhaupt erfassen können. Implementieren oder erweitern Sie dann ein CRIS, integrieren Sie ORCID, setzen Sie Datenrepositorien ein, verbinden Sie Systeme mit den Bewertungsabläufen und statten Sie die unterstützenden Dienste personell aus (ein Open-Access-Team, Data Stewards). Stellen Sie sicher, dass die Infrastruktur erfasst, was die neuen Kriterien erfordern. Rahmenwerke wie OI4RRA (die Schichten von Identifikatoren bis zu Bewertungswerkzeugen) und die TRUST-Prinzipien für Repositorien helfen bei der Entscheidung, wo investiert wird.",
       planText: "Wir werden unsere Forschungsinformationsinfrastruktur implementieren oder ausbauen (CRIS, ORCID-Integration, Datenrepositorien), die unterstützenden Dienste personell ausstatten und sie mit den Bewertungsabläufen verbinden, damit sie erfasst, was die neuen Kriterien erfordern.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
-      title: "Kriterien nach Karrierestufe und Verfahren differenzieren",
-      description: "Entwickeln Sie eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen. Unterscheiden Sie außerdem zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung. Einheitskriterien für alle benachteiligen Early-Career-Forschende.",
-      planText: "Wir werden eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen entwickeln und zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung unterscheiden, damit einheitliche Kriterien Early-Career-Forschende nicht länger benachteiligen.",
+      title: "Kriterien nach Karrierestufe, Verfahren und Fach differenzieren",
+      description: "Entwickeln Sie eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen und lassen Sie jedes Fach selbst bestimmen, was als Qualität gilt (Bücher in den Geisteswissenschaften, Konferenzbeiträge in der Informatik). Unterscheiden Sie außerdem zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung. Einheitskriterien für alle benachteiligen Early-Career-Forschende.",
+      planText: "Wir werden eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen entwickeln, jedes Fach selbst bestimmen lassen, was als Qualität gilt, und zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung unterscheiden, damit einheitliche Kriterien Early-Career-Forschende nicht länger benachteiligen.",
       examples: ["UB differentiated review per call type (predoc, postdoc, Serra Hunter, cátedras)", "Eurodoc R1/R2/R3 mapping"],
     },
     {
@@ -942,12 +920,6 @@ export default {
       examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
     },
     {
-      title: "CARE + FAIR als gepaarte Grundsätze der Daten-Governance übernehmen",
-      description: "FAIR allein kann Gemeinschaftsdaten ohne Einwilligung in offene Systeme extrahieren. Paaren Sie FAIR mit CARE (Collective benefit, Authority to control, Responsibility, Ethics) in der institutionellen Datenrichtlinie und den Bewertungskriterien. Besonders tragend, wenn Forschung indigene Völker oder gemeinschaftlich verwaltete Daten betrifft.",
-      planText: "Wir werden FAIR mit den CARE-Prinzipien (Collective benefit, Authority to control, Responsibility, Ethics) in unserer Datenrichtlinie und unseren Bewertungskriterien paaren, damit Offenheit niemals die Einwilligung und den kollektiven Nutzen der Gemeinschaften übergeht.",
-      examples: ["GIDA CARE Principles", "HGP2 federated GWAS in Jordan", "Allele frequency across Caribbean cohorts via BioVault"],
-    },
-    {
       title: "Auf Sprachverzerrung prüfen (Helsinki Initiative on Multilingualism)",
       description: "Stellen Sie sicher, dass Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird. Überprüfen Sie Kriterien, Ausschusszusammensetzung und konsultierte Datenbanken auf implizite Bevorzugung der englischen Sprache. Die Helsinki Initiative bietet den maßgeblichen Rahmen.",
       planText: "Wir werden Kriterien, Ausschusszusammensetzung und die von uns konsultierten Datenbanken auf implizite Bevorzugung der englischen Sprache überprüfen (im Einklang mit der Helsinki Initiative on Multilingualism), damit Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird.",
@@ -958,24 +930,6 @@ export default {
       description: "Stimmen Sie sich mit einem regionalen Forum ab (IRAF Indien, AFRA Afrika/AOSP, CoARA National Chapter), statt isoliert zu reformieren. Einseitige Reform in einem kennzahlengetriebenen Ökosystem riskiert, Ihre Forschenden zu benachteiligen; regionale Koordination schützt sie.",
       planText: "Wir werden uns mit einem regionalen Forum oder einem CoARA National Chapter abstimmen, statt isoliert zu reformieren, und unsere Forschenden durch regionale Koordination schützen.",
       examples: ["IRAF inauguration (Dr. Gitanjali Yadav)", "AOSP Governing Council", "CoARA Spain (CRUE/CSIC)"],
-    },
-    {
-      title: "TRUST-Prinzipien bei der Wahl oder dem Ausbau von Repositorien anwenden",
-      description: "Nutzen Sie die TRUST-Prinzipien für digitale Repositorien (Transparency, Responsibility, User focus, Sustainability, Technology), um die Infrastruktur zu prüfen, die Ihre Bewertungsbelege trägt. Paaren Sie sie mit FAIR für die Abdeckung der Datenebene.",
-      planText: "Wir werden die TRUST-Prinzipien für digitale Repositorien (Transparency, Responsibility, User focus, Sustainability, Technology) anwenden, um die Infrastruktur zu prüfen, die unsere Bewertungsbelege trägt, und sie auf der Datenebene mit FAIR paaren.",
-      examples: ["TRUST Principles (Lin et al. 2020)", "OI4RRA Tier 1 Publishing"],
-    },
-    {
-      title: "Ausnahmen von der Offenheit dokumentieren („so offen wie möglich, so geschlossen wie nötig“)",
-      description: "Offenheit ist der Standard; Ausnahmen müssen dokumentiert, zeitlich begrenzt, einer Aufsicht unterworfen und periodisch erneut geprüft werden. Dieses Prinzip (aus dem CoARA-ERIP Whitepaper und der Barcelona Declaration) macht geschlossene Daten zur überprüfbaren Ausnahme statt zur stillen Norm.",
-      planText: "Wir werden Offenheit zum Standard machen und jede Ausnahme dokumentieren (zeitlich begrenzt, einer Aufsicht unterworfen und periodisch erneut geprüft), damit geschlossene Daten die überprüfbare Ausnahme statt der stillen Norm sind.",
-      examples: ["CoARA-ERIP Whitepaper (2025)", "UNESCO Recommendation on Open Science"],
-    },
-    {
-      title: "Ihren Bewertungs-Stack an der 4-Schichten-Architektur von OI4RRA ausrichten",
-      description: "Die OI4RRA-Arbeitsgruppe von CoARA definiert eine 4-Schichten-Architektur: Tier 0 Foundation (PIDs, ORCID, ROR, DOI), Tier 1 Publishing, Tier 2 Metadaten-Aggregatoren (OpenAIRE, ORKG), Tier 3 Bewertungsunterstützung (Analytik, narrative-CV-Generatoren). Bilden Sie ab, was Sie haben vs. was auf jeder Schicht fehlt; investieren Sie entsprechend.",
-      planText: "Wir werden unsere Bewertungsinfrastruktur an der 4-Schichten-Architektur von OI4RRA ausrichten, von persistenten Identifikatoren bis zu Werkzeugen der Bewertungsunterstützung, und dort investieren, wo Schichten fehlen.",
-      examples: ["OI4RRA Framework & Principles (Manola et al. 2025)", "OI4RRA Policy Briefs for RPOs/RFOs"],
     },
     {
       title: "Eine Beitragstaxonomie übernehmen (CRediT / CASRAI / TaDiRAH)",
@@ -1040,7 +994,7 @@ export default {
     },
     {
       title: "Forschende bei der Erfüllung von Open-Science-Kriterien unterstützen",
-      description: "Offene Praktiken in der Bewertung zu honorieren ist nur fair, wenn sie sich umsetzen lassen. Dazu gehören eine Open-Access- und Forschungsdaten-Policy, regelmäßige Schulungen zu Open Access, Datenmanagement und FAIR sowie aktuelle Hilfen (Vorlagen für Datenmanagementpläne, eine Entscheidungshilfe, wie offen etwas sein kann). Dieselben Hilfen stehen auch den Bewertenden zur Verfügung, damit alle vom gleichen Verständnis ausgehen.",
+      description: "Offene Praktiken in der Bewertung zu honorieren ist nur fair, wenn sie sich umsetzen lassen. Dazu gehören eine Open-Access- und Forschungsdaten-Policy, regelmäßige Schulungen zu Open Access, Datenmanagement und FAIR sowie aktuelle Hilfen (Vorlagen für Datenmanagementpläne, eine Entscheidungshilfe, wie offen etwas sein kann). Dieselben Hilfen stehen auch den Bewertenden zur Verfügung, damit alle vom gleichen Verständnis ausgehen. Ausnahmen von der Offenheit werden dokumentiert (so offen wie möglich, so geschlossen wie nötig), und wo indigene oder gemeinschaftliche Daten betroffen sind, wird FAIR mit den CARE-Prinzipien verbunden.",
       planText: "Wir werden eine Open-Access- und Forschungsdaten-Policy verabschieden und ihre Umsetzung durch regelmäßige Schulungen und aktuelle Hilfen unterstützen, die auch den Bewertenden zur Verfügung stehen.",
     },
     {
@@ -1067,6 +1021,46 @@ export default {
       title: "Nur bewerten, wo es nötig ist",
       description: "Für jede wiederkehrende Bewertung fragen, ob es sie braucht und in welcher Tiefe. Bewertungen, die keine Entscheidung verändern, streichen oder zusammenlegen, und eine Praxis lieber ermöglichen als messen. Sonst häufen neue Dimensionen (Open Science, Kollegialität, Integrität) nur mehr Bewertung auf dieselben Menschen.",
       planText: "Wir werden unsere wiederkehrenden Bewertungen überprüfen, nur die beibehalten, die eine Entscheidung stützen, und ihre Tiefe entsprechend festlegen, damit die Reform keinen zusätzlichen Bewertungsaufwand erzeugt.",
+    },
+    {
+      title: "Die nationale und europäische Bewertungspolitik mitgestalten",
+      description: "Vieles, woran Forschende gemessen werden, wird außerhalb der Einrichtung festgelegt: von nationalen Evaluations- und Akkreditierungsagenturen, Berufungs- und Beförderungsgremien, Förderern, Rektorenkonferenzen. Dort mitwirken, wo diese Kriterien entstehen (Konsultationen, nationale CoARA-Chapter, Arbeitsgruppen der Agenturen), Widersprüche zu den reformierten Kriterien benennen und auf Angleichung drängen. Sonst kann eine Reform, die national nicht anerkannt wird, gerade denen schaden, die ihr folgen.",
+      planText: "Wir werden an der Gestaltung der nationalen und europäischen Bewertungspolitik mitwirken, über Konsultationen, nationale Chapter und Arbeitsgruppen der Agenturen, und uns für Kriterien einsetzen, die mit unseren reformierten übereinstimmen.",
+    },
+    {
+      title: "Die Reform in den HRS4R-Plan und bestehende Strategiezyklen schreiben",
+      description: "CoARA nicht als eigenes Projekt führen. Den HRS4R-Aktionsplan (HR Excellence in Research) mit den zehn Verpflichtungen abgleichen, um zu sehen, was schon läuft, die neuen Kriterien in die Rekrutierungspolitik (OTM-R) und die nächste HRS4R-Erneuerung schreiben und Ziele der Bewertungsreform in die Pläne aufnehmen, die ohnehin verfolgt werden: Strategieplan, Qualitätssicherung, Gleichstellungsplan. So wird die Reform in Zyklen überprüft, die es ohnehin gibt.",
+      planText: "Wir werden unseren HRS4R-Aktionsplan mit den CoARA-Verpflichtungen abgleichen, die reformierten Kriterien in unsere Rekrutierungspolitik und die nächste HRS4R-Erneuerung schreiben und Ziele der Bewertungsreform in unseren Strategieplan und den Qualitätssicherungszyklus aufnehmen.",
+    },
+    {
+      title: "Neu regeln, wie Bewertende und Kommissionen ausgewählt werden",
+      description: "Qualitative Urteile sind nur so gut wie die Menschen, die sie fällen. Regeln festlegen, wer in Kommissionen sitzt und wer begutachtet: ein Gleichgewicht von Karrierestufen, Fächern, Geschlechtern und Sektoren, internationale oder externe Mitglieder, wo sinnvoll, offengelegte Interessenkonflikte und Bewertende, die die reformierten Kriterien kennen. Die Besetzung rotieren, damit nicht immer dieselben wenigen entscheiden.",
+      planText: "Wir werden Regeln für die Auswahl von Bewertenden und die Besetzung von Kommissionen festlegen, die ein Gleichgewicht von Karrierestufen, Fächern, Geschlechtern und Sektoren, Interessenkonflikte und die Kenntnis der reformierten Kriterien abdecken, und die Besetzung rotieren.",
+    },
+    {
+      title: "Einen Dienst für verantwortungsvolle Bibliometrie anbieten",
+      description: "Wenn Zahlen verwendet werden, sollten sie von Menschen kommen, die ihre Grenzen kennen. Ein Dienst (oft in der Bibliothek oder im Forschungsservice), der Bewertende und Forschende berät, welcher Indikator zu welcher Frage passt, fachnormierte Zahlen mit Kontext statt roher Zählungen liefert und Kennzahlenkompetenz vermittelt. Er beantwortet zudem die Frage, die Kommissionen ohnehin stellen, damit sie nicht zum Impact-Faktor greifen.",
+      planText: "Wir werden einen Dienst für verantwortungsvolle Bibliometrie anbieten, der Bewertende und Forschende zu geeigneten Indikatoren berät, kontextualisierte Zahlen liefert und Kennzahlenkompetenz aufbaut.",
+    },
+    {
+      title: "Einen Rahmen zur Anerkennung gesellschaftlicher Wirkung aufbauen",
+      description: "Gemeinsam mit denen, die sie erleben (regionale Partner, Wirtschaft, Verwaltung, Zivilgesellschaft), festlegen, was gesellschaftliche Wirkung für die Einrichtung bedeutet und wie sie belegt wird: Wirkungsnarrative, qualitative Fallbeschreibungen, wenige Indikatoren. In einer Bewertungsrunde erproben und qualitativ halten, damit daraus keine neue Kennzahl wird.",
+      planText: "Wir werden gemeinsam mit externen Akteuren einen Rahmen zur Anerkennung gesellschaftlicher Wirkung in der Bewertung entwickeln, ihn in einer Bewertungsrunde erproben und qualitativ halten.",
+    },
+    {
+      title: "Preise für Beiträge schaffen, die die Kriterien übersehen",
+      description: "Preise sind ein schneller, sichtbarer Weg zu zeigen, was die Einrichtung schätzt: Open Science, Mentoring, Teamarbeit, Wissenschaftskommunikation, Forschungsunterstützung. Preise für Beiträge schaffen, die die Kriterien bisher übersehen haben, mit Nominierungs- und Auswahlkriterien, die ebenfalls der Reform folgen.",
+      planText: "Wir werden Preise für Beiträge schaffen, die unsere Kriterien bisher übersehen haben, etwa Open Science, Mentoring, Teamarbeit und Wissenschaftskommunikation, mit Nominierungs- und Auswahlkriterien im Sinne der Reform.",
+    },
+    {
+      title: "Wenige ausgewählte Leistungen verlangen, jede begründet",
+      description: "Lange Publikationslisten durch eine kurze Auswahl ersetzen (oft drei bis zehn Leistungen beliebiger Art), die die bewerbende Person selbst trifft, jede mit einigen Zeilen dazu, warum sie wichtig ist und was die Person beigetragen hat. So wird die Arbeit gelesen und beurteilt statt gezählt.",
+      planText: "Wir werden vollständige Publikationslisten in Anträgen durch eine kurze, von der bewerbenden Person getroffene Auswahl von Leistungen ersetzen, jede mit einer Begründung ihrer Bedeutung und des eigenen Beitrags.",
+    },
+    {
+      title: "Bewertungsdaten auf offene Forschungsinformationen stützen",
+      description: "Eine Bewertung, die auf proprietären Datenbanken beruht, können die Bewerteten nicht überprüfen. Die Daten hinter Bewertung und Monitoring auf offene Quellen umstellen (OpenAlex, OpenAIRE, Crossref, ORCID, das eigene Repositorium) und die Unterzeichnung der Barcelona-Erklärung zu offenen Forschungsinformationen erwägen.",
+      planText: "Wir werden die Daten unserer Bewertung und unseres Monitorings auf offene Quellen für Forschungsinformationen stützen und die Unterzeichnung der Barcelona-Erklärung zu offenen Forschungsinformationen erwägen.",
     },
   ],
 

@@ -747,14 +747,9 @@ export default {
 
   actions: [
     {
-      title: "Mapear los tipos de productos reconocidos actualmente",
-      description: "Crea un inventario de todos los tipos de productos reconocidos actualmente en tus criterios de evaluación (publicaciones, datos, software, patentes, etc.). Identifica las brechas.",
-      planText: "Crearemos un inventario de todos los tipos de productos reconocidos actualmente en nuestros criterios de evaluación (publicaciones, datos, software, patentes, etc.) e identificaremos las brechas.",
-    },
-    {
-      title: "Redactar una tipología ampliada de productos",
-      description: "Desarrolla una tipología completa de contribuciones de investigación: artículos revisados por pares, conjuntos de datos, software, código, protocolos, materiales docentes, mentoría, informes de políticas, medios, ciencia ciudadana, etc.",
-      planText: "Desarrollaremos una tipología completa de contribuciones de investigación: artículos revisados por pares, conjuntos de datos, software, código, protocolos, materiales docentes, mentoría, informes de políticas, medios y ciencia ciudadana.",
+      title: "Mapear los productos reconocidos y redactar una tipología ampliada",
+      description: "Parte de un inventario de los tipos de productos que reconocen hoy tus criterios y de sus brechas. Luego desarrolla una tipología completa de contribuciones de investigación: artículos revisados por pares, conjuntos de datos, software, código, protocolos, materiales docentes, mentoría, informes de políticas, medios, ciencia ciudadana, etc.",
+      planText: "Haremos un inventario de los tipos de productos que reconocen hoy nuestros criterios y desarrollaremos una tipología completa de contribuciones de investigación: artículos revisados por pares, conjuntos de datos, software, código, protocolos, materiales docentes, mentoría, informes de políticas, medios y ciencia ciudadana.",
       examples: ["Netherlands Recognition & Rewards programme", "UK REF impact case studies"],
     },
     {
@@ -763,15 +758,9 @@ export default {
       planText: "Revisaremos todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación junto a los logros individuales, y aseguraremos que las personas evaluadoras estén formadas para evaluarlos.",
     },
     {
-      title: "Estudiar modelos de CV narrativo",
-      description: "Revisa plantillas de CV narrativo de instituciones que las han adoptado: UKRI Narrative CV, NWO (Países Bajos), Swiss National Science Foundation.",
-      planText: "Revisaremos plantillas de CV narrativo de instituciones que las han adoptado (UKRI, NWO, Swiss National Science Foundation) para seleccionar un modelo adecuado a nuestro contexto.",
-      examples: ["UKRI Résumé for Research and Innovation", "NWO narrative sections", "Swiss NSF academic profile"],
-    },
-    {
       title: "Diseñar y pilotar un CV narrativo",
-      description: "Adapta una plantilla de CV narrativo a tu contexto institucional. Pilotéala en una o dos rondas de evaluación (p. ej., convocatorias internas, un comité de promoción). Recoge retroalimentación de las personas evaluadoras y las candidaturas.",
-      planText: "Adaptaremos una plantilla de CV narrativo a nuestro contexto institucional, la pilotaremos en una o dos rondas de evaluación y recogeremos retroalimentación de las personas evaluadoras y las candidaturas.",
+      description: "Revisa los modelos de CV narrativo existentes (Résumé for Researchers, R4RI de UKRI, plantillas nacionales) y adapta uno a tu contexto institucional. Pilotéala en una o dos rondas de evaluación (p. ej., convocatorias internas, un comité de promoción). Recoge retroalimentación de las personas evaluadoras y las candidaturas.",
+      planText: "Revisaremos los modelos de CV narrativo existentes, adaptaremos uno a nuestro contexto institucional, la pilotaremos en una o dos rondas de evaluación y recogeremos retroalimentación de las personas evaluadoras y las candidaturas.",
     },
     {
       title: "Formar a los comités de evaluación",
@@ -804,19 +793,14 @@ export default {
       planText: "Revisaremos las comunicaciones institucionales, los criterios de alianzas y los procesos de evaluación en busca de referencias a Shanghai, THE, QS u otros rankings.",
     },
     {
-      title: "Desarrollar una política de alianzas libre de rankings",
-      description: "Crea criterios para alianzas internacionales basados en la calidad de la investigación, la alineación estratégica y el beneficio mutuo en lugar de los rankings institucionales.",
-      planText: "Crearemos criterios para alianzas internacionales basados en la calidad de la investigación, la alineación estratégica y el beneficio mutuo en lugar de los rankings institucionales.",
-    },
-    {
-      title: "Estimar las necesidades de recursos",
-      description: "Calcula el presupuesto, los equivalentes a tiempo completo (FTE) y el tiempo necesarios para la reforma de la evaluación: desarrollo de formación, tiempo de comités, reescritura de políticas, infraestructura, seguimiento.",
-      planText: "Calcularemos el presupuesto, el tiempo del personal y la infraestructura necesarios para la reforma de la evaluación: desarrollo de formación, tiempo de comités, reescritura de políticas y seguimiento.",
+      title: "Publicar la postura sobre los rankings y dejarlos fuera de las decisiones internas",
+      description: "Declarar públicamente cómo ve la institución los rankings universitarios y para qué no los usará (por ejemplo, con una declaración More Than Our Rank de INORMS), explicar sus límites a la propia comunidad y excluirlos de las decisiones de contratación, promoción, financiamiento y alianzas. Algunas instituciones van más allá y dejan de enviar datos a los rankings comerciales.",
+      planText: "Publicaremos nuestra postura sobre los rankings universitarios, explicaremos sus límites a nuestra comunidad y los dejaremos fuera de las decisiones de contratación, promoción, financiamiento y alianzas.",
     },
     {
       title: "Asegurar financiamiento y personal dedicados",
-      description: "Solicita la asignación de presupuesto a la dirección institucional. Designa una persona coordinadora de la reforma o un comité con tiempo protegido y mandato claro.",
-      planText: "Aseguraremos una asignación presupuestaria dedicada y designaremos una persona coordinadora de la reforma o un comité con tiempo protegido y mandato claro.",
+      description: "Estima lo que necesita la reforma (tiempo del personal, sistemas, formación, comunicación) y luego solicita la asignación de presupuesto a la dirección institucional. Designa una persona coordinadora de la reforma o un comité con tiempo protegido y mandato claro.",
+      planText: "Estimaremos los recursos que necesita la reforma, aseguraremos una asignación presupuestaria dedicada y designaremos una persona coordinadora de la reforma o un comité con tiempo protegido y mandato claro.",
     },
     {
       title: "Realizar una auditoría exhaustiva de criterios",
@@ -905,21 +889,15 @@ export default {
       examples: ["UCM CoARA Working Group", "DCU Open Research Steering Group", "Pannonia Scientific Quality Analysis Group"],
     },
     {
-      title: "Evaluar la preparación de TI para el registro de productos diversos",
-      description: "Revisa si tu CRIS (Sistema de Información de Investigación Actual), repositorio o sistemas de RR. HH. pueden registrar productos diversos (conjuntos de datos, software, patentes, mentoría, divulgación). Identifica las brechas.",
-      planText: "Revisaremos si nuestro CRIS, repositorio y sistemas de RR. HH. pueden registrar productos diversos (conjuntos de datos, software, patentes, mentoría, divulgación) e identificaremos las brechas.",
-      examples: ["UPC DRAC system with 35 indicators", "SDU Pure CRIS + Dataverse", "UCM DOCTA repository"],
-    },
-    {
       title: "Mejorar la infraestructura para apoyar la evaluación reformada",
-      description: "Implementa o mejora el CRIS, integra ORCID, despliega repositorios de datos, conecta los sistemas con los flujos de trabajo de evaluación y dota de personal el apoyo que los rodea (un equipo de acceso abierto, una persona gestora de datos). Asegura que la infraestructura registre lo que requieren los nuevos criterios.",
+      description: "Comprueba primero si tus sistemas pueden registrar productos diversos. Luego implementa o mejora el CRIS, integra ORCID, despliega repositorios de datos, conecta los sistemas con los flujos de trabajo de evaluación y dota de personal el apoyo que los rodea (un equipo de acceso abierto, una persona gestora de datos). Asegura que la infraestructura registre lo que requieren los nuevos criterios. Marcos como OI4RRA (las capas que van de los identificadores a las herramientas de evaluación) y los principios TRUST para repositorios ayudan a decidir dónde invertir.",
       planText: "Implementaremos o mejoraremos nuestra infraestructura de información de investigación (CRIS, integración con ORCID, repositorios de datos), dotaremos de personal los servicios de apoyo que la rodean y la conectaremos con los flujos de trabajo de evaluación para que registre lo que requieren los nuevos criterios.",
       examples: ["UPC DRAC feeding into Programa Càtedres evaluation", "Helmholtz automated quality indicator pipelines"],
     },
     {
-      title: "Diferenciar los criterios por etapa de carrera y proceso",
-      description: "Desarrolla criterios de evaluación distintos para puestos de doctorado, postdoctorado, vía de titularidad y sénior. Distingue también entre contratación, promoción, convocatorias internas y evaluación de unidades. Los criterios uniformes desfavorecen a las personas investigadoras en inicio de carrera.",
-      planText: "Desarrollaremos criterios de evaluación distintos para puestos de doctorado, postdoctorado, vía de titularidad y sénior, y distinguiremos entre contratación, promoción, convocatorias internas y evaluación de unidades, para que los criterios uniformes dejen de desfavorecer a las personas investigadoras en inicio de carrera.",
+      title: "Diferenciar los criterios por etapa de carrera, proceso y disciplina",
+      description: "Desarrolla criterios de evaluación distintos para puestos de doctorado, postdoctorado, vía de titularidad y sénior, y deja que cada disciplina defina qué cuenta como calidad en sus propios términos (libros en humanidades, ponencias en informática). Distingue también entre contratación, promoción, convocatorias internas y evaluación de unidades. Los criterios uniformes desfavorecen a las personas investigadoras en inicio de carrera.",
+      planText: "Desarrollaremos criterios de evaluación distintos para puestos de doctorado, postdoctorado, vía de titularidad y sénior, dejaremos que cada disciplina defina qué cuenta como calidad en sus propios términos, y distinguiremos entre contratación, promoción, convocatorias internas y evaluación de unidades, para que los criterios uniformes dejen de desfavorecer a las personas investigadoras en inicio de carrera.",
       examples: ["UB differentiated review per call type (predoc, postdoc, Serra Hunter, cátedras)", "Eurodoc R1/R2/R3 mapping"],
     },
     {
@@ -947,12 +925,6 @@ export default {
       examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
     },
     {
-      title: "Adoptar CARE + FAIR como principios emparejados de gobernanza de datos",
-      description: "FAIR por sí solo puede extraer datos comunitarios hacia sistemas abiertos sin consentimiento. Empareja FAIR con CARE (beneficio colectivo, autoridad para controlar, responsabilidad, ética) en la política institucional de datos y los criterios de evaluación. Especialmente determinante cuando la investigación involucra a pueblos indígenas o datos de propiedad comunitaria.",
-      planText: "Emparejaremos FAIR con los principios CARE (beneficio colectivo, autoridad para controlar, responsabilidad, ética) en nuestra política de datos y criterios de evaluación, de modo que la apertura nunca prevalezca sobre el consentimiento comunitario y el beneficio colectivo.",
-      examples: ["GIDA CARE Principles", "HGP2 federated GWAS in Jordan", "Allele frequency across Caribbean cohorts via BioVault"],
-    },
-    {
       title: "Auditar el sesgo lingüístico (Helsinki Initiative on Multilingualism)",
       description: "Asegura que la investigación en lenguas locales o no dominantes no sea penalizada. Revisa los criterios, la composición de los comités y las bases de datos consultadas en busca de sesgo implícito hacia el inglés. La Helsinki Initiative ofrece el marco canónico.",
       planText: "Revisaremos los criterios, la composición de los comités y las bases de datos que consultamos en busca de sesgo implícito hacia el inglés, siguiendo la Helsinki Initiative on Multilingualism, para que la investigación en lenguas locales o no dominantes no sea penalizada.",
@@ -963,24 +935,6 @@ export default {
       description: "Alinéate con un foro regional (IRAF India, AFRA África/AOSP, CoARA National Chapter) en lugar de reformar de forma aislada. La reforma unilateral en un ecosistema guiado por métricas corre el riesgo de desfavorecer a tus personas investigadoras; la coordinación regional las protege.",
       planText: "Nos alinearemos con un foro regional o un CoARA National Chapter en lugar de reformar de forma aislada, protegiendo a nuestras personas investigadoras mediante la coordinación regional.",
       examples: ["IRAF inauguration (Dr. Gitanjali Yadav)", "AOSP Governing Council", "CoARA Spain (CRUE/CSIC)"],
-    },
-    {
-      title: "Aplicar los principios TRUST al elegir o mejorar repositorios",
-      description: "Usa los principios TRUST para Repositorios Digitales (Transparency, Responsibility, User focus, Sustainability, Technology) para auditar la infraestructura que respalda la evidencia de tu evaluación. Empareja con FAIR para la cobertura de la capa de datos.",
-      planText: "Aplicaremos los principios TRUST para Repositorios Digitales (Transparency, Responsibility, User focus, Sustainability, Technology) para auditar la infraestructura que respalda nuestra evidencia de evaluación, emparejándolos con FAIR en la capa de datos.",
-      examples: ["TRUST Principles (Lin et al. 2020)", "OI4RRA Tier 1 Publishing"],
-    },
-    {
-      title: "Documentar las excepciones a la apertura ('tan abierto como sea posible, tan cerrado como sea necesario')",
-      description: "La apertura es la opción por defecto; las excepciones deben documentarse, tener plazo limitado, estar sujetas a supervisión y revisarse periódicamente. Este principio (del Whitepaper CoARA-ERIP y la Declaración de Barcelona) convierte los datos cerrados en la excepción auditable en lugar de la norma silenciosa.",
-      planText: "Haremos de la apertura la opción por defecto y documentaremos cada excepción (con plazo limitado, sujeta a supervisión y revisada periódicamente) para que los datos cerrados sean la excepción auditable y no la norma silenciosa.",
-      examples: ["CoARA-ERIP Whitepaper (2025)", "UNESCO Recommendation on Open Science"],
-    },
-    {
-      title: "Mapear tu infraestructura de evaluación contra la arquitectura de 4 niveles de OI4RRA",
-      description: "El WG OI4RRA de CoARA define una arquitectura de 4 niveles: Nivel 0 Fundamento (PIDs, ORCID, ROR, DOI), Nivel 1 Publicación, Nivel 2 Agregadores de metadatos (OpenAIRE, ORKG), Nivel 3 Apoyo a la evaluación (analítica, constructores de CV narrativo). Mapea lo que tienes frente a lo que falta en cada nivel; invierte en consecuencia.",
-      planText: "Mapearemos nuestra infraestructura de evaluación contra la arquitectura de cuatro niveles de OI4RRA, desde los identificadores persistentes hasta las herramientas de apoyo a la evaluación, e invertiremos donde falten niveles.",
-      examples: ["OI4RRA Framework & Principles (Manola et al. 2025)", "OI4RRA Policy Briefs for RPOs/RFOs"],
     },
     {
       title: "Adoptar una taxonomía de contribuciones (CRediT / CASRAI / TaDiRAH)",
@@ -1045,7 +999,7 @@ export default {
     },
     {
       title: "Apoyar al personal investigador para cumplir los criterios de ciencia abierta",
-      description: "Premiar las prácticas abiertas en la evaluación solo es justo si se pueden llevar a cabo. Hace falta una política de acceso abierto y de datos de investigación, formación periódica en acceso abierto, gestión de datos y FAIR, y orientaciones al día (plantillas de plan de gestión de datos, una guía para decidir cuán abierto ser). Las mismas orientaciones sirven a quienes evalúan, para que quien aplica los criterios y quien los cumple compartan un mismo entendimiento.",
+      description: "Premiar las prácticas abiertas en la evaluación solo es justo si se pueden llevar a cabo. Hace falta una política de acceso abierto y de datos de investigación, formación periódica en acceso abierto, gestión de datos y FAIR, y orientaciones al día (plantillas de plan de gestión de datos, una guía para decidir cuán abierto ser). Las mismas orientaciones sirven a quienes evalúan, para que quien aplica los criterios y quien los cumple compartan un mismo entendimiento. Las excepciones a la apertura se documentan (tan abierto como sea posible, tan cerrado como sea necesario) y, cuando hay datos indígenas o comunitarios, FAIR va acompañado de los principios CARE.",
       planText: "Adoptaremos una política de acceso abierto y de datos de investigación y apoyaremos su cumplimiento con formación periódica y orientaciones actualizadas, compartidas también con quienes evalúan.",
     },
     {
@@ -1072,6 +1026,46 @@ export default {
       title: "Evaluar solo cuando es necesario",
       description: "Para cada evaluación periódica, preguntarse si hace falta y con qué profundidad. Suprimir o fusionar las que no cambian ninguna decisión, y preferir facilitar una práctica a medirla. Si no, sumar dimensiones nuevas a la evaluación (ciencia abierta, colegialidad, integridad) acumula más evaluación sobre las mismas personas.",
       planText: "Revisaremos nuestras evaluaciones periódicas, mantendremos solo las que informan una decisión y ajustaremos su profundidad, para que la reforma no añada carga de evaluación.",
+    },
+    {
+      title: "Contribuir a la política de evaluación nacional y europea",
+      description: "Buena parte de lo que se exige al personal investigador se decide fuera de la institución: agencias nacionales de evaluación y acreditación, comisiones de promoción, financiadores, conferencias de rectores. Participar donde se escriben esos criterios (consultas, capítulos nacionales de CoARA, grupos de trabajo de las agencias), señalar dónde chocan con los criterios reformados y empujar para alinearlos. Si no, una reforma que el nivel nacional no reconoce puede perjudicar a quienes la siguen.",
+      planText: "Participaremos en la definición de la política de evaluación nacional y europea, mediante consultas, capítulos nacionales y grupos de trabajo de las agencias, e impulsaremos criterios alineados con los nuestros ya reformados.",
+    },
+    {
+      title: "Integrar la reforma en el plan HRS4R y en los ciclos estratégicos existentes",
+      description: "No llevar CoARA como un proyecto aparte. Contrastar el plan de acción HRS4R (HR Excellence in Research) con los diez compromisos para ver qué ya está en marcha, incorporar los nuevos criterios a la política de contratación (OTM-R) y a la próxima renovación HRS4R, y añadir objetivos de reforma de la evaluación a los planes que ya se siguen: el plan estratégico, el aseguramiento de la calidad, el plan de igualdad. Así la reforma se revisa en ciclos que existen de todos modos.",
+      planText: "Contrastaremos nuestro plan HRS4R con los compromisos de CoARA, incorporaremos los criterios reformados a nuestra política de contratación y a la próxima renovación HRS4R, y añadiremos objetivos de reforma de la evaluación a nuestro plan estratégico y al ciclo de aseguramiento de la calidad.",
+    },
+    {
+      title: "Reformar cómo se eligen las personas evaluadoras y los paneles",
+      description: "El juicio cualitativo vale lo que valen quienes lo emiten. Fijar reglas sobre quién integra los paneles y quién revisa: equilibrio de etapas de carrera, disciplinas, géneros y sectores, miembros internacionales o externos cuando convenga, conflictos de interés declarados y personas evaluadoras que conozcan los criterios reformados. Rotar la composición para que no decidan siempre las mismas personas.",
+      planText: "Fijaremos reglas para seleccionar a las personas evaluadoras y componer los paneles, que cubran el equilibrio de etapas de carrera, disciplinas, géneros y sectores, los conflictos de interés y el conocimiento de los criterios reformados, y rotaremos su composición.",
+    },
+    {
+      title: "Ofrecer un servicio de bibliometría responsable",
+      description: "Cuando se usan cifras, conviene que las aporte quien conoce sus límites. Un servicio (a menudo en la biblioteca o la oficina de investigación) que asesore a evaluadores e investigadores sobre qué indicador sirve para qué pregunta, que entregue cifras normalizadas por disciplina y con contexto en lugar de recuentos brutos, y que forme en alfabetización métrica. Responde además la pregunta que los paneles harán de todos modos, para que no recurran al factor de impacto.",
+      planText: "Ofreceremos un servicio de bibliometría responsable que asesore a personas evaluadoras e investigadoras sobre los indicadores adecuados, aporte cifras contextualizadas y forme en alfabetización métrica.",
+    },
+    {
+      title: "Construir un marco para reconocer el impacto social",
+      description: "Decidir, con quienes lo viven (socios regionales, industria, administración, sociedad civil), qué significa el impacto social para la institución y cómo se acredita: relatos de impacto, descripciones cualitativas de casos, un conjunto reducido de indicadores. Pilotarlo en una ronda de evaluación y mantenerlo cualitativo para que no se convierta en una métrica más.",
+      planText: "Desarrollaremos, con actores externos, un marco para reconocer el impacto social en la evaluación, lo pilotaremos en una ronda de evaluación y lo mantendremos cualitativo.",
+    },
+    {
+      title: "Crear premios para las contribuciones que los criterios pasan por alto",
+      description: "Los premios son una forma rápida y visible de decir qué valora la institución: ciencia abierta, mentoría, trabajo en equipo, divulgación, apoyo a la investigación. Crear premios para las contribuciones que los criterios han pasado por alto, con criterios de nominación y selección que también sigan la reforma.",
+      planText: "Crearemos premios para las contribuciones que nuestros criterios han pasado por alto, como la ciencia abierta, la mentoría, el trabajo en equipo y la divulgación, con criterios de nominación y selección acordes con la reforma.",
+    },
+    {
+      title: "Pedir unos pocos productos seleccionados, cada uno justificado",
+      description: "Sustituir las largas listas de publicaciones por una selección breve (a menudo entre tres y diez productos de cualquier tipo) elegida por la persona candidata, cada uno con unas líneas sobre por qué importa y cuál fue su aportación. Así se lee y se juzga el trabajo en lugar de contarlo.",
+      planText: "Sustituiremos las listas completas de publicaciones en las solicitudes por una selección breve de productos elegida por la persona candidata, cada uno con una justificación de su relevancia y de su aportación.",
+    },
+    {
+      title: "Basar los datos de evaluación en información abierta sobre la investigación",
+      description: "Una evaluación que descansa en bases de datos propietarias no puede ser comprobada por quienes son evaluados. Trasladar los datos que sustentan la evaluación y el seguimiento a fuentes abiertas (OpenAlex, OpenAIRE, Crossref, ORCID, el repositorio propio) y considerar la adhesión a la Declaración de Barcelona sobre Información Abierta de Investigación.",
+      planText: "Basaremos los datos de nuestra evaluación y seguimiento en fuentes abiertas de información sobre la investigación y consideraremos adherirnos a la Declaración de Barcelona sobre Información Abierta de Investigación.",
     },
   ],
 

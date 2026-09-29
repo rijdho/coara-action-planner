@@ -39,7 +39,7 @@ test('the tagging is pinned: 61 actions, the counts below', () => {
   assert.equal(ACTIONS.length, 61)
   const count = fw => ACTIONS.filter(a => a.frameworks.some(f => f.startsWith(fw))).length
   assert.equal(count('DORA'), 21)
-  assert.equal(count('Leiden'), 21)
-  assert.equal(count('SCOPE'), 13)
-  assert.equal(ACTIONS.filter(a => a.frameworks.length === 0).length, 22)
+  assert.equal(count('Leiden'), 23)
+  assert.equal(count('SCOPE'), 16)
+  assert.equal(ACTIONS.filter(a => a.frameworks.length === 0).length, 20)
 })

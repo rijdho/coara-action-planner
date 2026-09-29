@@ -23,6 +23,19 @@ latest release.
   development conversations. Two come from the Leiden Manifesto (principle 5, letting
   researchers verify their data) and SCOPE (evaluate only where necessary), which few plans
   take yet. All are appended, so earlier actions keep their positions and translations.
+- **The catalogue re-balanced on a reading of all 335 plans, still 61 actions.** Eight actions
+  that almost no plan takes (0 to 11 of 335) were folded into the neighbour that absorbs them:
+  output mapping into the typology, studying CV models into piloting one, estimating resources
+  into securing them, IT readiness, TRUST and OI4RRA into infrastructure, CARE+FAIR and
+  exceptions to openness into open science support (which takes over the Indigenous-serving
+  context tag). The ranking-free partnership policy became what plans actually do: publish a
+  position on rankings and keep them out of internal decisions. Eight actions were added, the
+  most frequent in the plans that no catalogue action covered: shaping national and European
+  assessment policy, writing the reform into HRS4R and strategy cycles, reforming how evaluators
+  and panels are chosen, a responsible bibliometrics service, a framework for societal impact,
+  awards for overlooked contributions, a few selected outputs instead of full lists, and
+  assessment data from open research information. Every commitment keeps an entry-level action,
+  and the actions backed by DORA, Leiden or SCOPE stay. Criteria can now also differ by field.
 - **A 25th question (q9b)** on how the institution keeps its own staff and governing bodies
   informed about the reform. Commitment 9 was measured by one question on public progress
   reports, while the plans themselves show internal communication as the more common practice
