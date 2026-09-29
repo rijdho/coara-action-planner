@@ -65,10 +65,10 @@ export default {
     start_instPlaceholder: "Nombre de la institución (opcional)",
     start_perspectivesTitle: "Perspectivas",
     start_perspectivesHint:
-      "Cada perspectiva es la mirada de un participante, etiquetada con su rol. Todas responden las mismas 24 preguntas; las completas una vez por perspectiva, desde ese punto de vista. Resultados consolida las perspectivas y señala dónde difieren sus lecturas de una misma pregunta (la brecha de percepción).",
+      "Cada perspectiva es la mirada de un participante, etiquetada con su rol. Todas responden las mismas 25 preguntas; las completas una vez por perspectiva, desde ese punto de vista. Resultados consolida las perspectivas y señala dónde difieren sus lecturas de una misma pregunta (la brecha de percepción).",
     start_perspectivesEyebrow: "Lo que esta herramienta hace y una guía no",
     start_perspectivesWhy:
-      "Un plan redactado por una sola oficina refleja un solo punto de vista. Si la dirección, la oficina de investigación y el personal investigador responden las mismas 24 preguntas, el desacuerdo mismo se convierte en evidencia: Resultados señala cada compromiso cuya lectura difiere en dos niveles o más, y son esos los que conviene alinear antes de redactar nada.",
+      "Un plan redactado por una sola oficina refleja un solo punto de vista. Si la dirección, la oficina de investigación y el personal investigador responden las mismas 25 preguntas, el desacuerdo mismo se convierte en evidencia: Resultados señala cada compromiso cuya lectura difiere en dos niveles o más, y son esos los que conviene alinear antes de redactar nada.",
     start_quickStart: "Configurar una evaluación colectiva:",
     start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspectiva {n}",
@@ -566,6 +566,17 @@ export default {
         3: "Un marco de reporte está listo y la recolección de datos ha comenzado",
         4: "Se ha publicado o presentado un informe de progreso",
         5: "Se publican informes de progreso periódicos en un ciclo definido",
+      },
+    },
+    q9b: {
+      text: "¿Cómo mantiene tu institución informados sobre la reforma a su personal y a sus órganos de gobierno?",
+      answers: {
+        0: "No hemos comunicado la reforma internamente",
+        1: "Se ha mencionado la reforma, pero no hay una comunicación interna planificada",
+        2: "La reforma se ha presentado al menos una vez a la dirección o a los órganos de gobierno",
+        3: "Un plan de comunicación define públicos, canales y responsables",
+        4: "El personal y los órganos de gobierno reciben actualizaciones con una periodicidad fija",
+        5: "Las actualizaciones periódicas se archivan, el personal puede responder y los órganos de gobierno revisan el avance en un ciclo fijo",
       },
     },
     q10a: {

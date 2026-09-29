@@ -60,10 +60,10 @@ export default {
     start_instPlaceholder: "Name der Einrichtung (optional)",
     start_perspectivesTitle: "Perspektiven",
     start_perspectivesHint:
-      "Jede Perspektive ist die Sicht einer antwortenden Person, versehen mit ihrer Rolle. Alle beantworten dieselben 24 Fragen; Sie füllen sie einmal pro Perspektive aus, aus diesem Blickwinkel. Die Ergebnisse führen die Perspektiven zusammen und markieren, wo deren Einschätzungen derselben Frage voneinander abweichen (die Wahrnehmungslücke).",
+      "Jede Perspektive ist die Sicht einer antwortenden Person, versehen mit ihrer Rolle. Alle beantworten dieselben 25 Fragen; Sie füllen sie einmal pro Perspektive aus, aus diesem Blickwinkel. Die Ergebnisse führen die Perspektiven zusammen und markieren, wo deren Einschätzungen derselben Frage voneinander abweichen (die Wahrnehmungslücke).",
     start_perspectivesEyebrow: "Was dieses Werkzeug kann und ein Leitfaden nicht",
     start_perspectivesWhy:
-      "Ein Plan, den eine einzelne Stelle schreibt, gibt eine einzige Sichtweise wieder. Beantworten Leitung, Forschungsservice und Forschende dieselben 24 Fragen, wird die Uneinigkeit selbst zum Befund: Ergebnisse markiert jede Verpflichtung, deren Einschätzungen um zwei Stufen oder mehr auseinandergehen, und genau dort lohnt die Verständigung, bevor irgendetwas geschrieben wird.",
+      "Ein Plan, den eine einzelne Stelle schreibt, gibt eine einzige Sichtweise wieder. Beantworten Leitung, Forschungsservice und Forschende dieselben 25 Fragen, wird die Uneinigkeit selbst zum Befund: Ergebnisse markiert jede Verpflichtung, deren Einschätzungen um zwei Stufen oder mehr auseinandergehen, und genau dort lohnt die Verständigung, bevor irgendetwas geschrieben wird.",
     start_quickStart: "Gemeinsame Bestandsaufnahme einrichten:",
     start_quickStartAdd: "+ {role}",
     start_perspectiveN: "Perspektive {n}",
@@ -561,6 +561,17 @@ export default {
         3: "Ein Berichtsrahmen liegt bereit und die Datenerhebung hat begonnen",
         4: "Ein Fortschrittsbericht wurde veröffentlicht oder eingereicht",
         5: "Regelmäßige Fortschrittsberichte werden in einem festgelegten Zyklus veröffentlicht",
+      },
+    },
+    q9b: {
+      text: "Wie hält Ihre Einrichtung ihre Beschäftigten und Leitungsgremien über die Reform auf dem Laufenden?",
+      answers: {
+        0: "Wir haben die Reform intern nicht kommuniziert",
+        1: "Die Reform wurde erwähnt, eine geplante interne Kommunikation gibt es nicht",
+        2: "Die Reform wurde der Leitung oder den Leitungsgremien mindestens einmal vorgestellt",
+        3: "Ein Kommunikationsplan legt Zielgruppen, Kanäle und Verantwortliche fest",
+        4: "Beschäftigte und Leitungsgremien erhalten Updates in festem Rhythmus",
+        5: "Regelmäßige Updates werden archiviert, Beschäftigte können antworten, und die Leitungsgremien prüfen den Fortschritt in einem festen Zyklus",
       },
     },
     q10a: {

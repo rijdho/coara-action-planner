@@ -1,5 +1,5 @@
 // Regenerates the README screenshots in this folder by driving a real assessment:
-// it fills in all 24 questions with the PROFILE below, then shoots the Results tab.
+// it fills in all 25 questions with the PROFILE below, then shoots the Results tab.
 //
 //   npm run dev &                                    # vite, defaults to :5173
 //   npm i -D puppeteer                               # or point CHROME_PATH at an existing Chrome
@@ -20,7 +20,7 @@ mkdirSync(OUT, { recursive: true })
 // instead of a flat ring. Values are answer levels (L0–L5) per question.
 const PROFILE = {
   C1: [3, 2, 3, 2, 1, 2], C2: [2, 1], C3: [4, 3], C4: [3], C5: [1, 1],
-  C6: [2, 2, 1, 3], C7: [3, 2], C8: [4, 3], C9: [1], C10: [2, 2],
+  C6: [2, 2, 1, 3], C7: [3, 2], C8: [4, 3], C9: [1, 1], C10: [2, 2],
 }
 
 const browser = await puppeteer.launch({
@@ -65,7 +65,7 @@ const progress = await page.evaluate(async profile => {
       await sleep(300)
     }
   }
-  return (document.body.innerText.match(/Progress:\s*\d+\/24/) || ['?'])[0]
+  return (document.body.innerText.match(/Progress:\s*\d+\/25/) || ['?'])[0]
 }, PROFILE)
 console.log(progress)
 

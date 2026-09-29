@@ -71,8 +71,8 @@ test('planText is institutional prose, not the reader-facing description', () =>
 })
 
 test('questions cover the commitments with a full 0–5 answer ladder', () => {
-  assert.equal(QUESTIONS.length, 24)
-  assert.equal(new Set(QUESTIONS.map(q => q.id)).size, 24, 'question ids are unique')
+  assert.equal(QUESTIONS.length, 25)
+  assert.equal(new Set(QUESTIONS.map(q => q.id)).size, 25, 'question ids are unique')
   for (const q of QUESTIONS) {
     assert.ok(COMMITMENT_IDS.has(q.commitment), `question ${q.id}: commitment "${q.commitment}" exists`)
     assert.equal(q.answers.length, 6, `question ${q.id}: one answer per maturity level`)

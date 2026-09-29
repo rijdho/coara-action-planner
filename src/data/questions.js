@@ -275,6 +275,19 @@ export const QUESTIONS = [
       { level: 5, text: "Regular progress reports are published on a defined cycle" },
     ],
   },
+  {
+    id: "q9b",
+    commitment: "communicate",
+    text: "How does your institution keep its own staff and governing bodies informed about the reform?",
+    answers: [
+      { level: 0, text: "We have not communicated the reform internally" },
+      { level: 1, text: "The reform has been mentioned, but there is no planned internal communication" },
+      { level: 2, text: "The reform has been presented to leadership or governing bodies at least once" },
+      { level: 3, text: "A communication plan names audiences, channels and owners" },
+      { level: 4, text: "Staff and governing bodies receive updates on a fixed rhythm" },
+      { level: 5, text: "Regular updates are archived, staff can respond, and governing bodies review progress on a fixed cycle" },
+    ],
+  },
 
   // C10: Collective evaluation
   {

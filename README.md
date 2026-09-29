@@ -5,7 +5,7 @@
 **Self-assess your institution against the ten CoARA commitments and get a prioritised,
 editable reform action plan, entirely in your browser.**
 
-A static React app. Answer 24 diagnostic questions, and it scores your institution's maturity
+A static React app. Answer 25 diagnostic questions, and it scores your institution's maturity
 across the ten commitments of the
 [CoARA Agreement on Reforming Research Assessment](https://coara.org/), then generates a
 prioritised action list and a corpus-grounded, editable action-plan narrative you can export.
@@ -37,10 +37,10 @@ Five steps: **Start → Questionnaire → Plan → Results → Report.**
 ```mermaid
 flowchart LR
     accTitle: The five steps of an assessment
-    accDescr: Start names the institution and sets up one perspective per respondent role. Each perspective answers the same 24-question questionnaire, and the tool consolidates the answers into one profile while surfacing where the readings diverge. Plan applies optional tuning, Results scores maturity and ranks actions, and Report drafts an editable action-plan narrative.
+    accDescr: Start names the institution and sets up one perspective per respondent role. Each perspective answers the same 25-question questionnaire, and the tool consolidates the answers into one profile while surfacing where the readings diverge. Plan applies optional tuning, Results scores maturity and ranks actions, and Report drafts an editable action-plan narrative.
 
     start["🏛️ Start<br/>institution, perspectives"]
-    questionnaire["📋 Questionnaire<br/>24 questions, 0–5 maturity"]
+    questionnaire["📋 Questionnaire<br/>25 questions, 0–5 maturity"]
     consolidated["🔀 Consolidated profile<br/>divergence surfaced"]
     plan["🎚️ Plan<br/>horizon, context, targets"]
     results["📊 Results<br/>radar, gaps, ranked actions"]
@@ -62,7 +62,7 @@ flowchart LR
 - **Start:** name the institution and set up *perspectives*: answer the questionnaire once per
   respondent role (e.g. research office, leadership, a working group), and the tool consolidates
   them and surfaces where their readings diverge.
-- **Questionnaire:** 24 diagnostic questions mapped to the ten commitments, scored on a 0–5
+- **Questionnaire:** 25 diagnostic questions mapped to the ten commitments, scored on a 0–5
   maturity model (Unaware → Aware → Exploring → Planning → Implementing → Embedded).
 - **Plan:** optional tuning: time horizon, institutional context, priority commitments, whether
   to include high-effort actions, and per-commitment *target* levels (your ambition).
@@ -88,7 +88,7 @@ The calibration lives in [`src/data/`](src/data/), in plain readable JavaScript:
 
 | File | What it holds |
 |---|---|
-| [`questions.js`](src/data/questions.js) | 24 diagnostic questions, each with 0–5 answer options mapped to a commitment |
+| [`questions.js`](src/data/questions.js) | 25 diagnostic questions, each with 0–5 answer options mapped to a commitment |
 | [`commitments.js`](src/data/commitments.js) | the ten CoARA commitments + the 6-level maturity model |
 | [`actions.js`](src/data/actions.js) | 61 recommended actions (each with `fromLevel`/`toLevel`/`effort`/`impact`, a `theme` key, the `frameworks` it puts into practice, real institutional examples, and a `planText`, the action restated as institutional first-person prose for the generated plan) **and** the `prioritiseActions` algorithm |
 | [`frameworks.js`](src/data/frameworks.js) | the DORA recommendations, Leiden Manifesto principles and SCOPE stages and principles an action can be tagged with, each linked to its source |

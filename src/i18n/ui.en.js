@@ -58,10 +58,10 @@ export const UI_EN = {
   start_instPlaceholder: "Institution name (optional)",
   start_perspectivesTitle: "Perspectives",
   start_perspectivesHint:
-    "Each perspective is one respondent's view, tagged with their role. Everyone answers the same 24 questions; you fill them in once per perspective, from that vantage point. Results consolidates the perspectives and flags where their readings of the same question diverge (the perception gap).",
+    "Each perspective is one respondent's view, tagged with their role. Everyone answers the same 25 questions; you fill them in once per perspective, from that vantage point. Results consolidates the perspectives and flags where their readings of the same question diverge (the perception gap).",
   start_perspectivesEyebrow: "What this does that a guide cannot",
   start_perspectivesWhy:
-    "A plan drafted by one office reflects one vantage point. Ask leadership, the research office and researchers the same 24 questions and the disagreement itself becomes evidence. Results flags every commitment where readings differ by two levels or more, and those are the ones to align on before writing anything.",
+    "A plan drafted by one office reflects one vantage point. Ask leadership, the research office and researchers the same 25 questions and the disagreement itself becomes evidence. Results flags every commitment where readings differ by two levels or more, and those are the ones to align on before writing anything.",
   start_quickStart: "Set up a group assessment:",
   start_quickStartAdd: "+ {role}",
   start_perspectiveN: "Perspective {n}",

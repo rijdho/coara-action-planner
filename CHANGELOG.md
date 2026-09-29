@@ -23,6 +23,12 @@ latest release.
   development conversations. Two come from the Leiden Manifesto (principle 5, letting
   researchers verify their data) and SCOPE (evaluate only where necessary), which few plans
   take yet. All are appended, so earlier actions keep their positions and translations.
+- **A 25th question (q9b)** on how the institution keeps its own staff and governing bodies
+  informed about the reform. Commitment 9 was measured by one question on public progress
+  reports, while the plans themselves show internal communication as the more common practice
+  (communication plans and regular updates to governing bodies are among the most frequent
+  actions). The answer scale follows what the plans describe, from a one-off presentation to
+  leadership to regular, archived updates that staff can respond to.
 - **Framework tags.** Each action names the DORA recommendations, Leiden principles and SCOPE
   stages or principles it puts into practice; Results and the report show them with links to
   the sources. `tests/frameworks.test.mjs` checks that every tag exists and pins the counts.
