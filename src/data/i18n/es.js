@@ -188,13 +188,13 @@ export default {
     about_nav: "Acerca de esta herramienta",
     start_aboutLink: "Cómo se construyó esta herramienta, y a partir de qué",
     about_title: "Acerca de esta herramienta",
-    about_lede: "El Research Assessment Reform Planner ayuda a una institución a situarse frente a los diez compromisos del Acuerdo para la Reforma de la Evaluación de la Investigación (CoARA, 2022) y a redactar su plan de acción. Orienta; no certifica.",
+    about_lede: "El Research Assessment Reform Planner ayuda a una institución a situarse frente a los diez compromisos del Acuerdo sobre la Reforma de la Evaluación de la Investigación (CoARA, 2022) y a redactar su plan de acción. Orienta; no certifica.",
     about_h_sources: "De dónde sale",
     about_sources_1: "Las primeras preguntas y acciones se calibraron leyendo a mano 15 planes de acción de CoARA publicados.",
-    about_sources_2: "El corpus son todos los planes de acción de CoARA publicados en Zenodo, localizados por búsqueda de texto y en la comunidad de planes de acción de CoARA: recopilados por primera vez el 17 de abril de 2026 y actualizados el 6 de agosto de 2026, {plans} planes en total. Todos son de acceso abierto; {ccby} tienen licencia CC BY 4.0 y el resto otras licencias Creative Commons o ninguna. Su texto se extrajo de los archivos PDF y DOCX depositados. Los planes se citan por su DOI y no se redistribuyen.",
-    about_sources_3: "En septiembre de 2026 se leyó cada plan completo con un procedimiento documentado, asistido por un modelo de lenguaje: cada acción comprometida se extrajo con una cita textual, cada cita se comprobó contra el texto del plan mediante un script, y pasadas independientes intentaron refutar cada registro y resolvieron los emparejamientos en disputa. Se extrajeron {extracted} acciones y se conservaron {kept}.",
+    about_sources_2: "El corpus son los planes de acción de CoARA localizados en Zenodo por búsqueda de texto y en la comunidad de planes de acción de CoARA: recopilados por primera vez el 17 de abril de 2026 y actualizados el 6 de agosto de 2026, {plans} planes en total. Todos son de acceso abierto; {ccby} tienen licencia CC BY 4.0 y el resto otras licencias Creative Commons o ninguna. Su texto se extrajo de los archivos PDF y DOCX depositados. Los planes se citan por su DOI y no se redistribuyen.",
+    about_sources_3: "En septiembre de 2026 modelos de lenguaje leyeron cada plan completo siguiendo un procedimiento documentado: cada acción a la que se compromete un plan se extrajo con una cita textual, cada cita se comprobó contra el texto del plan mediante un script, y pasadas independientes intentaron refutar cada registro y resolvieron los emparejamientos en disputa. Se extrajeron {extracted} registros, {kept} superaron las comprobaciones y {matched} se asignaron a una acción del catálogo.",
     about_h_output: "Qué produjo",
-    about_output: "{questions} preguntas que sitúan cada compromiso en una escala de madurez de seis niveles, de 0 (sin conocimiento) a 5 (integrado); {actions} acciones, cada una con los niveles a los que se aplica, su esfuerzo e impacto, ejemplos reales y los elementos de DORA, el Manifiesto de Leiden o SCOPE que pone en práctica; y, para cada acción, la proporción de los {plans} planes que la toman. El informe cita las 19 preguntas orientadoras de las Action Plan Guidelines del Secretariado de CoARA (octubre de 2023).",
+    about_output: "{questions} preguntas que sitúan cada compromiso en una escala de madurez de seis niveles, de 0 (sin conocimiento) a 5 (integrado); {actions} acciones, cada una con los niveles a los que se aplica, su esfuerzo e impacto, ejemplos reales cuando se conocen y, cuando corresponde, los elementos de DORA, el Manifiesto de Leiden o SCOPE que pone en práctica; y, para cada acción, la proporción de los {plans} planes que la incluyen. El informe cita las 19 preguntas orientadoras de las Action Plan Guidelines del Secretariado de CoARA (octubre de 2023).",
     about_h_limits: "Límites",
     about_limits: "Las proporciones son mínimos y cuentan lo que los planes se comprometen a hacer, no lo logrado. Ninguna persona codificó la lectura; su fiabilidad descansa en la comprobación mecánica de las citas y en las pasadas de verificación independientes. Los niveles y el orden de las acciones son una guía estructurada para la reflexión, no una puntuación ni una certificación, y la herramienta no está respaldada por CoARA.",
     about_h_more: "Método, datos y cita",
@@ -203,12 +203,12 @@ export default {
     res_examples: "Ejemplos:",
     res_frameworks: "Aplica:",
     res_corpus: "{pct}% de {n} planes",
-    res_readingTitle: "Proporción de los {n} planes de acción de CoARA publicados que toman esta acción, según una lectura completa de cada plan en la que cada acción está respaldada por una cita textual y una verificación independiente. Es un mínimo.",
+    res_readingTitle: "Proporción de los {n} planes de acción de CoARA publicados que incluyen esta acción, según una lectura completa de cada plan en la que cada acción está respaldada por una cita textual y una verificación independiente. Es un mínimo.",
     res_corpusTitle: "Proporción de los {n} planes de acción CoARA publicados cuyo texto completo coincide con el tema de esta acción (por palabras clave, orientativo)",
     ev_universal: "Casi universal en los planes existentes",
     ev_common: "Frecuente en los planes existentes",
     ev_emerging: "Práctica emergente",
-    ev_frontier: "Frontera: pocos planes lo hacen aún, una oportunidad para liderar",
+    ev_frontier: "Frontera: pocos planes lo hacen todavía",
     res_ctaNext: "Siguiente:",
     res_ctaBody: "convierte esto en un borrador escrito de plan de acción CoARA que puedes editar y compartir.",
     res_generateReport: "Generar informe →",
@@ -300,7 +300,7 @@ export default {
 
     h_resources: "4. Recursos (Compromiso 5 de CoARA)",
     resourcesBody:
-      "{inst} comprometerá los recursos necesarios para ejecutar este plan: [partida presupuestaria], [tiempo de personal dedicado / coordinación], [formación para los comités de evaluación] e [infraestructura para el seguimiento de productos diversos]. Un [comité / oficina designado] coordinará la implementación.",
+      "{inst} comprometerá los recursos necesarios para ejecutar este plan: [partida presupuestaria], [tiempo de personal dedicado / coordinación], [formación para los comités de evaluación] e [infraestructura para el seguimiento de productos diversos]. Un [comité designado / una oficina designada] coordinará la implementación.",
 
     h_awareness: "5. Sensibilización, orientación e intercambio (Compromisos 7–8 de CoARA)",
     awarenessBody:
@@ -312,7 +312,7 @@ export default {
 
     h_ongoing: "Compromiso continuo",
     ongoingBody:
-      "{inst} entiende la reforma de la evaluación de la investigación como un proceso iterativo. Este plan se revisará [anualmente] y se actualizará a medida que los criterios se pilotan, se evalúan y se integran en todos los procesos de evaluación.",
+      "{inst} entiende la reforma de la evaluación de la investigación como un proceso iterativo. Este plan se revisará [anualmente] y se actualizará a medida que los criterios se piloten, se evalúen y se integren en todos los procesos de evaluación.",
 
     footer:
       "Borrador generado con Research Assessment Reform Planner (rijdho.github.io/coara-action-planner, DOI 10.5281/zenodo.21492548) a partir de una autoevaluación de los diez compromisos de CoARA. Edítalo libremente antes de su adopción.",
@@ -475,7 +475,7 @@ export default {
       },
     },
     q5b: {
-      text: "¿Tu institución cuenta con una estructura formal de gobernanza (comité, grupo de trabajo, junta directiva) dedicada a la reforma de la evaluación de la investigación?",
+      text: "¿Tu institución cuenta con una estructura formal de gobernanza (comité, grupo de trabajo, comité de dirección) dedicada a la reforma de la evaluación de la investigación?",
       answers: {
         0: "No existe una estructura dedicada",
         1: "Existe una persona impulsora individual pero ninguna estructura formal",
@@ -592,7 +592,7 @@ export default {
         2: "La reforma se ha presentado al menos una vez a la dirección o a los órganos de gobierno",
         3: "Un plan de comunicación define públicos, canales y responsables",
         4: "El personal y los órganos de gobierno reciben actualizaciones con una periodicidad fija",
-        5: "Las actualizaciones periódicas se archivan, el personal puede responder y los órganos de gobierno revisan el avance en un ciclo fijo",
+        5: "Las actualizaciones periódicas se archivan, el personal puede dar su opinión y los órganos de gobierno revisan el avance en un ciclo fijo",
       },
     },
     q10a: {
@@ -640,7 +640,7 @@ export default {
       },
     },
     q10b: {
-      text: "¿Tu institución documenta las excepciones a la apertura siguiendo el principio 'tan abierto como sea posible, tan cerrado como sea necesario' (con plazo limitado y revisado)?",
+      text: "¿Tu institución documenta las excepciones a la apertura siguiendo el principio 'tan abierto como sea posible, tan cerrado como sea necesario' (con plazo limitado y revisadas)?",
       answers: {
         0: "Las excepciones a la apertura no se documentan",
         1: "Sabemos que deberíamos documentar las excepciones",
@@ -770,13 +770,13 @@ export default {
     },
     {
       title: "Integrar productos diversos en todos los procesos de evaluación",
-      description: "Revisa todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación junto a los logros individuales. Asegura que las personas evaluadoras estén formadas para evaluarlos.",
+      description: "Revisa todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación (revisión por pares, participación en comités) junto a los logros individuales. Asegura que las personas evaluadoras estén formadas para evaluarlos.",
       planText: "Revisaremos todos los criterios de contratación, promoción, titularidad y financiamiento para incluir y ponderar explícitamente los tipos de productos diversos y reconocer el trabajo en equipo, colegiado y de evaluación junto a los logros individuales, y aseguraremos que las personas evaluadoras estén formadas para evaluarlos.",
     },
     {
       title: "Diseñar y pilotar un CV narrativo",
-      description: "Revisa los modelos de CV narrativo existentes (Résumé for Researchers, R4RI de UKRI, plantillas nacionales) y adapta uno a tu contexto institucional. Pilotéala en una o dos rondas de evaluación (p. ej., convocatorias internas, un comité de promoción). Recoge retroalimentación de las personas evaluadoras y las candidaturas.",
-      planText: "Revisaremos los modelos de CV narrativo existentes, adaptaremos uno a nuestro contexto institucional, la pilotaremos en una o dos rondas de evaluación y recogeremos retroalimentación de las personas evaluadoras y las candidaturas.",
+      description: "Revisa los modelos de CV narrativo existentes (Résumé for Researchers, R4RI de UKRI, plantillas nacionales) y adapta uno a tu contexto institucional. Pilotéalo en una o dos rondas de evaluación (p. ej., convocatorias internas, un comité de promoción). Recoge retroalimentación de las personas evaluadoras y las candidaturas.",
+      planText: "Revisaremos los modelos de CV narrativo existentes, adaptaremos uno a nuestro contexto institucional, lo pilotaremos en una o dos rondas de evaluación y recogeremos retroalimentación de las personas evaluadoras y las candidaturas.",
     },
     {
       title: "Formar a los comités de evaluación",
@@ -794,7 +794,7 @@ export default {
       planText: "Buscaremos en todas las ofertas de empleo, directrices de promoción, convocatorias de financiamiento y políticas internas referencias al JIF, el índice h, los cuartiles o las 'revistas de alto impacto', documentando cada caso.",
     },
     {
-      title: "Eliminar los indicadores indirectos métricos de los criterios",
+      title: "Eliminar de los criterios los indicadores métricos sustitutivos",
       description: "Revisa todos los documentos identificados para eliminar o reemplazar los criterios basados en métricas. Reemplaza 'publicar en revistas Q1' por 'demostrar impacto a través de productos diversos'.",
       planText: "Revisaremos todos los documentos identificados para eliminar o reemplazar los criterios basados en métricas, sustituyendo fórmulas como 'publicar en revistas Q1' por 'demostrar impacto a través de productos diversos'.",
     },
@@ -810,7 +810,7 @@ export default {
     },
     {
       title: "Publicar la postura sobre los rankings y dejarlos fuera de las decisiones internas",
-      description: "Declarar públicamente cómo ve la institución los rankings universitarios y para qué no los usará (por ejemplo, con una declaración More Than Our Rank de INORMS), explicar sus límites a la propia comunidad y excluirlos de las decisiones de contratación, promoción, financiamiento y alianzas. Algunas instituciones van más allá y dejan de enviar datos a los rankings comerciales.",
+      description: "Declara públicamente cómo ve tu institución los rankings universitarios y para qué no los usará (por ejemplo, con una declaración More Than Our Rank de INORMS), explica sus límites a tu propia comunidad y exclúyelos de las decisiones de contratación, promoción, financiamiento y alianzas. Algunas instituciones van más allá y dejan de enviar datos a los rankings comerciales.",
       planText: "Publicaremos nuestra postura sobre los rankings universitarios, explicaremos sus límites a nuestra comunidad y los dejaremos fuera de las decisiones de contratación, promoción, financiamiento y alianzas.",
     },
     {
@@ -830,8 +830,8 @@ export default {
     },
     {
       title: "Establecer un ciclo periódico de revisión de criterios",
-      description: "Fija un calendario establecido (p. ej., cada 3 años) para revisar y actualizar todos los criterios de evaluación. Incluye la consulta a las partes interesadas en cada revisión.",
-      planText: "Fijaremos un calendario establecido (p. ej., cada 3 años) para revisar y actualizar todos los criterios de evaluación, con consulta a las partes interesadas en cada ciclo.",
+      description: "Establece un calendario (p. ej., cada 3 años) para revisar y actualizar todos los criterios de evaluación. Incluye la consulta a las partes interesadas en cada revisión.",
+      planText: "Estableceremos un calendario (p. ej., cada 3 años) para revisar y actualizar todos los criterios de evaluación, con consulta a las partes interesadas en cada ciclo.",
     },
     {
       title: "Crear materiales informativos básicos",
@@ -840,7 +840,7 @@ export default {
     },
     {
       title: "Realizar talleres y asambleas abiertas",
-      description: "Organiza talleres interactivos para personas investigadoras, evaluadoras y administrativas. Incluye ejercicios prácticos (p. ej., 'evalúa a esta candidatura sin métricas'). Realiza asambleas abiertas de preguntas y respuestas.",
+      description: "Organiza talleres interactivos para personas investigadoras, evaluadoras y administrativas. Incluye ejercicios prácticos (p. ej., 'evalúa esta candidatura sin métricas'). Realiza asambleas abiertas de preguntas y respuestas.",
       planText: "Organizaremos talleres interactivos para personas investigadoras, evaluadoras y administrativas, con ejercicios prácticos como la evaluación de candidaturas sin métricas, complementados con asambleas abiertas de preguntas y respuestas.",
     },
     {
@@ -872,7 +872,7 @@ export default {
     {
       title: "Liderar o contribuir a estudios de benchmarking",
       description: "Comparte datos de evaluación anonimizados, y cuando proceda tus métodos y herramientas, con instituciones pares. Participa en estudios comparativos del progreso de la reforma entre entidades firmantes o inícialos, y apóyate en la investigación sobre la investigación: involucra a quienes estudian la evaluación en tu propia institución.",
-      planText: "Compartiremos datos de evaluación anonimizados, y cuando proceda nuestros métodos y herramientas, con instituciones pares, participaremos en estudios comparativos del progreso de la reforma entre entidades firmantes, o los iniciaremos, y nos apoyaremos en la investigación sobre la investigación, incluida la de nuestro propio personal.",
+      planText: "Compartiremos datos de evaluación anonimizados, y cuando proceda nuestros métodos y herramientas, con instituciones pares, participaremos en estudios comparativos del progreso de la reforma entre entidades firmantes, o los iniciaremos, y nos apoyaremos en la investigación sobre la investigación, incluida la de nuestro propio personal que estudia la evaluación.",
     },
     {
       title: "Revisar los procesos de evaluación en busca de brechas de EDI",
@@ -900,7 +900,7 @@ export default {
     },
     {
       title: "Establecer una estructura de gobernanza dedicada a la reforma",
-      description: "Crea un comité o grupo de trabajo formal con mandato claro, membresía multidisciplinaria, representación de las personas investigadoras y líneas de reporte a la dirección institucional. Esta es la acción fundacional que habilita todas las demás.",
+      description: "Crea un comité o grupo de trabajo formal con mandato claro, membresía multidisciplinaria, representación de las personas investigadoras y líneas de reporte a la dirección institucional. De ella dependen casi todas las demás acciones.",
       planText: "Estableceremos un comité o grupo de trabajo formal de la reforma con mandato claro, membresía multidisciplinaria, representación de las personas investigadoras y líneas de reporte directas a la dirección institucional.",
       examples: ["UCM CoARA Working Group", "DCU Open Research Steering Group", "Pannonia Scientific Quality Analysis Group"],
     },
@@ -930,7 +930,7 @@ export default {
     },
     {
       title: "Realizar una encuesta interna sobre las percepciones de la evaluación",
-      description: "Encuesta a tu comunidad investigadora: ¿qué criterios creen que se usan frente a los que creen que deberían usarse? Esta base de evidencia es invaluable para calibrar la reforma. Publica los resultados de forma abierta.",
+      description: "Encuesta a tu comunidad investigadora: ¿qué criterios creen que se usan frente a los que creen que deberían usarse? Los resultados ayudan a calibrar la reforma. Publica los resultados de forma abierta.",
       planText: "Encuestaremos a nuestra comunidad investigadora sobre qué criterios cree que se usan frente a los que cree que deberían usarse, y publicaremos los resultados de forma abierta como base de evidencia para calibrar la reforma.",
       examples: ["Helmholtz survey of 1,145 researchers", "UCLouvain 34 interviews with evaluation committees", "UCM planned periodic surveys"],
     },
@@ -942,7 +942,7 @@ export default {
     },
     {
       title: "Auditar el sesgo lingüístico (Helsinki Initiative on Multilingualism)",
-      description: "Asegura que la investigación en lenguas locales o no dominantes no sea penalizada. Revisa los criterios, la composición de los comités y las bases de datos consultadas en busca de sesgo implícito hacia el inglés. La Helsinki Initiative ofrece el marco canónico.",
+      description: "Asegura que la investigación en lenguas locales o no dominantes no sea penalizada. Revisa los criterios, la composición de los comités y las bases de datos consultadas en busca de sesgo implícito hacia el inglés. La Helsinki Initiative on Multilingualism es la referencia habitual.",
       planText: "Revisaremos los criterios, la composición de los comités y las bases de datos que consultamos en busca de sesgo implícito hacia el inglés, siguiendo la Helsinki Initiative on Multilingualism, para que la investigación en lenguas locales o no dominantes no sea penalizada.",
       examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
     },
@@ -976,7 +976,7 @@ export default {
     {
       title: "Mantener la reforma en la agenda de los órganos de gobierno",
       description: "Llevar el plan de acción a los órganos que dirigen la institución (equipo de dirección, claustro, consejo de gobierno, comisión de investigación, reuniones de decanatos) y volver a ellos cada cierto tiempo con un breve informe de avance. La aprobación formal da mandato al plan una sola vez; un punto fijo en el orden del día mantiene informadas, y con responsabilidades, a las personas que asignan presupuesto y fijan criterios.",
-      planText: "Presentaremos el plan de acción a nuestros órganos de gobierno y volveremos a ellos a intervalos fijos con un breve informe de avance, para que quienes asignan presupuesto y fijan criterios sigan informados y asuman su parte.",
+      planText: "Presentaremos el plan de acción a nuestros órganos de gobierno y volveremos a ellos a intervalos fijos con un breve informe de avance, para que quienes asignan presupuesto y fijan criterios sigan informados y rindan cuentas.",
     },
     {
       title: "Redactar guías escritas para personas evaluadoras y revisoras externas",
@@ -985,7 +985,7 @@ export default {
     },
     {
       title: "Publicar los criterios de evaluación y dar retroalimentación a quienes se evalúa",
-      description: "Los criterios, indicadores y procedimientos de contratación, promoción y evaluación interna se publican donde candidaturas y personal puedan leerlos antes de ser evaluados: la web para la contratación, la intranet para los procesos internos. Tras cada decisión, se explica qué criterios se aplicaron y con qué resultado, dentro de los límites de la confidencialidad. Un criterio que nadie puede ver no se puede exigir.",
+      description: "Los criterios, indicadores y procedimientos de contratación, promoción y evaluación interna se publican donde candidaturas y personal puedan leerlos antes de ser evaluados: la web para la contratación, la intranet para los procesos internos. Tras cada decisión, se explica qué criterios se aplicaron y con qué resultado, dentro de los límites de la confidencialidad. Nadie puede reclamar que se cumpla un criterio que no puede ver.",
       planText: "Publicaremos los criterios, indicadores y procedimientos de contratación, promoción y evaluación interna antes de que nadie sea evaluado con ellos, y daremos retroalimentación a candidaturas y personal sobre cómo se aplicaron.",
     },
     {
@@ -995,12 +995,12 @@ export default {
     },
     {
       title: "Crear trayectorias de carrera distintas para todos los perfiles de investigación",
-      description: "Que se pueda avanzar por más de una vía: trayectorias formales junto a la tradicional (docente, investigadora, de innovación o de impacto social) y un marco de carrera publicado que abarque todos los perfiles, incluido el personal técnico y de apoyo. Cada trayectoria necesita sus propios criterios de progresión. Diversificar los criterios solo sirve si existen las carreras a las que conducen.",
+      description: "Que se pueda avanzar por más de una vía: trayectorias formales junto a la tradicional (docente, investigadora, de innovación o de impacto social) y un marco de carrera publicado que abarque todos los perfiles, incluido el personal investigador y de apoyo. Cada trayectoria necesita sus propios criterios de progresión. Diversificar los criterios solo sirve si existen las carreras a las que conducen.",
       planText: "Crearemos trayectorias de carrera diferenciadas para la docencia, la investigación y el impacto social, recogidas en un marco de carrera publicado que abarque todos los perfiles, cada una con sus propios criterios de progresión.",
     },
     {
       title: "Mantener un canal permanente de participación y retroalimentación del personal investigador",
-      description: "Dar al personal investigador una voz duradera en la reforma y no una única consulta al principio: un foro o comité que abarque etapas de carrera y disciplinas, una ronda de consulta sobre cada acción antes de ponerla en marcha y una vía directa hacia el grupo de dirección. El ciclo se cierra publicando lo que se escuchó y lo que cambió gracias a ello.",
+      description: "Dar al personal investigador una voz duradera en la reforma y no una única consulta al principio: un foro o comité que abarque etapas de carrera y disciplinas, una ronda de consulta sobre cada acción antes de ponerla en marcha y una vía desde ahí hacia el grupo de dirección. El ciclo se cierra publicando lo que se escuchó y lo que cambió gracias a ello.",
       planText: "Mantendremos un foro permanente de participación del personal investigador, de todas las etapas de carrera y disciplinas, lo consultaremos sobre cada acción antes de ponerla en marcha y publicaremos lo que escuchamos y lo que cambió como resultado.",
     },
     {
@@ -1010,7 +1010,7 @@ export default {
     },
     {
       title: "Codiseñar los nuevos criterios con las personas a quienes se evaluará",
-      description: "Antes de fijar criterios o guías nuevos, grupos focales o sesiones de codiseño con personal investigador de distintas disciplinas, etapas de carrera y perfiles para delimitar el cambio, redactar el texto y comentar los borradores, y una ronda final de confirmación. Quienes participan dan forma al texto en lugar de conocerlo después, lo que saca a la luz los puntos ciegos a tiempo y facilita mucho la adopción.",
+      description: "Antes de fijar criterios o guías nuevos, organizar grupos focales o sesiones de codiseño con personal investigador de distintas disciplinas, etapas de carrera y perfiles para delimitar el cambio, redactar el texto y comentar los borradores, y devolver la versión revisada para una ronda final de confirmación. Quienes participan dan forma al texto en lugar de conocerlo después, lo que saca a la luz los puntos ciegos a tiempo y facilita mucho la adopción.",
       planText: "Codiseñaremos los nuevos criterios y guías con personal investigador de distintas disciplinas, etapas de carrera y perfiles, desde la delimitación hasta una ronda final de confirmación, antes de adoptarlos.",
     },
     {
@@ -1020,7 +1020,7 @@ export default {
     },
     {
       title: "Adoptar una política propia de evaluación responsable, incluido el uso de métricas",
-      description: "Convertir una adhesión en reglas que las comisiones siguen: principios propios de evaluación responsable que digan también cuándo pueden y cuándo no pueden usarse indicadores cuantitativos (como apoyo al juicio experto, nunca como sustituto; sin indicadores basados en revistas para personas; siempre con su contexto). Se aprueban en el órgano responsable de la evaluación, se publican, y rúbricas y convocatorias se revisan contra esa única referencia.",
+      description: "Convertir una adhesión en reglas que las comisiones siguen: principios propios de evaluación responsable que digan también cuándo pueden y cuándo no pueden usarse indicadores cuantitativos (como apoyo al juicio experto, nunca como sustituto; sin indicadores basados en la revista para evaluar a personas; siempre con su contexto). Se aprueban en el órgano responsable de la evaluación, se publican, y rúbricas y convocatorias se revisan contra esa única referencia.",
       planText: "Adoptaremos y publicaremos una política propia de evaluación responsable, con reglas sobre el uso de indicadores cuantitativos, aprobada por el órgano responsable de la evaluación, y revisaremos nuestras rúbricas y convocatorias de acuerdo con ella.",
     },
     {
@@ -1045,7 +1045,7 @@ export default {
     },
     {
       title: "Contribuir a la política de evaluación nacional y europea",
-      description: "Buena parte de lo que se exige al personal investigador se decide fuera de la institución: agencias nacionales de evaluación y acreditación, comisiones de promoción, financiadores, conferencias de rectores. Participar donde se escriben esos criterios (consultas, capítulos nacionales de CoARA, grupos de trabajo de las agencias), señalar dónde chocan con los criterios reformados y empujar para alinearlos. Si no, una reforma que el nivel nacional no reconoce puede perjudicar a quienes la siguen.",
+      description: "Buena parte de lo que se exige al personal investigador se decide fuera de la institución: agencias nacionales de evaluación y acreditación, comisiones de promoción, financiadores, conferencias de rectores. Participar donde se escriben esos criterios (consultas, capítulos nacionales de CoARA, grupos de trabajo de las agencias), señalar dónde chocan con los criterios reformados y empujar para alinearlos. Si no, una reforma que el nivel nacional no reconoce puede perjudicar al personal investigador de la institución.",
       planText: "Participaremos en la definición de la política de evaluación nacional y europea, mediante consultas, capítulos nacionales y grupos de trabajo de las agencias, e impulsaremos criterios alineados con los nuestros ya reformados.",
     },
     {
@@ -1060,7 +1060,7 @@ export default {
     },
     {
       title: "Ofrecer un servicio de bibliometría responsable",
-      description: "Cuando se usan cifras, conviene que las aporte quien conoce sus límites. Un servicio (a menudo en la biblioteca o la oficina de investigación) que asesore a evaluadores e investigadores sobre qué indicador sirve para qué pregunta, que entregue cifras normalizadas por disciplina y con contexto en lugar de recuentos brutos, y que forme en alfabetización métrica. Responde además la pregunta que los paneles harán de todos modos, para que no recurran al factor de impacto.",
+      description: "Cuando se usan cifras, conviene que las aporte quien conoce sus límites. Un servicio (a menudo en la biblioteca o la oficina de investigación) que asesore a personas evaluadoras e investigadoras sobre qué indicador sirve para qué pregunta, que entregue cifras normalizadas por disciplina y con contexto en lugar de recuentos brutos, y que forme en alfabetización métrica. Responde además la pregunta que los paneles harán de todos modos, para que no recurran al factor de impacto.",
       planText: "Ofreceremos un servicio de bibliometría responsable que asesore a personas evaluadoras e investigadoras sobre los indicadores adecuados, aporte cifras contextualizadas y forme en alfabetización métrica.",
     },
     {
@@ -1076,7 +1076,7 @@ export default {
     {
       title: "Pedir unos pocos productos seleccionados, cada uno justificado",
       description: "Sustituir las largas listas de publicaciones por una selección breve (a menudo entre tres y diez productos de cualquier tipo) elegida por la persona candidata, cada uno con unas líneas sobre por qué importa y cuál fue su aportación. Así se lee y se juzga el trabajo en lugar de contarlo.",
-      planText: "Sustituiremos las listas completas de publicaciones en las solicitudes por una selección breve de productos elegida por la persona candidata, cada uno con una justificación de su relevancia y de su aportación.",
+      planText: "Sustituiremos las listas completas de publicaciones en las solicitudes por una selección breve de productos elegida por la persona candidata, cada uno con una justificación de su relevancia y de la aportación de la persona candidata.",
     },
     {
       title: "Basar los datos de evaluación en información abierta sobre la investigación",

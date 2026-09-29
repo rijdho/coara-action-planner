@@ -17,6 +17,7 @@ export default function AboutPage() {
     actions: ACTIONS.length,
     extracted: READING.extracted.toLocaleString(lang),
     kept: READING.kept.toLocaleString(lang),
+    matched: READING.matched.toLocaleString(lang),
     ccby: READING.licences["cc-by-4.0"] ?? 0,
   };
   const Section = ({ title, children }) => (

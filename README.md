@@ -167,7 +167,7 @@ a visible change to the method, to be made on purpose and recorded in the CHANGE
 purpose, so recalibrating the real catalog cannot break tests that are about the maths.
 
 `calibration.test.mjs` guards the failures that are silent rather than loud. A mistyped
-`theme` still renders, it just quietly loses its "N% of 335 plans" evidence band; an action
+`theme` still renders, it just quietly loses its keyword prevalence, the fallback figure and the one the corpus-parity test relies on; an action
 whose `fromLevel` is not below its `toLevel` can never be recommended at all; a commitment
 with no entry-level action tells an institution it is weakest there and then offers nothing
 to do about it.
@@ -203,7 +203,7 @@ changing the tagging is a visible edit rather than a drift.
 `corpus/data/action-uptake.csv`.
 
 `chart-boundary.test.mjs` keeps the charting library out of the entry bundle. recharts and
-its dependency tree are the heaviest thing this app ships and only two of the five routes
+its dependency tree are the heaviest thing this app ships and only two of the six routes
 draw a chart, so the implementation sits behind a `React.lazy` boundary. That split rests
 entirely on nothing importing it statically: one stray import folds it all back into the
 main chunk, the app looks and behaves exactly the same, and only a byte count would ever
@@ -234,13 +234,12 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
   an independent check ([`corpus/README.md`](corpus/README.md), "The full reading"). They are lower
   bounds, and they count what plans commit to, not what has been done. Read them as bands
   (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
-  reason to skip an action: frontier practices are an opportunity to lead. [`corpus/`](corpus/)
-  publishes which plans were read, the exact keyword signature behind every theme, and the
-  pipeline that reproduces the counts, so the figures can be checked rather than trusted,
-  and recounted: the loop is incremental, and the last recount ran on 6 August 2026.
-  For the eleven themes added in September 2026, [`corpus/README.md`](corpus/README.md) also
-  says how many of the plans where a full reading found the action each signature catches;
-  for some it is under half, so those figures are floors.
+  reason to skip an action. [`corpus/`](corpus/) publishes the per-action counts, the list of
+  plans read and the reading's rules; the records behind them are not published, because they
+  quote the plans. Its pipeline reproduces the keyword counts, not the reading; the last keyword
+  recount ran on 6 August 2026. For the eleven themes added in September 2026,
+  [`corpus/README.md`](corpus/README.md) says how many of the plans where the reading of 40
+  plans found the action each signature catches; for some it is under half.
 - **The guiding questions are a resource, not a template.** CoARA publishes no reporting or
   action-plan template for members, and the guidelines say the guiding questions "do not serve
   as a rigid template but rather as a resource and suggestion". Printing them beside each

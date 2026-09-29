@@ -1,11 +1,13 @@
 # The corpus behind "N% of 335 plans"
 
-**Which published CoARA action plans were read, the exact keyword signatures used to count
-them, the counts that came out, and the pipeline that reproduces all of it.**
+**Which published CoARA action plans were read, how many of them take each action, the keyword
+signatures kept as a second signal, and the pipeline that reproduces the keyword counts.**
 
-Results shows lines like "found in 77% of 335 plans" beside each recommended action. Those
-figures come from [`src/data/evidence.js`](../src/data/evidence.js), and this folder is where
-they were measured. It exists so the number can be checked rather than taken on trust: this
+Results shows lines like "57% of 335 plans" beside each recommended action. Those figures come
+from a full reading of every plan ([`data/action-uptake.csv`](data/action-uptake.csv), read by
+[`src/data/uptake.js`](../src/data/uptake.js)); the keyword prevalence in
+[`src/data/evidence.js`](../src/data/evidence.js) is the fallback. This folder is where both
+were measured. It exists so the number can be checked rather than taken on trust: this
 tool argues that its methodology is the product, and an unauditable percentage would be the
 one part of that claim a reader has to take on faith.
 
@@ -73,7 +75,7 @@ Prevalence is then filed into one of four bands, which is how Results displays i
 One signature is worth reading as an example of the judgement involved. The `publish-plan`
 theme deliberately does **not** match a bare "zenodo": nearly every plan carries its own
 Zenodo DOI in a footer, which records that the deposit happened rather than that the plan
-commits to publishing itself. Including it took the theme from 51 plans to 107, more than
+commits to publishing itself. Including it took the theme from 51 plans to 107 (counted on the 314 plans of July 2026), more than
 doubling it on an artefact of the citation line.
 
 ## The full reading (September 2026)
@@ -103,14 +105,14 @@ How a plan came to count for an action:
 
 What these figures can and cannot support:
 
-- **They are lower bounds.** A record counts only when two readers agree it is the action.
+- **They are lower bounds.** A record counts only when two model passes agree it is the action.
   Records the checker disputed, and actions a plan implies without stating them, count for
   nothing.
 - **They measure what plans say they do or will do, not what happened.** A plan that promises
   a narrative CV counts the same as one that has run it for three years; the status field
   separates the two in the underlying records, and the published figure does not.
 - **Language models read the plans.** Every record carries a quote that was checked
-  mechanically against the text, so an invented action cannot enter; interpretation (is this
+  mechanically against the text, so an invented quote cannot enter; interpretation (is this
   overstated, is this the same action) is a judgement, made twice where it mattered.
 - **The records themselves are not published here**, for the same reason the plans are not:
   they quote documents that belong to the institutions that wrote them. They are kept, with the
@@ -156,11 +158,12 @@ for the 27 themes that already existed.
 - **Read the bands, not the digits.** "78.3%" is a keyword count with a spuriously precise
   decimal. Two themes three points apart are not meaningfully different; a `universal` theme
   and a `frontier` one are.
-- **The keywords are English-dominant.** Only `publish-plan` and `formal-approval` carry
-  Spanish, German or French alternatives. The Zenodo deposits carry no usable language
+- **The keywords are English-dominant.** Only four signatures (`publish-plan`,
+  `formal-approval`, `leadership-agenda`, `evaluate-reform`) carry Spanish, German or French
+  alternatives. The Zenodo deposits carry no usable language
   metadata, so the size of the resulting undercount is unmeasured, but plans written in
-  other languages certainly match less often than they should, and every figure here is a
-  lower bound for that reason.
+  other languages certainly match less often than they should, which pushes the figures down;
+  over-matching (below) pushes the other way.
 - **Regexes over-match as well as under-match.** `no-rankings` matches any mention of a
   ranking, including a plan explaining that it already ignores them. Nothing here
   distinguishes endorsement from rejection.
@@ -206,9 +209,10 @@ nothing new costs one API call and no disk. And step 5 makes the manifest an *ou
 pipeline rather than a hand-kept file, so `plans.csv` cannot drift away from what was actually
 counted.
 
-Nothing here sends a document to a model or a third-party service. Extraction is `pdftotext`
-locally, and the measurement is regular expressions over the resulting text: the token cost of
-recounting the entire corpus is zero. That is a deliberate constraint, not an accident: it is
+The keyword recount sends no document to a model or a third-party service. Extraction is
+`pdftotext` locally, and the measurement is regular expressions over the resulting text: the
+token cost of recounting the entire corpus is zero. The full reading (above) did use language
+models and is not part of this loop. That is a deliberate constraint, not an accident: it is
 what makes a recount cheap enough to actually happen.
 
 The working corpus lands in `corpus/work/`, which is not committed and is fully rebuildable
@@ -216,8 +220,8 @@ from `data/plans.csv`. The corpus is reproducible rather than backed up.
 
 **After an update**, propagate `CORPUS_SIZE` and `THEME_FREQUENCY` into
 [`src/data/evidence.js`](../src/data/evidence.js) (`npm test` fails until you do), refresh the
-harvest date and counts above, and record the recount in the CHANGELOG. Every percentage the
-app displays moves, so it is a release, not a patch.
+harvest date and counts above, and record the recount in the CHANGELOG. The keyword prevalence
+moves; the per-action figures on Results change only with a reading of the added plans.
 
 ## How stale is this snapshot?
 

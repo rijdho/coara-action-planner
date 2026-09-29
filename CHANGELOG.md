@@ -10,14 +10,28 @@ latest release.
 
 ## [Unreleased]
 
+### Fixed
+
+- **A review of every text against its English original and against the data.** Spanish and
+  German: wrong genders and pronouns, calques ("liefern", "Normalisierung"), a German term that
+  read as "uniform assessment" where unit evaluation was meant, "Kapitel" for "Chapter", a
+  statistical term ("fachnormalisiert"), meanings narrowed or shifted, and one Spanish action
+  that broke the register of its neighbours. All three languages: inflated wording removed
+  ("invaluable", "the foundational action that enables all others", "the canonical framework",
+  and "an opportunity to lead" on the frontier band, the only band that pitched). The About page,
+  README, `corpus/README.md` and CITATION.cff now say what the data supports: the corpus is what
+  the Zenodo search found, language models read the plans, figures count records and matched
+  records separately, not every action has examples or framework tags, the keyword signatures
+  were calibrated on 40 plans, and the keyword pipeline does not reproduce the reading.
+
 ### Added
 
 - **An About page** on the site itself, one click from every step (rail) and linked from Start:
   what the tool is, where it comes from (the 15 hand-read plans, the Zenodo corpus with its
   harvest dates and licences, the full reading of September 2026), what it produced (questions,
   maturity levels, actions, the share of plans), its limits and how to cite it. English, German
-  and Spanish. Every number on it is read from the data the tool uses, so it cannot drift from
-  Results; the reading's totals and the plans' licences now travel in `src/data/uptake.js`.
+  and Spanish. The counts on it (plans, questions, actions, records, licences) are read from the data the
+  tool uses, so they cannot drift from Results; the reading's totals and the plans' licences now travel in `src/data/uptake.js`.
 
 ## [1.5.0] - 2026-09-29
 
@@ -63,15 +77,16 @@ latest release.
   stages or principles it puts into practice; Results and the report show them with links to
   the sources. `tests/frameworks.test.mjs` checks that every tag exists and pins the counts.
 - **Eleven corpus themes (27 to 38)** for the new actions, each signature calibrated against
-  the full reading; `corpus/README.md` publishes how many of the plans where the reading found
+  the reading of 40 plans; `corpus/README.md` publishes how many of the plans where the reading found
   the action each one catches. Adding them changed no existing count.
 
 ### Changed
 
-- Seven actions widened instead of gaining near-duplicates: A03 credits team, collegial and
-  evaluation work; A16 adapts national matrices (NOR-CAM, FIN-CAM) and carries rubrics into job
-  ads and calls; A20 includes collaborative reform projects; A21 includes university alliances;
-  A25 draws on research on research; A32 staffs the support services; A34 adds training.
+- Seven actions widened instead of gaining near-duplicates (ids as in the final catalogue): A02
+  credits team, collegial and evaluation work; A13 adapts national matrices (NOR-CAM, FIN-CAM)
+  and carries rubrics into job ads and calls; A17 includes collaborative reform projects; A18
+  includes university alliances; A22 draws on research on research; A28 staffs the support
+  services; A30 adds training to mentoring.
 - The README's account of the context ceiling was wrong: +4 is more than one level of gap at
   high impact (3), not less. It now says what the code does.
 

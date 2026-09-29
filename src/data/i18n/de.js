@@ -38,7 +38,7 @@ export default {
     // Assessment page
     asmt_title: "Institutionelle Selbsteinschätzung",
     asmt_intro:
-      "Beantworten Sie die folgenden Fragen, um den Reifegrad Ihrer Einrichtung bei jeder CoARA-Verpflichtung zu ermitteln. Wenn Sie fertig sind, verwandelt der Reiter „Ergebnisse“ Ihre Antworten in ein Reifegradprofil und einen priorisierten Aktionsplan. Alles wird lokal in Ihrem Browser gespeichert.",
+      "Beantworten Sie die folgenden Fragen, um den Reifegrad Ihrer Einrichtung bei jeder CoARA-Verpflichtung zu ermitteln. Wenn Sie fertig sind, verwandelt der Tab „Ergebnisse“ Ihre Antworten in ein Reifegradprofil und einen priorisierten Aktionsplan. Alles wird lokal in Ihrem Browser gespeichert.",
 
     // Start page + perspectives + ambition (added)
     tab_start: "Start",
@@ -51,7 +51,7 @@ export default {
       "Der Fragebogen misst Ihre aktuelle Reife bei jeder CoARA-Verpflichtung: den Ist-Zustand, ehrlich eingeschätzt.",
     start_lens_goal: "② Wohin wir wollen",
     start_lens_goal_desc:
-      "Im Tab Plan legen Sie ein Reife-Ziel pro Verpflichtung fest. Die Lücke zwischen Ist und Ziel schließt Ihr Aktionsplan.",
+      "Im Tab Plan legen Sie einen Ziel-Reifegrad pro Verpflichtung fest. Die Lücke zwischen Ist und Ziel schließt Ihr Aktionsplan.",
     start_lens_who: "③ Wer diese Information liefert",
     start_lens_who_desc:
       "Geben Sie an, wer antwortet. Fügen Sie mehrere Perspektiven hinzu (z. B. Leitung und Forschende), um zu sehen, wo die Einschätzungen auseinandergehen.",
@@ -77,11 +77,11 @@ export default {
     start_multiNote:
       "Mehrere Perspektiven werden zu einem Profil gemittelt; Abweichungen von zwei oder mehr Stufen werden in den Ergebnissen markiert.",
     start_cta: "Zum Fragebogen →",
-    asmt_answeringAs: "Antwort als: {role}",
+    asmt_answeringAs: "Sie antworten als: {role}",
     asmt_switchPerspective: "Wechseln →",
     plan_s5_title: "5 · Ambition: wohin wollen Sie?",
     plan_s5_hint:
-      "Legen Sie ein Reife-Ziel pro Verpflichtung fest. Maßnahmen, die die Lücke zwischen Ihrer aktuellen Stufe und dem Ziel schließen, steigen nach oben; Verpflichtungen, die ihr Ziel bereits erreicht haben, sinken. Lassen Sie „–“, um nur nach der Lücke bis zur höchsten Stufe zu ordnen.",
+      "Legen Sie einen Ziel-Reifegrad pro Verpflichtung fest. Maßnahmen, die die Lücke zwischen Ihrer aktuellen Stufe und dem Ziel schließen, steigen nach oben; Verpflichtungen, die ihr Ziel bereits erreicht haben, sinken. Lassen Sie „–“, um nur nach der Lücke bis zur höchsten Stufe zu ordnen.",
     plan_ambition_now: "jetzt",
     plan_ambition_current: "aktuelle Stufe",
     plan_ambition_target: "Zielstufe",
@@ -135,7 +135,7 @@ export default {
     // horizons (label + description)
     horizon_quickwins_label: "Schnelle Erfolge zuerst",
     horizon_quickwins_desc:
-      "Wir haben begrenzte Zeit und Kapazität. Bevorzugen Sie aufwandsarme Maßnahmen, die wir sofort beginnen können.",
+      "Wir haben begrenzte Zeit und Kapazität. Aufwandsarme Maßnahmen bevorzugen, die wir sofort beginnen können.",
     horizon_balanced_label: "Ausgewogen",
     horizon_balanced_desc: "Mischung aus schnellen Erfolgen und tiefgreifenderen Veränderungen, rein nach Lücke und Wirkung geordnet.",
     horizon_structural_label: "Struktureller Wandel",
@@ -183,15 +183,15 @@ export default {
     about_nav: "Über dieses Werkzeug",
     start_aboutLink: "Wie dieses Werkzeug entstanden ist, und woraus",
     about_title: "Über dieses Werkzeug",
-    about_lede: "Der Research Assessment Reform Planner hilft einer Einrichtung, ihren Stand bei den zehn Verpflichtungen des Agreement on Reforming Research Assessment (CoARA, 2022) zu bestimmen und ihren Aktionsplan zu entwerfen. Er orientiert; er zertifiziert nicht.",
+    about_lede: "Der Research Assessment Reform Planner hilft einer Einrichtung, ihren Stand bei den zehn Verpflichtungen der Vereinbarung zur Reform der Forschungsbewertung (CoARA, 2022) zu bestimmen und ihren Aktionsplan zu entwerfen. Er orientiert; er zertifiziert nicht.",
     about_h_sources: "Woher es stammt",
     about_sources_1: "Die ersten Fragen und Maßnahmen wurden anhand von 15 veröffentlichten CoARA-Aktionsplänen kalibriert, die von Hand gelesen wurden.",
-    about_sources_2: "Das Korpus umfasst alle auf Zenodo veröffentlichten CoARA-Aktionspläne, gefunden über Textsuche und in der Community der CoARA-Aktionspläne: erstmals erhoben am 17. April 2026 und aktualisiert am 6. August 2026, insgesamt {plans} Pläne. Alle sind frei zugänglich; {ccby} stehen unter CC BY 4.0, die übrigen unter anderen Creative-Commons-Lizenzen oder ohne Lizenz. Ihr Text wurde aus den hinterlegten PDF- und DOCX-Dateien extrahiert. Die Pläne werden über ihre DOIs zitiert und nicht weiterverbreitet.",
-    about_sources_3: "Im September 2026 wurde jeder Plan vollständig gelesen, mit einem dokumentierten, von einem Sprachmodell unterstützten Verfahren: Jede Maßnahme, zu der sich ein Plan verpflichtet, wurde mit einem wörtlichen Zitat erfasst, jedes Zitat per Skript am Text des Plans geprüft, und unabhängige Durchgänge versuchten, jeden Eintrag zu widerlegen, und entschieden strittige Zuordnungen. {extracted} Maßnahmen wurden erfasst, {kept} beibehalten.",
+    about_sources_2: "Das Korpus umfasst die CoARA-Aktionspläne, die auf Zenodo über Textsuche und in der Community der CoARA-Aktionspläne gefunden wurden: erstmals erhoben am 17. April 2026 und aktualisiert am 6. August 2026, insgesamt {plans} Pläne. Alle sind frei zugänglich; {ccby} stehen unter CC BY 4.0, die übrigen unter anderen Creative-Commons-Lizenzen oder ohne Lizenz. Ihr Text wurde aus den hinterlegten PDF- und DOCX-Dateien extrahiert. Die Pläne werden über ihre DOIs zitiert und nicht weiterverbreitet.",
+    about_sources_3: "Im September 2026 lasen Sprachmodelle jeden Plan vollständig, nach einem dokumentierten Verfahren: Jede Maßnahme, zu der sich ein Plan verpflichtet, wurde mit einem wörtlichen Zitat erfasst, jedes Zitat per Skript am Text des Plans geprüft, und unabhängige Durchgänge versuchten, jeden Eintrag zu widerlegen, und entschieden strittige Zuordnungen. {extracted} Einträge wurden erfasst, {kept} bestanden die Prüfungen, und {matched} wurden einer Maßnahme des Katalogs zugeordnet.",
     about_h_output: "Was daraus entstand",
-    about_output: "{questions} Fragen, die jede Verpflichtung auf einer sechsstufigen Reifeskala einordnen, von 0 (nicht bewusst) bis 5 (verankert); {actions} Maßnahmen, jede mit den Stufen, für die sie gilt, ihrem Aufwand und ihrer Wirkung, realen Beispielen und den Elementen von DORA, Leiden-Manifest oder SCOPE, die sie umsetzt; und für jede Maßnahme der Anteil der {plans} Pläne, die sie vorsehen. Der Bericht zitiert die 19 Leitfragen der Action Plan Guidelines des CoARA-Sekretariats (Oktober 2023).",
+    about_output: "{questions} Fragen, die jede Verpflichtung auf einer sechsstufigen Reifeskala einordnen, von 0 (nicht bewusst) bis 5 (verankert); {actions} Maßnahmen, jede mit den Stufen, für die sie gilt, ihrem Aufwand und ihrer Wirkung, realen Beispielen, soweit bekannt, und, wo zutreffend, den Elementen von DORA, Leiden-Manifest oder SCOPE, die sie umsetzt; und für jede Maßnahme der Anteil der {plans} Pläne, die sie vorsehen. Der Bericht zitiert die 19 Leitfragen der Action Plan Guidelines des CoARA-Sekretariats (Oktober 2023).",
     about_h_limits: "Grenzen",
-    about_limits: "Die Anteile sind Untergrenzen und zählen, wozu sich Pläne verpflichten, nicht was erreicht wurde. Die Lektüre wurde nicht von Menschen kodiert; ihre Verlässlichkeit beruht auf der mechanischen Prüfung der Zitate und den unabhängigen Prüfdurchgängen. Stufen und Reihenfolgen sind ein strukturierter Anstoß zur Reflexion, keine Bewertung und keine Zertifizierung, und das Werkzeug ist nicht von CoARA anerkannt.",
+    about_limits: "Die Anteile sind Untergrenzen und zählen, wozu sich Pläne verpflichten, nicht was erreicht wurde. Die Lektüre wurde nicht von Menschen kodiert; ihre Verlässlichkeit beruht auf der mechanischen Prüfung der Zitate und den unabhängigen Prüfdurchgängen. Stufen und Reihenfolgen sind ein strukturierter Anstoß zur Reflexion, keine Bewertung und keine Zertifizierung, und das Werkzeug wird von CoARA weder unterstützt noch empfohlen.",
     about_h_more: "Methode, Daten und Zitation",
     about_more: "Die Methode, die Liste der Pläne mit ihren Zenodo-Einträgen und die Zahlen je Maßnahme sind im Quellrepositorium veröffentlicht. Zitiert wird das Werkzeug über seinen Konzept-DOI, der stets auf die neueste Version verweist.",
     about_link_method: "Methode und Daten (corpus/)",
@@ -203,7 +203,7 @@ export default {
     ev_universal: "Nahezu universell in bestehenden Plänen",
     ev_common: "Verbreitet in bestehenden Plänen",
     ev_emerging: "Aufkommende Praxis",
-    ev_frontier: "Neuland: bislang von wenigen Plänen umgesetzt, eine Chance, voranzugehen",
+    ev_frontier: "Neuland: bislang von wenigen Plänen umgesetzt",
     res_ctaNext: "Weiter:",
     res_ctaBody: "verwandeln Sie dies in einen schriftlichen CoARA-Aktionsplan-Entwurf, den Sie bearbeiten und teilen können.",
     res_generateReport: "Bericht erstellen →",
@@ -250,7 +250,7 @@ export default {
     respondentMulti:
       "Diese Selbsteinschätzung führt {n} Perspektiven zusammen ({roles}). Mehrere Blickwinkel zu vereinen ergibt ein vollständigeres, ehrlicheres Bild davon, wo die Einrichtung steht und wo sich die Einschätzungen des Fortschritts unterscheiden.",
     ambitionLine:
-      "Innerhalb dieses Horizonts strebt {inst} an, bestimmte Verpflichtungen auf erklärte Reife-Zielstufen voranzubringen: {targets}.",
+      "Innerhalb dieses Horizonts strebt {inst} an, bestimmte Verpflichtungen auf erklärte Ziel-Reifegrade voranzubringen: {targets}.",
     targetLevelShort: "Stufe {level} ({label})",
     contestedNote:
       "Die internen Einschätzungen des Fortschritts gehen am stärksten auseinander bei {contested}; diese werden zur frühen Abstimmung priorisiert, damit sich die Einrichtung einig wird, wo sie wirklich steht, bevor sie handelt.",
@@ -347,7 +347,7 @@ export default {
     gq_label: "CoARA-Leitfrage",
     gq_labelPlural: "CoARA-Leitfragen",
     gq_intro:
-      "Die mit *CoARA-Leitfrage* gekennzeichneten Impulse sind den *Action Plan Guidelines* (Oktober 2023) des CoARA-Sekretariats entnommen. Sie sind eine Anregung und Hilfestellung, keine verbindliche Vorlage (für Aktionspläne seiner Mitglieder veröffentlicht CoARA überhaupt keine Vorlage), doch sie Abschnitt für Abschnitt zu beantworten ist der schnellste Weg, diesen Entwurf daran zu prüfen, worüber die Koalition ihre Mitglieder zum Nachdenken auffordert.",
+      "Die mit *CoARA-Leitfrage* gekennzeichneten Impulse sind den *Action Plan Guidelines* (Oktober 2023) des CoARA-Sekretariats entnommen. Sie sind eine Anregung und Hilfestellung, keine verbindliche Vorlage (CoARA veröffentlicht keine Vorlage für die Aktionspläne seiner Mitglieder), doch sie Abschnitt für Abschnitt zu beantworten ist der schnellste Weg, diesen Entwurf daran zu prüfen, worüber die Koalition ihre Mitglieder zum Nachdenken auffordert.",
     gq_quotedInEnglish:
       "Sie werden im veröffentlichten Englisch wiedergegeben, da CoARA keine Übersetzung herausgibt.",
     gq_source:
@@ -404,7 +404,7 @@ export default {
       },
     },
     q1d: {
-      text: "Berücksichtigt Ihre Einrichtung Gleichstellung, Vielfalt und Inklusion (EDI) in ihren Bewertungsverfahren, z. B. Karriereunterbrechungen, Elternzeit, Behinderung, Geschlechterverzerrung in Bewertungsausschüssen?",
+      text: "Berücksichtigt Ihre Einrichtung Chancengerechtigkeit, Vielfalt und Inklusion (EDI) in ihren Bewertungsverfahren, z. B. Karriereunterbrechungen, Elternzeit, Behinderung, Geschlechterverzerrung in Bewertungsausschüssen?",
       answers: {
         0: "EDI wird in der Bewertung nicht berücksichtigt",
         1: "Uns sind EDI-Themen bewusst, aber wir haben nicht gehandelt",
@@ -437,14 +437,14 @@ export default {
       },
     },
     q3a: {
-      text: "Erwähnen Ihre Kriterien für Einstellung, Beförderung oder Förderung ausdrücklich den Journal Impact Factor (JIF), den h-index oder Zeitschriften-Quartile?",
+      text: "Erwähnen Ihre Kriterien für Einstellung, Beförderung oder Förderung ausdrücklich den Journal Impact Factor (JIF), den h-Index oder Zeitschriften-Quartile?",
       answers: {
         0: "Wir wissen nicht, was in unseren Kriterien steht",
         1: "Ja, sie erwähnen diese Kennzahlen und wir wissen, dass das problematisch ist",
         2: "Wir haben unsere Kriterien geprüft und identifiziert, wo diese auftauchen",
         3: "Wir haben überarbeitete Kriterien entworfen, die diese Kennzahlen entfernen",
         4: "Die meisten Kriterien wurden aktualisiert, um diese Kennzahlen zu entfernen",
-        5: "Kein Bewertungsverfahren verweist auf JIF, h-index oder Quartile",
+        5: "Kein Bewertungsverfahren verweist auf JIF, h-Index oder Quartile",
       },
     },
     q3b: {
@@ -514,7 +514,7 @@ export default {
       },
     },
     q6c: {
-      text: "Sind Ihre Bewertungskriterien nach Karrierestufe (Promotion, Postdoc, Tenure-Track, Senior) und nach Verfahrenstyp (Einstellung, Beförderung, Förderung, Einheitsbewertung) differenziert?",
+      text: "Sind Ihre Bewertungskriterien nach Karrierestufe (Promotion, Postdoc, Tenure-Track, Senior) und nach Verfahrenstyp (Einstellung, Beförderung, Förderung, Bewertung von Organisationseinheiten) differenziert?",
       answers: {
         0: "Wir verwenden für alles dieselben Kriterien",
         1: "Wir wissen, dass Differenzierung nötig ist, haben aber nicht begonnen",
@@ -560,7 +560,7 @@ export default {
     q8a: {
       text: "Beteiligt sich Ihre Einrichtung an thematischen CoARA-Arbeitsgruppen oder Action Clusters (SSH, EMCRs, Peer Review, RMI, OI4RRA, ERIP usw.)?",
       answers: {
-        0: "Wir sind in keiner thematischen Gruppe beteiligt",
+        0: "Wir sind an keiner thematischen Gruppe beteiligt",
         1: "Wir kennen die Gruppen, sind aber nicht beigetreten",
         2: "Wir prüfen, welchen Gruppen wir beitreten sollen",
         3: "Wir sind beigetreten und planen unseren Beitrag",
@@ -587,7 +587,7 @@ export default {
         2: "Die Reform wurde der Leitung oder den Leitungsgremien mindestens einmal vorgestellt",
         3: "Ein Kommunikationsplan legt Zielgruppen, Kanäle und Verantwortliche fest",
         4: "Beschäftigte und Leitungsgremien erhalten Updates in festem Rhythmus",
-        5: "Regelmäßige Updates werden archiviert, Beschäftigte können antworten, und die Leitungsgremien prüfen den Fortschritt in einem festen Zyklus",
+        5: "Regelmäßige Updates werden archiviert, Beschäftigte können Rückmeldung geben, und die Leitungsgremien prüfen den Fortschritt in einem festen Zyklus",
       },
     },
     q10a: {
@@ -662,7 +662,7 @@ export default {
       title: "Bewertung auf qualitative Beurteilung stützen",
       text: "Die Bewertung von Forschung in erster Linie auf qualitative Beurteilung stützen, für die das Peer Review zentral ist, unterstützt durch einen verantwortungsvollen Einsatz quantitativer Indikatoren. Dies bedeutet, unangemessene Verwendungen zeitschriften- und publikationsbasierter Kennzahlen aufzugeben, insbesondere des Journal Impact Factor (JIF), um einzelne Forschende zu bewerten oder Einstellungs- und Förderentscheidungen zu treffen.",
       inPractice: [
-        "JIF, h-index und Zeitschriften-Quartile aus Einstellungs-/Beförderungskriterien streichen",
+        "JIF, h-Index und Zeitschriften-Quartile aus Einstellungs-/Beförderungskriterien streichen",
         "Bewertungsformulare neu gestalten, um narrative und qualitative Belege hervorzuheben",
         "Bewertungsausschüsse im verantwortungsvollen Umgang mit Kennzahlen schulen",
         "Narrative Lebensläufe oder portfoliobasierte Bewertung einführen",
@@ -670,9 +670,9 @@ export default {
     },
     "no-metrics": {
       title: "Unangemessene zeitschriftenbasierte Kennzahlen aufgeben",
-      text: "Aufhören, zeitschriftenbasierte Kennzahlen wie den Journal Impact Factor und den h-index als Surrogatindikatoren für die Qualität einzelner Forschungsleistungen oder einzelner Forschender bei Einstellungs-, Beförderungs- und Förderentscheidungen zu verwenden.",
+      text: "Aufhören, zeitschriftenbasierte Kennzahlen wie den Journal Impact Factor und den h-Index als Surrogatindikatoren für die Qualität einzelner Forschungsleistungen oder einzelner Forschender bei Einstellungs-, Beförderungs- und Förderentscheidungen zu verwenden.",
       inPractice: [
-        "Alle Bewertungskriterien auf Verweise auf JIF, h-index, Quartile prüfen",
+        "Alle Bewertungskriterien auf Verweise auf JIF, h-Index, Quartile prüfen",
         "Kennzahlen-Schwellenwerte aus Stellenausschreibungen und Beförderungsrichtlinien entfernen",
         "Quantitative Surrogate durch inhaltsbasierte Bewertung ersetzen",
         "Die Änderung der Forschungsgemeinschaft kommunizieren",
@@ -765,17 +765,17 @@ export default {
     },
     {
       title: "Vielfältige Forschungsleistungen in allen Bewertungsverfahren verankern",
-      description: "Überarbeiten Sie alle Kriterien für Einstellung, Beförderung, Tenure und Förderung, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit neben individuellen Leistungen anzuerkennen. Stellen Sie sicher, dass Bewertende darin geschult sind, sie zu beurteilen.",
+      description: "Überarbeiten Sie alle Kriterien für Einstellung, Beförderung, Tenure und Förderung, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit (Gutachten, Gremientätigkeit) neben individuellen Leistungen anzuerkennen. Stellen Sie sicher, dass Bewertende darin geschult sind, sie zu beurteilen.",
       planText: "Wir werden alle Kriterien für Einstellung, Beförderung, Tenure und Förderung überarbeiten, um vielfältige Leistungstypen ausdrücklich einzubeziehen und zu gewichten und Team-, Gremien- und Begutachtungsarbeit neben individuellen Leistungen anzuerkennen, und sicherstellen, dass Bewertende darin geschult sind, sie zu beurteilen.",
     },
     {
       title: "Einen narrativen Lebenslauf entwerfen und erproben",
-      description: "Sichten Sie bestehende Modelle narrativer Lebensläufe (Résumé for Researchers, R4RI von UKRI, nationale Vorlagen) und passen Sie eines an Ihren institutionellen Kontext an. Erproben Sie sie in ein oder zwei Bewertungsrunden (z. B. interne Förderungen, ein Beförderungsausschuss). Sammeln Sie Rückmeldungen von Bewertenden und Kandidatinnen und Kandidaten.",
-      planText: "Wir werden bestehende Modelle narrativer Lebensläufe sichten, eines an unseren institutionellen Kontext anpassen, sie in ein oder zwei Bewertungsrunden erproben und Rückmeldungen von Bewertenden sowie Kandidatinnen und Kandidaten sammeln.",
+      description: "Sichten Sie bestehende Modelle narrativer Lebensläufe (Résumé for Researchers, R4RI von UKRI, nationale Vorlagen) und passen Sie eines an Ihren institutionellen Kontext an. Erproben Sie es in ein oder zwei Bewertungsrunden (z. B. interne Förderungen, ein Beförderungsausschuss). Sammeln Sie Rückmeldungen von Bewertenden und Kandidatinnen und Kandidaten.",
+      planText: "Wir werden bestehende Modelle narrativer Lebensläufe sichten, eines an unseren institutionellen Kontext anpassen, es in ein oder zwei Bewertungsrunden erproben und Rückmeldungen von Bewertenden sowie Kandidatinnen und Kandidaten sammeln.",
     },
     {
       title: "Bewertungsausschüsse schulen",
-      description: "Entwickeln und liefern Sie Schulungen für Bewertungsausschüsse zu qualitativer Bewertung, verantwortungsvollem Umgang mit Kennzahlen und impliziten Vorurteilen. Beziehen Sie praktische Übungen mit Beispielportfolios ein.",
+      description: "Entwickeln Sie Schulungen für Bewertungsausschüsse zu qualitativer Bewertung, verantwortungsvollem Umgang mit Kennzahlen und impliziten Vorurteilen, und führen Sie sie durch. Beziehen Sie praktische Übungen mit Beispielportfolios ein.",
       planText: "Wir werden Schulungen für Bewertungsausschüsse zu qualitativer Bewertung, verantwortungsvollem Umgang mit Kennzahlen und impliziten Vorurteilen entwickeln und durchführen, einschließlich praktischer Übungen mit Beispielportfolios.",
     },
     {
@@ -785,8 +785,8 @@ export default {
     },
     {
       title: "Kriterien auf Kennzahlen-Verweise prüfen",
-      description: "Durchsuchen Sie alle Stellenausschreibungen, Beförderungsrichtlinien, Förderausschreibungen und internen Richtlinien nach Verweisen auf JIF, h-index, Quartile oder „High-Impact-Journals“. Dokumentieren Sie jeden Fall.",
-      planText: "Wir werden alle Stellenausschreibungen, Beförderungsrichtlinien, Förderausschreibungen und internen Richtlinien nach Verweisen auf JIF, h-index, Quartile oder „High-Impact-Journals“ durchsuchen und jeden Fall dokumentieren.",
+      description: "Durchsuchen Sie alle Stellenausschreibungen, Beförderungsrichtlinien, Förderausschreibungen und internen Richtlinien nach Verweisen auf JIF, h-Index, Quartile oder „High-Impact-Journals“. Dokumentieren Sie jeden Fall.",
+      planText: "Wir werden alle Stellenausschreibungen, Beförderungsrichtlinien, Förderausschreibungen und internen Richtlinien nach Verweisen auf JIF, h-Index, Quartile oder „High-Impact-Journals“ durchsuchen und jeden Fall dokumentieren.",
     },
     {
       title: "Kennzahlen-Surrogate aus den Kriterien entfernen",
@@ -820,8 +820,8 @@ export default {
     },
     {
       title: "Bewertungsrubriken neu gestalten",
-      description: "Erstellen Sie auf Grundlage der Prüfungsergebnisse neue Rubriken, die vielfältige Beiträge, qualitative Belege und die Ausrichtung am Auftrag der Einrichtung betonen. Wo eine nationale oder vergleichbare Bewertungsmatrix existiert (NOR-CAM, FIN-CAM), passen Sie diese an, statt bei null zu beginnen. Erproben und anpassen, dann in das übertragen, was Bewerbende tatsächlich sehen: Ausschreibungstexte, Formulare und Ausschreibungsbedingungen.",
-      planText: "Auf Grundlage der Prüfungsergebnisse werden wir neue Rubriken erstellen, die vielfältige Beiträge, qualitative Belege und die Ausrichtung an unserem institutionellen Auftrag betonen, dabei eine vorhandene nationale Matrix anpassen, sie schrittweise erproben und anpassen und in Ausschreibungstexte, Formulare und Ausschreibungsbedingungen übertragen.",
+      description: "Erstellen Sie auf Grundlage der Prüfungsergebnisse neue Rubriken, die vielfältige Beiträge, qualitative Belege und die Ausrichtung am Auftrag der Einrichtung betonen. Wo eine nationale oder vergleichbare Karrierebewertungsmatrix existiert (NOR-CAM, FIN-CAM), passen Sie diese an, statt bei null zu beginnen. Erproben Sie die Rubriken, passen Sie sie an und übertragen Sie sie dann in das, was Bewerbende tatsächlich sehen: Ausschreibungstexte, Formulare und Ausschreibungsbedingungen.",
+      planText: "Auf Grundlage der Prüfungsergebnisse werden wir neue Rubriken erstellen, die vielfältige Beiträge, qualitative Belege und die Ausrichtung an unserem institutionellen Auftrag betonen, dabei, wo vorhanden, eine nationale Matrix anpassen, sie schrittweise erproben und anpassen und in Ausschreibungstexte, Formulare und Ausschreibungsbedingungen übertragen.",
     },
     {
       title: "Periodischen Zyklus zur Kriterienüberprüfung etablieren",
@@ -830,7 +830,7 @@ export default {
     },
     {
       title: "Grundlegende Informationsmaterialien erstellen",
-      description: "Entwickeln Sie ein einseitiges Informationsblatt, eine FAQ und ein kurzes Video, das erklärt, was CoARA ist, warum Ihre Einrichtung unterzeichnet hat und was sich ändern wird. Auf der institutionellen Website veröffentlichen.",
+      description: "Entwickeln Sie ein einseitiges Informationsblatt, eine FAQ und ein kurzes Video, die erklären, was CoARA ist, warum Ihre Einrichtung unterzeichnet hat und was sich ändern wird. Veröffentlichen Sie sie auf der Website Ihrer Einrichtung.",
       planText: "Wir werden ein einseitiges Informationsblatt, eine FAQ und ein kurzes Video auf der institutionellen Website veröffentlichen, die erklären, was CoARA ist, warum wir unterzeichnet haben und was sich ändern wird.",
     },
     {
@@ -856,8 +856,8 @@ export default {
     },
     {
       title: "Einen Fortschrittsbericht veröffentlichen",
-      description: "Schreiben und veröffentlichen Sie Ihren ersten Fortschrittsbericht. Beziehen Sie ein: Ausgangslage, ergriffene Maßnahmen, Indikatoren für Veränderung, bewältigte Herausforderungen, nächste Schritte. Öffentlich teilen.",
-      planText: "Wir werden unseren ersten Fortschrittsbericht schreiben und öffentlich teilen; er umfasst Ausgangslage, ergriffene Maßnahmen, Indikatoren für Veränderung, bewältigte Herausforderungen und nächste Schritte.",
+      description: "Schreiben und veröffentlichen Sie Ihren ersten Fortschrittsbericht. Er sollte enthalten: Ausgangslage, ergriffene Maßnahmen, Indikatoren für Veränderung, aufgetretene Herausforderungen, nächste Schritte. Machen Sie ihn öffentlich zugänglich.",
+      planText: "Wir werden unseren ersten Fortschrittsbericht schreiben und öffentlich teilen; er umfasst Ausgangslage, ergriffene Maßnahmen, Indikatoren für Veränderung, aufgetretene Herausforderungen und nächste Schritte.",
     },
     {
       title: "Die öffentliche Selbsteinschätzung vorbereiten",
@@ -877,8 +877,8 @@ export default {
     },
     {
       title: "EDI-Leitlinien für Bewertungsausschüsse umsetzen",
-      description: "Entwickeln und durchsetzen Sie Leitlinien: verpflichtende Schulung zu unbewussten Vorurteilen für Bewertende, Normalisierung von Anpassungen bei Karriereunterbrechungen, Sicherstellung einer diversen Ausschusszusammensetzung, Einbeziehung von EDI-Selbsteinschätzungsfragebögen.",
-      planText: "Wir werden EDI-Leitlinien für Bewertungsausschüsse einführen und durchsetzen: verpflichtende Schulung zu unbewussten Vorurteilen, normalisierte Anpassungen bei Karriereunterbrechungen, diverse Ausschusszusammensetzung und EDI-Selbsteinschätzungsfragebögen.",
+      description: "Entwickeln Sie Leitlinien und setzen Sie sie durch: verpflichtende Schulung zu unbewussten Vorurteilen für Bewertende, Anpassungen bei Karriereunterbrechungen als Regelfall, Sicherstellung einer diversen Ausschusszusammensetzung, Einbeziehung von EDI-Selbsteinschätzungsfragebögen.",
+      planText: "Wir werden EDI-Leitlinien für Bewertungsausschüsse einführen und durchsetzen: verpflichtende Schulung zu unbewussten Vorurteilen, Anpassungen bei Karriereunterbrechungen als Regelfall, diverse Ausschusszusammensetzung und EDI-Selbsteinschätzungsfragebögen.",
       examples: ["FRQ mandatory bias module for all committee members", "SDU Mentoring for Change Programme"],
     },
     {
@@ -895,7 +895,7 @@ export default {
     },
     {
       title: "Eine eigene Governance-Struktur für die Reform etablieren",
-      description: "Schaffen Sie einen formalen Ausschuss oder eine Arbeitsgruppe mit klarem Mandat, multidisziplinärer Mitgliedschaft, Vertretung der Forschenden und Berichtswegen zur institutionellen Leitung. Dies ist die grundlegende Maßnahme, die alle anderen ermöglicht.",
+      description: "Schaffen Sie einen formalen Ausschuss oder eine Arbeitsgruppe mit klarem Mandat, multidisziplinärer Mitgliedschaft, Vertretung der Forschenden und Berichtswegen zur institutionellen Leitung. Die meisten anderen Maßnahmen hängen davon ab.",
       planText: "Wir werden einen formalen Reformausschuss oder eine Arbeitsgruppe mit klarem Mandat, multidisziplinärer Mitgliedschaft, Vertretung der Forschenden und direkten Berichtswegen zur institutionellen Leitung etablieren.",
       examples: ["UCM CoARA Working Group", "DCU Open Research Steering Group", "Pannonia Scientific Quality Analysis Group"],
     },
@@ -907,43 +907,43 @@ export default {
     },
     {
       title: "Kriterien nach Karrierestufe, Verfahren und Fach differenzieren",
-      description: "Entwickeln Sie eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen und lassen Sie jedes Fach selbst bestimmen, was als Qualität gilt (Bücher in den Geisteswissenschaften, Konferenzbeiträge in der Informatik). Unterscheiden Sie außerdem zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung. Einheitskriterien für alle benachteiligen Early-Career-Forschende.",
-      planText: "Wir werden eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen entwickeln, jedes Fach selbst bestimmen lassen, was als Qualität gilt, und zwischen Einstellung, Beförderung, internen Förderungen und Einheitsbewertung unterscheiden, damit einheitliche Kriterien Early-Career-Forschende nicht länger benachteiligen.",
+      description: "Entwickeln Sie eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen und lassen Sie jedes Fach selbst bestimmen, was als Qualität gilt (Bücher in den Geisteswissenschaften, Konferenzbeiträge in der Informatik). Unterscheiden Sie außerdem zwischen Einstellung, Beförderung, internen Förderungen und Bewertung von Organisationseinheiten. Einheitskriterien für alle benachteiligen Early-Career-Forschende.",
+      planText: "Wir werden eigene Bewertungskriterien für Promotions-, Postdoc-, Tenure-Track- und Senior-Positionen entwickeln, jedes Fach selbst bestimmen lassen, was als Qualität gilt, und zwischen Einstellung, Beförderung, internen Förderungen und Bewertung von Organisationseinheiten unterscheiden, damit einheitliche Kriterien Early-Career-Forschende nicht länger benachteiligen.",
       examples: ["UB differentiated review per call type (predoc, postdoc, Serra Hunter, cátedras)", "Eurodoc R1/R2/R3 mapping"],
     },
     {
       title: "Mentoring-Programme für Early-Career-Forschende einrichten",
-      description: "Schaffen Sie strukturiertes Mentoring und Schulungen, die Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: wie man ein Portfolio aufbaut, einen narrativen Lebenslauf schreibt, vielfältige Beiträge nachweist. Binden Sie erfahrene Forschende als Mentorinnen und Mentoren ein.",
-      planText: "Wir werden strukturiertes Mentoring und Schulungen mit erfahrenen Forschenden als Mentorinnen und Mentoren schaffen, die Early-Career-Forschenden hilft, sich in der reformierten Bewertung zurechtzufinden: ein Portfolio aufbauen, einen narrativen Lebenslauf schreiben und vielfältige Beiträge nachweisen.",
+      description: "Schaffen Sie strukturiertes Mentoring und Schulungen, die Early-Career-Forschenden helfen, sich in der reformierten Bewertung zurechtzufinden: wie man ein Portfolio aufbaut, einen narrativen Lebenslauf schreibt, vielfältige Beiträge nachweist. Binden Sie erfahrene Forschende als Mentorinnen und Mentoren ein.",
+      planText: "Wir werden strukturiertes Mentoring und Schulungen mit erfahrenen Forschenden als Mentorinnen und Mentoren schaffen, die Early-Career-Forschenden helfen, sich in der reformierten Bewertung zurechtzufinden: ein Portfolio aufbauen, einen narrativen Lebenslauf schreiben und vielfältige Beiträge nachweisen.",
       examples: ["SDU Mentoring for Change (130 PhDs/year)", "OGS mentoring initiative", "Pannonia Group of Young Scientists"],
     },
     {
       title: "Forschungsintegrität mit der Bewertungsreform verknüpfen",
-      description: "Entwickeln Sie Anleitung zu Predatory Journals, Forschungsethik und verantwortungsvollem Verhalten als Teil der Kommunikation zur Bewertungsreform. Die Qualität der Forschungspraxis sollte gewürdigt werden, nicht nur die Forschungsleistungen.",
-      planText: "Wir werden Forschungsintegrität mit der Bewertungsreform verknüpfen und Anleitung zu Predatory Journals, Forschungsethik und verantwortungsvollem Verhalten entwickeln, damit die Qualität der Forschungspraxis neben den Forschungsleistungen gewürdigt wird.",
+      description: "Entwickeln Sie Leitfäden zu Predatory Journals, Forschungsethik und verantwortungsvollem Verhalten als Teil der Kommunikation zur Bewertungsreform. Die Qualität der Forschungspraxis sollte gewürdigt werden, nicht nur die Forschungsleistungen.",
+      planText: "Wir werden Forschungsintegrität mit der Bewertungsreform verknüpfen und Leitfäden zu Predatory Journals, Forschungsethik und verantwortungsvollem Verhalten entwickeln, damit die Qualität der Forschungspraxis neben den Forschungsleistungen gewürdigt wird.",
       examples: ["Pannonia Committee on Research Ethics", "Hong Kong Principles", "LBG Ethics & Diversity Hub"],
     },
     {
       title: "Interne Umfrage zur Wahrnehmung der Bewertung durchführen",
-      description: "Befragen Sie Ihre Forschungsgemeinschaft: Welche Kriterien werden ihrer Ansicht nach verwendet vs. welche sollten verwendet werden? Diese Evidenzbasis ist von unschätzbarem Wert, um die Reform zu kalibrieren. Veröffentlichen Sie die Ergebnisse offen.",
+      description: "Befragen Sie Ihre Forschungsgemeinschaft: Welche Kriterien werden ihrer Ansicht nach verwendet vs. welche sollten verwendet werden? Die Ergebnisse helfen, die Reform zu kalibrieren. Veröffentlichen Sie die Ergebnisse offen.",
       planText: "Wir werden unsere Forschungsgemeinschaft dazu befragen, welche Kriterien ihrer Ansicht nach verwendet werden und welche verwendet werden sollten, und die Ergebnisse offen veröffentlichen, als Evidenzbasis zur Kalibrierung der Reform.",
       examples: ["Helmholtz survey of 1,145 researchers", "UCLouvain 34 interviews with evaluation committees", "UCM planned periodic surveys"],
     },
     {
-      title: "Reform auf die Einheits- und Institutionsbewertung ausweiten",
+      title: "Reform auf die Bewertung von Organisationseinheiten und der Einrichtung ausweiten",
       description: "Die Reform endet nicht bei der individuellen Bewertung. Überprüfen Sie, wie Fachbereiche, Institute und Forschungsgruppen bewertet werden: Auch diese Verfahren stützen sich auf Publikationskennzahlen und Rankings. Entwickeln Sie qualitative Alternativen.",
       planText: "Wir werden die Reform über die individuelle Bewertung hinaus ausweiten, überprüfen, wie Fachbereiche, Institute und Forschungsgruppen bewertet werden, und qualitative Alternativen zu Publikationskennzahlen und Rankings entwickeln.",
       examples: ["Helmholtz centre-level KPI review", "LBG periodic institute evaluation by 3 experts", "AQU institutional quality assessment"],
     },
     {
       title: "Auf Sprachverzerrung prüfen (Helsinki Initiative on Multilingualism)",
-      description: "Stellen Sie sicher, dass Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird. Überprüfen Sie Kriterien, Ausschusszusammensetzung und konsultierte Datenbanken auf implizite Bevorzugung der englischen Sprache. Die Helsinki Initiative bietet den maßgeblichen Rahmen.",
+      description: "Stellen Sie sicher, dass Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird. Überprüfen Sie Kriterien, Ausschusszusammensetzung und konsultierte Datenbanken auf implizite Bevorzugung der englischen Sprache. Die Helsinki Initiative on Multilingualism ist die übliche Referenz.",
       planText: "Wir werden Kriterien, Ausschusszusammensetzung und die von uns konsultierten Datenbanken auf implizite Bevorzugung der englischen Sprache überprüfen (im Einklang mit der Helsinki Initiative on Multilingualism), damit Forschung in lokalen oder nicht-dominanten Sprachen nicht benachteiligt wird.",
       examples: ["AQU Catalunya: Helsinki Initiative adoption", "FRQ 60+ francophone journals funded", "Leiden Manifesto principle 3"],
     },
     {
-      title: "Einem regionalen Forum oder nationalen Kapitel beitreten",
-      description: "Stimmen Sie sich mit einem regionalen Forum ab (IRAF Indien, AFRA Afrika/AOSP, CoARA National Chapter), statt isoliert zu reformieren. Einseitige Reform in einem kennzahlengetriebenen Ökosystem riskiert, Ihre Forschenden zu benachteiligen; regionale Koordination schützt sie.",
+      title: "Einem regionalen Forum oder einem nationalen CoARA-Chapter beitreten",
+      description: "Stimmen Sie sich mit einem regionalen Forum ab (IRAF Indien, AFRA Afrika/AOSP, CoARA National Chapter), statt isoliert zu reformieren. Einseitige Reform in einem kennzahlengetriebenen Ökosystem birgt das Risiko, Ihre Forschenden zu benachteiligen; regionale Koordination schützt sie.",
       planText: "Wir werden uns mit einem regionalen Forum oder einem CoARA National Chapter abstimmen, statt isoliert zu reformieren, und unsere Forschenden durch regionale Koordination schützen.",
       examples: ["IRAF inauguration (Dr. Gitanjali Yadav)", "AOSP Governing Council", "CoARA Spain (CRUE/CSIC)"],
     },
@@ -960,7 +960,7 @@ export default {
     },
     {
       title: "Den Plan von den Leitungsgremien formal genehmigen lassen",
-      description: "Legen Sie den Aktionsplan Ihrem Senat, Rektorat, Vorstand oder Hochschulrat zur formalen Genehmigung vor und halten Sie den Beschluss fest. Ein nie verabschiedeter Plan hat kein Mandat: Er kann kein Budget beanspruchen, keine Fakultät zur Änderung ihrer Kriterien verpflichten, und wird still zum persönlichen Projekt derjenigen, die ihn verfasst haben.",
+      description: "Legen Sie den Aktionsplan Ihrem Senat, Rektorat, Vorstand oder Hochschulrat zur formalen Genehmigung vor und halten Sie den Beschluss fest. Ein nie verabschiedeter Plan hat kein Mandat: Er kann kein Budget beanspruchen, keine Fakultät zur Änderung ihrer Kriterien verpflichten und wird stillschweigend zum persönlichen Projekt derjenigen, die ihn verfasst haben.",
       planText: "Wir werden den Aktionsplan unseren Leitungsgremien zur formalen Genehmigung vorlegen und den Beschluss festhalten, damit die Reform auf einem institutionellen Mandat beruht und nicht auf dem guten Willen ihrer Verfasserinnen und Verfasser.",
     },
     {
@@ -990,13 +990,13 @@ export default {
     },
     {
       title: "Eigene Karrierewege für alle Rollen in der Forschung schaffen",
-      description: "Aufstieg über mehr als einen Weg ermöglichen: formale Laufbahnen neben der klassischen (lehrorientiert, forschungsorientiert, Innovation oder gesellschaftliche Wirkung) und ein veröffentlichter Karriererahmen für alle Rollen, einschließlich wissenschaftsunterstützendem Personal. Jede Laufbahn braucht eigene Kriterien für das Vorankommen. Vielfältigere Kriterien helfen nur, wenn es die Karrieren gibt, zu denen sie führen.",
+      description: "Aufstieg über mehr als einen Weg ermöglichen: formale Laufbahnen neben der klassischen (lehrorientiert, forschungsorientiert, Innovation oder gesellschaftliche Wirkung) und ein veröffentlichter Karriererahmen für alle Rollen, einschließlich wissenschaftsunterstützenden Personals. Jede Laufbahn braucht eigene Kriterien für das Vorankommen. Vielfältigere Kriterien helfen nur, wenn es die Karrieren gibt, zu denen sie führen.",
       planText: "Wir werden eigene Karrierewege für Lehre, Forschung und gesellschaftliche Wirkung schaffen, festgehalten in einem veröffentlichten Karriererahmen für alle Rollen, jeweils mit eigenen Kriterien für das Vorankommen.",
     },
     {
-      title: "Einen ständigen Kanal für Beteiligung und Rückmeldung der Forschenden einrichten",
-      description: "Forschenden eine dauerhafte Stimme in der Reform geben statt einer einmaligen Befragung zu Beginn: ein Forum oder Gremium über Karrierestufen und Disziplinen hinweg, eine Konsultationsrunde zu jeder Maßnahme vor ihrer Einführung und ein direkter Weg zur Steuerungsgruppe. Der Kreis schließt sich, wenn veröffentlicht wird, was gehört wurde und was sich dadurch geändert hat.",
-      planText: "Wir werden ein ständiges Forum für die Beteiligung von Forschenden aller Karrierestufen und Disziplinen einrichten, es vor der Einführung jeder Maßnahme konsultieren und veröffentlichen, was wir gehört und was wir daraufhin geändert haben.",
+      title: "Einen ständigen Kanal für Beteiligung und Rückmeldung der Forschenden unterhalten",
+      description: "Forschenden eine dauerhafte Stimme in der Reform geben statt einer einmaligen Befragung zu Beginn: ein Forum oder Gremium über Karrierestufen und Disziplinen hinweg, eine Konsultationsrunde zu jeder Maßnahme vor ihrer Einführung und ein Weg von dort zur Steuerungsgruppe. Der Kreis schließt sich, wenn veröffentlicht wird, was gehört wurde und was sich dadurch geändert hat.",
+      planText: "Wir werden ein ständiges Forum für die Beteiligung von Forschenden aller Karrierestufen und Disziplinen unterhalten, es vor der Einführung jeder Maßnahme konsultieren und veröffentlichen, was wir gehört und was wir daraufhin geändert haben.",
     },
     {
       title: "Die Wirkung reformierter Verfahren evaluieren",
@@ -1010,7 +1010,7 @@ export default {
     },
     {
       title: "Forschende bei der Erfüllung von Open-Science-Kriterien unterstützen",
-      description: "Offene Praktiken in der Bewertung zu honorieren ist nur fair, wenn sie sich umsetzen lassen. Dazu gehören eine Open-Access- und Forschungsdaten-Policy, regelmäßige Schulungen zu Open Access, Datenmanagement und FAIR sowie aktuelle Hilfen (Vorlagen für Datenmanagementpläne, eine Entscheidungshilfe, wie offen etwas sein kann). Dieselben Hilfen stehen auch den Bewertenden zur Verfügung, damit alle vom gleichen Verständnis ausgehen. Ausnahmen von der Offenheit werden dokumentiert (so offen wie möglich, so geschlossen wie nötig), und wo indigene oder gemeinschaftliche Daten betroffen sind, wird FAIR mit den CARE-Prinzipien verbunden.",
+      description: "Offene Praktiken in der Bewertung zu honorieren ist nur fair, wenn sie sich umsetzen lassen. Dazu gehören eine Open-Access- und Forschungsdaten-Policy, regelmäßige Schulungen zu Open Access, Datenmanagement und FAIR sowie aktuelle Hilfen (Vorlagen für Datenmanagementpläne, eine Entscheidungshilfe, wie offen etwas sein sollte). Dieselben Hilfen stehen auch den Bewertenden zur Verfügung, damit alle vom gleichen Verständnis ausgehen. Ausnahmen von der Offenheit werden dokumentiert (so offen wie möglich, so geschlossen wie nötig), und wo indigene oder gemeinschaftliche Daten betroffen sind, wird FAIR mit den CARE-Prinzipien verbunden.",
       planText: "Wir werden eine Open-Access- und Forschungsdaten-Policy verabschieden und ihre Umsetzung durch regelmäßige Schulungen und aktuelle Hilfen unterstützen, die auch den Bewertenden zur Verfügung stehen.",
     },
     {
@@ -1055,7 +1055,7 @@ export default {
     },
     {
       title: "Einen Dienst für verantwortungsvolle Bibliometrie anbieten",
-      description: "Wenn Zahlen verwendet werden, sollten sie von Menschen kommen, die ihre Grenzen kennen. Ein Dienst (oft in der Bibliothek oder im Forschungsservice), der Bewertende und Forschende berät, welcher Indikator zu welcher Frage passt, fachnormierte Zahlen mit Kontext statt roher Zählungen liefert und Kennzahlenkompetenz vermittelt. Er beantwortet zudem die Frage, die Kommissionen ohnehin stellen, damit sie nicht zum Impact-Faktor greifen.",
+      description: "Wenn Zahlen verwendet werden, sollten sie von Menschen kommen, die ihre Grenzen kennen. Ein Dienst (oft in der Bibliothek oder im Forschungsservice), der Bewertende und Forschende berät, welcher Indikator zu welcher Frage passt, fachnormalisierte Zahlen mit Kontext statt roher Zählungen liefert und Kennzahlenkompetenz vermittelt. Er beantwortet zudem die Frage, die Kommissionen ohnehin stellen, damit sie nicht zum Impact-Faktor greifen.",
       planText: "Wir werden einen Dienst für verantwortungsvolle Bibliometrie anbieten, der Bewertende und Forschende zu geeigneten Indikatoren berät, kontextualisierte Zahlen liefert und Kennzahlenkompetenz aufbaut.",
     },
     {

@@ -7,7 +7,8 @@ abstract: >-
   generates a prioritised, editable action plan. Multilingual (EN/DE/ES).
   The 25 diagnostic questions, the 61 calibrated actions with evidence from a
   full reading of 335 published action plans, and the prioritisation algorithm
-  are published in readable form under CC BY 4.0.
+  are published in readable form: questions and actions under CC BY 4.0, the
+  algorithm and code under Apache-2.0.
 type: software
 authors:
   - family-names: "Hartley Belmar"

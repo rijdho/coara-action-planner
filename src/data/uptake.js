@@ -73,4 +73,4 @@ export const ACTION_UPTAKE = {
 
 /** The reading itself: actions extracted, actions kept after the checks, and the Zenodo
  *  licences of the plans read (licence id -> number of plans). */
-export const READING = {"extracted": 10774, "kept": 10387, "licences": {"cc-by-4.0": 314, "cc-by-sa-4.0": 13, "cc-by-nc-sa-4.0": 3, "none": 3, "cc-by-nc-4.0": 1, "cc-zero": 1}};
+export const READING = {"extracted": 10774, "kept": 10387, "matched": 6886, "licences": {"cc-by-4.0": 314, "cc-by-sa-4.0": 13, "cc-by-nc-sa-4.0": 3, "none": 3, "cc-by-nc-4.0": 1, "cc-zero": 1}};
