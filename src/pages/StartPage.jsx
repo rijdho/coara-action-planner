@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useLang } from "../i18n/context";
 import {
   getInstitutionName, saveInstitutionName,
@@ -120,6 +120,7 @@ export default function StartPage() {
       <div>
         <h1 className="text-2xl font-bold" style={{ color: "var(--color-text)" }}>{t("start_title")}</h1>
         <p className="text-sm" style={{ color: "var(--color-text-muted)" }}>{t("start_intro")}</p>
+        <p className="text-sm mt-1"><Link to="/about" className="underline" style={{ color: "var(--color-accent)" }}>{t("start_aboutLink")}</Link></p>
       </div>
 
       {/* The three lenses */}

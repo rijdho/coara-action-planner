@@ -10,6 +10,15 @@ latest release.
 
 ## [Unreleased]
 
+### Added
+
+- **An About page** on the site itself, one click from every step (rail) and linked from Start:
+  what the tool is, where it comes from (the 15 hand-read plans, the Zenodo corpus with its
+  harvest dates and licences, the full reading of September 2026), what it produced (questions,
+  maturity levels, actions, the share of plans), its limits and how to cite it. English, German
+  and Spanish. Every number on it is read from the data the tool uses, so it cannot drift from
+  Results; the reading's totals and the plans' licences now travel in `src/data/uptake.js`.
+
 ## [1.5.0] - 2026-09-29
 
 ### Added

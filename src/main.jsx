@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter, Routes, Route, useLocation, NavLink } from "react-router-dom";
 import StartPage from "./pages/StartPage";
+import AboutPage from "./pages/AboutPage";
 import AssessmentPage from "./pages/AssessmentPage";
 import PlanPage from "./pages/PlanPage";
 import ResultsPage from "./pages/ResultsPage";
@@ -69,6 +70,10 @@ function Rail({ onNavigate }) {
             {t(step.key)}
           </NavLink>
         ))}
+        <NavLink to="/about" className="nav-item" onClick={onNavigate}>
+          <span className="nav-step" aria-hidden="true">i</span>
+          {t("about_nav")}
+        </NavLink>
       </nav>
       {/* The family's standard credits, one item per line (rijdho/house-style README). */}
       <div className="rail-foot">
@@ -99,9 +104,15 @@ function CommandBar({ theme, toggleTheme, onMenu }) {
     <div className="cmdbar no-print">
       <button className="menu-btn" onClick={onMenu} aria-label={t("nav_menu")}><MenuIcon /></button>
       <div className="cmd-title">
-        <span style={{ color: "var(--muted)" }}>{`0${idx + 1}`.slice(-2)}</span>
-        <span className="sep">/</span>
-        {t(current ? current.key : "tab_start")}
+        {pathname === "/about" ? (
+          t("about_nav")
+        ) : (
+          <>
+            <span style={{ color: "var(--muted)" }}>{`0${idx + 1}`.slice(-2)}</span>
+            <span className="sep">/</span>
+            {t(current ? current.key : "tab_start")}
+          </>
+        )}
       </div>
       <div className="cmd-spacer" />
       <div className="langs" role="group" aria-label={t("langLabel")}>
@@ -154,6 +165,7 @@ function Shell() {
               <Route path="/plan" element={<PlanPage />} />
               <Route path="/results" element={<ResultsPage />} />
               <Route path="/report" element={<ReportPage />} />
+              <Route path="/about" element={<AboutPage />} />
             </Routes>
           </div>
         </main>
