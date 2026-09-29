@@ -1,6 +1,6 @@
 {
   "name": "coara-action-planner",
-  "version": "1.3.0",
+  "version": "1.5.0",
   "description": "Self-assess your institution against the ten CoARA commitments and generate a prioritised, editable action plan, entirely in your browser.",
   "license": "Apache-2.0",
   "type": "module",

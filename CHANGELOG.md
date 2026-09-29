@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.5.0] - 2026-09-29
+
 ### Added
 
 - **Fourteen actions, from 47 to 61.** Twelve come from reading 40 published plans in full
@@ -332,6 +334,7 @@ Initial public release. Version DOI:
 - GitHub Actions workflow publishing to GitHub Pages on every push to `main`.
 
 [Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.4.0...HEAD
+[1.5.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.5.0
 [1.4.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.4.0
 [1.3.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.3.0
 [1.2.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.2.0

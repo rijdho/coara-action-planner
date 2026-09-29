@@ -5,8 +5,8 @@ abstract: >-
   A static, client-side web tool that self-assesses an institution against the
   ten commitments of the CoARA Agreement on Reforming Research Assessment and
   generates a prioritised, editable action plan. Multilingual (EN/DE/ES).
-  The 25 diagnostic questions, the 61 calibrated actions with corpus-derived
-  prevalence evidence (335 published action plans), and the prioritisation algorithm
+  The 25 diagnostic questions, the 61 calibrated actions with evidence from a
+  full reading of 335 published action plans, and the prioritisation algorithm
   are published in readable form under CC BY 4.0.
 type: software
 authors:
@@ -29,8 +29,8 @@ url: "https://rijdho.github.io/coara-action-planner/"
 # described in the abstract above and in the README, which is where a reader
 # looks for it anyway.
 license: Apache-2.0
-version: "1.4.0"
-date-released: "2026-09-24"
+version: "1.5.0"
+date-released: "2026-09-29"
 keywords:
   - CoARA
   - research assessment reform
