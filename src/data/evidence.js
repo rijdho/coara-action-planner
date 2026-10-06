@@ -71,7 +71,7 @@ export function themeEvidence(theme) {
 
 /**
  * Evidence for an action from the full reading of every plan: how many plans take this action,
- * counted from records backed by a verbatim quote and an independent check (a lower bound).
+ * counted from records backed by a verbatim quote and a second check (disputed records count for none).
  * Falls back to the keyword theme only for an action the reading has no figure for.
  */
 export function actionEvidence(action) {

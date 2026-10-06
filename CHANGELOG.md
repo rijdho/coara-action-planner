@@ -10,8 +10,19 @@ latest release.
 
 ## [Unreleased]
 
+## [1.6.0] - 2026-10-06
+
 ### Fixed
 
+- **What the reading's checks can claim, in all three languages.** The About page, the Results
+  tooltips, the README and `corpus/README.md` called the verification passes "independent" and
+  the shares "lower bounds". Every pass is the same model under other instructions, and no
+  person checked the records that count, so the passes are now described as such and the
+  shares as leaning low: disputed records count for none, and that does not correct a record
+  counted wrongly. The tooltips name the corpus as "the {n} plans in the corpus (Zenodo, to
+  August 2026)" rather than "the published plans", since plans deposited after the August
+  harvest are not in it. No figure changes.
+- `CITATION.cff` carries the v1.5.0 version DOI, and the 1.5.0 section below records it.
 - **A review of every text against its English original and against the data.** Spanish and
   German: wrong genders and pronouns, calques ("liefern", "Normalisierung"), a German term that
   read as "uniform assessment" where unit evaluation was meant, "Kapitel" for "Chapter", a
@@ -100,6 +111,8 @@ latest release.
 
 - `CITATION.cff` carries the v1.4.0 version DOI and names the three interface languages; the
   1.4.0 CHANGELOG section records its DOI and describes the rename once.
+
+Version DOI: [10.5281/zenodo.23043031](https://doi.org/10.5281/zenodo.23043031).
 
 ## [1.4.0] - 2026-09-24
 

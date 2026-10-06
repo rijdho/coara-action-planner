@@ -121,7 +121,7 @@ from Zenodo: 314 at the April 2026 calibration, 335 as of the August 2026 recoun
 
 In September 2026 every one of the 335 plans was read in full: each action a plan commits to
 was extracted with a verbatim quote, each quote was checked against the plan's text by string
-search, and an independent pass tried to refute each record ([`corpus/README.md`](corpus/README.md),
+search, and a second pass of the same model tried to refute each record ([`corpus/README.md`](corpus/README.md),
 "The full reading"). The catalogue was rebuilt on that reading and held at 61 actions: actions
 that almost no plan takes were folded into their neighbours, and the most frequent practices
 the catalogue did not cover were added. Two actions ("Let researchers verify the data used to
@@ -230,9 +230,9 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
 - **The radar is a shape, not a score.** With ten axes in a fixed order, the polygon's area and
   outline carry no meaning; read the per-commitment numbers, not the picture.
 - **Reading-derived corpus evidence.** The "N% of 335 plans" figures on Results come from a full
-  reading of every published action plan in which each action is backed by a verbatim quote and
-  an independent check ([`corpus/README.md`](corpus/README.md), "The full reading"). They are lower
-  bounds, and they count what plans commit to, not what has been done. Read them as bands
+  reading of every plan in the corpus (Zenodo, to 6 August 2026) in which each action is backed
+  by a verbatim quote and a second check ([`corpus/README.md`](corpus/README.md), "The full reading"). They lean low
+  (disputed records count for none, and no person checked the ones that count), and they count what plans commit to, not what has been done. Read them as bands
   (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
   reason to skip an action. [`corpus/`](corpus/) publishes the per-action counts, the list of
   plans read and the reading's rules; the records behind them are not published, because they

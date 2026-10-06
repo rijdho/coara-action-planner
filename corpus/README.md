@@ -97,7 +97,7 @@ How a plan came to count for an action:
 3. **Adversarial check.** A second agent, told to refute by default, re-read each plan and judged
    every record: quote present, not overstated, status defensible. 10,387 records survive.
 4. **Matching.** A separate agent matched each record to a catalogue action or to none; a checker
-   judged each match; disputed matches went to an independent third judge. A final pass matched
+   judged each match; disputed matches went to a third judge (the same model, other instructions). A final pass matched
    the records that still had no action against the final 61-action catalogue, again with a
    checker. 6,886 supported records count for an action. Matches the checker still disputed (567)
    count for none.
@@ -105,9 +105,10 @@ How a plan came to count for an action:
 
 What these figures can and cannot support:
 
-- **They are lower bounds.** A record counts only when two model passes agree it is the action.
+- **They lean low, without being strict lower bounds.** A record counts only when two model passes agree it is the action.
   Records the checker disputed, and actions a plan implies without stating them, count for
-  nothing.
+  nothing. But no person checked the records that do count, and every pass is the same model,
+  so a figure can also hold records a human reader would reject.
 - **They measure what plans say they do or will do, not what happened.** A plan that promises
   a narrative CV counts the same as one that has run it for three years; the status field
   separates the two in the underlying records, and the published figure does not.
@@ -123,7 +124,7 @@ What these figures can and cannot support:
 Eleven signatures were added for the actions that joined the catalogue in September 2026.
 Nine of those actions were found by reading 40 plans in full rather than by keyword: every
 action a plan commits to was extracted with a verbatim quote, the quotes were checked against
-the text by string match, and an independent pass tried to refute each record. That reading
+the text by string match, and a second pass tried to refute each record. That reading
 also gives each new signature something to be calibrated against: of the plans in the 40
 where the reading found the action, how many does the keyword signature catch?
 
