@@ -10,6 +10,15 @@ latest release.
 
 ## [Unreleased]
 
+### Fixed
+
+- **The JSON export of Results can be copied into a plan without being misread.** Each action
+  now carries `planText`, the action written as the institution would write it (the text the
+  Markdown report already used), and its target as `currentLevel` → `targetLevel`, with a
+  `target` field such as "1 → 4". The level at which an action is first recommended, easy to read as
+  the institution's own level, is now `eligibleFromLevel` instead of `fromLevel`. `description`, the interface text addressed to the tool's user, is still there.
+  Pinned by `tests/export.test.mjs`, which also shows that the old export fails both checks.
+
 ## [1.6.0] - 2026-10-06
 
 ### Fixed

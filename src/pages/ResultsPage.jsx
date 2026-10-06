@@ -2,6 +2,7 @@ import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { prioritiseActions } from "../data/actions";
 import { actionEvidence } from "../data/evidence";
+import { exportActions } from "../lib/exportActions";
 import { FRAMEWORKS } from "../data/frameworks";
 import { interpolate } from "../i18n/registry";
 import MaturityBadge from "../components/MaturityBadge";
@@ -196,13 +197,7 @@ export default function ResultsPage() {
         focusCommitments: plan.focusCommitments,
         includeHighEffort: plan.includeHighEffort,
       },
-      actions: prioritised.map((a) => ({
-        commitment: a.commitment, title: a.title, description: a.description,
-        effort: a.effort, impact: a.impact,
-        // currentLevel = where this commitment stands; fromLevel/toLevel are the
-        // action's own calibration band (fromLevel is an eligibility threshold).
-        currentLevel: levels[a.commitment] ?? 0, fromLevel: a.fromLevel, toLevel: a.toLevel,
-      })),
+      actions: exportActions(prioritised, levels),
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
