@@ -21,6 +21,8 @@ latest release.
   the institution's own level, is now `eligibleFromLevel` instead of `fromLevel`. `description`, the interface text addressed to the tool's user, is still there.
   Pinned by `tests/export.test.mjs`, which also shows that the old export fails both checks.
 
+Version DOI: [10.5281/zenodo.23185708](https://doi.org/10.5281/zenodo.23185708).
+
 ## [1.6.0] - 2026-10-06
 
 ### Fixed
