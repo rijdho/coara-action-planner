@@ -44,6 +44,8 @@ latest release.
   and Spanish. The counts on it (plans, questions, actions, records, licences) are read from the data the
   tool uses, so they cannot drift from Results; the reading's totals and the plans' licences now travel in `src/data/uptake.js`.
 
+Version DOI: [10.5281/zenodo.23181753](https://doi.org/10.5281/zenodo.23181753).
+
 ## [1.5.0] - 2026-09-29
 
 ### Added
