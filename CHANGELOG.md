@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.6.1] - 2026-10-06
+
 ### Fixed
 
 - **The JSON export of Results can be copied into a plan without being misread.** Each action
