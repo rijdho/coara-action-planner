@@ -8,7 +8,7 @@ abstract: >-
   The 25 diagnostic questions, the 61 calibrated actions with evidence from a
   full reading of 335 published action plans, and the prioritisation algorithm
   are published in readable form: questions and actions under CC BY 4.0, the
-  algorithm and code under Apache-2.0.
+  algorithm and code under MIT.
 type: software
 authors:
   - family-names: "Hartley Belmar"
@@ -29,7 +29,7 @@ url: "https://rijdho.github.io/coara-action-planner/"
 # and would be discovered at release time. The CC BY 4.0 calibration data is
 # described in the abstract above and in the README, which is where a reader
 # looks for it anyway.
-license: Apache-2.0
+license: MIT
 version: "1.6.1"
 date-released: "2026-10-06"
 keywords:

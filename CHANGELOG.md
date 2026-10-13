@@ -10,6 +10,13 @@ latest release.
 
 ## [Unreleased]
 
+### Changed
+
+- **The code is licensed under [MIT](LICENSE) again**, as every code licence in the family now
+  is (2026-10-13). One short licence that everyone recognises, the same on every tool, weighs
+  more here than Apache's patent grant, which none of these tools needs. Releases 1.3.0 to 1.6.1
+  stay under Apache-2.0 for anyone who took a copy then; the calibration data stays CC BY 4.0.
+
 ## [1.6.1] - 2026-10-06
 
 ### Fixed
