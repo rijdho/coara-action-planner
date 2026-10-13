@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.7.0] - 2026-10-13
+
 ### Changed
 
 - **The code is licensed under [MIT](LICENSE) again**, as every code licence in the family now
