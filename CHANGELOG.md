@@ -12,6 +12,8 @@ latest release.
 
 ## [1.7.0] - 2026-10-13
 
+Version DOI: [10.5281/zenodo.23342950](https://doi.org/10.5281/zenodo.23342950).
+
 ### Changed
 
 - **The code is licensed under [MIT](LICENSE) again**, as every code licence in the family now
