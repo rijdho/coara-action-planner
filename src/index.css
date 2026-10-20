@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* The shared look (tokens, shell, components, the self-hosted Inter font) comes from
-   src/house/house.css, a synced copy of rijdho/house-style that src/main.jsx imports first;
+   src/house/house.css, a synced copy of the house style that src/main.jsx imports first;
    what stays here is what this tool adds or sets differently. node scripts/sync-house.mjs
    refreshes the copy. */
 

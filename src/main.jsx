@@ -8,7 +8,7 @@ import PlanPage from "./pages/PlanPage";
 import ResultsPage from "./pages/ResultsPage";
 import ReportPage from "./pages/ReportPage";
 import { LanguageProvider, useLang } from "./i18n/context";
-// The shared look (a synced copy of rijdho/house-style), then this tool's own styles.
+// The shared look (a synced copy of the house style), then this tool's own styles.
 import "./house/house.css";
 import "./index.css";
 
@@ -75,7 +75,7 @@ function Rail({ onNavigate }) {
           {t("about_nav")}
         </NavLink>
       </nav>
-      {/* The family's standard credits, one item per line (rijdho/house-style README). */}
+      {/* The family's standard credits, one item per line (house-style README). */}
       <div className="rail-foot">
         {t("rail_by")}{" "}
         <a href="https://rijdho.github.io" target="_blank" rel="noopener noreferrer">Ricardo Hartley Belmar</a>

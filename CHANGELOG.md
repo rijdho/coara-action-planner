@@ -156,7 +156,7 @@ Version DOI: [10.5281/zenodo.22944861](https://doi.org/10.5281/zenodo.22944861).
 - **"Part of Metaudits" moves up**, under rijdho.github.io in the brand block (house-style 1.0.4), out of the rail credits.
 - **The icon and the name link to the tool's start page**, with house-style 1.0.3.
 - **rijdho.github.io under the name is a link to it**, with house-style 1.0.2, which styles that link.
-- **The look comes from rijdho/house-style.** `src/house/` holds a synced copy (house.css and the
+- **The look comes from the shared house style.** `src/house/` holds a synced copy (house.css and the
   Inter fonts), imported before `src/index.css`, with a lock and a test that fail on a hand edit or
   a stale copy (`node scripts/sync-house.mjs` refreshes it). `src/index.css` keeps only what this tool
   adds or sets differently: 204 declarations identical to house.css went, and the duplicate
