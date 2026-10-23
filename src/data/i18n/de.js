@@ -659,7 +659,7 @@ export default {
       ],
     },
     qualitative: {
-      title: "Bewertung auf qualitative Beurteilung stützen",
+      title: "Bewertung vorrangig auf qualitative Beurteilung stützen",
       text: "Die Bewertung von Forschung in erster Linie auf qualitative Beurteilung stützen, für die das Peer Review zentral ist, unterstützt durch einen verantwortungsvollen Einsatz quantitativer Indikatoren. Dies bedeutet, unangemessene Verwendungen zeitschriften- und publikationsbasierter Kennzahlen aufzugeben, insbesondere des Journal Impact Factor (JIF), um einzelne Forschende zu bewerten oder Einstellungs- und Förderentscheidungen zu treffen.",
       inPractice: [
         "JIF, h-Index und Zeitschriften-Quartile aus Einstellungs-/Beförderungskriterien streichen",
@@ -669,7 +669,7 @@ export default {
       ],
     },
     "no-metrics": {
-      title: "Unangemessene zeitschriftenbasierte Kennzahlen aufgeben",
+      title: "Unangemessene Nutzung zeitschriften- und publikationsbasierter Kennzahlen aufgeben",
       text: "Aufhören, zeitschriftenbasierte Kennzahlen wie den Journal Impact Factor und den h-Index als Surrogatindikatoren für die Qualität einzelner Forschungsleistungen oder einzelner Forschender bei Einstellungs-, Beförderungs- und Förderentscheidungen zu verwenden.",
       inPractice: [
         "Alle Bewertungskriterien auf Verweise auf JIF, h-Index, Quartile prüfen",
@@ -744,7 +744,7 @@ export default {
       ],
     },
     "collective-eval": {
-      title: "Auf Grundlage von Evidenz und offenen Daten bewerten",
+      title: "Praktiken evidenzbasiert bewerten und Daten offen bereitstellen",
       text: "Rigorose Methoden anwenden, um zu beurteilen, ob reformierte Praktiken die gewünschten Ergebnisse erzielen. Die gemeinschaftliche Kontrolle über Bewertungsdaten sicherstellen, gestützt auf Evidenz und offene Daten, unter Wahrung von Transparenz und Reproduzierbarkeit.",
       inPractice: [
         "Daten für die ökosystemweite Fortschrittsbeobachtung beitragen",

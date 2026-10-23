@@ -664,7 +664,7 @@ export default {
       ],
     },
     qualitative: {
-      title: "Basar la evaluación en el juicio cualitativo",
+      title: "Basar la evaluación principalmente en el juicio cualitativo",
       text: "Basar la evaluación de la investigación principalmente en el juicio cualitativo, para el cual la revisión por pares es central, respaldado por un uso responsable de los indicadores cuantitativos. Esto implica abandonar los usos inapropiados de las métricas basadas en revistas y publicaciones, especialmente el Factor de Impacto de la Revista (JIF), para evaluar a personas investigadoras individuales o tomar decisiones de contratación y financiamiento.",
       inPractice: [
         "Eliminar el JIF, el índice h y los cuartiles de revistas de los criterios de contratación/promoción",
@@ -674,7 +674,7 @@ export default {
       ],
     },
     "no-metrics": {
-      title: "Abandonar las métricas inapropiadas basadas en revistas",
+      title: "Abandonar los usos inapropiados de métricas de revistas y publicaciones",
       text: "Dejar de usar métricas basadas en revistas, como el Factor de Impacto de la Revista y el índice h, como indicadores indirectos de la calidad de productos de investigación individuales o de personas investigadoras individuales, en las decisiones de contratación, promoción y financiamiento.",
       inPractice: [
         "Auditar todos los criterios de evaluación en busca de referencias al JIF, el índice h y los cuartiles",
@@ -749,7 +749,7 @@ export default {
       ],
     },
     "collective-eval": {
-      title: "Evaluar con base en la evidencia y los datos abiertos",
+      title: "Evaluar las prácticas con evidencia y abrir los datos",
       text: "Usar métodos rigurosos para evaluar si las prácticas reformadas logran los resultados deseados. Asegurar el control comunitario de los datos de evaluación, con base en la evidencia y los datos abiertos, manteniendo la transparencia y la reproducibilidad.",
       inPractice: [
         "Aportar datos para el seguimiento del progreso de todo el ecosistema",

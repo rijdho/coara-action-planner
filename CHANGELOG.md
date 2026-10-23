@@ -10,6 +10,15 @@ latest release.
 
 ## [Unreleased]
 
+## [1.7.2] - 2026-10-23
+
+### Fixed
+
+- **The German and Spanish titles of C2, C3 and C10 now say what the English ones say since
+  1.7.1.** 1.7.1 changed only the English titles, so the other two languages still dropped
+  "primarily" from C2, called the metrics rather than their uses inappropriate in C3, and read
+  C10 as evaluating on open data.
+
 ## [1.7.1] - 2026-10-23
 
 Version DOI: [10.5281/zenodo.23596406](https://doi.org/10.5281/zenodo.23596406).

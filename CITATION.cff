@@ -30,7 +30,7 @@ url: "https://rijdho.github.io/coara-action-planner/"
 # described in the abstract above and in the README, which is where a reader
 # looks for it anyway.
 license: MIT
-version: "1.7.1"
+version: "1.7.2"
 date-released: "2026-10-23"
 keywords:
   - CoARA
