@@ -12,6 +12,8 @@ latest release.
 
 ## [1.7.2] - 2026-10-23
 
+Version DOI: [10.5281/zenodo.23596504](https://doi.org/10.5281/zenodo.23596504).
+
 ### Fixed
 
 - **The German and Spanish titles of C2, C3 and C10 now say what the English ones say since
