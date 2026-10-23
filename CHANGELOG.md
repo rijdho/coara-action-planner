@@ -12,6 +12,8 @@ latest release.
 
 ## [1.7.1] - 2026-10-23
 
+Version DOI: [10.5281/zenodo.23596406](https://doi.org/10.5281/zenodo.23596406).
+
 ### Changed
 
 - **Three commitment titles follow the Agreement more closely.** C2 is now "Base assessment
