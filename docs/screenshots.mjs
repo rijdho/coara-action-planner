@@ -47,14 +47,14 @@ const progress = await page.evaluate(async profile => {
   const sleep = ms => new Promise(r => setTimeout(r, ms))
   const groupsNow = () => {
     const opts = [...document.querySelectorAll('button')]
-      .filter(b => /\bL[0-5]\s*$/.test(b.innerText.trim()))
+      .filter(b => /L[0-5]\s*$/.test(b.innerText.trim())) // no separator before L: the text runs into it
     const g = []
     for (let i = 0; i < opts.length; i += 6) g.push(opts.slice(i, i + 6))
     return g
   }
   for (const [code, levels] of Object.entries(profile)) {
     const tab = [...document.querySelectorAll('button')]
-      .find(b => new RegExp('^' + code + '\\n').test(b.innerText))
+      .find(b => new RegExp('^' + code + '(?!\\d)').test(b.innerText)) // C1 must not match C10
     if (!tab) continue
     tab.click()
     await sleep(400)

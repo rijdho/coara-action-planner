@@ -10,6 +10,24 @@ latest release.
 
 ## [Unreleased]
 
+## [1.7.1] - 2026-10-23
+
+### Changed
+
+- **Three commitment titles follow the Agreement more closely.** C2 is now "Base assessment
+  primarily on qualitative evaluation" (the Agreement's "primarily" had been dropped), C3
+  "Abandon inappropriate uses of journal and publication metrics" (it is the uses that are
+  inappropriate, not the metrics), and C10 "Evaluate practices on evidence and make data open"
+  (the old title read as evaluating on open data). The commitment texts, questions and actions
+  are unchanged. The article on the 335 plans uses the same titles.
+
+### Fixed
+
+- **`docs/screenshots.mjs` runs again.** Its selectors expected a line break after each
+  commitment code and a word boundary before each level, and the current layout has neither,
+  so it answered none of the 25 questions. The README screenshot of maturity by commitment is
+  regenerated with the new titles.
+
 ## [1.7.0] - 2026-10-13
 
 Version DOI: [10.5281/zenodo.23342950](https://doi.org/10.5281/zenodo.23342950).

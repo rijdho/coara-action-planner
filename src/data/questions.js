@@ -62,7 +62,7 @@ export const QUESTIONS = [
     ],
   },
 
-  // C2: Base assessment on qualitative judgement
+  // C2: Base assessment primarily on qualitative evaluation
   {
     id: "q2a",
     commitment: "qualitative",
@@ -90,7 +90,7 @@ export const QUESTIONS = [
     ],
   },
 
-  // C3: Abandon inappropriate journal-based metrics
+  // C3: Abandon inappropriate uses of journal and publication metrics
   {
     id: "q3a",
     commitment: "no-metrics",

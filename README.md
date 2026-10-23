@@ -79,7 +79,7 @@ flowchart LR
 ![Per-commitment breakdown for the same example institution: each of the ten commitments listed
 with a progress bar and its maturity level, from C5 "Commit resources for reform" and C9
 "Communicate progress" at L1 Aware, through six commitments at L2 Exploring or L3 Planning, up to
-C3 "Abandon inappropriate journal-based metrics" and C8 "Exchange practices and experiences" at
+C3 "Abandon inappropriate uses of journal and publication metrics" and C8 "Exchange practices and experiences" at
 L4 Implementing.](docs/maturity-by-commitment.png)
 
 ## The methodology is the point

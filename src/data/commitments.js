@@ -80,7 +80,7 @@ export const COMMITMENTS = [
     id: "qualitative",
     number: 2,
     type: "core",
-    title: "Base assessment on qualitative judgement",
+    title: "Base assessment primarily on qualitative evaluation",
     text: "Base the assessment of research primarily on qualitative judgement, for which peer review is central, supported by a responsible use of quantitative indicators. This implies abandoning inappropriate uses of journal- and publication-based metrics, especially the Journal Impact Factor (JIF), to assess individual researchers or make hiring and funding decisions.",
     inPractice: [
       "Eliminate JIF, h-index, and journal quartiles from hiring/promotion criteria",
@@ -95,7 +95,7 @@ export const COMMITMENTS = [
     id: "no-metrics",
     number: 3,
     type: "core",
-    title: "Abandon inappropriate journal-based metrics",
+    title: "Abandon inappropriate uses of journal and publication metrics",
     text: "Stop using journal-based metrics such as the Journal Impact Factor and h-index as proxy indicators for the quality of individual research outputs or individual researchers, in hiring, promotion, and funding decisions.",
     inPractice: [
       "Audit all evaluation criteria for references to JIF, h-index, quartiles",
@@ -205,7 +205,7 @@ export const COMMITMENTS = [
     id: "collective-eval",
     number: 10,
     type: "supporting",
-    title: "Evaluate based on evidence and open data",
+    title: "Evaluate practices on evidence and make data open",
     text: "Use rigorous methods to assess whether reformed practices achieve desired outcomes. Ensure community control of assessment data, based on evidence and open data, maintaining transparency and reproducibility.",
     inPractice: [
       "Contribute data for ecosystem-wide progress monitoring",
