@@ -1083,6 +1083,11 @@ export default {
       description: "Una evaluación que descansa en bases de datos propietarias no puede ser comprobada por quienes son evaluados. Trasladar los datos que sustentan la evaluación y el seguimiento a fuentes abiertas (OpenAlex, OpenAIRE, Crossref, ORCID, el repositorio propio) y considerar la adhesión a la Declaración de Barcelona sobre Información Abierta de Investigación.",
       planText: "Basaremos los datos de nuestra evaluación y seguimiento en fuentes abiertas de información sobre la investigación y consideraremos adherirnos a la Declaración de Barcelona sobre Información Abierta de Investigación.",
     },
+    {
+      title: "Decir a los investigadores qué contará, y animarlos a mostrarlo",
+      description: "Diga qué resultados y actividades reconocerán sus criterios (conjuntos de datos, software, docencia, divulgación, etc.), muestre a los investigadores cómo presentarlos y fomente las prácticas que los producen, como compartir datos y código. Reconocer la diversidad sirve de poco si los investigadores no saben qué cuenta o nunca lo producen.",
+      planText: "Diremos a nuestros investigadores qué resultados y actividades reconocerán nuestros criterios, como conjuntos de datos, software, docencia y divulgación, les mostraremos cómo presentarlos y fomentaremos las prácticas que los producen, como compartir datos y código.",
+    },
   ],
 
   contexts: {

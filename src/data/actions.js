@@ -936,6 +936,20 @@ export const ACTIONS = [
     planText: "We will base our assessment and monitoring data on open research information sources and consider signing the Barcelona Declaration on Open Research Information.",
     examples: ["University of Bologna", "University of Milan", "Politecnico di Torino", "Maastricht University"],
   },
+  {
+    id: "A62",
+    commitment: "diversity",
+    fromLevel: 1,
+    toLevel: 4,
+    effort: "low",
+    impact: "high",
+    theme: "diverse-outputs",
+    frameworks: ["DORA 4"],
+    title: "Tell researchers what will count, and encourage them to show it",
+    description: "Say which outputs and activities your criteria will recognise (datasets, software, teaching, public engagement, and so on), show researchers how to present them, and encourage the practices behind them, such as sharing data and code. Recognising diversity has little effect if researchers do not know what counts or never produce it.",
+    planText: "We will tell our researchers which outputs and activities our criteria will recognise, such as datasets, software, teaching and public engagement, show them how to present them, and encourage the practices behind them, such as sharing data and code.",
+    examples: [],
+  },
 ];
 
 /** Priority score: higher = more urgent. Based on gap between current and target, impact, effort, and optional institutional context. */

@@ -1078,6 +1078,11 @@ export default {
       description: "Eine Bewertung, die auf proprietären Datenbanken beruht, können die Bewerteten nicht überprüfen. Die Daten hinter Bewertung und Monitoring auf offene Quellen umstellen (OpenAlex, OpenAIRE, Crossref, ORCID, das eigene Repositorium) und die Unterzeichnung der Barcelona-Erklärung zu offenen Forschungsinformationen erwägen.",
       planText: "Wir werden die Daten unserer Bewertung und unseres Monitorings auf offene Quellen für Forschungsinformationen stützen und die Unterzeichnung der Barcelona-Erklärung zu offenen Forschungsinformationen erwägen.",
     },
+    {
+      title: "Forschenden sagen, was zählt, und sie ermutigen, es zu zeigen",
+      description: "Sagen Sie, welche Leistungen und Tätigkeiten Ihre Kriterien anerkennen werden (Datensätze, Software, Lehre, Wissenschaftskommunikation usw.), zeigen Sie Forschenden, wie sie sie darstellen, und fördern Sie die Praktiken dahinter, etwa das Teilen von Daten und Code. Vielfalt anzuerkennen bewirkt wenig, wenn Forschende nicht wissen, was zählt, oder es nie hervorbringen.",
+      planText: "Wir werden unseren Forschenden sagen, welche Leistungen und Tätigkeiten unsere Kriterien anerkennen werden, etwa Datensätze, Software, Lehre und Wissenschaftskommunikation, ihnen zeigen, wie sie sie darstellen, und die Praktiken dahinter fördern, etwa das Teilen von Daten und Code.",
+    },
   ],
 
   contexts: {

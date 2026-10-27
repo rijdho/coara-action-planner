@@ -35,10 +35,10 @@ test('every listed reference is used by at least one action', () => {
   assert.deepEqual(unusedDora, [], 'a DORA recommendation is listed but no action cites it')
 })
 
-test('the tagging is pinned: 61 actions, the counts below', () => {
-  assert.equal(ACTIONS.length, 61)
+test('the tagging is pinned: 62 actions, the counts below', () => {
+  assert.equal(ACTIONS.length, 62)
   const count = fw => ACTIONS.filter(a => a.frameworks.some(f => f.startsWith(fw))).length
-  assert.equal(count('DORA'), 21)
+  assert.equal(count('DORA'), 22)   // A62 (2026-10-27): DORA 4
   assert.equal(count('Leiden'), 23)
   assert.equal(count('SCOPE'), 16)
   assert.equal(ACTIONS.filter(a => a.frameworks.length === 0).length, 20)
