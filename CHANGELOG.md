@@ -10,6 +10,25 @@ latest release.
 
 ## [Unreleased]
 
+### Added
+
+- **A62, "Tell researchers what will count, and encourage them to show it"** (C1, DORA 4). Found
+  when records of the first reading were coded by hand: recognising diverse outputs does little if
+  researchers are not told which outputs and activities count, nor encouraged to produce and
+  declare them. English, German and Spanish texts.
+
+### Changed
+
+- **"N% of 335 plans" now comes from a second reading of every plan (October 2026).** Fifty records
+  of the first reading, coded by hand, showed that records it had left without an action mostly had
+  one (14 of 15): its agents had been told to give no action when in doubt. The second reading
+  gives each record the closest action on its topic, settles every match the checker disputes,
+  replaces a status the checker rejects instead of dropping the record, and counts steps about the
+  plan itself (drafting it, calling it a living document) for no action. Most shares rise; the
+  method and its limits are in `corpus/README.md`, "The full reading". The About page, the Results
+  tooltip and the README describe the new reading in all three languages, and no longer say the
+  shares lean low.
+
 ## [1.7.2] - 2026-10-23
 
 Version DOI: [10.5281/zenodo.23596504](https://doi.org/10.5281/zenodo.23596504).

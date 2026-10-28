@@ -119,15 +119,17 @@ The questions and actions were hand-calibrated by reading 15 real institutional 
 OGS, SDU, U. Pannonia) and cross-checked against a corpus of published CoARA action plans
 from Zenodo: 314 at the April 2026 calibration, 335 as of the August 2026 recount.
 
-In September 2026 every one of the 335 plans was read in full: each action a plan commits to
-was extracted with a verbatim quote, each quote was checked against the plan's text by string
-search, and a second pass of the same model tried to refute each record ([`corpus/README.md`](corpus/README.md),
-"The full reading"). The catalogue was rebuilt on that reading and held at 61 actions: actions
-that almost no plan takes were folded into their neighbours, and the most frequent practices
-the catalogue did not cover were added. Two actions ("Let researchers verify the data used to
-assess them", "Evaluate only where necessary") come from the Leiden Manifesto and SCOPE rather
-than from the plans, which rarely take them yet, and stay because of it. The same reading
-gives each action the "N% of 335 plans" shown on Results.
+In September 2026 every one of the 335 plans was read in full by language models, and the
+catalogue was rebuilt on that reading: actions that almost no plan takes were folded into their
+neighbours, and the most frequent practices the catalogue did not cover were added, which gave 61
+actions. Two actions ("Let researchers verify the data used to assess them", "Evaluate only where
+necessary") come from the Leiden Manifesto and SCOPE rather than from the plans, which rarely take
+them yet, and stay because of it. In October 2026, after records of that reading had been coded by
+hand, the plans were read again under revised coding rules, and the coding added a 62nd action:
+"Tell researchers what will count, and encourage them to show it". Each counted record is backed
+by a verbatim quote checked against the plan's text by string search and by a second pass of the same
+model that tried to refute it ([`corpus/README.md`](corpus/README.md), "The full reading"). That
+reading gives each action the "N% of 335 plans" shown on Results.
 
 Each action also names the DORA recommendations, Leiden principles and SCOPE stages or
 principles it puts into practice, read against those texts. Many carry none: DORA and Leiden
@@ -231,15 +233,16 @@ by the Open Graph tags there; regenerate it with `node docs/og-card.mjs` wheneve
   outline carry no meaning; read the per-commitment numbers, not the picture.
 - **Reading-derived corpus evidence.** The "N% of 335 plans" figures on Results come from a full
   reading of every plan in the corpus (Zenodo, to 6 August 2026) in which each action is backed
-  by a verbatim quote and a second check ([`corpus/README.md`](corpus/README.md), "The full reading"). They lean low
-  (disputed records count for none, and no person checked the ones that count), and they count what plans commit to, not what has been done. Read them as bands
-  (near-universal / common / emerging / frontier), not exact counts. Low prevalence is not a
-  reason to skip an action. [`corpus/`](corpus/) publishes the per-action counts, the list of
-  plans read and the reading's rules; the records behind them are not published, because they
-  quote the plans. Its pipeline reproduces the keyword counts, not the reading; the last keyword
-  recount ran on 6 August 2026. For the eleven themes added in September 2026,
-  [`corpus/README.md`](corpus/README.md) says how many of the plans where the reading of 40
-  plans found the action each signature catches; for some it is under half.
+  by a verbatim quote and a second check ([`corpus/README.md`](corpus/README.md), "The full
+  reading"). No person checked the records that count, each record goes to the closest action on
+  its topic, and a second run gives slightly different counts; the figures count what plans commit
+  to, not what has been done. Read them as bands (near-universal / common / emerging / frontier),
+  not exact counts. Low prevalence is not a reason to skip an action. [`corpus/`](corpus/)
+  publishes the per-action counts, the list of plans read and the reading's rules; the records
+  behind them are not published, because they quote the plans. Its pipeline reproduces the
+  keyword counts, not the reading; the last keyword recount ran on 6 August 2026. For the eleven
+  themes added in September 2026, [`corpus/README.md`](corpus/README.md) says how many of the plans
+  where the reading of 40 plans found the action each signature catches; for some it is under half.
 - **The guiding questions are a resource, not a template.** CoARA publishes no reporting or
   action-plan template for members, and the guidelines say the guiding questions "do not serve
   as a rigid template but rather as a resource and suggestion". Printing them beside each
