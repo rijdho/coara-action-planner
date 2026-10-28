@@ -12,6 +12,8 @@ latest release.
 
 ## [1.8.0] - 2026-10-28
 
+Version DOI: [10.5281/zenodo.23736158](https://doi.org/10.5281/zenodo.23736158).
+
 ### Added
 
 - **A62, "Tell researchers what will count, and encourage them to show it"** (C1, DORA 4). Found
