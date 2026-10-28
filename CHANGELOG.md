@@ -10,6 +10,8 @@ latest release.
 
 ## [Unreleased]
 
+## [1.8.0] - 2026-10-28
+
 ### Added
 
 - **A62, "Tell researchers what will count, and encourage them to show it"** (C1, DORA 4). Found
@@ -446,7 +448,8 @@ Initial public release. Version DOI:
   calibration data.
 - GitHub Actions workflow publishing to GitHub Pages on every push to `main`.
 
-[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.4.0...HEAD
+[Unreleased]: https://github.com/rijdho/coara-action-planner/compare/v1.8.0...HEAD
+[1.8.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.8.0
 [1.5.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.5.0
 [1.4.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.4.0
 [1.3.0]: https://github.com/rijdho/coara-action-planner/releases/tag/v1.3.0
