@@ -9,6 +9,7 @@ abstract: >-
   full reading of 335 published action plans, and the prioritisation algorithm
   are published in readable form: questions and actions under CC BY 4.0, the
   algorithm and code under MIT.
+  It runs at https://rijdho.github.io/coara-action-planner/.
 type: software
 authors:
   - family-names: "Hartley Belmar"
